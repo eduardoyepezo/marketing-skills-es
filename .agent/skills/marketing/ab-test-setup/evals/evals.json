@@ -1,0 +1,105 @@
+{
+  "skill_name": "ab-test-setup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quiero hacer una prueba A/B del titular de nuestra página de inicio. Actualmente decimos 'La Herramienta Todo en Uno de Gestión de Proyectos' y queremos probar algo enfocado en beneficios. Recibimos unos 15.000 visitantes al mes y nuestra tasa de registro actual es del 3,2%.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe construir una hipótesis adecuada usando el marco: 'Porque [observación], creemos que [cambio] provocará [resultado], lo cual mediremos mediante [métrica].' Debe identificar esto como una prueba A/B (dos variantes). Debe calcular o hacer referencia a las necesidades de tamaño de muestra en base a 15.000 visitantes mensuales y una tasa base del 3,2%. Debe definir la métrica principal (tasa de registro), métricas secundarias y métricas de protección. Debe advertir sobre el problema del espionaje anticipado y recomendar una duración fija para la prueba. Debe proporcionar el plan de prueba en el formato de salida estructurado.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Utiliza el marco de hipótesis con observación, creencia, resultado y métrica",
+        "Identifica el tipo como prueba A/B",
+        "Aborda el cálculo del tamaño de muestra en base al tráfico y la tasa base",
+        "Define la métrica principal (tasa de registro)",
+        "Define métricas secundarias y de protección",
+        "Advierte sobre el problema del espionaje anticipado",
+        "Proporciona un plan de prueba estructurado"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "queremos probar como 4 colores diferentes de botón de CTA en nuestra página de precios. ¿es buena idea?",
+      "expected_output": "Debe activarse con phrasing informal. Debe identificar esto como una prueba A/B/n (múltiples variantes). Debe advertir que probar 4 variantes requiere significativamente más tráfico que una prueba A/B simple. Debe hacer referencia a la guía rápida de tamaño de muestra que muestra multiplicadores de tráfico para múltiples variantes. Debe cuestionar si el color del botón por sí solo tiene probabilidades de producir un impacto significativo versus probar el texto del CTA, la ubicación o el contexto circundante. Debe recomendar reducir a 2 variantes o asegurarse de tener tráfico suficiente. Debe igualmente proporcionar el marco de hipótesis y la configuración de la prueba si se decide proceder.",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Identifica como prueba A/B/n (múltiples variantes)",
+        "Advierte sobre el mayor volumen de tráfico necesario para 4 variantes",
+        "Hace referencia a los requisitos de tamaño de muestra",
+        "Cuestiona si el color del botón por sí solo tiene alto impacto",
+        "Sugiere elementos alternativos de mayor impacto para probar",
+        "Proporciona el marco de hipótesis"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Nuestra prueba lleva 3 días corriendo y la Variante B está ganando con un 95% de confianza. ¿Deberíamos darla por concluida?",
+      "expected_output": "Debe abordar inmediatamente el problema del espionaje anticipado. Debe explicar que revisar los resultados antes de tiempo infla las tasas de falsos positivos. Debe recomendar ejecutar la prueba durante la duración completa precalculada independientemente de los resultados tempranos. Debe explicar por qué la significancia temprana puede ser engañosa (regresión a la media, efectos del día de la semana, cambios en la mezcla de audiencia). Debe proporcionar orientación sobre cuándo SÍ es apropiado detener una prueba antes de tiempo (métodos de prueba secuencial). Debe recomendar el compromiso previo a la prueba con la duración.",
+      "assertions": [
+        "Aborda el problema del espionaje anticipado directamente",
+        "Explica por qué la significancia temprana es engañosa",
+        "Recomienda ejecutar durante la duración completa precalculada",
+        "Menciona los efectos del día de la semana o los cambios en la mezcla de audiencia",
+        "Explica la inflación de la tasa de falsos positivos por el espionaje anticipado",
+        "Menciona las pruebas secuenciales como enfoque alternativo"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Ayúdame a configurar una prueba multivariante en nuestra página de destino. Quiero probar el titular, la imagen destacada y el botón CTA simultáneamente.",
+      "expected_output": "Debe identificar esto como una Prueba Multivariante (MVT). Debe explicar que la MVT prueba combinaciones de elementos y requiere mucho más tráfico que las pruebas A/B. Debe calcular o hacer referencia a las necesidades de tráfico (las combinaciones se multiplican: ej., 2 titulares × 2 imágenes × 2 CTAs = 8 combinaciones). Debe recomendar la MVT solo si el tráfico lo permite, de lo contrario sugerir pruebas A/B secuenciales. Debe construir hipótesis para cada elemento que se prueba. Debe definir los efectos de interacción a observar. Debe proporcionar un plan de prueba estructurado.",
+      "assertions": [
+        "Identifica como prueba multivariante (MVT)",
+        "Explica que la MVT prueba combinaciones de elementos",
+        "Aborda los requisitos de tráfico significativamente mayores",
+        "Calcula el número de combinaciones",
+        "Sugiere pruebas A/B secuenciales como alternativa si el tráfico es insuficiente",
+        "Construye hipótesis para cada elemento",
+        "Proporciona un plan de prueba estructurado"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Qué métricas debo rastrear para una prueba A/B en nuestra página de registro de prueba gratuita? Estamos probando un formulario más largo (que añade campos de tamaño de empresa y cargo) frente al formulario corto actual.",
+      "expected_output": "Debe aplicar el marco de selección de métricas con tres niveles: métricas primarias, secundarias y de protección. Principal: tasa de finalización del formulario (la métrica de conversión directa). Secundarias: métricas de calidad de leads (tasa de conversión de SQL, tasa de activación post-registro). De protección: volumen total de registros (asegurar que el formulario más largo no reduzca los registros totales por debajo de un umbral aceptable). Debe explicar el equilibrio entre cantidad de conversiones y calidad de leads. Debe señalar que esta prueba necesita una ventana de observación más larga para medir las métricas posteriores.",
+      "assertions": [
+        "Aplica el marco de métricas en tres niveles (principal, secundaria, de protección)",
+        "Identifica la tasa de finalización del formulario como métrica principal",
+        "Identifica la calidad de leads como métrica secundaria",
+        "Define métricas de protección para prevenir resultados negativos",
+        "Explica el equilibrio entre cantidad y calidad",
+        "Señala la necesidad de una ventana de observación más larga para las métricas posteriores"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes ayudarme a redactar el texto para nuestra nueva página de destino? Queremos probarla contra la versión actual.",
+      "expected_output": "Debe reconocer que esto es principalmente una tarea de redacción de textos, no una tarea de configuración de pruebas. Debe derivar o hacer referencia cruzada a la habilidad de redacción de textos para escribir el texto real. Puede ayudar a formular la hipótesis de la prueba y la configuración, pero debe dejar claro que la redacción de textos es la habilidad adecuada para crear el texto de la página.",
+      "assertions": [
+        "Reconoce que esto es principalmente una tarea de redacción de textos",
+        "Hace referencia o deriva a la habilidad de redacción de textos",
+        "No intenta escribir el texto completo de la página usando patrones de configuración de pruebas",
+        "Puede ofrecer ayuda con la hipótesis y la configuración de la prueba"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Ejecutamos una prueba A/B en nuestra página de precios durante 4 semanas. Control: 2,1% de conversión. Variante: 2,4% de conversión. 12.000 visitantes por variante. ¿Es estadísticamente significativo? ¿Deberíamos implementarlo?",
+      "expected_output": "Debe evaluar los resultados frente a los criterios de significancia estadística. Debe calcular o estimar si el tamaño de muestra es suficiente para detectar un incremento de 0,3 puntos porcentuales desde una base del 2,1% (esto es un incremento relativo de ~14%). Debe hacer referencia al umbral de confianza del 95%. Debe discutir la significancia práctica versus la estadística. Debe recomendar si implementar, continuar la prueba o iterar. Debe considerar el análisis por segmentos si los resultados son límitrofes.",
+      "assertions": [
+        "Evalúa frente a los criterios de significancia estadística",
+        "Aborda si el tamaño de muestra es suficiente para este tamaño de efecto",
+        "Hace referencia al umbral de confianza del 95%",
+        "Distingue la significancia estadística de la práctica",
+        "Proporciona una recomendación clara sobre la implementación",
+        "Sugiere análisis por segmentos o seguimiento si los resultados son límitrofes"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "skill_name": "page-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Aquí está mi página de aterrizaje de SaaS: https://example.com/product. Recibimos alrededor de 5.000 visitantes al mes desde Google Ads, pero solo el 1,2% se convierte en registros de prueba gratuita. ¿Puedes ayudarme a identificar qué está fallando?",
+      "expected_output": "Debe verificar primero product-marketing-context.md. Debe identificar el tipo de página (página de aterrizaje) y el objetivo de conversión (registro de prueba gratuita). Debe analizar las dimensiones del marco de CRO: claridad de la propuesta de valor, efectividad del titular, ubicación/copia/jerarquía del CTA, jerarquía visual, señales de confianza, manejo de objeciones y puntos de fricción. Debe proporcionar recomendaciones organizadas como Victorias Rápidas, Cambios de Alto Impacto e Ideas para Pruebas. Debe señalar el problema de correspondencia de mensajes entre Google Ads y la página de aterrizaje. Debe proporcionar 2-3 alternativas de titular y copia de CTA con justificación.",
+      "assertions": [
+        "Verifica product-marketing-context.md",
+        "Identifica el tipo de página como página de aterrizaje",
+        "Identifica el objetivo de conversión como registro de prueba gratuita",
+        "Analiza la claridad de la propuesta de valor",
+        "Analiza la ubicación y copia del CTA",
+        "Señala la correspondencia de mensajes entre anuncios y página de aterrizaje",
+        "La salida tiene sección de Victorias Rápidas",
+        "La salida tiene sección de Cambios de Alto Impacto",
+        "La salida tiene sección de Ideas para Pruebas",
+        "Proporciona 2-3 alternativas de titular o CTA"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestra página de precios tiene tres niveles, pero nadie elige el del medio. El 60% elige el plan más barato y el 30% abandona por completo. ¿Qué deberíamos cambiar?",
+      "expected_output": "Debe aplicar el marco de CRO de Página de Precios. Debe abordar la claridad de comparación de planes, la indicación del plan recomendado y la ansiedad sobre '¿qué plan es el adecuado para mí?'. Debe analizar si la propuesta de valor del nivel intermedio está suficientemente diferenciada. Debe recomendar señales de confianza y prueba social cerca de los precios. Debe sugerir experimentos específicos como cambiar los nombres de los planes, ajustar la diferenciación de funciones, agregar un interruptor anual o destacar visualmente el plan recomendado. La salida debe incluir secciones de Victorias Rápidas, Cambios de Alto Impacto e Ideas para Pruebas.",
+      "assertions": [
+        "Aplica el marco de CRO de Página de Precios",
+        "Aborda la indicación del plan recomendado",
+        "Aborda la ansiedad sobre '¿qué plan es el adecuado para mí?'",
+        "Analiza la diferenciación del nivel intermedio",
+        "Sugiere experimentos específicos",
+        "La salida tiene sección de Victorias Rápidas",
+        "La salida tiene sección de Cambios de Alto Impacto",
+        "La salida tiene sección de Ideas para Pruebas"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "esta página no está convirtiendo. ¿puedes echarle un vistazo? es nuestra página de inicio para una herramienta de gestión de proyectos B2B",
+      "expected_output": "Debe activarse con la frase informal 'esta página no está convirtiendo'. Debe identificar esto como un análisis de CRO de Página de Inicio. Debe hacer preguntas aclaratorias sobre la tasa de conversión actual, las fuentes de tráfico y el objetivo de conversión. Debe aplicar el Marco de Análisis CRO completo comenzando por la claridad de la propuesta de valor. Debe abordar la guía específica de página de inicio: atender a múltiples audiencias, liderar con la propuesta de valor más amplia y proporcionar rutas claras para las diferentes intenciones de los visitantes. Debe proporcionar una salida estructurada con Victorias Rápidas, Cambios de Alto Impacto, Ideas para Pruebas y Alternativas de Copia.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Identifica como CRO de Página de Inicio",
+        "Pregunta sobre la tasa de conversión actual",
+        "Pregunta sobre las fuentes de tráfico",
+        "Aplica el Marco de Análisis CRO",
+        "Aborda el servicio a múltiples audiencias",
+        "Aborda rutas claras para diferentes intenciones de visitantes",
+        "La salida tiene secciones estructuradas"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Tenemos un blog que recibe 20.000 visitas orgánicas al mes, pero casi nadie hace clic hacia nuestro producto. ¿Cómo conseguimos más conversiones de los lectores del blog?",
+      "expected_output": "Debe aplicar el marco de CRO de Publicación de Blog. Debe recomendar CTAs contextuales que coincidan con los temas del contenido y CTAs en línea en los puntos de pausa naturales. Debe analizar si los CTAs son relevantes para el tema del contenido o genéricos. Debe sugerir ubicaciones específicas de CTA: dentro del contenido, al final de la publicación, en la barra lateral y en una barra fija. Debe recomendar probar diferentes formatos de CTA (enlaces de texto en línea, tarjetas tipo banner, intención de salida). Debe hacer referencia cruzada con la habilidad de redacción para mejorar la copia del CTA.",
+      "assertions": [
+        "Aplica el marco de CRO de Publicación de Blog",
+        "Recomienda CTAs contextuales que coincidan con el contenido",
+        "Recomienda CTAs en línea en puntos de pausa naturales",
+        "Sugiere ubicaciones específicas de CTA",
+        "Sugiere probar diferentes formatos de CTA",
+        "Hace referencia cruzada con la habilidad de redacción u otra relacionada"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Rediseñamos nuestra página de aterrizaje y las conversiones cayeron del 4,2% al 2,8%. Aquí está la nueva página. ¿Qué salió mal?",
+      "expected_output": "Debe abordar esto como una auditoría de diagnóstico de CRO centrada en lo que cambió. Debe comparar sistemáticamente con las dimensiones del marco de CRO para identificar las posibles causas de la regresión. Debe verificar los errores comunes de rediseño: pérdida de señales de confianza, menor claridad de la propuesta de valor, cambios en la jerarquía del CTA, fricción agregada, ruptura de la correspondencia de mensajes con las fuentes de tráfico. Debe proporcionar soluciones específicas organizadas por impacto probable. Debe recomendar revertir los cambios de alto riesgo mientras se prueban otros.",
+      "assertions": [
+        "Aborda como auditoría de diagnóstico",
+        "Verifica la pérdida de señales de confianza",
+        "Verifica el debilitamiento de la propuesta de valor",
+        "Verifica cambios en la jerarquía del CTA",
+        "Verifica la fricción agregada",
+        "Verifica la ruptura de correspondencia de mensajes con fuentes de tráfico",
+        "Proporciona soluciones organizadas por impacto",
+        "Recomienda revertir cambios de alto riesgo"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro formulario de registro tiene demasiados campos y la gente sigue abandonándolo a mitad de camino. ¿Puedes ayudarnos a optimizarlo?",
+      "expected_output": "Debe reconocer que esto es sobre optimización de formularios de registro, no sobre CRO de página general. Debe remitir o hacer referencia cruzada a la habilidad signup-flow-cro, que maneja específicamente los flujos de registro, inscripción y creación de cuentas. Puede proporcionar algunos consejos generales de reducción de fricción, pero debe dejar claro que signup-flow-cro es la habilidad adecuada para esta tarea.",
+      "assertions": [
+        "Reconoce esto como optimización de flujo de registro",
+        "Hace referencia o remite a la habilidad signup-flow-cro",
+        "No intenta un análisis completo de page-cro en un formulario"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Revisa esta página de funcionalidades de nuestra herramienta de monitoreo de API. La mayoría del tráfico proviene de búsqueda orgánica por 'herramientas de monitoreo de API'. Queremos que inicien una prueba gratuita.",
+      "expected_output": "Debe aplicar el marco de CRO de Página de Funcionalidades: conectar la función al beneficio, mostrar casos de uso y ejemplos, ruta clara para probar/comprar. Debe hacer referencia a la sección de experimentos y sugerir ideas de prueba priorizadas para la sección hero, señales de confianza y variaciones de CTA. Debe señalar la fuente de tráfico de búsqueda orgánica y verificar la correspondencia de mensajes con la intención de búsqueda. Debe hacer referencia cruzada a la habilidad ab-test-setup para la implementación adecuada de pruebas.",
+      "assertions": [
+        "Aplica el marco de CRO de Página de Funcionalidades",
+        "Conecta funciones con beneficios",
+        "Sugiere casos de uso y ejemplos",
+        "Proporciona ruta clara para probar/comprar",
+        "Señala la fuente de tráfico orgánico y la correspondencia con la intención de búsqueda",
+        "Sugiere hipótesis de experimentos específicos",
+        "Hace referencia cruzada a la habilidad ab-test-setup"
+      ],
+      "files": []
+    }
+  ]
+}

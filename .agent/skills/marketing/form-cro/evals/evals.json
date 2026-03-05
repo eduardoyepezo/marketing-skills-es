@@ -1,0 +1,90 @@
+{
+  "skill_name": "form-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audita nuestro formulario de solicitud de demostración. Actualmente tiene estos campos: Nombre, Apellido, Correo Electrónico Corporativo, Número de Teléfono, Nombre de la Empresa, Tamaño de la Empresa, Cargo, Industria, Solución Actual, Rango de Presupuesto y un área de texto 'Cuéntanos sobre tus necesidades'. Nuestra tasa de conversión es del 3,1% y queremos mejorarla.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el principio de 'cada campo tiene un costo' — 11 campos es excesivo para un formulario de demostración. Debe hacer referencia a los datos de costo por campo (3 campos como base, 7+ campos = reducción del 25-50% en la conversión). Debe evaluar cada campo: cuáles son esenciales para la preparación de la demostración, cuáles se pueden recopilar más tarde o inferir. Debe recomendar reducir a los campos esenciales (probablemente Correo Electrónico Corporativo, Nombre de la Empresa y quizás un calificador). Debe proporcionar los hallazgos de la auditoría en el formato estructurado (Problema, Impacto, Solución, Prioridad). Debe recomendar Soluciones Rápidas, Cambios de Alto Impacto e Ideas de Pruebas.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el principio de 'cada campo tiene un costo'",
+        "Hace referencia a los datos del impacto del número de campos",
+        "Evalúa cada campo según su necesidad",
+        "Recomienda reducir a los campos esenciales",
+        "Proporciona hallazgos en formato estructurado (Problema, Impacto, Solución, Prioridad)",
+        "Incluye Soluciones Rápidas, Cambios de Alto Impacto e Ideas de Pruebas"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestro formulario de contacto solo tiene los campos Nombre, Correo Electrónico y Mensaje, pero estamos recibiendo muchos envíos de spam y leads de baja calidad. ¿Cómo lo arreglamos sin añadir demasiada fricción?",
+      "expected_output": "Debe aplicar la guía del tipo de formulario de contacto. Debe abordar el spam primero con soluciones sin fricción: campos honeypot, reCAPTCHA, validación del lado del servidor. Luego debe abordar la calidad de los leads: sugerir añadir un campo calificador (nombre de empresa o rango de presupuesto) para filtrar sin fricción excesiva. Debe aplicar la guía de manejo de errores para la validación. Debe recomendar la optimización del diseño del formulario y del botón de envío. Debe equilibrar calidad vs cantidad en las recomendaciones.",
+      "assertions": [
+        "Aplica la guía del tipo de formulario de contacto",
+        "Recomienda soluciones anti-spam (honeypot, reCAPTCHA)",
+        "Sugiere campos calificadores mínimos para la calidad de leads",
+        "Equilibra calidad vs cantidad",
+        "Aborda el manejo de errores y la validación",
+        "Recomienda primero las soluciones sin fricción"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿deberíamos usar un formulario de un solo paso o de varios pasos para nuestra solicitud de presupuesto? necesitamos información de la empresa, detalles del proyecto, plazos y presupuesto.",
+      "expected_output": "Debe activarse con la redacción informal. Debe aplicar la guía de formularios de varios pasos — con tantos tipos de datos requeridos, los varios pasos probablemente sean mejores. Debe hacer referencia al umbral: se recomienda varios pasos cuando hay más de 5-6 campos. Debe recomendar agrupar por tipo (información de contacto → detalles del proyecto → presupuesto/plazos). Debe incluir la recomendación de indicador de progreso. Debe aplicar las mejores prácticas: preguntas fáciles primero, guardar el progreso, permitir la navegación hacia atrás. Debe señalar que los varios pasos suelen aumentar la tasa de finalización en formularios más largos.",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Recomienda varios pasos según el número de campos",
+        "Hace referencia al umbral de 5-6 campos para varios pasos",
+        "Sugiere agrupación lógica de campos",
+        "Recomienda indicador de progreso",
+        "Aplica las mejores prácticas de varios pasos",
+        "Señala que los varios pasos aumentan la tasa de finalización en formularios más largos"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cómo debemos gestionar los errores del formulario? Los usuarios se frustran y abandonan nuestro formulario de captación de leads cuando encuentran errores de validación.",
+      "expected_output": "Debe aplicar la guía de manejo de errores. Debe recomendar la validación en línea (no solo al enviar). Debe proporcionar ejemplos específicos de mensajes de error (útiles, no genéricos). Debe recomendar: no borrar el formulario en caso de error, enfocar en el campo con problema, mostrar los requisitos por adelantado y no después del fallo. Debe abordar problemas comunes de UX de validación: formato de correo electrónico, formato de teléfono, indicadores de campos obligatorios. Debe proporcionar ejemplos de mensajes de error buenos vs malos.",
+      "assertions": [
+        "Aplica la guía de manejo de errores",
+        "Recomienda la validación en línea",
+        "Proporciona ejemplos específicos de mensajes de error",
+        "Recomienda no borrar el formulario en caso de error",
+        "Recomienda mostrar los requisitos por adelantado",
+        "Proporciona ejemplos de mensajes de error buenos vs malos",
+        "Aborda problemas comunes de UX de validación"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesitamos optimizar nuestro formulario para móviles. Más del 60% de nuestro tráfico es móvil, pero nuestra tasa de conversión en móviles es la mitad que en escritorio.",
+      "expected_output": "Debe aplicar la guía de optimización para móviles. Debe recomendar: objetivos táctiles más grandes (altura mínima de 44px), tipos de teclado apropiados (email, tel), soporte de autocompletado, diseño de una sola columna, botón de CTA fijo, reducir la escritura (usar desplegables, interruptores). Debe abordar los problemas específicos de formularios en móviles: ventana gráfica, tamaño de fuente, posición de los botones, comportamiento del desplazamiento. Debe recomendar pruebas con dispositivos reales.",
+      "assertions": [
+        "Aplica la guía de optimización para móviles",
+        "Recomienda objetivos táctiles más grandes (44px+)",
+        "Recomienda tipos de teclado apropiados",
+        "Recomienda soporte de autocompletado",
+        "Recomienda diseño de una sola columna",
+        "Aborda los problemas específicos de móviles",
+        "Recomienda pruebas con dispositivos reales"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro formulario de registro tiene demasiados campos y los usuarios lo abandonan a mitad. ¿Puedes ayudarnos a optimizarlo?",
+      "expected_output": "Debe reconocer que se trata de la optimización de formularios de registro/registro de cuentas, no de CRO de formularios en general. Debe remitirse o hacer referencia cruzada a la habilidad signup-flow-cro, que gestiona específicamente los flujos de registro, inscripción y creación de cuentas. Puede proporcionar consejos generales sobre la fricción en formularios, pero debe dejar claro que signup-flow-cro es la habilidad adecuada para los formularios de registro.",
+      "assertions": [
+        "Reconoce que se trata de optimización del flujo de registro",
+        "Hace referencia o se remite a la habilidad signup-flow-cro",
+        "No intenta una optimización completa del formulario de registro usando patrones generales de CRO de formularios"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "skill_name": "site-architecture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a planificar la arquitectura del sitio para nuestro nuevo sitio web de marketing SaaS. Tenemos una página de inicio, página de producto, página de precios, página de nosotros, blog, y queremos agregar páginas de comparación con competidores y páginas de integraciones.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar los principios de diseño de jerarquía de páginas (regla de los 3 clics, plana vs profunda). Debe crear un árbol ASCII que muestre la estructura completa del sitio. Debe organizar las páginas de manera lógica: navegación principal (Inicio, Producto, Precios, Nosotros, Blog), sección de páginas de comparación, hub de integraciones. Debe recomendar patrones de estructura de URL para cada sección. Debe proporcionar recomendaciones de diseño de navegación (4-7 elementos en el encabezado). Debe incluir estrategia de vínculos internos (hub-and-spoke para comparaciones e integraciones). Debe proporcionar el conjunto completo de entregables: jerarquía, mapa de URLs, especificación de navegación.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica la regla de los 3 clics y principios de estructura plana vs profunda",
+        "Crea árbol ASCII para la estructura del sitio",
+        "Organiza las páginas de manera lógica",
+        "Recomienda estructura de URL para cada sección",
+        "Proporciona diseño de navegación (4-7 elementos en el encabezado)",
+        "Incluye estrategia de vínculos internos",
+        "Proporciona jerarquía, mapa de URLs y especificación de navegación"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestro sitio web ha crecido de forma orgánica y la navegación es un desastre. Tenemos más de 50 páginas y los usuarios no encuentran nada. Ayúdanos a reorganizarlo.",
+      "expected_output": "Debe tratar esto como una auditoría y rediseño de arquitectura del sitio. Debe recomendar comenzar con un inventario de contenido de las más de 50 páginas. Debe aplicar el diseño de jerarquía de páginas para reorganizar: agrupar páginas relacionadas, establecer relaciones padre-hijo claras, aplicar la regla de los 3 clics. Debe rediseñar la navegación (reducir elementos del encabezado, usar megamenú o desplegables para páginas más profundas). Debe proporcionar la estructura del árbol ASCII antes y después. Debe abordar las redirecciones de URL para cualquier página que se mueva. Debe incluir un mapa visual del sitio (Mermaid).",
+      "assertions": [
+        "Recomienda primero un inventario de contenido",
+        "Agrupa páginas relacionadas de manera lógica",
+        "Aplica la regla de los 3 clics",
+        "Rediseña la estructura de navegación",
+        "Proporciona árbol ASCII o mapa visual del sitio",
+        "Aborda las redirecciones de URL para páginas movidas",
+        "Reduce los elementos de navegación del encabezado"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿cómo debería verse nuestra estructura de URL? seguimos debatiendo entre /blog/nombre-del-post vs /recursos/blog/nombre-del-post y /producto/funcion vs /funciones/nombre-de-funcion",
+      "expected_output": "Debe activarse con lenguaje informal. Debe aplicar la guía de patrones de estructura de URL. Debe recomendar URLs limpias y descriptivas: preferir rutas más cortas (/blog/nombre-del-post sobre /recursos/blog/nombre-del-post), usar patrones consistentes, evitar anidamiento innecesario. Debe proporcionar recomendaciones de estructura de URL para cada tipo de sección (blog, funciones, comparaciones, integraciones). Debe abordar las implicaciones de SEO de la estructura de URL. Debe proporcionar un mapa de URLs completo como referencia.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Aplica los patrones de estructura de URL",
+        "Recomienda rutas más cortas y limpias",
+        "Proporciona recomendaciones para cada tipo de sección",
+        "Aborda las implicaciones de SEO",
+        "Proporciona referencia de mapa de URLs"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Vamos a agregar páginas de SEO programático: 200 páginas de integraciones y 50 páginas de comparación. ¿Cómo deben encajar estas en la arquitectura de nuestro sitio?",
+      "expected_output": "Debe abordar cómo integrar contenido escalado en la arquitectura del sitio. Debe recomendar páginas hub para ambas secciones (/integraciones y /comparar o /vs). Debe aplicar el modelo de vínculos internos hub-and-spoke. Debe abordar la navegación: estas no deben saturar la navegación principal, pero deben ser accesibles a través de las páginas hub. Debe proporcionar estructura de URL para ambas secciones. Debe abordar las consideraciones del presupuesto de rastreo para 250 páginas nuevas. Debe hacer referencia cruzada con programmatic-seo para la estrategia de contenido.",
+      "assertions": [
+        "Recomienda páginas hub para cada sección",
+        "Aplica vínculos internos hub-and-spoke",
+        "Mantiene las páginas programáticas fuera de la navegación principal",
+        "Proporciona estructura de URL para ambas secciones",
+        "Aborda el presupuesto de rastreo para 250 páginas",
+        "Hace referencia cruzada con la habilidad programmatic-seo"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Puedes crear un mapa visual del sitio? Queremos algo que podamos compartir con nuestro equipo de diseño.",
+      "expected_output": "Debe proporcionar un mapa visual del sitio usando el formato de diagrama Mermaid. Debe organizar el mapa del sitio de forma jerárquica mostrando las relaciones entre páginas. Debe usar la sintaxis de gráfico Mermaid que puede ser renderizada por la mayoría de las herramientas. Debe incluir todas las secciones principales y páginas clave. Debe ser lo suficientemente claro para que un equipo de diseño lo use como referencia para la navegación y el wireframing.",
+      "assertions": [
+        "Proporciona mapa visual del sitio en formato Mermaid",
+        "Muestra relaciones jerárquicas entre páginas",
+        "Incluye todas las secciones principales",
+        "Usa un formato claro y legible",
+        "Adecuado para compartir con el equipo de diseño"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro sitemap XML no ha sido actualizado en 6 meses y tenemos errores de rastreo en Search Console. ¿Puedes arreglar nuestro SEO técnico?",
+      "expected_output": "Debe reconocer que esto es una tarea de auditoría técnica de SEO, no una tarea de diseño de arquitectura del sitio. Debe diferir o hacer referencia cruzada con la habilidad seo-audit, que maneja sitemaps XML, errores de rastreo y problemas técnicos de SEO. site-architecture se enfoca en el diseño de jerarquía de páginas, navegación y estructura de URL, no en la resolución de problemas técnicos de SEO.",
+      "assertions": [
+        "Reconoce que esto es SEO técnico, no arquitectura del sitio",
+        "Hace referencia o difiere a la habilidad seo-audit",
+        "Explica que site-architecture cubre el diseño, no el SEO técnico"
+      ],
+      "files": []
+    }
+  ]
+}

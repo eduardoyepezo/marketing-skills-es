@@ -1,0 +1,90 @@
+{
+  "skill_name": "ad-creative",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Genera creatividades publicitarias para nuestra campaña en Meta (Facebook/Instagram). Vendemos un asistente de escritura con IA para profesionales de marketing de contenidos. Propuesta de valor principal: redactar publicaciones de blog 5 veces más rápido. Audiencia objetivo: gerentes de marketing de contenidos en empresas B2B SaaS. Presupuesto: 5.000 USD al mes.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe generar creatividades siguiendo el enfoque basado en ángulos: identificar 3-5 ángulos (velocidad, calidad, ROI, el dolor de la página en blanco, ventaja competitiva). Para cada ángulo, debe generar texto principal (≤125 caracteres), titular (≤40 caracteres) y descripción (≤30 caracteres) respetando los límites de caracteres de Meta. Debe proporcionar múltiples variaciones por ángulo. Debe sugerir la dirección visual o de imagen para cada uno. Debe organizar el resultado con el nombre del ángulo, gancho, cuerpo y CTA para cada variación. Debe recomendar qué ángulos probar primero.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Utiliza el enfoque de generación basado en ángulos",
+        "Identifica múltiples ángulos (3-5)",
+        "Respeta los límites de caracteres de Meta (125/40/30)",
+        "Genera múltiples variaciones por ángulo",
+        "Sugiere la dirección visual o de imagen",
+        "Incluye gancho, cuerpo y CTA para cada uno",
+        "Recomienda qué ángulos probar primero"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Necesito texto para Google Ads de nuestro producto CRM. Nos dirigimos a la palabra clave 'mejor CRM para pequeñas empresas'. Necesito anuncios de búsqueda responsivos.",
+      "expected_output": "Debe generar creatividades para Google RSA respetando los límites de caracteres: titulares (≤30 caracteres cada uno, se necesitan 10-15 variaciones) y descripciones (≤90 caracteres cada una, se necesitan 4+ variaciones). Debe señalar que la fijación de posición debe usarse con moderación ya que reduce la optimización. Debe incluir la palabra clave objetivo en los titulares. Debe proporcionar múltiples variaciones basadas en ángulos. Debe sugerir extensiones de anuncio (vínculos de sitio, textos destacados, fragmentos estructurados). Debe seguir las mejores prácticas de Google Ads para RSA.",
+      "assertions": [
+        "Respeta los límites de caracteres de Google RSA (30 caracteres en titulares, 90 en descripciones)",
+        "Genera 10-15 variaciones de titular",
+        "Genera 4+ variaciones de descripción",
+        "Incluye la palabra clave objetivo en los titulares",
+        "Señala que la fijación debe usarse con moderación según la guía de la habilidad",
+        "Sugiere extensiones de anuncio",
+        "Utiliza el enfoque de variación basado en ángulos"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Aquí están los datos de rendimiento de nuestros anuncios: Anuncio A (ángulo de punto de dolor) - CTR 2,1%, CPC 3,20 USD, tasa de conversión 4,5%. Anuncio B (ángulo de prueba social) - CTR 1,4%, CPC 4,10 USD, tasa de conversión 6,2%. Anuncio C (ángulo de características) - CTR 0,8%, CPC 5,50 USD, tasa de conversión 2,1%. Ayúdame a iterar sobre estos.",
+      "expected_output": "Debe activar el modo de iteración a partir del rendimiento (no generar desde cero). Debe analizar los datos: el Anuncio A tiene el mejor CTR, el Anuncio B tiene la mejor tasa de conversión (mayor eficiencia a pesar del CTR más bajo), el Anuncio C está bajo rendimiento en todas las métricas. Debe recomendar apostar por el ángulo de punto de dolor (alto CTR) y el de prueba social (alta conversión), mientras se pausa o se renueva el ángulo de características. Debe generar nuevas variaciones que combinen los elementos ganadores (gancho de punto de dolor + prueba social). Debe sugerir iteraciones específicas en el Anuncio A y el Anuncio B.",
+      "assertions": [
+        "Activa el modo de iteración basado en los datos de rendimiento",
+        "Analiza CTR, CPC y tasa de conversión de cada anuncio",
+        "Identifica los ángulos ganadores a partir de los datos",
+        "Recomienda pausar o renovar la creatividad con bajo rendimiento",
+        "Genera nuevas variaciones combinando los elementos ganadores",
+        "Proporciona iteraciones específicas sobre los mejores resultados"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "necesitamos anuncios de linkedin para nuestro producto de seguridad empresarial. la audiencia son CISOs y directores de TI.",
+      "expected_output": "Debe activarse con phrasing informal. Debe generar creatividades para anuncios de LinkedIn respetando los límites de caracteres: texto introductorio (≤150 caracteres), titular (≤70 caracteres), descripción (≤100 caracteres). Debe adaptar el tono y los mensajes para la audiencia de seguridad empresarial (CISOs, directores de TI): lenguaje más formal, enfocado en cumplimiento normativo y reducción de riesgos. Debe proporcionar múltiples ángulos relevantes para compradores de seguridad (reducción de riesgos, cumplimiento, tiempo de respuesta a incidentes, costo de brechas de seguridad). Debe sugerir recomendaciones de formato de anuncio para LinkedIn (contenido patrocinado, anuncios de mensaje, etc.).",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Respeta los límites de caracteres de LinkedIn (150/70/100)",
+        "Adapta el tono para la audiencia de seguridad empresarial",
+        "Utiliza lenguaje de reducción de riesgos y cumplimiento normativo",
+        "Proporciona múltiples ángulos relevantes para compradores de seguridad",
+        "Sugiere recomendaciones de formato de anuncio para LinkedIn"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesito generar un gran lote de variaciones de anuncios para una campaña multiplataforma que se lanza la próxima semana. Somos un servicio de entrega de comidas dirigido a profesionales ocupados. Necesito anuncios para Google, Meta y TikTok.",
+      "expected_output": "Debe activar el flujo de trabajo de generación en lote. Debe generar creatividades para las tres plataformas respetando los límites de caracteres de cada una: Google RSA (30/90), Meta (125/40/30), TikTok (80 caracteres recomendados, 100 como máximo). Debe identificar 3-5 ángulos que funcionen en todas las plataformas (conveniencia, salud, ahorro de tiempo, variedad, costo frente a comer fuera). Debe generar variaciones por ángulo por plataforma. Debe señalar las consideraciones creativas específicas de cada plataforma (TikTok necesita conceptos de video, no solo texto). Debe organizar el resultado claramente por plataforma.",
+      "assertions": [
+        "Activa el flujo de trabajo de generación en lote",
+        "Genera para las tres plataformas",
+        "Respeta los límites de caracteres de cada plataforma",
+        "Identifica ángulos que funcionen en todas las plataformas",
+        "Señala que TikTok necesita conceptos de video",
+        "Organiza el resultado por plataforma",
+        "Genera múltiples variaciones por ángulo por plataforma"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Ayúdame a planificar nuestra estrategia general de publicidad de pago. Tenemos un presupuesto mensual de 20.000 USD y queremos determinar qué plataformas usar y cómo distribuir el gasto.",
+      "expected_output": "Debe reconocer que esto es una tarea de estrategia publicitaria de pago, no de generación de creatividades. Debe derivar o hacer referencia cruzada a la habilidad paid-ads, que gestiona la estrategia de campaña, la selección de plataformas y la asignación de presupuesto. Puede mencionar brevemente las consideraciones creativas pero debe dejar claro que paid-ads es la habilidad adecuada para la estrategia.",
+      "assertions": [
+        "Reconoce que esto es una estrategia de publicidad de pago, no generación de creatividades",
+        "Hace referencia o deriva a la habilidad paid-ads",
+        "No intenta desarrollar una estrategia de campaña completa usando patrones de generación de creatividades"
+      ],
+      "files": []
+    }
+  ]
+}

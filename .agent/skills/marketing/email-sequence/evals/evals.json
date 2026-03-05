@@ -1,0 +1,93 @@
+{
+  "skill_name": "email-sequence",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crea una secuencia de correos electrónicos de bienvenida para nuevos usuarios que se registren en la prueba gratuita de nuestra herramienta de gestión de proyectos. La prueba dura 14 días. Queremos que lleguen a su momento aha (crear su primer proyecto e invitar a un miembro del equipo).",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe crear una secuencia de bienvenida (5-7 correos electrónicos) siguiendo los principios fundamentales: un correo electrónico, un objetivo; valor antes de la solicitud. Debe mapear cada correo electrónico a un objetivo específico en el recorrido de la prueba de 14 días. Debe incluir tiempos/retrasos entre correos electrónicos. Cada correo electrónico debe seguir la estructura de copy de correo electrónico: gancho → contexto → valor → CTA → cierre. Debe incluir líneas de asunto siguiendo la estrategia de líneas de asunto. Debe alinear la secuencia con el momento aha (primer proyecto + invitación al equipo). La salida debe seguir el formato estructurado con descripción general de la secuencia y especificaciones por correo electrónico.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Crea una secuencia de bienvenida de 5-7 correos electrónicos",
+        "Sigue el principio de un correo electrónico, un objetivo",
+        "Mapea los correos electrónicos al cronograma de prueba (14 días)",
+        "Incluye tiempos entre correos electrónicos",
+        "Cada correo electrónico tiene gancho, contexto, valor y CTA",
+        "Incluye líneas de asunto para cada correo electrónico",
+        "Se alinea con el momento aha establecido",
+        "La salida sigue el formato estructurado por correo electrónico"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Necesitamos una secuencia de nutrición de leads para personas que descarguen nuestro informe 'State of DevOps 2024'. El objetivo es que reserven una demostración de nuestra plataforma CI/CD.",
+      "expected_output": "Debe crear una secuencia de nutrición de leads (6-8 correos electrónicos). Debe seguir el principio de valor antes de la solicitud — los primeros correos electrónicos deben proporcionar valor relacionado, no presionar inmediatamente por la demostración. Debe mapear la secuencia desde el reconocimiento (descarga del informe) hasta la consideración (contenido relacionado, casos de éxito) y la decisión (solicitud de demostración). Debe incluir tiempos entre correos electrónicos. Cada correo electrónico debe tener una línea de asunto clara, gancho y un único CTA. Debe aumentar gradualmente las solicitudes de compromiso a lo largo de la secuencia.",
+      "assertions": [
+        "Crea una secuencia de nutrición de leads de 6-8 correos electrónicos",
+        "Sigue el principio de valor antes de la solicitud",
+        "Mapea desde el reconocimiento hasta la consideración y la decisión",
+        "Incluye tiempos entre correos electrónicos",
+        "Cada correo electrónico tiene línea de asunto clara y un único CTA",
+        "Aumenta gradualmente las solicitudes de compromiso",
+        "Conecta con el tema de la descarga original"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestras tasas de apertura de correo electrónico se han desplomado. antes eran del 35%, ahora estamos al 18%. ¿qué está pasando y cómo arreglamos nuestras líneas de asunto?",
+      "expected_output": "Debe activarse con la redacción informal. Debe diagnosticar las posibles causas de la caída en las tasas de apertura: reputación del remitente, higiene de la lista, calidad de las líneas de asunto, frecuencia de envío, problemas de entregabilidad. Debe aplicar la estrategia de líneas de asunto de la habilidad: probar patrones de curiosidad vs beneficio vs urgencia, personalización, longitud óptima. Debe recomendar una campaña de reactivación para limpiar la lista. Debe proporcionar fórmulas específicas de líneas de asunto y ejemplos. Debe sugerir un marco de pruebas para las líneas de asunto.",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Diagnostica posibles causas más allá de las líneas de asunto",
+        "Aborda la reputación del remitente y la entregabilidad",
+        "Recomienda higiene de la lista o reactivación",
+        "Aplica la estrategia de líneas de asunto con patrones específicos",
+        "Proporciona fórmulas y ejemplos de líneas de asunto",
+        "Sugiere un marco de pruebas"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Construye una secuencia de reactivación para suscriptores que no han abierto ningún correo electrónico en 90 días. Tenemos aproximadamente 5.000 suscriptores inactivos.",
+      "expected_output": "Debe crear una secuencia de reactivación (3-4 correos electrónicos). Debe seguir el patrón de reactivación: el primer correo electrónico reconoce la ausencia y ofrece valor, los correos electrónicos intermedios escalan con razones convincentes para volver a interactuar, el correo electrónico final es un claro 'última oportunidad' antes de la eliminación. Debe recomendar líneas de asunto agresivas para llamar la atención. Debe incluir una política de baja definitiva (eliminar a los que no responden tras completar la secuencia). Debe abordar el impacto en la entregabilidad de mantener suscriptores inactivos.",
+      "assertions": [
+        "Crea una secuencia de reactivación de 3-4 correos electrónicos",
+        "Reconoce la ausencia en el primer correo electrónico",
+        "Escala a lo largo de la secuencia",
+        "Incluye un correo electrónico final de 'última oportunidad'",
+        "Recomienda una política de baja definitiva para los que no responden",
+        "Aborda el impacto en la entregabilidad de los suscriptores inactivos",
+        "Usa líneas de asunto convincentes"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuál es el momento ideal para nuestra secuencia de correos electrónicos de incorporación? Enviamos el primer correo electrónico inmediatamente después del registro, pero no estamos seguros sobre el resto.",
+      "expected_output": "Debe proporcionar orientación sobre el momento para las secuencias de incorporación. Debe hacer referencia al marco de tiempos y retrasos: primer correo electrónico inmediato (bienvenida/confirmación), luego sugerir un momento basado en datos según activadores de comportamiento del usuario en comparación con retrasos de tiempo fijos. Debe recomendar correos electrónicos activados por comportamiento cuando sea posible (usuario completó acción → siguiente correo electrónico) con alternativas basadas en tiempo. Debe proporcionar patrones de momento típicos para la incorporación en SaaS (día 0, día 1, día 3, día 5, día 7, etc.). Debe señalar que el momento óptimo depende de la complejidad del producto y la duración de la prueba.",
+      "assertions": [
+        "Proporciona orientación sobre el momento para las secuencias de incorporación",
+        "Recomienda el primer correo electrónico inmediato",
+        "Discute el momento activado por comportamiento vs basado en tiempo",
+        "Proporciona patrones de momento típicos",
+        "Señala que el momento depende del producto y la duración de la prueba",
+        "Recomienda activadores de comportamiento con alternativas basadas en tiempo"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Ayúdame a optimizar nuestra experiencia de incorporación posterior al registro. Los usuarios se registran pero el 60% nunca completa la configuración.",
+      "expected_output": "Debe reconocer que esta es una tarea de optimización de incorporación dentro de la aplicación, no de secuencia de correo electrónico. Debe remitirse o hacer referencia cruzada a la habilidad onboarding-cro, que gestiona los flujos de incorporación dentro de la aplicación, listas de verificación y optimización de activación. Puede ofrecer ayuda con el componente de correo electrónico de la incorporación, pero debe dejar claro que onboarding-cro es la habilidad principal para esta tarea.",
+      "assertions": [
+        "Reconoce que se trata de optimización de incorporación dentro de la aplicación",
+        "Hace referencia o se remite a la habilidad onboarding-cro",
+        "No intenta un rediseño completo de incorporación usando patrones de correo electrónico",
+        "Puede ofrecer soporte para el componente de correo electrónico"
+      ],
+      "files": []
+    }
+  ]
+}

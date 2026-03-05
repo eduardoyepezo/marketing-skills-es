@@ -1,0 +1,94 @@
+{
+  "skill_name": "programmatic-seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Queremos crear páginas de SEO programático para nuestro CRM. Estamos pensando en páginas de 'CRM para [industria]', como 'CRM para Bienes Raíces', 'CRM para Salud', etc. ¿Cómo deberíamos abordarlo?",
+      "expected_output": "Debe verificar primero product-marketing-context.md. Debe identificar esto como el manual de Personas (páginas específicas por industria). Debe aplicar los principios fundamentales: valor único por página (no solo intercambiar el nombre de la industria), datos o información propietaria por industria, estructura de URL limpia. Debe recomendar el marco de implementación: investigación de palabras clave para cada variación de industria, requisitos de datos (qué contenido específico de cada industria hace que cada página sea única), diseño de plantilla, estrategia de enlazado interno entre páginas de industria y páginas principales, y estrategia de indexación. Debe advertir contra el contenido escaso (solo plantilla + intercambio de palabra clave).",
+      "assertions": [
+        "Verifica product-marketing-context.md",
+        "Identifica como manual de Personas",
+        "Aplica los principios fundamentales (valor único, datos propietarios, URLs limpias)",
+        "Recomienda investigación de palabras clave por variación",
+        "Aborda los requisitos de datos para contenido único",
+        "Proporciona guía de diseño de plantilla",
+        "Incluye estrategia de enlazado interno",
+        "Advierte contra el contenido escaso"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Crea una estrategia de páginas de comparación. Queremos páginas como 'Notion vs Asana', 'Notion vs Monday', etc. para todos nuestros competidores. Tenemos 15 competidores.",
+      "expected_output": "Debe identificar esto como el manual de Comparaciones. Debe aplicar el enfoque programático para páginas de comparación de competidores a escala. Debe recomendar: estructura de plantilla para páginas de comparación, datos únicos por comparación (no solo la misma plantilla con nombres intercambiados), investigación de palabras clave para cada variación '[competidor A] vs [competidor B]', estructura de URL (/compare/notion-vs-asana), enlazado interno entre páginas de comparación y controles de calidad. Debe hacer referencia cruzada a la habilidad competitor-alternatives para la estructura del contenido de la página.",
+      "assertions": [
+        "Identifica como manual de Comparaciones",
+        "Recomienda estructura de plantilla para escala",
+        "Aborda datos únicos por comparación",
+        "Incluye investigación de palabras clave para variaciones",
+        "Proporciona recomendación de estructura de URL",
+        "Incluye estrategia de enlazado interno",
+        "Hace referencia cruzada a la habilidad competitor-alternatives",
+        "Aplica controles de calidad"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "queremos posicionarnos para palabras clave de 'integración con [nombre de herramienta]'. tenemos integraciones con más de 50 herramientas y queremos una página para cada una. como 'integración con Slack', 'integración con Salesforce', etc.",
+      "expected_output": "Debe activarse con la frase informal. Debe identificar esto como el manual de Integraciones. Debe recomendar: diseño de plantilla para páginas de integración (qué hace, cómo configurarla, casos de uso), contenido único por integración (flujos de trabajo específicos, capturas de pantalla, pasos de configuración), investigación de palabras clave para '[herramienta] + integración con [tu producto]', estructura de URL (/integraciones/slack), página central que enlace a todas las páginas de integración y consideraciones de marcado de esquema. Debe enfatizar que cada página necesita valor único genuino, no solo 'nos integramos con [herramienta]'.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Identifica como manual de Integraciones",
+        "Recomienda plantilla con contenido único por integración",
+        "Incluye pasos de configuración y casos de uso por página",
+        "Proporciona recomendación de estructura de URL",
+        "Recomienda página central para todas las integraciones",
+        "Enfatiza el valor único genuino por página"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Creamos 500 páginas de SEO programático, pero Google no está indexando la mayoría. Solo 80 están en el índice. ¿Qué está saliendo mal?",
+      "expected_output": "Debe diagnosticar el problema de indexación. Debe aplicar la guía de controles de calidad y estrategia de indexación. Debe investigar: contenido escaso (¿están las páginas proporcionando valor único o solo plantilla + palabra clave?), presupuesto de rastreo (500 páginas puede estar bien, pero depende de la autoridad del sitio), enlazado interno (¿son las páginas descubribles?), inclusión en el mapa del sitio XML, problemas de contenido duplicado o casi duplicado. Debe recomendar soluciones específicas: mejorar la unicidad del contenido, fortalecer el enlazado interno, enviar el mapa del sitio, verificar robots.txt, usar Search Console para solicitudes de indexación. Debe advertir que Google puede optar por no indexar páginas con contenido escaso independientemente.",
+      "assertions": [
+        "Diagnostica el problema de indexación",
+        "Investiga el contenido escaso como causa probable",
+        "Verifica las consideraciones de presupuesto de rastreo",
+        "Verifica el enlazado interno hacia las páginas programáticas",
+        "Verifica el mapa del sitio XML y robots.txt",
+        "Recomienda soluciones específicas para la indexación",
+        "Advierte sobre las políticas de contenido escaso de Google"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Ayúdame a crear una sección de glosario para nuestra plataforma de automatización de marketing. Queremos definir más de 200 términos de marketing y posicionarnos para palabras clave de 'definición de [término]'.",
+      "expected_output": "Debe identificar esto como el manual de Glosario. Debe aplicar el diseño de plantilla: plantilla de página de definición de término (definición, ejemplos, términos relacionados, cómo aplica al producto del usuario), página central/índice que enlace a todos los términos, estructura de URL (/glosario/[termino]), navegación alfabética y por categorías. Debe abordar la calidad: cada definición debe proporcionar valor genuino más allá de una definición de diccionario. Debe incluir estrategia de enlazado interno y marcado de esquema (esquema DefinedTerm). Debe recomendar comenzar con los términos de mayor volumen.",
+      "assertions": [
+        "Identifica como manual de Glosario",
+        "Proporciona diseño de plantilla para páginas de términos",
+        "Recomienda página central/índice",
+        "Proporciona estructura de URL",
+        "Aborda la calidad del contenido más allá de las definiciones de diccionario",
+        "Incluye estrategia de enlazado interno",
+        "Recomienda comenzar con los términos de mayor volumen"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes auditar nuestras páginas de SEO programático existentes para detectar problemas técnicos? Tenemos errores de rastreo y algunas páginas devuelven errores 404.",
+      "expected_output": "Debe reconocer que esta es una tarea de auditoría de SEO técnico, no una tarea de estrategia de SEO programático. Debe remitir o hacer referencia cruzada a la habilidad seo-audit, que maneja la rastreabilidad, la indexación y los problemas técnicos de SEO. programmatic-seo se centra en la estrategia, el diseño de plantillas y la planificación de contenido para páginas a escala.",
+      "assertions": [
+        "Reconoce esto como una tarea de auditoría de SEO técnico",
+        "Hace referencia o remite a la habilidad seo-audit",
+        "Explica que programmatic-seo es para estrategia y diseño de plantillas",
+        "No intenta una auditoría completa de SEO técnico"
+      ],
+      "files": []
+    }
+  ]
+}

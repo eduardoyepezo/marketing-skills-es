@@ -1,0 +1,90 @@
+{
+  "skill_name": "paid-ads",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a planificar una estrategia de publicidad de pago. Somos una herramienta B2B SaaS para equipos de RRHH, vendemos a $99/mes por puesto. Tenemos $15k/mes para gastar en anuncios y queremos generar solicitudes de demo. ¿Dónde deberíamos anunciar?",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería aplicar la guía de selección de plataforma basada en B2B, audiencia de RRHH, punto de precio de $99/mes. Debería recomendar LinkedIn (segmentación B2B por cargo/industria), Google Ads (intención de búsqueda para palabras clave de software de RRHH) y potencialmente Meta (retargeting). Debería recomendar una estructura de campaña con convenciones de nomenclatura. Debería definir la estrategia de segmentación de audiencia para cada plataforma. Debería establecer la asignación de presupuesto entre plataformas. Debería definir métricas de éxito y el enfoque de atribución. Debería recomendar la estructura inicial y el plan de escalado.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Aplica la guía de selección de plataforma",
+        "Recomienda plataformas apropiadas para audiencia B2B de RRHH",
+        "Recomienda estructura de campaña con convenciones de nomenclatura",
+        "Define la segmentación de audiencia por plataforma",
+        "Establece la asignación de presupuesto entre plataformas",
+        "Define métricas de éxito",
+        "Recomienda estructura inicial y plan de escalado"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestro CPC en Google Ads es $12 y nuestro costo por lead es $180. ¿Es bueno? Estamos obteniendo alrededor de 80 leads/mes con un presupuesto de $15k.",
+      "expected_output": "Debería evaluar las métricas en contexto. Debería evaluar: $12 CPC para B2B (razonable según la industria), $180 CPL (depende del LTV — necesita compararse con el valor de vida del cliente), 80 leads/mes de $15k (los números cuadran). Debería aplicar el marco de optimización de campañas: verificar el nivel de calidad, relevancia de los términos de búsqueda, tasa de conversión de la página de destino, palabras clave negativas. Debería recomendar palancas de optimización específicas para reducir el CPC y el CPL. Debería enmarcar el rendimiento frente a benchmarks de la industria si aplica. Debería preguntar sobre las tasas de conversión posteriores (lead → demo → cliente).",
+      "assertions": [
+        "Evalúa las métricas en contexto",
+        "Compara el CPL frente a las consideraciones de LTV",
+        "Aplica el marco de optimización de campañas",
+        "Recomienda palancas de optimización específicas",
+        "Pregunta sobre las tasas de conversión posteriores",
+        "Proporciona contexto de la industria para benchmarking"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "queremos ejecutar anuncios de retargeting para personas que visitaron nuestro sitio pero no convirtieron. ¿cómo deberíamos configurar esto?",
+      "expected_output": "Debería activarse con frases informales. Debería aplicar la sección de estrategias de retargeting, específicamente el enfoque basado en el embudo. Debería recomendar segmentos de audiencia: todos los visitantes (amplio), visitantes de la página de precios (alta intención), lectores del blog (menor intención) y abandonadores de carrito/registro (máxima intención). Debería recomendar mensajes y ofertas diferentes para cada segmento. Debería abordar el límite de frecuencia para evitar la fatiga de anuncios. Debería recomendar plataformas de retargeting (Meta, Google Display, LinkedIn). Debería incluir ventanas de duración para cada audiencia.",
+      "assertions": [
+        "Se activa con frases informales",
+        "Aplica el enfoque de retargeting basado en el embudo",
+        "Recomienda segmentos de audiencia por nivel de intención",
+        "Recomienda mensajes diferentes por segmento",
+        "Aborda el límite de frecuencia",
+        "Recomienda plataformas de retargeting",
+        "Incluye ventanas de duración de audiencia"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Deberíamos anunciar en TikTok? Vendemos software de contabilidad para pequeñas empresas. Actualmente nuestros anuncios están en Google y Meta.",
+      "expected_output": "Debería aplicar la guía de selección de plataforma específicamente para TikTok. Debería evaluar la idoneidad de TikTok para software de contabilidad + audiencia de pequeñas empresas: probablemente menos adecuado que Google/Meta para esta categoría (menor intención de compra, audiencia más joven, menos segmentación B2B). Debería discutir cuándo TikTok SÍ puede funcionar para B2B (reconocimiento de marca, contenido creativo, propietarios de negocios más jóvenes). Debería proporcionar una recomendación honesta con salvedades. Debería sugerir un enfoque de presupuesto de prueba pequeño si quieren intentarlo.",
+      "assertions": [
+        "Aplica la guía de selección de plataforma para TikTok",
+        "Evalúa la idoneidad para contabilidad + audiencia de pequeñas empresas",
+        "Proporciona una evaluación honesta de la probable menor idoneidad",
+        "Discute cuándo TikTok puede funcionar para B2B",
+        "Sugiere un presupuesto de prueba pequeño si se procede",
+        "Compara con el rendimiento actual en Google/Meta"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cómo estructuramos nuestras campañas de Google Ads? Tenemos más de 50 palabras clave que queremos targetear para nuestro producto CRM.",
+      "expected_output": "Debería aplicar el marco de estructura de campaña y convenciones de nomenclatura. Debería recomendar organizar las campañas por tema/intención (marca, competidores, funcionalidades del producto, puntos de dolor). Debería recomendar la estructura del grupo de anuncios (temática ajustada, 5-15 palabras clave por grupo). Debería definir las convenciones de nomenclatura para campañas y grupos de anuncios. Debería recomendar la estrategia de tipos de concordancia. Debería incluir listas de palabras clave negativas. Debería proporcionar una estructura de campaña de ejemplo.",
+      "assertions": [
+        "Aplica el marco de estructura de campaña",
+        "Organiza las campañas por tema/intención",
+        "Recomienda una estructura de grupo de anuncios ajustada",
+        "Define las convenciones de nomenclatura",
+        "Recomienda la estrategia de tipos de concordancia",
+        "Incluye listas de palabras clave negativas",
+        "Proporciona una estructura de campaña de ejemplo"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes escribir algo de copy de anuncios para nuestros anuncios de Facebook? Necesitamos titulares y descripciones para 5 ángulos diferentes.",
+      "expected_output": "Debería reconocer que esto es una tarea de generación de creatividades de anuncios, no de estrategia de campaña. Debería derivar o hacer referencia cruzada al skill ad-creative, que maneja la generación de copy de anuncios específico por plataforma con límites de caracteres, variación basada en ángulos y generación en lote. Puede proporcionar una breve guía del marco de copy de anuncios, pero debe dejar claro que ad-creative es el skill adecuado para generar copy de anuncios a escala.",
+      "assertions": [
+        "Reconoce esto como generación de creatividades de anuncios",
+        "Referencia o deriva al skill ad-creative",
+        "No intenta generar copy de anuncios en masa usando patrones de estrategia de campaña"
+      ],
+      "files": []
+    }
+  ]
+}

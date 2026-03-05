@@ -1,0 +1,90 @@
+{
+  "skill_name": "content-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a construir una estrategia de contenido para nuestro producto SaaS B2B. Vendemos software de gestión de gastos a equipos de finanzas en empresas de 50 a 500 empleados. Actualmente no tenemos blog y queremos empezar desde cero.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe establecer pilares de contenido (3-5 áreas temáticas principales). Debe mapear los tipos de contenido por etapa del comprador (reconocimiento → consideración → decisión → implementación). Debe identificar oportunidades de investigación de palabras clave por etapa del comprador. Debe recomendar una combinación de contenido buscable (impulsado por SEO) y compartible (liderazgo de opinión, datos). Debe usar el marco de puntuación de priorización (impacto en el cliente 40%, adecuación contenido-mercado 30%, potencial de búsqueda 20%, recursos 10%). Debe proporcionar un calendario de contenido inicial o cadencia de publicación. Debe recomendar tipos de contenido apropiados para empezar desde cero.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Establece 3-5 pilares de contenido",
+        "Mapea el contenido por etapa del comprador (desde reconocimiento hasta implementación)",
+        "Incluye investigación de palabras clave por etapa del comprador",
+        "Recomienda una combinación de contenido buscable y compartible",
+        "Usa el marco de puntuación de priorización",
+        "Proporciona cadencia de publicación o calendario",
+        "Recomienda tipos de contenido apropiados para comenzar"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tenemos más de 200 publicaciones de blog pero el tráfico ha estado estancado durante un año. Nuestro contenido parece aleatorio, sin una estrategia clara. ¿Cómo lo arreglamos?",
+      "expected_output": "Debe diagnosticar el problema del 'contenido aleatorio'. Debe recomendar un proceso de auditoría de contenido para evaluar las publicaciones existentes. Debe introducir pilares de contenido y agrupación temática para organizar la biblioteca existente. Debe identificar oportunidades de hub-and-spoke a partir del contenido existente. Debe recomendar qué publicaciones actualizar, consolidar o retirar. Debe usar el marco de priorización para planificar los próximos pasos. Debe abordar la construcción de autoridad temática a través de clústeres.",
+      "assertions": [
+        "Diagnostica el problema del 'contenido aleatorio'",
+        "Recomienda una auditoría de contenido para las publicaciones existentes",
+        "Introduce pilares de contenido y agrupación temática",
+        "Identifica oportunidades de hub-and-spoke",
+        "Recomienda decisiones de actualizar, consolidar o retirar",
+        "Usa el marco de priorización",
+        "Aborda la construcción de autoridad temática"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿qué tipo de contenido deberíamos crear? somos una herramienta para desarrolladores (plataforma de pruebas de API) y nuestra audiencia son desarrolladores backend e ingenieros de QA",
+      "expected_output": "Debe activarse con la redacción informal. Debe recomendar tipos de contenido apropiados para una audiencia de desarrolladores: tutoriales técnicos, guías estilo documentación, contenido de casos de uso, bibliotecas de plantillas/ejemplos, benchmarks basados en datos. Debe señalar que las audiencias de desarrolladores prefieren profundidad, precisión y valor práctico sobre el contenido puramente de marketing. Debe sugerir pilares de contenido alineados con los intereses de los desarrolladores. Debe usar el marco de fuentes de ideación (datos de palabras clave, foros de la comunidad como Stack Overflow/Reddit, brechas de la competencia).",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Recomienda tipos de contenido para audiencia de desarrolladores",
+        "Enfatiza la profundidad técnica y el valor práctico",
+        "Señala que los desarrolladores prefieren el fondo sobre el marketing",
+        "Sugiere pilares de contenido para una herramienta de desarrolladores",
+        "Usa el marco de fuentes de ideación",
+        "Menciona canales de la comunidad de desarrolladores"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cómo debemos priorizar qué contenido crear primero? Tenemos una lista de 50 ideas de publicaciones de blog pero recursos limitados: un content marketer escribiendo 2 publicaciones por semana.",
+      "expected_output": "Debe aplicar el marco de puntuación de priorización: impacto en el cliente (40%), adecuación contenido-mercado (30%), potencial de búsqueda (20%), recursos requeridos (10%). Debe ayudar a puntuar o clasificar las ideas de contenido usando este marco. Debe recomendar enfocarse primero en el contenido de alto impacto y menor esfuerzo. Debe considerar la distribución por etapa del comprador (no escribir solo contenido de la parte superior del embudo). Debe proporcionar un flujo de trabajo práctico para el único content marketer.",
+      "assertions": [
+        "Aplica el marco de puntuación de priorización con pesos",
+        "Explica cada dimensión de puntuación",
+        "Recomienda enfocarse primero en alto impacto y menor esfuerzo",
+        "Considera la distribución por etapa del comprador",
+        "Proporciona un flujo de trabajo práctico para recursos limitados"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Queremos construir autoridad temática en 'employee engagement'. ¿Cómo se ve un clúster de contenido para este tema?",
+      "expected_output": "Debe aplicar el modelo de clúster de contenido hub-and-spoke. Debe diseñar una página pilar para 'employee engagement' (guía completa de 3000+ palabras). Debe identificar 8-15 artículos de apoyo tipo spoke dirigidos a palabras clave de cola larga relacionadas con el employee engagement. Debe mapear la estructura de enlaces internos entre el hub y los spokes. Debe abordar la investigación de palabras clave para el clúster. Debe recomendar tipos de contenido para cada pieza (guía, cómo hacerlo, plantilla, basado en datos, etc.).",
+      "assertions": [
+        "Aplica el modelo de clúster de contenido hub-and-spoke",
+        "Diseña una página pilar para el tema principal",
+        "Identifica 8-15 artículos de apoyo tipo spoke",
+        "Mapea los enlaces internos entre hub y spokes",
+        "Aborda la investigación de palabras clave para el clúster",
+        "Recomienda tipos de contenido para cada pieza"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes escribir una publicación de blog sobre las mejores prácticas de trabajo remoto para nuestro blog de software de recursos humanos?",
+      "expected_output": "Debe reconocer que esta es una tarea de redacción/creación de contenido, no de estrategia de contenido. Debe remitirse o hacer referencia cruzada a la habilidad copywriting para escribir piezas individuales de contenido. Puede proporcionar contexto estratégico (dónde encaja esto en la estrategia de contenido, targeting de palabras clave, audiencia) pero debe dejar claro que copywriting es la habilidad adecuada para escribir el contenido real.",
+      "assertions": [
+        "Reconoce esto como creación de contenido, no estrategia",
+        "Hace referencia o se remite a la habilidad copywriting",
+        "No intenta escribir la publicación de blog completa",
+        "Puede proporcionar contexto estratégico para la pieza"
+      ],
+      "files": []
+    }
+  ]
+}

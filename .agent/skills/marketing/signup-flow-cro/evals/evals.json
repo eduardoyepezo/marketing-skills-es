@@ -1,0 +1,88 @@
+{
+  "skill_name": "signup-flow-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audita nuestro flujo de registro. Tenemos un proceso de 3 pasos: el Paso 1 solicita correo electrónico, contraseña y nombre completo. El Paso 2 solicita nombre de empresa, tamaño de empresa, rol e industria. El Paso 3 solicita caso de uso y cómo se enteraron de nosotros. La tasa de completación actual es del 45%.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe identificar el tipo de flujo (probablemente prueba B2B SaaS). Debe aplicar los principios fundamentales: minimizar los campos requeridos (¿cuáles de estos son genuinamente necesarios antes de que puedan usar el producto?). Debe evaluar cada paso: el Paso 1 es razonable, los campos del Paso 2 son en su mayoría aplazables a la creación de perfil progresivo, el Paso 3 es completamente aplazable. Debe recomendar reducir al Paso 1 únicamente o como máximo 2 pasos. Debe proporcionar los hallazgos de la auditoría en formato estructurado (Problema, Impacto, Corrección, Prioridad). Debe incluir Ganancias Rápidas, Cambios de Alto Impacto e Hipótesis de Prueba.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Identifica el tipo de flujo",
+        "Aplica el principio de minimizar campos requeridos",
+        "Evalúa cada campo por su necesidad",
+        "Recomienda aplazar la mayoría de los campos del Paso 2 y todos los del Paso 3",
+        "Proporciona hallazgos en formato estructurado",
+        "Incluye Ganancias Rápidas, Cambios de Alto Impacto, Hipótesis de Prueba"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Deberíamos agregar SSO de Google y Microsoft a nuestra página de registro? Somos una herramienta de gestión de proyectos B2B y actualmente solo tenemos registro con correo electrónico/contraseña.",
+      "expected_output": "Debe aplicar la guía de opciones de autenticación social. Para B2B, debe recomendar Google y Microsoft como las principales opciones de SSO (coincidiendo con la recomendación para B2B). Debe explicar los beneficios: mayor conversión (menos fricción), correo electrónico pre-verificado, incorporación más rápida. Debe recomendar colocar el SSO de forma prominente (a menudo mayor conversión que el correo electrónico). Debe abordar consideraciones de implementación: separación visual clara del registro por correo electrónico, texto del botón ('Registrarse con Google' no solo el ícono de Google), considerar qué opción enfatizar según la audiencia.",
+      "assertions": [
+        "Aplica la guía de opciones de autenticación social",
+        "Recomienda Google y Microsoft para B2B",
+        "Explica los beneficios de conversión del SSO",
+        "Recomienda ubicación prominente",
+        "Aborda la separación visual del registro por correo electrónico",
+        "Proporciona recomendaciones de implementación"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestro formulario de registro solo pide correo electrónico y contraseña pero solo el 35% de los visitantes lo completan. ¿qué más podría estar mal?",
+      "expected_output": "Debe activarse con lenguaje informal. Debe investigar más allá de los campos del formulario ya que el formulario ya es mínimo. Debe aplicar la guía de reducción de confianza y fricción: ¿hay un mensaje de 'No se requiere tarjeta de crédito'? ¿Garantía de privacidad? ¿Testimonio cerca del formulario? Debe verificar problemas a nivel del formulario: manejo de errores, claridad de los requisitos de contraseña, texto del botón de envío. También debe examinar los factores previos al formulario: ¿es clara la propuesta de valor? ¿Está optimizada la página? (referencia cruzada con page-cro). Debe proporcionar una lista de verificación de diagnóstico y recomendaciones.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Investiga más allá de los campos del formulario",
+        "Aplica reducción de confianza y fricción",
+        "Verifica el mensaje 'No se requiere tarjeta de crédito'",
+        "Verifica el manejo de errores y la experiencia de contraseña",
+        "Considera los factores previos al formulario (propuesta de valor, CRO de página)",
+        "Proporciona lista de verificación de diagnóstico"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Requerimos verificación de correo electrónico antes de que los usuarios puedan acceder al producto. ¿Eso está perjudicando nuestra conversión? ¿Deberíamos cambiarlo?",
+      "expected_output": "Debe aplicar la guía de flujos de verificación. Debe explicar que requerir la verificación antes del acceso al producto crea fricción y probablemente reduce la activación. Debe recomendar alternativas: retrasar la verificación hasta que sea necesaria (dejar que los usuarios exploren primero), enlace mágico como alternativa a la contraseña, dejar que los usuarios comiencen mientras la verificación está pendiente. Debe discutir cuándo la verificación de correo electrónico ES necesaria (cumplimiento, prevención de abusos). Debe proporcionar recomendaciones específicas para mejorar la experiencia de verificación si se mantiene.",
+      "assertions": [
+        "Aplica la guía de flujos de verificación",
+        "Explica el impacto de la fricción por verificación",
+        "Recomienda retrasar la verificación",
+        "Sugiere dejar que los usuarios exploren mientras está pendiente",
+        "Discute cuándo la verificación es necesaria",
+        "Proporciona mejoras si se mantiene la verificación"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Qué experimentos deberíamos ejecutar en nuestra página de registro? Queremos mejorar nuestra tasa de registro para prueba.",
+      "expected_output": "Debe aplicar la sección de ideas de experimentos. Debe proporcionar experimentos en diferentes categorías: experimentos de diseño del formulario (diseño, cantidad de campos, SSO), experimentos de texto y mensajes (titular, texto del CTA, elementos de confianza), experimentos de prueba y compromiso (tarjeta de crédito requerida vs no, duración de la prueba) y experimentos post-envío. Debe priorizar los experimentos por impacto probable. Debe hacer referencia cruzada con ab-test-setup para el diseño adecuado de experimentos.",
+      "assertions": [
+        "Aplica la sección de ideas de experimentos",
+        "Cubre experimentos de diseño del formulario",
+        "Cubre experimentos de texto y mensajes",
+        "Cubre experimentos de prueba y compromiso",
+        "Prioriza por impacto probable",
+        "Hace referencia cruzada con la habilidad ab-test-setup"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Los usuarios se registran bien pero luego nunca se activan. Solo el 20% completa la incorporación. ¿Qué hacemos?",
+      "expected_output": "Debe reconocer que esto es un problema de incorporación posterior al registro, no un problema del flujo de registro. Debe diferir o hacer referencia cruzada con la habilidad onboarding-cro, que maneja la activación posterior al registro y la optimización de la incorporación. signup-flow-cro cubre que los usuarios completen el formulario de registro, no lo que sucede después.",
+      "assertions": [
+        "Reconoce que esto es incorporación posterior al registro, no flujo de registro",
+        "Hace referencia o difiere a la habilidad onboarding-cro",
+        "Explica que signup-flow-cro cubre el formulario de registro, no lo posterior al registro"
+      ],
+      "files": []
+    }
+  ]
+}

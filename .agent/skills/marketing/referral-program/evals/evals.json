@@ -1,0 +1,89 @@
+{
+  "skill_name": "referral-program",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a diseñar un programa de referidos para nuestro producto SaaS. Somos una herramienta de gestión de proyectos a $49/mes con aproximadamente 1.000 clientes. Queremos fomentar el crecimiento boca a boca.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe distinguir entre programas de referidos y programas de afiliados (este es de referidos: clientes existentes que refieren a sus contactos). Debe diseñar el ciclo del referido: punto de activación (cuándo pedir el referido), mecanismo de compartir (enlace único, invitación por correo, compartir en redes sociales), flujo de conversión (qué experimenta la persona referida) y estructura de recompensas. Debe recomendar el tipo de incentivo: se recomienda doble cara (tanto quien refiere como quien es referido obtienen valor). Debe sugerir incentivos específicos apropiados para un SaaS a $49/mes (por ejemplo, un mes gratis para ambos). Debe incluir la lista de verificación de lanzamiento. Debe recomendar integraciones de herramientas (Rewardful, Tolt, etc.).",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Distingue referidos de afiliados",
+        "Diseña el ciclo del referido (activación, compartir, convertir, recompensar)",
+        "Recomienda estructura de incentivo doble cara",
+        "Sugiere incentivos específicos para el precio del producto",
+        "Incluye lista de verificación de lanzamiento",
+        "Recomienda integraciones de herramientas"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tenemos un programa de referidos pero solo el 5% de los clientes ha referido a alguien alguna vez. ¿Cómo aumentamos la participación?",
+      "expected_output": "Debe aplicar la guía de optimización del programa. Debe diagnosticar la baja participación: ¿los clientes conocen el programa? ¿El punto de activación está bien cronometrado? ¿El incentivo es lo suficientemente atractivo? ¿Es fácil compartir? Debe recomendar tácticas de optimización: mejor ubicación/visibilidad, timing de las solicitudes de referidos en momentos de máxima satisfacción, mejorar el incentivo, simplificar el mecanismo de compartir, agregar recordatorios de referidos en correos y dentro de la aplicación. Debe proporcionar ideas de experimentos específicos para probar mejoras.",
+      "assertions": [
+        "Aplica la guía de optimización del programa",
+        "Diagnostica posibles causas de baja participación",
+        "Verifica concientización, timing, incentivo y fricción",
+        "Recomienda tácticas de optimización",
+        "Sugiere cronometrar solicitudes de referidos en momentos de satisfacción",
+        "Proporciona ideas de experimentos"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿debemos hacer referidos o afiliados? vendemos cursos en línea de $199-499 y queremos que otros creadores e influencers nos promuevan.",
+      "expected_output": "Debe activarse con lenguaje informal. Debe aplicar la distinción entre referidos y afiliados con claridad. Para este caso de uso (conseguir que creadores/influencers promuevan el producto), debe recomendar un programa de afiliados (no de referidos, ya que los afiliados son promotores externos, no clientes existentes). Debe aplicar la guía de la sección de programa de afiliados: estructura de comisiones para productos digitales (típicamente 20-40% para cursos), duración de cookies, condiciones de pago, incorporación de afiliados. Debe recomendar plataformas/herramientas de afiliados apropiadas para creadores de cursos.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Distingue claramente referidos de afiliados",
+        "Recomienda afiliados para este caso de uso",
+        "Proporciona guía de estructura de comisiones para cursos",
+        "Aborda duración de cookies y condiciones de pago",
+        "Recomienda plataformas de afiliados apropiadas"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Qué estructura de incentivos funciona mejor? Hemos estado ofreciendo $10 de descuento para quienes refieren pero no está funcionando. Nuestro producto cuesta $29/mes.",
+      "expected_output": "Debe evaluar el incentivo actual: $10 de descuento en un producto de $29/mes es significativo pero solo beneficia a quien refiere (una sola cara). Debe recomendar probar incentivos de doble cara (ambas partes obtienen valor). Debe discutir tipos de incentivos: crédito en cuenta, meses gratis, actualizaciones de funciones, efectivo. Debe aplicar el concepto de incentivo escalonado (recompensas crecientes por múltiples referidos). Debe proporcionar estructuras alternativas de incentivos específicas para probar. Debe señalar que el incentivo solo puede no ser el problema: la ubicación y el timing también importan.",
+      "assertions": [
+        "Evalúa la estructura de incentivo actual",
+        "Identifica que es una sola cara y recomienda doble cara",
+        "Discute múltiples tipos de incentivos",
+        "Aplica el concepto de incentivo escalonado",
+        "Proporciona alternativas específicas para probar",
+        "Señala que el incentivo puede no ser el único problema"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cómo medimos el éxito de nuestro programa de referidos? ¿Qué métricas debemos seguir?",
+      "expected_output": "Debe aplicar el marco de medición del éxito. Debe definir métricas clave: tasa de participación (% de clientes que refieren), tasa de compartición (referidos enviados por participante), tasa de conversión (visitantes referidos que se convierten en clientes), coeficiente viral (factor k), costo de adquisición de clientes por referido vs otros canales, LTV del cliente referido vs LTV del cliente orgánico. Debe recomendar herramientas de seguimiento y paneles de control. Debe proporcionar rangos de referencia para cada métrica.",
+      "assertions": [
+        "Aplica el marco de medición del éxito",
+        "Define tasa de participación, tasa de compartición, tasa de conversión",
+        "Incluye coeficiente viral / factor k",
+        "Compara el CAC por referidos con otros canales",
+        "Compara el LTV del cliente referido con el orgánico",
+        "Recomienda enfoque de seguimiento",
+        "Proporciona rangos de referencia"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes escribir los correos de invitación de referidos? Necesito el correo que se envía cuando alguien comparte su enlace de referido.",
+      "expected_output": "Debe reconocer que esto se superpone con la redacción de correos. Debe aplicar la sección de correos de referidos de la habilidad para correos específicos de referidos. Sin embargo, para el diseño detallado de secuencias de correos (nutrición de múltiples correos para usuarios referidos), debe hacer referencia cruzada con la habilidad email-sequence. Debe proporcionar la guía para el correo de invitación de referidos pero señalar que el trabajo más amplio de secuencias de correo es manejado por email-sequence.",
+      "assertions": [
+        "Aplica la sección de correos de referidos de la habilidad",
+        "Proporciona guía para el correo de invitación de referidos",
+        "Hace referencia cruzada con email-sequence para trabajo más amplio de correos",
+        "Proporciona copia o plantilla específica para el correo de referidos"
+      ],
+      "files": []
+    }
+  ]
+}

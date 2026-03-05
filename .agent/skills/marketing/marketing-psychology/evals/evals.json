@@ -1,0 +1,88 @@
+{
+  "skill_name": "marketing-psychology",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "¿Cómo puedo usar la psicología para aumentar las conversiones en nuestra página de precios? Vendemos una herramienta B2B SaaS con tres niveles ($29, $79, $199/mes).",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería aplicar los modelos de psicología de precios relevantes: anclaje (mostrar el plan más alto primero o usar un señuelo), precios encantadores (considerar $29 frente a $30), Regla del 100 (descuentos en porcentaje frente a en dólares), encuadre Bueno-Mejor-Óptimo, aversión a la pérdida (mostrar lo que se pierde en los niveles inferiores). También debería aplicar modelos de persuasión más amplios: prueba social cerca de los precios, escasez para ofertas por tiempo limitado, efecto por defecto (preseleccionar el plan recomendado). Debería proporcionar recomendaciones específicas y accionables vinculadas a sus puntos de precio.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Aplica modelos de psicología de precios (anclaje, precios encantadores, Regla del 100)",
+        "Aplica el encuadre Bueno-Mejor-Óptimo",
+        "Aplica la aversión a la pérdida en la diferenciación de niveles",
+        "Aplica la prueba social cerca de los precios",
+        "Proporciona recomendaciones específicas para sus puntos de precio",
+        "Referencia modelos mentales específicos por nombre"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Explica el principio de escasez y cómo usarlo éticamente en marketing SaaS sin ser manipulador.",
+      "expected_output": "Debería explicar la escasez como modelo mental (la disponibilidad limitada aumenta el valor percibido). Debería proporcionar aplicaciones legítimas en SaaS: plazas limitadas en beta, precios de acceso anticipado con plazos reales, acceso limitado por tiempo a funcionalidades, lanzamientos por cohortes. Debería distinguir la escasez ética (restricciones reales) de la urgencia fabricada (temporizadores de cuenta regresiva falsos, límites artificiales). Debería proporcionar ejemplos específicos y guía de implementación. Debería referenciar modelos relacionados (urgencia, FOMO, aversión a la pérdida).",
+      "assertions": [
+        "Explica el principio de escasez claramente",
+        "Proporciona aplicaciones legítimas en SaaS",
+        "Distingue el uso ético del manipulador",
+        "Proporciona ejemplos específicos",
+        "Referencia modelos mentales relacionados",
+        "Aborda las consideraciones éticas directamente"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿qué principios psicológicos debería usar para escribir mejor copy de marketing?",
+      "expected_output": "Debería activarse con frases informales. Debería recomendar modelos mentales relevantes para el copy de la taxonomía del skill: prueba social, reciprocidad, aversión a la pérdida, anclaje, escasez, Efecto IKEA, Efecto de Dotación, Compromiso y Coherencia. Para cada principio, debería explicar qué es y proporcionar una aplicación específica de copywriting. Debería referenciar la tabla de referencia rápida por desafío. Debería organizar según dónde en el copy aplica cada principio (titulares, cuerpo, CTAs, testimonios).",
+      "assertions": [
+        "Se activa con frases informales",
+        "Recomienda modelos mentales relevantes para el copy",
+        "Explica brevemente cada principio",
+        "Proporciona una aplicación de copywriting específica por principio",
+        "Organiza según dónde aplica cada uno en el copy",
+        "Referencia múltiples categorías de modelos"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Estoy diseñando un flujo de onboarding y quiero usar psicología conductual para aumentar la activación. ¿Qué modelos debería aplicar?",
+      "expected_output": "Debería aplicar modelos de diseño y conductuales de la taxonomía del skill: Efecto de Gradiente de Meta (la motivación aumenta cerca del objetivo), Ley de Hick (reducir opciones), Efecto IKEA (dejar que los usuarios construyan algo), Efecto de Dotación (dejar que experimenten la propiedad), Efecto Zeigarnik (las tareas incompletas impulsan la finalización), Compromiso y Coherencia (primero solicitudes pequeñas). Debería explicar cómo aplica cada uno específicamente al onboarding. Debería proporcionar recomendaciones accionables para cada modelo.",
+      "assertions": [
+        "Aplica el Efecto de Gradiente de Meta",
+        "Aplica la Ley de Hick",
+        "Aplica el Efecto IKEA o el Efecto de Dotación",
+        "Aplica el Efecto Zeigarnik o principios de compromiso",
+        "Explica cómo aplica cada uno al onboarding",
+        "Proporciona recomendaciones accionables por modelo"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuál es la psicología detrás de por qué los trials gratuitos funcionan mejor que freemium para algunos productos?",
+      "expected_output": "Debería aplicar los modelos mentales relevantes: aversión a la pérdida (los usuarios de trial temen perder el acceso), efecto de dotación (sienten propiedad después de usarlo), costo hundido (tiempo invertido durante el trial), Efecto de Precio Cero (lo gratuito elimina la barrera psicológica para comenzar), sesgo del statu quo (inercia para mantener lo que tienen). Debería explicar cómo estos modelos interactúan en los contextos de trial frente a freemium. Debería señalar cuándo funciona mejor cada modelo (trial para productos con alto esfuerzo de activación, freemium para productos con efectos de red).",
+      "assertions": [
+        "Aplica la aversión a la pérdida al contexto de trial",
+        "Aplica el efecto de dotación",
+        "Aplica el Efecto de Precio Cero",
+        "Explica cómo interactúan los modelos en trial frente a freemium",
+        "Señala cuándo funciona mejor cada enfoque",
+        "Proporciona una explicación clara y educativa"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Ayúdame a ejecutar un test A/B sobre qué principio psicológico funciona mejor para nuestro CTA — escasez frente a prueba social.",
+      "expected_output": "Debería reconocer que esto es una tarea de configuración de test A/B, no una tarea de psicología. Debería derivar o hacer referencia cruzada al skill ab-test-setup para el diseño del experimento. Puede proporcionar contexto psicológico sobre ambos principios para informar la hipótesis, pero debe dejar claro que ab-test-setup es el skill adecuado para diseñar y ejecutar el experimento.",
+      "assertions": [
+        "Reconoce esto como una tarea de configuración de test A/B",
+        "Referencia o deriva al skill ab-test-setup",
+        "Puede proporcionar contexto psicológico para la hipótesis",
+        "No intenta diseñar el test completo usando patrones de psicología"
+      ],
+      "files": []
+    }
+  ]
+}

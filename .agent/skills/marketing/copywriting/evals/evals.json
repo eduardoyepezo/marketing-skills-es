@@ -1,0 +1,111 @@
+{
+  "skill_name": "copywriting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Escribe copy de página de inicio para una herramienta SaaS que automatiza la incorporación de empleados. El público objetivo son directores de recursos humanos en empresas medianas (200-2000 empleados). El principal diferenciador es que se integra con todos los principales sistemas HRIS y reduce el tiempo de incorporación de 2 semanas a 2 días.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe escribir copy completo de la página organizado por sección: Titular, Subtitular, CTA (por encima del pliegue), luego Prueba Social, Problema/Dolor, Solución/Beneficios, Cómo Funciona, Manejo de Objeciones y CTA Final. Debe seguir los principios de copywriting: claridad sobre ingeniosidad, beneficios sobre funciones, especificidad (usar el dato 'de 2 semanas a 2 días'), lenguaje del cliente. El titular debe comunicar la propuesta de valor principal. Los CTAs deben ser orientados a la acción ('Iniciar Prueba Gratuita' no 'Enviar'). Debe proporcionar 2-3 alternativas de titular con justificación. Debe incluir anotaciones que expliquen las decisiones clave de copy. Debe incluir contenido meta (título SEO de página y meta descripción).",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Escribe copy completo de la página organizado por sección",
+        "Incluye Titular, Subtitular y CTA por encima del pliegue",
+        "Incluye secciones de Prueba Social, Problema/Dolor, Solución/Beneficios, Cómo Funciona",
+        "Usa la especificidad 'de 2 semanas a 2 días' en el copy",
+        "Los CTAs son orientados a la acción, no genéricos",
+        "Proporciona 2-3 alternativas de titular con justificación",
+        "Incluye anotaciones que explican las decisiones de copy",
+        "Incluye contenido meta (título SEO y meta descripción)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Reescribe este titular: 'Una Plataforma Innovadora Impulsada por IA para Operaciones Empresariales Optimizadas' — es para una herramienta SaaS B2B que ayuda a pequeñas empresas a gestionar facturación y pagos.",
+      "expected_output": "Debe identificar los problemas: jerga ('innovadora', 'impulsada por IA', 'optimizadas', 'operaciones empresariales'), demasiado vago, lenguaje de empresa no lenguaje del cliente. Debe aplicar los principios de copywriting — especificidad sobre vaguedad, beneficios sobre funciones, lenguaje del cliente sobre lenguaje de empresa. Debe proporcionar 2-3 titulares alternativos usando fórmulas como '{Logra resultado} sin {punto de dolor}' o 'El {categoría} para {audiencia}'. Cada alternativa debe incluir justificación. También debe sugerir un subtitular que añada especificidad.",
+      "assertions": [
+        "Identifica la jerga en el titular original",
+        "Identifica la vaguedad como un problema",
+        "Identifica el problema de lenguaje de empresa vs lenguaje del cliente",
+        "Proporciona 2-3 titulares alternativos",
+        "Las alternativas usan fórmulas de titulares de la habilidad",
+        "Cada alternativa incluye justificación",
+        "Sugiere un subtitular"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "necesito copy para mi página de precios. tenemos tres planes: starter ($29/mes), pro ($79/mes), business ($199/mes). es una herramienta de programación de redes sociales para marketers",
+      "expected_output": "Debe activarse con la redacción informal. Debe preguntar o inferir el contexto de la audiencia. Debe aplicar la guía de Página de Precios: ayudar a los visitantes a elegir el plan correcto, abordar la ansiedad de '¿cuál es el correcto para mí?', hacer evidente el plan recomendado. Debe escribir nombres de planes, descripciones y listas de funciones con copy orientado a los beneficios (no solo nombres de funciones). Debe incluir un titular de página que aborde la decisión de precios. Los CTAs deben ser específicos por plan. Debe gestionar el manejo de objeciones (copy de FAQ). Debe proporcionar alternativas para los elementos clave.",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Aplica la guía de Página de Precios",
+        "Aborda la ansiedad de '¿cuál es el plan correcto para mí?'",
+        "Hace evidente el plan recomendado",
+        "Escribe copy de funciones orientado a los beneficios, no solo nombres de funciones",
+        "Incluye titular de página",
+        "Los CTAs son específicos por plan",
+        "Incluye copy de FAQ o manejo de objeciones",
+        "Proporciona alternativas para los elementos clave"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Escribe copy para nuestra página Acerca de. Somos una startup de 3 personas que construyó una herramienta para desarrolladores para migraciones de bases de datos. Fundada porque seguíamos perdiendo datos durante las migraciones en nuestros empleos anteriores. El tono debe ser profesional pero humano.",
+      "expected_output": "Debe aplicar la guía de Página Acerca de: contar la historia de por qué existen, conectar la misión con el beneficio del cliente, incluir igualmente un CTA. Debe adaptar la voz y el tono a 'profesional pero humano' según lo especificado. Debe contar la historia de origen de los fundadores de forma auténtica. Debe conectar el dolor personal con el dolor del cliente. Debe incluir un CTA incluso en la página Acerca de. El copy debe seguir las reglas de estilo: voz activa, seguro, específico. NO debe ser excesivamente corporativo ni genérico.",
+      "assertions": [
+        "Aplica la guía de Página Acerca de",
+        "Cuenta la historia de por qué existe la empresa",
+        "Conecta la misión con el beneficio del cliente",
+        "Incluye un CTA",
+        "Adapta el tono a profesional pero humano",
+        "Usa la historia de origen de los fundadores",
+        "Conecta el dolor personal con el dolor del cliente",
+        "Usa voz activa",
+        "Evita la jerga corporativa"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Puedes mejorar este CTA? Actualmente tenemos 'Más Información' en nuestra página de funciones para nuestro producto de panel de análisis.",
+      "expected_output": "Debe identificar inmediatamente 'Más Información' como un CTA débil según las pautas. Debe aplicar la fórmula de CTA: [Verbo de Acción] + [Lo Que Obtienen] + [Calificador]. Debe proporcionar 2-3 alternativas sólidas como 'Ver el Panel en Acción', 'Iniciar Tu Prueba Gratuita' o 'Explorar las Funciones de Análisis'. Cada alternativa debe incluir justificación y contexto sobre cuándo funciona mejor. También debe considerar la jerarquía de CTA — si este es un CTA primario o secundario, y sugerir CTAs complementarios si es relevante.",
+      "assertions": [
+        "Identifica 'Más Información' como un CTA débil",
+        "Aplica la fórmula de CTA de la habilidad",
+        "Proporciona 2-3 alternativas sólidas",
+        "Cada alternativa incluye justificación",
+        "Considera la jerarquía de CTA (primario vs secundario)",
+        "Sugiere CTAs complementarios"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Escríbeme una secuencia de bienvenida de 5 correos electrónicos para nuevos usuarios en prueba de nuestra herramienta de gestión de proyectos.",
+      "expected_output": "Debe reconocer que esta es una tarea de copywriting de correo electrónico, no de copywriting de páginas. Debe remitirse o hacer referencia cruzada a la habilidad email-sequence, que gestiona específicamente las secuencias de correo electrónico, campañas de goteo y correos electrónicos del ciclo de vida. Puede proporcionar una orientación general breve, pero debe dejar claro que email-sequence es la habilidad adecuada para esta tarea.",
+      "assertions": [
+        "Reconoce que se trata de trabajo de secuencia de correo electrónico",
+        "Hace referencia o se remite a la habilidad email-sequence",
+        "No intenta escribir una secuencia de correo electrónico completa usando patrones de copywriting de páginas"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Revisa este copy y dime qué está mal: '¡Estamos extremadamente emocionados de anunciar nuestra plataforma revolucionaria y de vanguardia que transformará totalmente cómo las empresas optimizan sus flujos de trabajo! ¡Regístrate ahora!!'",
+      "expected_output": "Debe aplicar la Verificación Rápida de Calidad. Debe identificar: signos de exclamación (eliminarlos), palabras de marketing sin sustancia ('revolucionaria', 'de vanguardia', 'transformará totalmente', 'optimizan'), construcciones pasivas/débiles ('estamos emocionados de anunciar'), lenguaje vago ('flujos de trabajo'). Debe aplicar las reglas de estilo de escritura: simple sobre complejo, específico sobre vago, seguro sobre calificado, mostrar sobre decir. Debe reescribir el copy siguiendo estos principios. Debe proporcionar 2-3 alternativas.",
+      "assertions": [
+        "Identifica el uso excesivo de signos de exclamación",
+        "Identifica palabras de marketing sin sustancia",
+        "Identifica lenguaje vago",
+        "Aplica las reglas de estilo de escritura",
+        "Reescribe el copy siguiendo los principios",
+        "Proporciona alternativas",
+        "El resultado es específico, claro y sin jerga"
+      ],
+      "files": []
+    }
+  ]
+}

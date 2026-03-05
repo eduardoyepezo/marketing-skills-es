@@ -1,0 +1,89 @@
+{
+  "skill_name": "copy-editing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Edita este copy de página de inicio para nosotros: '¡Bienvenido a CloudSync! Estamos muy emocionados de ofrecerte una plataforma innovadora y de vanguardia que se integra perfectamente con tus herramientas existentes. Nuestra poderosa solución ayuda a empresas de todos los tamaños a optimizar sus flujos de trabajo y a generar resultados significativos. ¡Empieza hoy y experimenta la diferencia!'",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el Marco de Siete Revisiones de forma sistemática. Revisión 1 (Claridad): identificar lenguaje vago ('optimizar flujos de trabajo', 'generar resultados significativos', 'experimenta la diferencia'). Revisión 2 (Voz y Tono): señalar 'Bienvenido a' como apertura débil, 'estamos muy emocionados' como lenguaje centrado en la empresa. Revisión 3 (¿Y Qué?): cuestionar qué valor específico se está ofreciendo. Revisión 4 (Demuéstralo): señalar que no hay puntos de prueba, estadísticas ni evidencia. Revisión 5 (Especificidad): señalar 'empresas de todos los tamaños', 'herramientas existentes', 'poderosa solución' como genéricos. Revisión 6 (Emoción Elevada): evaluar el impacto emocional. Revisión 7 (Cero Riesgo): verificar señales de confianza. Debe proporcionar una versión reescrita que aborde todos los problemas.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el Marco de Siete Revisiones",
+        "Identifica lenguaje vago (revisión de Claridad)",
+        "Señala apertura débil y lenguaje centrado en la empresa (revisión de Voz y Tono)",
+        "Cuestiona la propuesta de valor faltante (revisión ¿Y Qué?)",
+        "Señala la falta de puntos de prueba (revisión Demuéstralo)",
+        "Señala términos genéricos (revisión de Especificidad)",
+        "Proporciona una versión reescrita"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Edición rápida de esta sección de CTA: '¿Listo para llevar tu negocio al siguiente nivel? Nuestro equipo de profesionales dedicados está disponible para ayudarte a alcanzar tus objetivos. Haz clic aquí para obtener más información sobre cómo podemos ayudarte a tener éxito.'",
+      "expected_output": "Debe aplicar las verificaciones de edición rápida. Debe identificar: 'llevar tu negocio al siguiente nivel' (cliché), 'equipo de profesionales dedicados' (relleno), 'está disponible' (pasivo), 'haz clic aquí' (CTA débil), 'obtener más información' (acción vaga), 'ayudarte a tener éxito' (genérico). Debe aplicar verificaciones a nivel de palabra, oración y párrafo. Debe reescribir con una propuesta de valor específica, voz activa y un CTA fuerte orientado a la acción. Debe ser conciso ya que se solicitó como una 'edición rápida'.",
+      "assertions": [
+        "Identifica clichés y frases de relleno",
+        "Señala 'haz clic aquí' y 'obtener más información' como débiles",
+        "Aplica verificaciones a nivel de palabra y oración",
+        "Reescribe con valor específico y CTA fuerte",
+        "Usa voz activa en la reescritura",
+        "Mantiene la respuesta concisa para una edición rápida"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "edita esta descripción de producto, se siente demasiado larga y verbosa: 'Nuestra completa solución de gestión de proyectos proporciona a los equipos un sólido conjunto de herramientas que les permite planificar, ejecutar y supervisar sus proyectos de manera eficiente de principio a fin. Con nuestra interfaz intuitiva, un potente panel de análisis y capacidades de integración perfectas, puedes asegurarte de que cada aspecto de tu proyecto se gestione con precisión y cuidado. Ya seas una pequeña startup o una gran empresa, nuestra plataforma escala para satisfacer tus necesidades y requisitos únicos, ayudándote a entregar proyectos a tiempo y dentro del presupuesto siempre.'",
+      "expected_output": "Debe activarse con la redacción informal. Debe aplicar principalmente las revisiones de Claridad y Especificidad. Debe identificar: redundancia ('planificar, ejecutar y supervisar' se superpone con 'de principio a fin'), palabras de relleno ('completa', 'sólido', 'eficientemente', 'perfectas', 'únicos'), frases evasivas ('asegurando cada aspecto', 'con precisión y cuidado') y afirmaciones genéricas ('escala para satisfacer tus necesidades', 'a tiempo y dentro del presupuesto siempre'). Debe recortar el copy significativamente (probablemente un 50%+). Debe proporcionar una reescritura más ajustada que diga lo mismo en menos palabras y más específicas.",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Identifica redundancias en el copy",
+        "Identifica palabras de relleno y frases evasivas",
+        "Identifica afirmaciones genéricas",
+        "Recorta el copy significativamente (reducción del 50%+)",
+        "Proporciona una reescritura más ajustada con lenguaje específico"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Revisa esta sección de testimonios y mejórala: 'CloudSync es genial. Realmente ayudó a nuestra empresa. El equipo fue muy receptivo y el producto funciona bien. Se lo recomendaríamos a cualquiera que busque una solución. - John S., CEO'",
+      "expected_output": "Debe aplicar las revisiones de Demuéstralo y Especificidad. Debe identificar el testimonio como demasiado vago para ser persuasivo ('genial', 'realmente ayudó', 'funciona bien', 'cualquiera que busque una solución'). Debe recomendar reemplazarlo con resultados específicos ('redujo el tiempo de entrega de proyectos en un 30%'), contexto específico ('equipo de 45 ingenieros') y resultados concretos. Debe sugerir preguntas para hacerle al cliente y obtener un mejor testimonio. No debe fabricar números específicos, pero sí debe proporcionar una plantilla que muestre cómo se ve un testimonio sólido.",
+      "assertions": [
+        "Aplica las revisiones de Demuéstralo y Especificidad",
+        "Identifica el testimonio como demasiado vago",
+        "Recomienda resultados y contexto específicos",
+        "Sugiere preguntas para obtener un mejor testimonio",
+        "No fabrica números específicos",
+        "Proporciona una plantilla para un testimonio sólido"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesito que apliques las revisiones '¿Y Qué?' y 'Cero Riesgo' a este copy de página de precios: 'Nuestro plan Pro incluye proyectos ilimitados, informes avanzados, soporte prioritario e integraciones personalizadas. Desde $99/mes.'",
+      "expected_output": "Debe aplicar específicamente las revisiones ¿Y Qué? y Cero Riesgo según lo solicitado. ¿Y Qué?: para cada función, preguntar '¿qué significa esto para el cliente?' — proyectos ilimitados (¿qué permite?), informes avanzados (¿qué decisiones pueden tomar?), soporte prioritario (¿qué significa en la práctica? ¿tiempo de respuesta?), integraciones personalizadas (¿cuáles? ¿qué flujo de trabajo permite?). Cero Riesgo: identificar señales de confianza faltantes — sin garantía, sin mención de prueba gratuita, sin prueba social cerca de los precios, sin garantía de 'cancelar en cualquier momento'. Debe proporcionar copy reescrito que aborde ambas revisiones.",
+      "assertions": [
+        "Aplica la revisión ¿Y Qué? a cada función",
+        "Traduce las funciones a beneficios para el cliente",
+        "Aplica la revisión Cero Riesgo",
+        "Identifica las señales de confianza faltantes",
+        "Sugiere lenguaje de garantía, prueba gratuita o cancelación en cualquier momento",
+        "Proporciona copy reescrito que aborde ambas revisiones"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Escribe copy de página de inicio nuevo para nuestro producto. Estamos lanzando un CRM para agentes inmobiliarios.",
+      "expected_output": "Debe reconocer que esta es una tarea de redacción de copy desde cero, no de edición de copy. Debe remitirse o hacer referencia cruzada a la habilidad copywriting, que se ocupa de escribir copy nuevo desde cero. La edición de copy es específicamente para mejorar el copy existente. Debe dejar clara esta distinción.",
+      "assertions": [
+        "Reconoce que se trata de escribir copy nuevo, no de editar copy existente",
+        "Hace referencia o se remite a la habilidad copywriting",
+        "Explica que copy-editing es para mejorar copy existente",
+        "No intenta escribir copy de página completa desde cero"
+      ],
+      "files": []
+    }
+  ]
+}

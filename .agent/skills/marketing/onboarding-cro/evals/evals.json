@@ -1,0 +1,92 @@
+{
+  "skill_name": "onboarding-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a optimizar nuestro flujo de onboarding. Tenemos una herramienta de gestión de proyectos y solo el 30% de los usuarios de trial crean su primer proyecto dentro de la primera semana. Necesitamos llevarlos al valor más rápido.",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería comenzar definiendo el momento de activación/aha — en este caso, crear un primer proyecto. Debería evaluar el tiempo hasta el valor actual e identificar puntos de fricción. Debería recomendar un enfoque de flujo de onboarding (primero el producto, configuración guiada o primero el valor). Debería aplicar el patrón de lista de verificación (3-7 elementos para la finalización del onboarding). Debería abordar los estados vacíos como oportunidades para guiar a los usuarios. Debería proporcionar ideas de experimentos para probar mejoras. Debería incluir métricas de medición.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Define el momento de activación/aha",
+        "Evalúa el tiempo hasta el valor",
+        "Recomienda un enfoque de flujo de onboarding",
+        "Aplica el patrón de lista de verificación con 3-7 elementos",
+        "Aborda los estados vacíos como oportunidades",
+        "Proporciona ideas de experimentos",
+        "Incluye métricas de medición"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Qué debería incluir nuestra lista de verificación de onboarding? Somos una herramienta de colaboración de diseño. Los usuarios necesitan subir un diseño, invitar a un miembro del equipo y dejar un comentario para obtener el valor completo.",
+      "expected_output": "Debería aplicar el patrón de lista de verificación. Debería incluir las 3 acciones de activación indicadas (subir diseño, invitar al equipo, dejar un comentario). Debería recomendar 3-7 elementos en total ordenados por compromiso creciente. Debería sugerir comenzar con la victoria más rápida para generar impulso. Debería recomendar indicadores de progreso y recompensas por finalización. Debería abordar qué sucede cuando los usuarios omiten elementos. Debería proporcionar recomendaciones específicas de UX para la implementación de la lista de verificación.",
+      "assertions": [
+        "Aplica el patrón de lista de verificación",
+        "Incluye las 3 acciones de activación indicadas",
+        "Limita a 3-7 elementos en total",
+        "Ordena por compromiso creciente",
+        "Comienza con la victoria más rápida",
+        "Recomienda indicadores de progreso",
+        "Aborda los elementos omitidos",
+        "Proporciona recomendaciones de UX"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestros usuarios se registran pero luego nunca regresan. como el 50% ni siquiera inicia sesión una segunda vez. ¿qué hacemos?",
+      "expected_output": "Debería activarse con frases informales. Debería abordar esto como un problema de usuarios estancados. Debería aplicar el marco de manejo de usuarios estancados: identificar puntos de abandono, disparadores de reactivación, alcance multicanal (correo, en la aplicación, push). Debería investigar las causas raíz: ¿la experiencia de primera ejecución es demasiado compleja? ¿El valor no es inmediatamente evidente? ¿La configuración es demasiado larga? Debería recomendar mejoras inmediatas a la experiencia de la primera sesión. Debería sugerir onboarding multicanal (secuencias de correo para traerlos de vuelta). Debería hacer referencia cruzada a email-sequence para correos de reactivación.",
+      "assertions": [
+        "Se activa con frases informales",
+        "Aplica el marco de usuarios estancados",
+        "Identifica posibles causas raíz del abandono",
+        "Recomienda mejoras a la experiencia de la primera sesión",
+        "Sugiere onboarding multicanal",
+        "Hace referencia cruzada a email-sequence para la reactivación",
+        "Proporciona disparadores de reactivación específicos"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cómo manejamos el estado vacío cuando un nuevo usuario inicia sesión por primera vez? Ahora mismo solo ven un panel en blanco.",
+      "expected_output": "Debería aplicar la guía de estados vacíos como oportunidades. Debería recomendar convertir el panel en blanco en una experiencia guiada: datos de muestra para mostrar cómo se ve el producto cuando está poblado, un CTA claro de primera acción, consejos contextuales o un asistente de inicio rápido. Debería proporcionar recomendaciones específicas para el diseño del estado vacío: qué mostrar, qué acción solicitar, cómo reducir la 'parálisis del lienzo en blanco'. Debería referenciar patrones por tipo de producto si aplica.",
+      "assertions": [
+        "Aplica la guía de estados vacíos como oportunidades",
+        "Recomienda alternativas al panel en blanco",
+        "Sugiere datos de muestra o plantillas",
+        "Proporciona un CTA claro de primera acción",
+        "Aborda la parálisis del lienzo en blanco",
+        "Proporciona recomendaciones específicas de diseño del estado vacío"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Deberíamos usar tooltips, un tour del producto o un asistente de configuración para el onboarding? ¿Qué funciona mejor?",
+      "expected_output": "Debería aplicar la guía de tooltips/tours guiados. Debería comparar los enfoques: tooltips (contextuales, bajo demanda, menos intrusivos), tours del producto (recorrido guiado, pueden abrumar), asistentes de configuración (estructurados, aseguran pasos clave de configuración). Debería recomendar según la complejidad del producto y los objetivos de onboarding. Debería señalar que el mejor enfoque a menudo combina elementos. Debería proporcionar mejores prácticas para cada uno: evitar la fatiga de tooltips, límites de duración del tour, conteo de pasos del asistente. Debería recomendar probar diferentes enfoques.",
+      "assertions": [
+        "Compara tooltips, tours del producto y asistentes de configuración",
+        "Explica cuándo funciona mejor cada uno",
+        "Señala que los enfoques combinados a menudo funcionan",
+        "Proporciona mejores prácticas para cada uno",
+        "Aborda la fatiga de tooltips y la duración del tour",
+        "Recomienda probar diferentes enfoques"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro formulario de registro tiene 8 campos y la gente sigue abandonando. ¿Puedes ayudarnos a corregir el flujo de registro?",
+      "expected_output": "Debería reconocer que esto es una tarea de optimización del flujo de registro, no onboarding post-registro. Debería derivar o hacer referencia cruzada al skill signup-flow-cro, que maneja la optimización de formularios de registro, reducción de campos y diseño del flujo de inscripción. onboarding-cro cubre lo que sucede después del registro. Debería dejar clara esta distinción.",
+      "assertions": [
+        "Reconoce esto como optimización del flujo de registro, no onboarding",
+        "Referencia o deriva al skill signup-flow-cro",
+        "Explica que onboarding-cro cubre lo que ocurre post-registro",
+        "No intenta rediseñar el formulario de registro usando patrones de onboarding"
+      ],
+      "files": []
+    }
+  ]
+}

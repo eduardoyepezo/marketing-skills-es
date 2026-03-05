@@ -1,0 +1,93 @@
+{
+  "skill_name": "paywall-upgrade-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a diseñar el paywall de actualización para nuestra herramienta de gestión de proyectos. Los usuarios gratuitos pueden tener 3 proyectos, y queremos mostrar una pantalla de actualización cuando intenten crear un cuarto proyecto.",
+      "expected_output": "Debe verificar primero product-marketing-context.md. Debe identificar esto como un punto de activación por límite de uso. Debe aplicar los componentes de la pantalla de paywall: titular (comunicar el valor de la actualización, no solo el límite), demostración de valor (mostrar qué obtienen con el plan de pago), comparación de planes (gratuito vs. de pago), prueba social, CTA (específico y orientado a la acción) y salida de escape (opción de volver atrás). Debe proporcionar recomendaciones específicas de copia. Debe abordar el estado emocional del usuario en este momento (frustrado por el límite). Debe advertir contra los patrones oscuros.",
+      "assertions": [
+        "Verifica product-marketing-context.md",
+        "Identifica como activación por límite de uso",
+        "Aplica el marco de componentes de la pantalla de paywall",
+        "Incluye titular, demostración de valor, comparación, prueba social, CTA",
+        "Proporciona recomendaciones específicas de copia",
+        "Aborda el estado emocional del usuario en el límite",
+        "Incluye opción de salida de escape",
+        "Advierte contra los patrones oscuros"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestra prueba gratuita expira en 14 días y los usuarios ven una pantalla genérica de 'Tu prueba ha expirado'. La tasa de actualización desde esta pantalla es solo del 2%. ¿Cómo la mejoramos?",
+      "expected_output": "Debe identificar esto como un activador de expiración de prueba. Debe aplicar la guía del tipo de paywall por expiración de prueba. Debe recomendar: mostrar lo que construyeron/lograron durante la prueba (efecto de dotación), destacar las funciones específicas que utilizaron, mostrar el valor que perderían, proporcionar opciones claras de planes, incluir prueba social de usuarios similares que actualizaron. Debe diagnosticar por qué el 2% es bajo: probablemente una propuesta de valor débil, sin personalización, sin urgencia ni encuadre de pérdida. Debe proporcionar recomendaciones específicas de rediseño.",
+      "assertions": [
+        "Identifica como activador de expiración de prueba",
+        "Aplica la guía de paywall por expiración de prueba",
+        "Recomienda mostrar los logros del usuario durante la prueba",
+        "Usa encuadre de pérdida (lo que perderían)",
+        "Proporciona opciones claras de planes",
+        "Incluye prueba social",
+        "Diagnostica por qué la tasa actual del 2% es baja",
+        "Proporciona recomendaciones específicas de rediseño"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿cuándo deberíamos mostrar mensajes de actualización? no queremos ser molestos, pero también necesitamos convertir a los usuarios gratuitos en usuarios de pago.",
+      "expected_output": "Debe activarse con la frase informal. Debe aplicar las reglas de temporización y frecuencia. Debe recomendar puntos de activación de la habilidad: bloqueos de funciones (cuando intentan acceder a una función de pago), límites de uso (cuando alcanzan un umbral), momentos de valor (cuando acaban de experimentar un éxito) y puntos de transición naturales. Debe abordar el límite de frecuencia para evitar ser molesto. Debe recomendar los patrones a evitar (bloquear funcionalidad básica, demasiados popups, patrones oscuros). Debe proporcionar un enfoque equilibrado que respete la experiencia del usuario mientras impulsa las actualizaciones.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Aplica las reglas de temporización y frecuencia",
+        "Recomienda puntos de activación específicos",
+        "Aborda el límite de frecuencia",
+        "Advierte contra los patrones oscuros",
+        "Equilibra la experiencia del usuario con los objetivos de conversión",
+        "Proporciona recomendaciones específicas para cada tipo de activador"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Diseña un paywall de bloqueo de funciones. Cuando los usuarios gratuitos hagan clic en 'Analíticas Avanzadas' en nuestro panel, queremos mostrarles un mensaje de actualización.",
+      "expected_output": "Debe identificar esto como un activador de bloqueo de función. Debe aplicar la guía del tipo de paywall de bloqueo de función. Debe recomendar: mostrar una vista previa o captura de pantalla de la función de analíticas avanzadas, explicar el beneficio específico (no solo 'esta es una función de pago'), incluir una comparación de planes relevante para analíticas, proporcionar un CTA claro para actualizar e incluir una salida de escape para volver a las analíticas básicas. Debe recomendar mostrar qué información están perdiendo. Debe proporcionar recomendaciones de copia para la pantalla del paywall.",
+      "assertions": [
+        "Identifica como activador de bloqueo de función",
+        "Aplica la guía de paywall de bloqueo de función",
+        "Recomienda mostrar una vista previa de la función",
+        "Explica el beneficio específico de la función",
+        "Incluye comparación de planes relevante",
+        "Proporciona CTA claro y salida de escape",
+        "Proporciona recomendaciones de copia"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuáles son los errores comunes que se deben evitar con los paywalls dentro de la aplicación? No quiero ser agresivo ni hacer que los usuarios se sientan engañados.",
+      "expected_output": "Debe aplicar la sección de patrones a evitar. Debe cubrir: patrones oscuros (dificultar encontrar el botón de cierre, lenguaje confuso para cancelar la suscripción), errores que eliminan conversiones (bloquear la funcionalidad básica, mostrar paywalls demasiado pronto antes de que se demuestre el valor, sin salida de escape), problemas de frecuencia (demasiados mensajes, mostrar el mismo paywall repetidamente). Debe proporcionar alternativas positivas para cada patrón a evitar. Debe enfatizar que los buenos paywalls se sienten útiles, no agresivos.",
+      "assertions": [
+        "Aplica la sección de patrones a evitar",
+        "Cubre los patrones oscuros a evitar",
+        "Cubre los errores que eliminan conversiones",
+        "Cubre los problemas de frecuencia",
+        "Proporciona alternativas positivas para cada uno",
+        "Enfatiza el enfoque de ayuda versus agresividad"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes ayudarme a optimizar nuestra página de precios pública? Queremos que más visitantes elijan el plan Pro en lugar del plan Basic.",
+      "expected_output": "Debe reconocer que esta es una tarea de optimización de página de precios pública, no una tarea de paywall dentro de la aplicación. Debe remitir o hacer referencia cruzada a la habilidad page-cro para CRO de página de precios. paywall-upgrade-cro maneja específicamente los mensajes de actualización dentro de la aplicación para usuarios existentes, no las páginas de precios públicas.",
+      "assertions": [
+        "Reconoce esto como optimización de página de precios pública",
+        "Hace referencia o remite a la habilidad page-cro",
+        "Explica que paywall-upgrade-cro es para mensajes de actualización dentro de la aplicación",
+        "No intenta optimizar la página de precios pública"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "skill_name": "marketing-ideas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito ideas de marketing para mi producto SaaS. Somos un equipo bootstrapped de 3 personas, vendemos una herramienta de analítica por $49/mes para e-commerce y tenemos alrededor de 200 clientes. El presupuesto es ajustado — quizás $500/mes para marketing.",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería filtrar ideas según las restricciones de presupuesto bajo y etapa temprana. Debería obtener ideas relevantes de las 139 ideas de marketing organizadas por categoría. Debería proporcionar ideas apropiadas para SaaS bootstrapped: marketing de contenidos, construcción de comunidad, SEO, asociaciones, programas de referidos, redes sociales, Product Hunt y otras que no requieran grandes presupuestos. La salida debe seguir el formato: nombre de la idea, por qué encaja, cómo empezar, resultado esperado, recursos necesarios. Debería priorizar por impacto probable dada su etapa.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Filtra ideas según la restricción de presupuesto bajo",
+        "Proporciona ideas del catálogo de 139 ideas de marketing",
+        "Las ideas son apropiadas para la etapa de SaaS bootstrapped",
+        "La salida sigue el formato estructurado por idea",
+        "Incluye por qué encaja, cómo empezar, resultado esperado",
+        "Prioriza por impacto probable",
+        "Incluye recursos necesarios por idea"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Cuál es la forma más rápida de obtener más leads? Vendemos software de seguridad empresarial y tenemos un presupuesto de marketing de $10k/mes.",
+      "expected_output": "Debería aplicar las 'ideas principales por caso de uso' — específicamente las recomendaciones de 'leads rápidos'. Debería recomendar canales de pago (Google Ads, LinkedIn Ads para empresas), outbound (correo frío, contacto por LinkedIn) y lead magnets basados en contenido. Debería filtrar para tácticas apropiadas para empresas. Debería proporcionar la salida estructurada con por qué encaja cada idea, cómo empezar, cronograma esperado y recursos necesarios. Debería señalar que 'leads rápidos' típicamente significa canales de pago o outbound.",
+      "assertions": [
+        "Aplica el filtro de caso de uso 'leads rápidos'",
+        "Recomienda canales de pago apropiados para empresas",
+        "Recomienda tácticas outbound",
+        "Filtra para tácticas apropiadas para empresas",
+        "Proporciona salida estructurada por idea",
+        "Señala que leads rápidos significa canales de pago o outbound",
+        "Incluye expectativas de cronograma"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿cómo crecemos sin gastar dinero en anuncios? somos una empresa PLG (product-led growth) con un modelo freemium",
+      "expected_output": "Debería activarse con frases informales. Debería aplicar el filtro de caso de uso 'PLG' de las ideas principales. Debería recomendar tácticas específicas de PLG: funcionalidades de viralidad del producto, programas de referidos, construcción de comunidad, marketing de contenidos, SEO, herramientas/calculadoras gratuitas, contribuciones open-source, bucles de prueba social. Debería evitar ideas dependientes de anuncios dada la restricción. Debería proporcionar salida estructurada con guía de implementación.",
+      "assertions": [
+        "Se activa con frases informales",
+        "Aplica el filtro de caso de uso PLG",
+        "Recomienda tácticas específicas de PLG",
+        "Evita ideas dependientes de anuncios",
+        "Incluye tácticas de viralidad y referidos",
+        "Proporciona salida estructurada con guía de implementación"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Queremos construir autoridad y liderazgo de pensamiento en el espacio de HR tech. Somos una empresa nueva y nadie nos conoce aún.",
+      "expected_output": "Debería aplicar el filtro de caso de uso 'construcción de autoridad'. Debería recomendar tácticas de liderazgo de pensamiento: investigación/encuestas originales, publicaciones como invitado, apariciones en podcasts, conferencias, contenido en LinkedIn, publicación de informes de la industria, roundups de expertos. Debería señalar que la construcción de autoridad es una jugada a largo plazo. Debería proporcionar salida estructurada con cómo empezar cada idea, resultados esperados y cronograma.",
+      "assertions": [
+        "Aplica el filtro de caso de uso 'construcción de autoridad'",
+        "Recomienda tácticas de liderazgo de pensamiento",
+        "Incluye investigación original y contenido",
+        "Incluye apariciones en comunidades y medios",
+        "Señala que la construcción de autoridad es a largo plazo",
+        "Proporciona salida estructurada con cronogramas"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Dame 20 ideas de marketing. Vendemos software de gestión de proyectos.",
+      "expected_output": "Debería proporcionar una lista curada de ~20 ideas del catálogo. Debería organizarlas por categoría o por esfuerzo/impacto. Debería proporcionar un contexto de implementación breve para cada una. Debería variar las ideas entre categorías (contenido, comunidad, asociaciones, producto, pago, etc.) para obtener un conjunto equilibrado. La salida debe seguir el formato estructurado con al menos el nombre de la idea y una breve descripción para cada una.",
+      "assertions": [
+        "Proporciona aproximadamente 20 ideas",
+        "Las ideas abarcan múltiples categorías",
+        "Organiza por categoría o esfuerzo/impacto",
+        "Proporciona contexto de implementación breve por idea",
+        "La salida sigue el formato estructurado",
+        "Las ideas son relevantes para software de gestión de proyectos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Queremos configurar un programa de referidos. ¿Cómo deberíamos estructurarlo?",
+      "expected_output": "Debería reconocer que esto es específicamente una solicitud de diseño de programa de referidos. Debería derivar o hacer referencia cruzada al skill referral-program, que proporciona orientación detallada sobre el diseño del bucle de referidos, estructuras de incentivos, implementación y optimización. Puede mencionar brevemente los programas de referidos como una idea de marketing, pero debe dejar claro que referral-program es el skill adecuado para el diseño detallado del programa.",
+      "assertions": [
+        "Reconoce esto como una solicitud de diseño de programa de referidos",
+        "Referencia o deriva al skill referral-program",
+        "No intenta diseñar un programa de referidos detallado",
+        "Puede mencionar brevemente como una idea de marketing"
+      ],
+      "files": []
+    }
+  ]
+}

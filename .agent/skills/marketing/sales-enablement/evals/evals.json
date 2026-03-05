@@ -1,0 +1,91 @@
+{
+  "skill_name": "sales-enablement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a crear un deck de ventas para nuestro producto B2B SaaS. Vendemos una plataforma de compromiso de empleados a directores de RRHH en empresas con 500-5.000 empleados. Nuestro principal diferenciador son las encuestas de pulso en tiempo real con análisis impulsados por IA.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el marco del deck de ventas de 10-12 diapositivas: Título, Problema/Impacto, Soluciones Actuales que Fallan, Visión, Producto/Solución, Cómo Funciona, Pruebas (casos de estudio/métricas), Precios, Por Qué Ahora y Próximos Pasos. Debe adaptar el deck a la audiencia de directores de RRHH y el espacio de compromiso de empleados. Debe incorporar el diferenciador (encuestas de pulso en tiempo real + análisis de IA). Debe proporcionar recomendaciones de contenido diapositiva por diapositiva con notas del presentador. Debe recomendar dirección visual.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el marco de 10-12 diapositivas",
+        "Incluye diapositivas de Problema, Solución, Prueba, Precios, Próximos Pasos",
+        "Adapta a la audiencia de directores de RRHH",
+        "Incorpora el diferenciador indicado",
+        "Proporciona contenido diapositiva por diapositiva",
+        "Incluye notas del presentador o puntos clave para hablar"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nuestro equipo de ventas sigue recibiendo las mismas objeciones. Las principales son: 'ya usamos SurveyMonkey', 'no tenemos presupuesto ahora mismo' y 'nuestro equipo es muy pequeño para necesitar esto'. Ayúdame a crear un documento de manejo de objeciones.",
+      "expected_output": "Debe aplicar el marco de manejo de objeciones con la estructura de respuesta para cada objeción. Debe categorizar las objeciones (competidor/statu quo, presupuesto, necesidad/timing). Para cada objeción, debe proporcionar: reconocer, reencuadrar, evidencia/prueba, puente hacia el valor y pregunta de seguimiento. Debe proporcionar 2-3 variaciones de respuesta por objeción para diferentes contextos. Debe organizarse como un documento al que los representantes de ventas puedan consultar rápidamente durante las llamadas.",
+      "assertions": [
+        "Aplica el marco de manejo de objeciones",
+        "Categoriza las tres objeciones",
+        "Proporciona respuesta estructurada para cada una (reconocer, reencuadrar, evidencia, puente)",
+        "Proporciona 2-3 variaciones de respuesta por objeción",
+        "Se organiza para consulta rápida durante llamadas",
+        "Categoriza las objeciones usando el marco de la habilidad (competidor, presupuesto, necesidad/timing)"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "necesito un resumen de una página que podamos dejar después de las reuniones de ventas. algo que resuma nuestro producto y los beneficios clave.",
+      "expected_output": "Debe activarse con lenguaje informal. Debe aplicar el marco del resumen de una página/material de dejar. Debe incluir: titular con propuesta de valor central, beneficios clave (3-5), prueba social (logotipos de clientes, métrica clave), cómo funciona (simplificado), resumen de precios o rango 'desde', y CTA de siguiente paso claro. Debe recomendar principios de diseño para un resumen de una página: escaneable, jerarquía visual, no lleno de texto. Debe señalar que debe caber en una página (frente, o frente y reverso).",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Aplica el marco de resumen de una página/material de dejar",
+        "Incluye titular, beneficios, prueba social, cómo funciona, CTA",
+        "Se mantiene en formato de una página",
+        "Recomienda diseño escaneable",
+        "Proporciona contenido específico para cada sección"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Crea un guion de demostración para nuestro producto de panel de análisis. La demostración típica es de 30 minutos con un VP de Marketing.",
+      "expected_output": "Debe aplicar el marco del guion de demostración/guion de conversación con la estructura de 5 partes. Debe incluir: apertura (rapport, establecimiento de agenda, preguntas de descubrimiento), validación del problema (confirmar su dolor), presentación de la solución (mostrar el producto abordando su dolor), puntos de prueba (métricas, casos de estudio durante la demo) y cierre (próximos pasos, cronograma). Debe distribuir el tiempo de cada sección para 30 minutos. Debe incluir preguntas clave para hacer durante el descubrimiento. Debe señalar cuándo personalizar según las respuestas del prospecto.",
+      "assertions": [
+        "Aplica la estructura de guion de demostración de 5 partes",
+        "Incluye apertura con preguntas de descubrimiento",
+        "Incluye validación del problema",
+        "Incluye presentación de la solución",
+        "Incluye puntos de prueba",
+        "Incluye cierre con próximos pasos",
+        "Distribuye el tiempo para 30 minutos",
+        "Señala personalización según respuestas del prospecto"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Ayúdame a construir una calculadora de ROI que podamos usar durante las llamadas de ventas. Necesitamos mostrar a los prospectos cuánto dinero ahorrarán al cambiar a nuestro producto.",
+      "expected_output": "Debe aplicar el marco de la calculadora de ROI. Debe definir los datos de entrada (qué datos recopilar del prospecto: tamaño del equipo, costos actuales, tiempo dedicado a procesos manuales), metodología de cálculo (cómo computar los ahorros) y formato de salida (visual que muestra el cronograma de ROI, período de recuperación, ahorros anuales). Debe recomendar mantener los cálculos transparentes y conservadores. Debe sugerir validar los supuestos durante la llamada de ventas. Debe proporcionar la estructura de la calculadora y la lógica de las fórmulas.",
+      "assertions": [
+        "Aplica el marco de la calculadora de ROI",
+        "Define los datos de entrada requeridos",
+        "Proporciona metodología de cálculo",
+        "Recomienda supuestos conservadores",
+        "Incluye cronograma de ROI y período de recuperación",
+        "Sugiere validar supuestos durante las llamadas",
+        "Proporciona estructura de la calculadora"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Necesitamos una página de comparación pública que muestre cómo nos comparamos con Zendesk e Intercom.",
+      "expected_output": "Debe reconocer que esto es una página de comparación con competidores orientada al público, no material de ventas interno. Debe diferir o hacer referencia cruzada con la habilidad competitor-alternatives, que maneja páginas de comparación pública y alternativas. Sales-enablement cubre materiales internos (tarjetas de batalla, manejo de objeciones) mientras que competitor-alternatives maneja el contenido de comparación público orientado a SEO.",
+      "assertions": [
+        "Reconoce que esto es una página de comparación pública",
+        "Hace referencia o difiere a la habilidad competitor-alternatives",
+        "Explica la distinción entre material interno y público",
+        "No intenta crear una página de comparación pública SEO usando patrones de sales enablement"
+      ],
+      "files": []
+    }
+  ]
+}

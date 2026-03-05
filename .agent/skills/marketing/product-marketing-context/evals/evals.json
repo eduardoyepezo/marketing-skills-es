@@ -1,0 +1,85 @@
+{
+  "skill_name": "product-marketing-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quiero configurar el contexto de marketing de producto. Somos una empresa de SaaS B2B que vende una plataforma de retroalimentación de clientes a equipos de producto.",
+      "expected_output": "Debe verificar si .agents/product-marketing-context.md ya existe. Si no, debe ofrecer dos opciones: (1) Generar automáticamente desde el código base (recomendado) o (2) Comenzar desde cero. Si el usuario elige comenzar desde cero, debe guiar por las secciones de forma conversacional una a la vez. Debe cubrir todas las secciones aplicables: Resumen del Producto, Público Objetivo, Personas, Problemas que Resuelve, Panorama Competitivo, Diferenciación, Objeciones, Dinámicas de Cambio, Lenguaje del Cliente, Voz de Marca, Puntos de Prueba y Objetivos. Debe crear el archivo en .agents/product-marketing-context.md cuando esté completo.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Ofrece dos opciones: generación automática o comenzar desde cero",
+        "Cubre las secciones aplicables",
+        "Guía por las secciones de forma conversacional una a la vez",
+        "Crea el archivo en .agents/product-marketing-context.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Actualiza nuestro contexto de marketing de producto. Acabamos de añadir un nuevo nivel enterprise y nuestro público objetivo se ha expandido para incluir a VPs de Ingeniería, no solo a Gerentes de Producto.",
+      "expected_output": "Debe verificar si existe .agents/product-marketing-context.md y leerlo. Debe identificar qué secciones necesitan actualizarse según los cambios: Público Objetivo (añadir VP de Ingeniería), Personas (añadir nueva persona), Resumen del Producto (nuevo nivel enterprise, incluyendo actualizaciones de precios dentro de esa sección), Objeciones (específicas para enterprise) y Panorama Competitivo (competidores enterprise). Debe actualizar solo las secciones relevantes, preservando el contenido existente que no ha cambiado.",
+      "assertions": [
+        "Lee el product-marketing-context.md existente",
+        "Identifica las secciones que necesitan actualización",
+        "Actualiza el Público Objetivo con VP de Ingeniería",
+        "Añade nueva persona para el público expandido",
+        "Actualiza el Resumen del Producto para el nivel enterprise",
+        "Preserva las secciones sin cambios"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "crea un documento de contexto de producto para mi aplicación. es una aplicación móvil que ayuda a las personas a encontrar rutas de senderismo. estamos empezando.",
+      "expected_output": "Debe activarse con la frase informal. Debe verificar si existe el documento de contexto. Debe ofrecer las opciones de generación automática o comenzar desde cero. Debe adaptar las preguntas para una aplicación móvil B2C en etapa temprana (nicho de actividades al aire libre/fitness). Debe señalar que algunas secciones pueden ser escasas para un producto en etapa temprana y que eso está bien — se pueden completar a medida que el negocio madura. Debe omitir las secciones no aplicables (por ejemplo, la sección de Personas está enfocada en B2B) en lugar de forzar las 12. Debe aceptar respuestas más breves para secciones como Puntos de Prueba o Panorama Competitivo si la empresa es nueva.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Verifica si existe el documento de contexto",
+        "Ofrece las opciones de generación automática o comenzar desde cero",
+        "Adapta las preguntas para una aplicación móvil B2C en etapa temprana",
+        "Señala que algunas secciones pueden ser escasas al inicio",
+        "Omite secciones no aplicables en lugar de forzar las 12",
+        "Crea el archivo en .agents/product-marketing-context.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Puedes generar automáticamente nuestro contexto de marketing de producto a partir de nuestro código base y materiales de marketing existentes?",
+      "expected_output": "Debe activar el modo de flujo de trabajo de generación automática. Debe escanear el código base en busca de contexto de marketing existente: README, copia de la página de aterrizaje, página de precios, página de información, metadescripciones y cualquier documentación existente. Debe redactar el product-marketing-context.md a partir de lo que encuentre, completando las secciones donde haya información disponible y marcando las secciones que necesitan aportación manual. Debe presentar el borrador para revisión antes de guardarlo.",
+      "assertions": [
+        "Activa el modo de flujo de trabajo de generación automática",
+        "Escanea el código base en busca de materiales de marketing existentes",
+        "Redacta el contexto a partir de la información encontrada",
+        "Marca las secciones que necesitan aportación manual",
+        "Presenta el borrador para revisión antes de guardar"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Tenemos configurado un contexto de marketing de producto? Quiero asegurarme de que las otras habilidades de marketing tengan contexto sobre nuestro producto.",
+      "expected_output": "Debe verificar si existe .agents/product-marketing-context.md (y la ubicación anterior .claude/product-marketing-context.md). Debe informar si existe y resumir su contenido si se encuentra. Si no existe, debe ofrecer crear uno y explicar por qué es valioso (otras habilidades como copywriting, page-cro, seo-audit lo comprueban primero). Debe explicar cómo otras habilidades utilizan este documento de contexto.",
+      "assertions": [
+        "Verifica ambas ubicaciones de archivo",
+        "Informa si existe el documento de contexto",
+        "Resume el contenido si se encuentra",
+        "Ofrece crear uno si no existe",
+        "Explica cómo otras habilidades lo utilizan"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Escribe el texto de la página de inicio para nuestro producto SaaS.",
+      "expected_output": "Debe reconocer que esta es una tarea de redacción, no una tarea de contexto de marketing de producto. Debe verificar si existe product-marketing-context.md (como hacen otras habilidades) y, si no existe, puede sugerir crearlo primero. Pero debe remitir a la habilidad de redacción para escribir realmente el texto de la página de inicio.",
+      "assertions": [
+        "Reconoce esto como una tarea de redacción",
+        "Puede verificar o sugerir crear product-marketing-context.md",
+        "Hace referencia o remite a la habilidad de redacción para el texto real",
+        "No intenta escribir el texto de la página de inicio usando patrones de creación de contexto"
+      ],
+      "files": []
+    }
+  ]
+}

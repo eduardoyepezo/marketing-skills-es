@@ -1,0 +1,90 @@
+{
+  "skill_name": "free-tool-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Queremos crear una herramienta gratuita para generar leads para nuestro software de SEO. Estamos considerando una herramienta de auditoría SEO o una herramienta de investigación de palabras clave. ¿Cuál sería mejor y cómo deberíamos abordarla?",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería aplicar el cuadro de evaluación para comparar ambas ideas de herramientas en varias dimensiones (alineación con la audiencia, calidad de leads, esfuerzo de construcción, valor SEO, carga de mantenimiento, diferenciación competitiva). Debería referenciar los tipos de herramientas del skill (analizadores, testers). Debería recomendar la opción más sólida con su justificación. Debería discutir la estrategia de captación de leads (qué es gratuito frente a qué requiere correo electrónico). Debería abordar el alcance del MVP — cuál es la versión mínima viable. Debería proporcionar recomendaciones de implementación.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Aplica el cuadro de evaluación para comparar opciones",
+        "Referencia los tipos de herramientas del skill",
+        "Recomienda una opción con justificación clara",
+        "Discute la estrategia de captación de leads",
+        "Aborda el alcance del MVP",
+        "Proporciona recomendaciones de implementación"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Quiero crear una calculadora de ROI gratuita para nuestro software de RRHH. Los usuarios ingresan el tamaño de su empresa y sus procesos actuales, y la herramienta muestra cuánto tiempo y dinero ahorrarían.",
+      "expected_output": "Debería identificar esto como un tipo de herramienta calculadora. Debería aplicar el marco de ideación para validar el concepto. Debería discutir la estrategia de captación de leads: ¿el resultado básico debería ser gratuito y el informe detallado requiere registro? Debería abordar la decisión de construir vs. comprar. Debería recomendar el alcance del MVP (qué entradas, qué salidas, qué fórmula). Debería discutir las consideraciones SEO para la página de la herramienta. Debería referenciar el cuadro de evaluación para puntuar la idea.",
+      "assertions": [
+        "Identifica como tipo de herramienta calculadora",
+        "Aplica el marco de ideación para validar",
+        "Discute la estrategia de captación de leads",
+        "Aborda la decisión de construir vs. comprar",
+        "Recomienda el alcance del MVP (entradas, salidas, fórmula)",
+        "Discute consideraciones SEO",
+        "Referencia el cuadro de evaluación"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "danos algunas ideas de herramientas gratuitas que podríamos construir. vendemos software de email marketing para marcas de e-commerce.",
+      "expected_output": "Debería activarse con frases informales. Debería aplicar el marco de ideación para generar ideas de herramientas relevantes para email marketing + e-commerce. Debería proporcionar 5-8 ideas en distintos tipos de herramientas (calculadoras, generadores, analizadores, testers). Ejemplos: tester de líneas de asunto de correo, verificador de entregabilidad de correo, calculadora de ROI de correo, generador de plantillas de correo, verificador de puntuación de spam. Debería evaluar brevemente cada una según las dimensiones de evaluación. Debería recomendar las 2-3 mejores opciones a desarrollar.",
+      "assertions": [
+        "Se activa con frases informales",
+        "Aplica el marco de ideación",
+        "Genera ideas en múltiples tipos de herramientas",
+        "Las ideas son relevantes para email marketing + e-commerce",
+        "Proporciona 5-8 ideas",
+        "Evalúa brevemente cada idea",
+        "Recomienda las 2-3 mejores opciones a desarrollar"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Construimos una herramienta gratuita de prueba de velocidad de sitios web hace 6 meses, pero apenas recibe tráfico. ¿Qué salió mal y cómo lo solucionamos?",
+      "expected_output": "Debería diagnosticar por qué la herramienta no está recibiendo tráfico. Debería investigar: estrategia SEO para la página de la herramienta (palabras clave objetivo, optimización en página), estrategia de distribución (¿se lanzó y se olvidó?), panorama competitivo (¿ya existen herramientas gratuitas dominantes?), calidad y UX de la herramienta (¿ofrece valor único?). Debería aplicar los principios de engineering as marketing. Debería recomendar un plan de recuperación: mejoras SEO, marketing de contenidos alrededor de la herramienta, mejoras de producto para diferenciación.",
+      "assertions": [
+        "Diagnostica posibles problemas de tráfico",
+        "Investiga la estrategia SEO para la herramienta",
+        "Evalúa el panorama competitivo",
+        "Cuestiona la propuesta de valor única",
+        "Aplica los principios de engineering as marketing",
+        "Recomienda un plan de recuperación con acciones específicas"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Deberíamos poner nuestra herramienta gratuita detrás de un formulario de captura de correo o hacerla completamente gratuita? Queremos leads pero no queremos matar el uso.",
+      "expected_output": "Debería aplicar el marco de estrategia de captación de leads. Debería presentar el espectro: completamente sin restricciones → restricción parcial (resultados básicos gratuitos, informe detallado con registro) → completamente restringido. Debería recomendar la restricción parcial como el mejor enfoque típico — dar suficiente valor para demostrar el uso de la herramienta y restringir la salida detallada/accionable. Debería discutir las compensaciones: sin restricción = más valor SEO y uso, con restricción = más leads pero menos usuarios. Debería proporcionar recomendaciones específicas de restricción según el tipo de herramienta.",
+      "assertions": [
+        "Aplica la estrategia de captación de leads",
+        "Presenta el espectro de restricción (sin restricción a completamente restringido)",
+        "Recomienda el enfoque de restricción parcial",
+        "Discute las compensaciones de cada enfoque",
+        "Proporciona recomendaciones específicas de restricción",
+        "Aborda el impacto SEO de las decisiones de restricción"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Cómo optimizo la página de destino de nuestra herramienta gratuita para obtener más registros? La herramienta en sí es excelente, pero nadie la encuentra.",
+      "expected_output": "Debería reconocer que esto es una tarea de optimización de conversión de página de destino, no una tarea de estrategia de herramienta gratuita. Debería derivar o hacer referencia cruzada al skill page-cro para optimizar la tasa de conversión de la página de la herramienta. Puede proporcionar contexto específico de la herramienta gratuita (estrategia de captación, demostración de valor), pero debe dejar claro que page-cro es el skill adecuado para la optimización de conversión de página.",
+      "assertions": [
+        "Reconoce esto como page CRO, no como estrategia de herramienta gratuita",
+        "Referencia o deriva al skill page-cro",
+        "Puede proporcionar contexto específico de herramienta gratuita",
+        "No intenta realizar CRO completo de página usando patrones de estrategia de herramienta gratuita"
+      ],
+      "files": []
+    }
+  ]
+}

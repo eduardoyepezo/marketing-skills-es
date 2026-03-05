@@ -1,0 +1,93 @@
+{
+  "skill_name": "churn-prevention",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Nuestro producto SaaS tiene una tasa de cancelación mensual del 7% y necesitamos reducirla. Somos una herramienta de gestión de proyectos a 49 USD al mes con unos 2.000 clientes de pago. ¿Puedes ayudarnos a diseñar una estrategia de prevención de cancelaciones?",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe abordar tanto la cancelación voluntaria como la involuntaria. Debe diseñar un flujo de cancelación siguiendo el marco: disparador → encuesta de salida → oferta de retención dinámica → confirmación → nutrición post-cancelación. Debe incluir las 7 categorías de la encuesta de salida y recomendar ofertas de retención dinámicas mapeadas a cada razón de cancelación. Debe abordar la gestión de impagos para la cancelación involuntaria (pre-dunning, reintento inteligente, secuencia de correos electrónicos, período de gracia). Debe recomendar un modelo de puntuación de salud. Debe proporcionar un plan de implementación priorizado.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aborda tanto la cancelación voluntaria como la involuntaria",
+        "Diseña el flujo de cancelación con las etapas adecuadas",
+        "Incluye la encuesta de salida con múltiples categorías",
+        "Mapea las ofertas de retención a las razones de cancelación",
+        "Aborda el procedimiento de gestión de impagos para la recuperación de pagos",
+        "Recomienda un modelo de puntuación de salud",
+        "Proporciona un plan de implementación priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Seguimos perdiendo clientes porque sus tarjetas de crédito vencen. Aproximadamente el 15% de nuestras cancelaciones son por pagos fallidos. ¿Cómo lo solucionamos?",
+      "expected_output": "Debe identificar esto como cancelación involuntaria / recuperación de pagos. Debe aplicar el marco de gestión de impagos: pre-dunning (recordatorios de vencimiento de tarjeta antes del fallo), reintento inteligente (lógica de reintento basada en el motivo del fallo), secuencia de correos de gestión de impagos (urgencia escalada), período de gracia y cancelación eventual. Debe proporcionar el calendario específico para cada etapa. Debe recomendar herramientas y estrategias de recuperación de pagos (servicios de actualización de tarjetas, métodos de pago alternativos). Debe incluir benchmarks de tasa de recuperación.",
+      "assertions": [
+        "Identifica como cancelación involuntaria / recuperación de pagos",
+        "Aplica el marco de gestión de impagos",
+        "Incluye recordatorios de pre-dunning por vencimiento de tarjeta",
+        "Incluye lógica de reintento inteligente",
+        "Proporciona la secuencia de correos de gestión de impagos con urgencia escalada",
+        "Recomienda un período de gracia antes de la cancelación",
+        "Menciona servicios de actualización de tarjetas o métodos de pago alternativos",
+        "Incluye benchmarks de recuperación"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿qué deberíamos mostrar a los usuarios cuando hacen clic en el botón de cancelar? ahora mismo van directo a la cancelación sin ningún intento de retenerlos",
+      "expected_output": "Debe activarse con phrasing informal. Debe diseñar el flujo de cancelación: botón de cancelar → encuesta de salida → oferta de retención dinámica → confirmación → post-cancelación. Debe detallar las categorías de la encuesta de salida (demasiado caro, función faltante, cambió a la competencia, no lo usa suficiente, problemas técnicos, mal soporte, otro). Debe proporcionar ofertas de retención dinámicas mapeadas a cada razón (ej., demasiado caro → oferta de descuento, función faltante → actualización del roadmap, no lo usa suficiente → ayuda con la incorporación). Debe incluir recomendaciones de texto para cada pantalla. Debe advertir contra los patrones oscuros (hacer imposible cancelar).",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Diseña un flujo de cancelación de múltiples pasos",
+        "Incluye la encuesta de salida con 7 categorías",
+        "Proporciona ofertas de retención dinámicas mapeadas a las razones",
+        "Incluye recomendaciones de texto",
+        "Advierte contra los patrones oscuros",
+        "Incluye los pasos de confirmación y post-cancelación"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cómo identificamos qué clientes están en riesgo de cancelar antes de que realmente lo hagan? Queremos ser proactivos.",
+      "expected_output": "Debe aplicar el marco del modelo de puntuación de salud. Debe definir los componentes de la puntuación de salud: señales de uso del producto (frecuencia de inicio de sesión, adopción de funciones, finalización de acciones clave), señales de interacción (tickets de soporte, respuestas a NPS, interacción con correos electrónicos) y señales de cuenta (tipo de contrato, crecimiento de la empresa, cambios de interlocutores). Debe recomendar la metodología de puntuación (escala de 0 a 100). Debe definir niveles de riesgo e intervenciones recomendadas para cada nivel. Debe sugerir fuentes de datos y el enfoque de implementación.",
+      "assertions": [
+        "Aplica el marco del modelo de puntuación de salud",
+        "Define señales de salud basadas en el uso",
+        "Define señales de salud basadas en la interacción",
+        "Define señales de salud basadas en la cuenta",
+        "Recomienda la metodología de puntuación",
+        "Define niveles de riesgo con intervenciones",
+        "Sugiere fuentes de datos e implementación"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Nuestra encuesta de salida muestra que el 40% de las cancelaciones indican 'demasiado caro' como razón. ¿Qué ofertas de retención deberíamos probar?",
+      "expected_output": "Debe hacer referencia a las ofertas de retención dinámicas mapeadas a la razón 'demasiado caro'. Debe sugerir múltiples tipos de ofertas: descuento temporal, cambio a un plan más económico, descuento por facturación anual, pausa en lugar de cancelación, extensión de la prueba del plan actual. Debe recomendar probar diferentes ofertas para encontrar la que mejor funciona. También debe profundizar: 'demasiado caro' a menudo enmascara otros problemas (no percibir el valor, no usar suficientes funciones). Debe sugerir preguntas de seguimiento en la encuesta de salida para obtener información más específica.",
+      "assertions": [
+        "Hace referencia a las ofertas de retención para la razón 'demasiado caro'",
+        "Sugiere múltiples tipos de oferta (descuento, cambio de plan, pausa)",
+        "Recomienda probar diferentes ofertas",
+        "Señala que 'demasiado caro' a menudo enmascara otros problemas",
+        "Sugiere preguntas de seguimiento más profundas",
+        "Proporciona texto o estructura específicos para la oferta de retención"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Queremos configurar una secuencia de correos de recuperación para clientes que ya cancelaron. ¿Puedes ayudar a escribir esos correos?",
+      "expected_output": "Debe reconocer que esto se superpone con el trabajo de secuencias de correo electrónico. Debe derivar o hacer referencia cruzada a la habilidad email-sequence para escribir la secuencia de correos electrónicos real. Puede proporcionar contexto específico de cancelaciones (calendario post-cancelación, ganchos de reactivación, estrategia de oferta de recuperación) pero debe dejar claro que email-sequence es la habilidad adecuada para diseñar y escribir la secuencia completa de correos.",
+      "assertions": [
+        "Reconoce la superposición con el trabajo de secuencias de correo electrónico",
+        "Hace referencia o deriva a la habilidad email-sequence",
+        "Puede proporcionar contexto específico de cancelaciones para la secuencia",
+        "No intenta escribir una secuencia completa de correos electrónicos"
+      ],
+      "files": []
+    }
+  ]
+}

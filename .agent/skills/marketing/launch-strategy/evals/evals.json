@@ -1,0 +1,91 @@
+{
+  "skill_name": "launch-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Vamos a lanzar un nuevo producto B2B SaaS para equipos de diseño en 6 semanas. Es una herramienta de revisión de diseño. Tenemos una audiencia pequeña (500 suscriptores de correo, 2k seguidores en Twitter). Ayúdanos a planificar el lanzamiento.",
+      "expected_output": "Debería buscar primero product-marketing-context.md. Debería aplicar el Marco ORB (canales Propios, Rentados, Prestados) con los recursos específicos del usuario. Propios: lista de correo (500 suscriptores), sitio web. Rentados: Twitter (2k seguidores). Prestados: asociaciones, comunidades, Product Hunt. Debería recomendar el enfoque de lanzamiento en cinco fases con un cronograma ajustado a las 6 semanas: Preparación interna, Alpha (red existente), Beta (ampliada), Acceso anticipado, Lanzamiento completo. Debería proporcionar tácticas específicas para cada fase. Debería recomendar construir la audiencia antes del día de lanzamiento. Debería incluir una lista de verificación para el día del lanzamiento.",
+      "assertions": [
+        "Busca product-marketing-context.md",
+        "Aplica el Marco ORB (Propios, Rentados, Prestados)",
+        "Se ajusta a los canales y tamaños de audiencia específicos del usuario",
+        "Recomienda el enfoque de lanzamiento en cinco fases",
+        "Proporciona un cronograma ajustado a las 6 semanas",
+        "Proporciona tácticas específicas para cada fase",
+        "Recomienda construir la audiencia antes del lanzamiento",
+        "Incluye una lista de verificación para el día del lanzamiento"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Queremos lanzar en Product Hunt. ¿Algún consejo? Nunca lo hemos hecho antes.",
+      "expected_output": "Debería aplicar la sección de estrategia de Product Hunt. Debería cubrir: elegir el día y la hora correctos, preparar los recursos (logo, imágenes de galería, video del creador), elaborar el tagline y la descripción, construir una red de hunters, activar a los seguidores el día del lanzamiento, interactuar con los comentarios y el seguimiento post-lanzamiento. Debería recomendar un cronograma de preparación (comenzar 2-4 semanas antes). Debería mencionar errores comunes que evitar. Debería establecer expectativas realistas sobre los resultados.",
+      "assertions": [
+        "Aplica la sección de estrategia de Product Hunt",
+        "Cubre el tiempo (selección de día y hora)",
+        "Cubre la preparación de recursos",
+        "Aborda la red de hunters y la activación de seguidores",
+        "Recomienda un cronograma de preparación",
+        "Menciona errores comunes que evitar",
+        "Establece expectativas realistas"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "acabamos de lanzar una actualización importante de funcionalidad. ¿cómo deberíamos anunciarla? no es un lanzamiento completo del producto, solo una función nueva importante.",
+      "expected_output": "Debería activarse con frases informales. Debería aplicar la sección de estrategia de lanzamiento continuo, específicamente la matriz de actualizaciones mayores/medias/menores. Debería identificar esto como una actualización de funcionalidad mayor. Debería recomendar los canales y tácticas adecuados para el lanzamiento de una funcionalidad (menos que un lanzamiento completo del producto pero más que una entrada en el registro de cambios). Debería incluir: correo de anuncio, entrada de blog, publicación en redes sociales, notificación dentro de la aplicación y posiblemente un mini lanzamiento en Product Hunt. Debería proporcionar un marco de anuncio de funcionalidad.",
+      "assertions": [
+        "Se activa con frases informales",
+        "Aplica la estrategia de lanzamiento continuo / matriz de actualizaciones",
+        "Identifica como actualización de funcionalidad mayor",
+        "Escala las tácticas apropiadamente (no lanzamiento completo)",
+        "Recomienda canales de anuncio",
+        "Incluye correo, blog, redes sociales y notificación en la aplicación",
+        "Proporciona un marco de anuncio de funcionalidad"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Nuestro lanzamiento fracasó. Lanzamos hace 3 semanas y solo obtuvimos 50 registros. Esperábamos al menos 500. ¿Qué salió mal y qué podemos hacer ahora?",
+      "expected_output": "Debería aplicar la sección de marketing de producto post-lanzamiento. Debería diagnosticar posibles causas del fracaso: construcción insuficiente de audiencia antes del lanzamiento, canales equivocados, mensajes de propuesta de valor débiles, ejecución de lanzamiento deficiente, dirección a la audiencia incorrecta. Debería recomendar tácticas de recuperación post-lanzamiento: iterar en los mensajes, identificar qué canales produjeron los 50 registros y duplicar la apuesta, probar nuevos canales de distribución, aprovechar a los usuarios iniciales para testimonios. Debería proporcionar un plan de recuperación específico para 30 días.",
+      "assertions": [
+        "Aplica la guía de marketing de producto post-lanzamiento",
+        "Diagnostica posibles causas del fracaso",
+        "Aborda la brecha de construcción de audiencia pre-lanzamiento",
+        "Recomienda tácticas de recuperación post-lanzamiento",
+        "Sugiere analizar qué canales produjeron registros",
+        "Proporciona un plan de recuperación específico"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cómo aprovechamos las asociaciones y audiencias prestadas para nuestro lanzamiento? No tenemos una audiencia propia grande.",
+      "expected_output": "Debería enfocarse en el canal Prestado del Marco ORB. Debería proporcionar tácticas específicas de audiencia prestada: apariciones como invitado en podcasts, co-marketing con herramientas complementarias, asociaciones con influencers, participación en comunidades (grupos relevantes de Slack, servidores de Discord, Reddit), publicaciones como invitado, co-promociones. Debería recomendar cómo identificar y abordar a posibles socios. Debería señalar que las estrategias de audiencia prestada llevan tiempo construirlas y deben comenzar mucho antes del día del lanzamiento.",
+      "assertions": [
+        "Se enfoca en el canal Prestado del Marco ORB",
+        "Proporciona tácticas específicas de audiencia prestada",
+        "Menciona asociaciones, comunidades y contenido como invitado",
+        "Recomienda cómo identificar y abordar a posibles socios",
+        "Señala que las estrategias prestadas llevan tiempo construirlas",
+        "Sugiere comenzar mucho antes del día del lanzamiento"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Dame algunas ideas creativas de marketing para promocionar nuestro producto. Somos un equipo bootstrapped y no tenemos un gran presupuesto.",
+      "expected_output": "Debería reconocer que esto es una solicitud más amplia de ideas de marketing, no específicamente una tarea de estrategia de lanzamiento. Debería derivar o hacer referencia cruzada al skill marketing-ideas, que proporciona 139 ideas de marketing organizadas por categoría y filtradas por presupuesto. Puede proporcionar algunas ideas tácticas relacionadas con el lanzamiento, pero debe dejar claro que marketing-ideas es el skill adecuado para una sesión de brainstorming más amplia.",
+      "assertions": [
+        "Reconoce esto como una solicitud más amplia de ideas de marketing",
+        "Referencia o deriva al skill marketing-ideas",
+        "No intenta realizar un brainstorming completo de marketing usando patrones de estrategia de lanzamiento",
+        "Puede proporcionar algunas ideas tácticas relacionadas con el lanzamiento"
+      ],
+      "files": []
+    }
+  ]
+}

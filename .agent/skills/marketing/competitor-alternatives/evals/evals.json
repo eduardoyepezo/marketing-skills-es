@@ -1,0 +1,93 @@
+{
+  "skill_name": "competitor-alternatives",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crea una página de 'Mejores alternativas a Asana' para nuestra herramienta de gestión de proyectos. Competimos principalmente en precio (somos $8/usuario frente a sus $24/usuario) y simplicidad (se han vuelto demasiado complejos). El público objetivo son equipos pequeños (5-20 personas).",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe identificar esto como el formato de alternativas en plural ([Competidor] Alternativas). Debe incluir las secciones esenciales: resumen TL;DR, párrafos breves sobre cada alternativa (incluido el producto del usuario posicionado primero o de forma destacada), tabla comparativa de funciones, comparación de precios, para quién es mejor cada alternativa. Debe usar el enfoque de arquitectura de contenido modular. Debe abordar consideraciones de SEO para la palabra clave objetivo 'alternativas a Asana'. Debe posicionar el producto del usuario con los diferenciadores mencionados (precio, simplicidad).",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Identifica el formato de alternativas en plural",
+        "Incluye sección de resumen TL;DR",
+        "Incluye tabla comparativa de funciones",
+        "Incluye comparación de precios",
+        "Incluye 'para quién es mejor' por cada alternativa",
+        "Posiciona el producto del usuario de forma destacada con diferenciadores",
+        "Aborda el SEO para la palabra clave objetivo"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Escribe una página de comparación 'HubSpot vs Salesforce'. Somos HubSpot y queremos mostrar por qué somos la mejor opción para las pymes.",
+      "expected_output": "Debe identificar esto como el formato 'tú vs competidor'. Debe incluir secciones de comparación estructuradas: descripción general de ambos, comparación función por función, comparación de precios, pros/contras de cada uno, para quién es mejor cada uno y ruta de migración. Debe ser factualmente preciso sobre el competidor al tiempo que posiciona estratégicamente el producto del usuario. Debe incluir un TL;DR al principio. Debe abordar el enfoque para pymes a lo largo del texto. Debe usar el patrón de arquitectura de datos de competidores centralizado.",
+      "assertions": [
+        "Identifica el formato 'tú vs competidor'",
+        "Incluye secciones de comparación estructuradas",
+        "Incluye comparación función por función",
+        "Incluye comparación de precios",
+        "Incluye TL;DR al principio",
+        "Es factualmente preciso sobre el competidor",
+        "Posiciona estratégicamente el producto del usuario para pymes",
+        "Incluye ruta de migración o sección de cambio"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "necesitamos una página dirigida a 'alternativa a mailchimp' (singular). somos una plataforma de email marketing enfocada en marcas de e-commerce.",
+      "expected_output": "Debe activarse con la redacción informal. Debe identificar esto como el formato de alternativa en singular ([Competidor] Alternativa — posicionando el producto del usuario como LA alternativa). Debe centrar toda la página en por qué el producto del usuario es la mejor alternativa a Mailchimp para el e-commerce. Debe incluir: por qué los usuarios abandonan Mailchimp, qué hace mejor el producto del usuario (funciones específicas para e-commerce), comparación de funciones, comparación de precios, guía de migración, testimonios de clientes. Debe optimizar para la palabra clave singular 'alternativa a Mailchimp'.",
+      "assertions": [
+        "Se activa con la redacción informal",
+        "Identifica el formato de alternativa en singular",
+        "Se enfoca en el producto del usuario como LA alternativa",
+        "Incluye por qué los usuarios abandonan Mailchimp",
+        "Destaca las ventajas específicas para e-commerce",
+        "Incluye comparación de funciones y precios",
+        "Incluye guía de migración",
+        "Optimiza para la palabra clave en singular"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Pueden crear una página de comparación para 'Notion vs Coda'? Somos un sitio de reseñas de terceros, sin afiliación con ninguno de los productos.",
+      "expected_output": "Debe identificar esto como el formato 'competidor vs competidor' (perspectiva de terceros). Debe mantener la objetividad ya que el usuario no representa a ninguno de los dos productos. Debe incluir una comparación equilibrada: descripción general de ambos, comparación de funciones, precios, pros/contras, recomendaciones de casos de uso. Debe usar las secciones esenciales de la página de la habilidad. Debe sugerir cómo monetizar la página (enlaces de afiliados, CTA al propio producto del usuario si es relevante). Debe abordar el SEO para la palabra clave 'Notion vs Coda'.",
+      "assertions": [
+        "Identifica el formato 'competidor vs competidor'",
+        "Mantiene la objetividad (perspectiva de terceros)",
+        "Incluye comparación de funciones equilibrada",
+        "Incluye comparación de precios",
+        "Incluye recomendaciones de casos de uso",
+        "Aborda consideraciones de SEO",
+        "Sugiere un enfoque de monetización"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Queremos construir un hub completo de comparación con competidores. Tenemos 5 competidores principales y queremos crear páginas de alternativas para cada uno, además de comparaciones directas. ¿Cómo debemos estructurar esto?",
+      "expected_output": "Debe aplicar la arquitectura de datos de competidores centralizada. Debe recomendar una estructura de hub con: páginas de alternativas individuales para cada competidor (5 páginas en singular), una página de resumen de 'mejores alternativas', páginas de comparación directa para los enfrentamientos clave. Debe abordar la estrategia de enlaces internos entre estas páginas. Debe recomendar el proceso de investigación para recopilar datos competitivos. Debe abordar la estructura de URL y la arquitectura del sitio para el hub.",
+      "assertions": [
+        "Aplica la arquitectura de datos de competidores centralizada",
+        "Recomienda una estructura de hub con múltiples tipos de página",
+        "Sugiere páginas de alternativas individuales y de resumen",
+        "Aborda los enlaces internos entre páginas de comparación",
+        "Recomienda el proceso de investigación para datos competitivos",
+        "Aborda la estructura de URL"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Necesito crear una tarjeta de batalla para nuestro equipo de ventas comparándonos con Zendesk. Debe ayudar a los representantes a manejar objeciones competitivas durante las llamadas de ventas.",
+      "expected_output": "Debe reconocer esto como material interno de habilitación de ventas, no como una página de comparación pública. Debe remitirse o hacer referencia cruzada a la habilidad sales-enablement, que gestiona las tarjetas de batalla, los documentos de manejo de objeciones y el material competitivo interno. Puede proporcionar algunos consejos de posicionamiento competitivo, pero debe dejar claro que sales-enablement es la habilidad adecuada para los materiales de ventas internos.",
+      "assertions": [
+        "Reconoce esto como material interno de habilitación de ventas",
+        "Hace referencia o se remite a la habilidad sales-enablement",
+        "No intenta crear una tarjeta de batalla interna usando patrones de páginas de comparación públicas"
+      ],
+      "files": []
+    }
+  ]
+}

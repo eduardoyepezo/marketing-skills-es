@@ -1,0 +1,91 @@
+{
+  "skill_name": "revops",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a configurar las etapas del ciclo de vida de nuestros leads. Somos una empresa B2B SaaS que vende al mercado mediano. Usamos HubSpot como CRM y tenemos equipos de marketing y ventas que no están alineados en las definiciones de leads.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el marco del ciclo de vida del lead: Suscriptor → Lead → MQL → SQL → Oportunidad → Cliente → Evangelista. Debe definir criterios claros para cada transición de etapa (qué convierte a un Lead en MQL, etc.). Debe abordar el problema de alineación entre marketing y ventas: definir definiciones compartidas y SLAs. Debe recomendar pasos de implementación en el CRM para HubSpot. Debe incluir la configuración de puntuación de leads. Debe proporcionar un proceso de traspaso entre marketing y ventas.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el marco del ciclo de vida del lead con todas las etapas",
+        "Define criterios para cada transición de etapa",
+        "Aborda la alineación entre marketing y ventas",
+        "Proporciona guía de implementación en el CRM para HubSpot",
+        "Incluye configuración de puntuación de leads",
+        "Proporciona proceso de traspaso entre equipos"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Configura la puntuación de leads para nosotros. Queremos priorizar qué leads debe llamar primero el equipo de ventas. Vendemos software empresarial (ACV de $50k+).",
+      "expected_output": "Debe aplicar el marco de puntuación de leads con tres dimensiones: puntuación explícita (datos firmográficos: tamaño de empresa, industria, coincidencia de cargo), puntuación implícita (comportamiento: visitas a páginas, descargas de contenido, engagement con correos) y puntuación negativa (cancelaciones de suscripción, correos de competidores, correos de estudiantes). Debe proporcionar criterios de puntuación específicos apropiados para empresas (ACV de $50k+): dar mayor peso a señales firmográficas, incluir señales de presupuesto y autoridad. Debe definir umbrales de puntuación para MQL y SQL. Debe recomendar enrutamiento de leads basado en puntuaciones.",
+      "assertions": [
+        "Aplica puntuación de leads con dimensiones explícita, implícita y negativa",
+        "Proporciona criterios de puntuación específicos para empresas",
+        "Pondera adecuadamente las señales firmográficas",
+        "Incluye señales de puntuación por comportamiento",
+        "Incluye señales de puntuación negativa",
+        "Define umbrales de puntuación para MQL y SQL",
+        "Recomienda enrutamiento de leads basado en puntuaciones"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestro pipeline es un desastre. los negocios se quedan en etapas para siempre y no sabemos qué va a cerrarse realmente. ¿cómo lo arreglamos?",
+      "expected_output": "Debe activarse con lenguaje informal. Debe aplicar la guía de gestión de etapas del pipeline. Debe recomendar: definir etapas claras del pipeline con criterios de entrada/salida, establecer tiempo máximo en cada etapa, implementar seguimiento de velocidad por etapa, agregar campos obligatorios por etapa para forzar la entrada de datos. Debe abordar la higiene del pipeline: revisiones periódicas del pipeline, marcado de negocios estancados, análisis de victorias/pérdidas. Debe recomendar automatización del CRM para hacer cumplir las reglas de etapa. Debe proporcionar un plan práctico de limpieza para el desorden actual.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Aplica la gestión de etapas del pipeline",
+        "Define etapas con criterios de entrada/salida",
+        "Recomienda tiempo máximo por etapa",
+        "Aborda la higiene del pipeline y las revisiones periódicas",
+        "Recomienda automatización del CRM para su aplicación",
+        "Proporciona plan práctico de limpieza"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Qué métricas de RevOps debemos rastrear? Queremos construir un panel de control para nuestro equipo directivo.",
+      "expected_output": "Debe aplicar el marco del panel de métricas de RevOps. Debe recomendar métricas a lo largo del embudo: volumen de leads por fuente, tasa de conversión MQL a SQL, tasa de SQL a Oportunidad, tasa de cierre, tamaño promedio del negocio, duración del ciclo de ventas, velocidad del pipeline, ratio de cobertura del pipeline, CAC, LTV, ratio LTV:CAC. Debe organizar las métricas por audiencia (equipo de marketing, equipo de ventas, dirección). Debe recomendar la estructura del panel y la cadencia de revisiones.",
+      "assertions": [
+        "Aplica el panel de métricas de RevOps",
+        "Cubre métricas de todo el embudo",
+        "Incluye tasas de conversión entre etapas",
+        "Incluye velocidad y cobertura del pipeline",
+        "Incluye CAC, LTV, LTV:CAC",
+        "Organiza por audiencia",
+        "Recomienda estructura del panel y cadencia de revisiones"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Los datos de nuestro CRM son un desastre. Registros duplicados, campos faltantes, nomenclatura inconsistente. ¿Cómo lo limpiamos y lo mantenemos limpio?",
+      "expected_output": "Debe aplicar la guía de higiene de datos. Debe recomendar: estrategia de detección y fusión de duplicados, aplicación de campos obligatorios, convenciones de nomenclatura estandarizadas (listas de selección en lugar de texto libre), reglas de validación de datos, cadencia de auditoría regular. Debe abordar tanto la limpieza (corrección única) como la prevención (procesos continuos). Debe recomendar automatización del CRM para la higiene de datos. Debe proporcionar un plan de limpieza priorizado (comenzar con los problemas de calidad de datos de mayor impacto).",
+      "assertions": [
+        "Aplica la guía de higiene de datos",
+        "Recomienda detección y fusión de duplicados",
+        "Recomienda aplicación de campos obligatorios",
+        "Aborda convenciones de nomenclatura estandarizadas",
+        "Cubre tanto limpieza como prevención",
+        "Recomienda automatización del CRM para la higiene",
+        "Proporciona plan de limpieza priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes ayudarme a escribir correos de prospección en frío para los prospectos de nuestro pipeline?",
+      "expected_output": "Debe reconocer que esto es una tarea de redacción de correos en frío / prospección saliente, no de RevOps. Debe diferir o hacer referencia cruzada con la habilidad cold-email para la redacción de correos de prospección saliente. RevOps cubre los sistemas, procesos e infraestructura de datos, no el contenido real de los correos.",
+      "assertions": [
+        "Reconoce que esto es redacción de correos en frío, no RevOps",
+        "Hace referencia o difiere a la habilidad cold-email",
+        "Explica que RevOps cubre sistemas y procesos, no el contenido de correos"
+      ],
+      "files": []
+    }
+  ]
+}

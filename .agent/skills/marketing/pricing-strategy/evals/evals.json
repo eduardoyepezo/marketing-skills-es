@@ -1,0 +1,90 @@
+{
+  "skill_name": "pricing-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a definir los precios de nuestro nuevo producto SaaS. Es una plataforma de atención al cliente para tiendas de comercio electrónico. No estamos seguros de si cobrar por agente, por ticket o tarifa plana. Actualmente pensamos en un rango de $49-199 al mes.",
+      "expected_output": "Debe verificar primero product-marketing-context.md. Debe aplicar el marco de los tres ejes de precios: empaquetado (qué se incluye en cada nivel), métrica de precios (por agente, por ticket, tarifa plana — evaluar cada una), punto de precio (evaluación del rango $49-199). Debe analizar las métricas de valor y cuál se alinea mejor con el valor entregado (por agente es común en soporte, pero por ticket se alinea con el uso). Debe recomendar una estructura de niveles básico-mejor-óptimo. Debe abordar la psicología de precios. Debe proporcionar una recomendación de precios específica con justificación.",
+      "assertions": [
+        "Verifica product-marketing-context.md",
+        "Aplica el marco de los tres ejes de precios",
+        "Evalúa múltiples métricas de precios",
+        "Analiza qué métrica se alinea con el valor entregado",
+        "Recomienda estructura de niveles básico-mejor-óptimo",
+        "Aborda la psicología de precios",
+        "Proporciona recomendación específica de precios con justificación"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Queremos aumentar nuestros precios en un 30%. Llevamos 2 años a $29 al mes y hemos añadido muchas funciones. ¿Cómo hacemos esto sin perder clientes?",
+      "expected_output": "Debe aplicar las secciones de 'cuándo aumentar precios' y estrategias de aumento de precios. Debe recomendar una estrategia: mantener las condiciones actuales para clientes existentes (o darles un período de gracia), vincular el aumento a un nuevo valor, comunicar el cambio claramente con aviso previo, considerar un descuento por facturación anual como medida suavizante. Debe abordar diferentes enfoques (inmediato para nuevos clientes, diferido para los existentes). Debe recomendar una estrategia de comunicación específica. Debe señalar que algo de abandono es esperado y aceptable.",
+      "assertions": [
+        "Aplica las estrategias de aumento de precios",
+        "Recomienda mantener condiciones actuales o período de gracia",
+        "Recomienda vincular el aumento a un nuevo valor",
+        "Proporciona estrategia de comunicación",
+        "Aborda los tiempos para clientes nuevos vs. existentes",
+        "Sugiere la facturación anual como medida suavizante",
+        "Señala que algo de abandono es esperado"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿cómo averiguamos qué pagarán realmente las personas? estamos lanzando un nuevo producto y no tenemos idea de qué cobrar.",
+      "expected_output": "Debe activarse con la frase informal. Debe aplicar los métodos de investigación de precios: análisis de sensibilidad de precios de Van Westendorp (demasiado barato, ganga, caro, demasiado caro), MaxDiff para importancia de funciones, análisis comparativo de competencia. Debe explicar cómo ejecutar cada método. También debe recomendar enfoques más sencillos: hablar con clientes potenciales, analizar los precios de la competencia, probar diferentes puntos de precio. Debe proporcionar un plan práctico de investigación de precios que puedan ejecutar.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Aplica el método de sensibilidad de precios de Van Westendorp",
+        "Aplica MaxDiff para importancia de funciones",
+        "Recomienda el análisis comparativo de competencia",
+        "Explica cómo ejecutar cada método",
+        "Sugiere alternativas prácticas (entrevistas con clientes, análisis competitivo)",
+        "Proporciona un plan de investigación de precios ejecutable"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Tenemos un plan Basic ($19), Pro ($49) y Enterprise (precio personalizado). El plan Pro obtiene el 70% de los registros. ¿Deberíamos añadir un plan entre Pro y Enterprise?",
+      "expected_output": "Debe aplicar el marco de estructura de niveles básico-mejor-óptimo. Debe analizar la situación actual: que el Pro capture el 70% es en realidad saludable, pero la brecha con Enterprise sugiere que puede haber clientes del mercado medio desatendidos. Debe evaluar si un cuarto nivel tiene sentido: ¿aborda una brecha real o creará parálisis de elección? Debe aplicar psicología de precios (Ley de Hick — más opciones pueden reducir las decisiones). Debe recomendar ya sea un cuarto nivel con diferenciación clara o ajustar el plan Pro para cubrir mejor la brecha.",
+      "assertions": [
+        "Aplica la estructura de niveles básico-mejor-óptimo",
+        "Analiza el rendimiento del nivel actual",
+        "Evalúa si el cuarto nivel aborda una brecha real",
+        "Considera el riesgo de parálisis de elección",
+        "Aplica psicología de precios (Ley de Hick)",
+        "Proporciona recomendación específica con justificación"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Qué tácticas de psicología de precios deberíamos usar en nuestra página de precios? Queremos que el plan de $79 sea el más popular.",
+      "expected_output": "Debe aplicar la sección de psicología de precios: anclaje (mostrar el plan de $79 junto a un plan de mayor precio), efecto señuelo (hacer que el plan inferior parezca menos valioso), énfasis visual (destacar o 'recomendar' el plan de $79), precios psicológicos ($79 vs $80), Regla del 100 (descuentos porcentuales por debajo de $100, descuentos en dólares por encima), encuadre de pérdida (mostrar qué pierden los planes inferiores). Debe proporcionar recomendaciones específicas de diseño de página de precios. Debe hacer referencia cruzada a page-cro para una optimización más amplia de la página de precios.",
+      "assertions": [
+        "Aplica tácticas de psicología de precios",
+        "Aplica el efecto de anclaje",
+        "Aplica el efecto señuelo o énfasis visual",
+        "Aplica precios psicológicos o Regla del 100",
+        "Proporciona recomendaciones específicas de página de precios",
+        "Hace referencia cruzada a page-cro o marketing-psychology"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "La tasa de conversión de nuestra página de precios es solo del 1,5%. ¿Puedes revisar la página y sugerir mejoras?",
+      "expected_output": "Debe reconocer que esta es una tarea de optimización de conversión de página de precios, no una tarea de estrategia de precios. Debe remitir o hacer referencia cruzada a la habilidad page-cro, que maneja la optimización de la tasa de conversión de páginas de precios, incluyendo la claridad de comparación de planes, la optimización del CTA y las señales de confianza. pricing-strategy se centra en las decisiones de precios reales (qué cobrar, cómo empaquetar), no en el diseño de la página.",
+      "assertions": [
+        "Reconoce esto como CRO de página de precios, no estrategia de precios",
+        "Hace referencia o remite a la habilidad page-cro",
+        "Explica que pricing-strategy trata sobre las decisiones de precios",
+        "No intenta una auditoría completa de CRO de página"
+      ],
+      "files": []
+    }
+  ]
+}

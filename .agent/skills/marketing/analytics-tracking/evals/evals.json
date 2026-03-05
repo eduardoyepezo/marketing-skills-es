@@ -1,0 +1,90 @@
+{
+  "skill_name": "analytics-tracking",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a configurar el seguimiento de analítica para nuestro producto B2B SaaS. Usamos GA4 y GTM. Necesitamos rastrear registros, uso de funciones y eventos de actualización de plan.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el principio de 'rastrear para tomar decisiones': preguntar qué decisiones informará el seguimiento. Debe usar la convención de nomenclatura de eventos (objeto_acción, en minúsculas con guiones bajos). Debe definir los eventos esenciales para SaaS: signup_completed, trial_started, feature_used, plan_upgraded, etc. Debe proporcionar detalles de implementación en GA4 con los parámetros de evento adecuados. Debe incluir ejemplos de inserción en la capa de datos de GTM. Debe organizar el resultado como un plan de seguimiento con nombre del evento, disparador, parámetros y propósito para cada evento.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el principio de 'rastrear para tomar decisiones'",
+        "Utiliza la convención de nomenclatura objeto_acción",
+        "Define los eventos esenciales de SaaS (registro, uso de funciones, actualización)",
+        "Proporciona detalles de implementación en GA4",
+        "Incluye ejemplos de la capa de datos de GTM",
+        "El resultado sigue el formato de plan de seguimiento"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Qué parámetros UTM debemos usar? Publicamos anuncios en Google, Meta y LinkedIn, además de enviar un boletín semanal y publicar orgánicamente en LinkedIn.",
+      "expected_output": "Debe aplicar el marco de estrategia de parámetros UTM. Debe definir convenciones UTM consistentes: source (google, meta, linkedin, newsletter), medium (cpc, paid-social, email, organic-social), campaign (convención de nomenclatura con fecha o identificador). Debe proporcionar ejemplos de UTM específicos para cada canal mencionado. Debe advertir sobre los errores comunes de UTM (uso inconsistente de mayúsculas/minúsculas, parámetros redundantes, medium faltante). Debe recomendar una hoja de cálculo de seguimiento de UTM o un documento de convención de nomenclatura.",
+      "assertions": [
+        "Aplica la estrategia de parámetros UTM",
+        "Define convenciones de source, medium y campaign",
+        "Proporciona ejemplos de UTM específicos para cada canal",
+        "Utiliza convenciones de nomenclatura consistentes (minúsculas)",
+        "Advierte sobre los errores comunes de UTM",
+        "Recomienda documentación de seguimiento"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestro seguimiento parece roto — estamos viendo eventos duplicados y los números de conversión en GA4 no coinciden con lo que muestra nuestra base de datos. ¿ayuda?",
+      "expected_output": "Debe activarse con phrasing informal. Debe aplicar el marco de depuración y validación. Debe verificar sistemáticamente los problemas comunes: etiquetas de GTM duplicadas disparándose, deduplicación de eventos faltante, condiciones de disparador incorrectas, problemas de seguimiento entre dominios, filtrado por modo de consentimiento. Debe proporcionar pasos específicos de depuración: usar GA4 DebugView, modo de vista previa de GTM, herramientas de desarrollador del navegador. Debe abordar la discrepancia entre GA4 y la base de datos (causas comunes: modo de consentimiento, bloqueadores de anuncios, seguimiento del lado del cliente versus del lado del servidor, diferencias en el tiempo de expiración de sesiones).",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Aplica el marco de depuración y validación",
+        "Verifica el disparo de etiquetas duplicadas",
+        "Proporciona herramientas de depuración específicas (GA4 DebugView, Vista previa de GTM)",
+        "Aborda la discrepancia entre GA4 y la base de datos",
+        "Lista las causas comunes de discrepancias en los datos",
+        "Proporciona pasos sistemáticos de resolución de problemas"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Vamos a lanzar una tienda de comercio electrónico y necesitamos configurar el seguimiento desde cero. ¿Qué eventos son absolutamente necesarios?",
+      "expected_output": "Debe hacer referencia a los eventos esenciales por tipo de sitio, específicamente para comercio electrónico. Debe definir la taxonomía de eventos de comercio electrónico: product_viewed, product_added_to_cart, cart_viewed, checkout_started, checkout_step_completed, purchase_completed, product_removed_from_cart. Debe incluir los parámetros de comercio electrónico mejorado (item_id, item_name, price, quantity, etc.). Debe seguir la convención de nomenclatura objeto_acción. Debe organizarse como un plan de seguimiento con prioridades (imprescindibles versus opcionales).",
+      "assertions": [
+        "Hace referencia a los eventos esenciales para el tipo de sitio de comercio electrónico",
+        "Define la taxonomía completa de eventos de comercio electrónico",
+        "Incluye los parámetros de comercio electrónico mejorado",
+        "Sigue la convención de nomenclatura objeto_acción",
+        "Organiza por prioridad (imprescindibles versus opcionales)",
+        "Proporciona el resultado en formato de plan de seguimiento"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesitamos asegurarnos de que nuestro seguimiento cumpla con el GDPR. Tenemos usuarios europeos y usamos GA4, Hotjar y Facebook Pixel.",
+      "expected_output": "Debe aplicar el marco de privacidad y cumplimiento normativo. Debe abordar los requisitos del GDPR para cada herramienta: consentimiento antes del seguimiento, configuración de la plataforma de gestión de consentimiento (CMP), configuración del modo de consentimiento en GA4, carga condicional de Hotjar y Facebook Pixel. Debe recomendar una jerarquía de consentimiento (necesario, analítica, marketing). Debe proporcionar la implementación en GTM para el disparo de etiquetas basado en consentimiento. Debe mencionar la configuración de retención de datos en GA4. Debe abordar los requisitos del banner de cookies.",
+      "assertions": [
+        "Aplica el marco de privacidad y cumplimiento normativo",
+        "Aborda los requisitos del GDPR específicamente",
+        "Recomienda una plataforma de gestión de consentimiento",
+        "Cubre la configuración del modo de consentimiento en GA4",
+        "Aborda la carga condicional para cada herramienta",
+        "Proporciona la jerarquía de consentimiento",
+        "Menciona la configuración de retención de datos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Ayúdame a configurar el seguimiento para nuestra prueba A/B. Queremos medir qué versión de nuestra página de precios convierte mejor.",
+      "expected_output": "Debe reconocer que esto se superpone con la configuración de pruebas A/B, no solo con el seguimiento de analítica. Debe derivar o hacer referencia cruzada a la habilidad ab-test-setup para el diseño del experimento, la hipótesis y el análisis estadístico. Puede ayudar con la implementación del seguimiento (eventos a disparar, parámetros a incluir), pero debe dejar claro que ab-test-setup es la habilidad adecuada para el marco del experimento.",
+      "assertions": [
+        "Reconoce la superposición con la configuración de pruebas A/B",
+        "Hace referencia o deriva a la habilidad ab-test-setup",
+        "Puede ayudar con los detalles específicos de la implementación del seguimiento",
+        "No intenta diseñar el experimento completo"
+      ],
+      "files": []
+    }
+  ]
+}

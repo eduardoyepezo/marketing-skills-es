@@ -1,0 +1,87 @@
+{
+  "skill_name": "schema-markup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Agrega marcado de schema a la página principal de nuestro producto SaaS. Somos una herramienta de gestión de proyectos llamada TaskFlow. Necesitamos el schema de Organization y cualquier otro tipo relevante.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe implementar el schema de Organization en formato JSON-LD con todas las propiedades requeridas y recomendadas (name, url, logo, description, sameAs para perfiles sociales). Debe recomendar tipos de schema adicionales para la página principal de un SaaS: WebSite (con SearchAction si aplica), SoftwareApplication o Product. Debe usar @graph para múltiples tipos de schema en una página. Debe proporcionar el código JSON-LD completo listo para implementar. Debe recomendar la validación con la Prueba de Resultados Enriquecidos de Google y el validador de Schema.org.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Implementa el schema de Organization en JSON-LD",
+        "Incluye propiedades requeridas y recomendadas",
+        "Recomienda tipos de schema adicionales relevantes",
+        "Usa @graph para múltiples tipos",
+        "Proporciona código JSON-LD completo",
+        "Recomienda herramientas de validación"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tenemos una página de preguntas frecuentes con 20 preguntas sobre nuestro producto. ¿Cómo agrego el schema de FAQ para obtener los resultados enriquecidos en Google?",
+      "expected_output": "Debe implementar el schema FAQPage en formato JSON-LD. Debe mostrar la estructura correcta: FAQPage como mainEntity que contiene elementos Question, cada uno con acceptedAnswer. Debe proporcionar un ejemplo de código completo con 2-3 preguntas de muestra. Debe explicar que el schema de FAQ puede habilitar resultados enriquecidos que muestran preguntas/respuestas directamente en la búsqueda. Debe señalar las directrices de Google para el schema de FAQ (respuestas factuales, no promocionales). Debe recomendar el enfoque de validación.",
+      "assertions": [
+        "Implementa el schema FAQPage en JSON-LD",
+        "Muestra la estructura anidada correcta (FAQPage > Question > Answer)",
+        "Proporciona ejemplo de código completo",
+        "Explica los beneficios de los resultados enriquecidos",
+        "Señala las directrices de Google para el schema de FAQ",
+        "Recomienda validación"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "agrega schema a nuestras publicaciones del blog. publicamos artículos sobre consejos de marketing.",
+      "expected_output": "Debe activarse con lenguaje informal. Debe implementar el schema Article (o BlogPosting) en JSON-LD. Debe incluir propiedades requeridas: headline, author (como Person con name y url), datePublished, dateModified, image, publisher (como Organization). Debe recomendar el schema BreadcrumbList junto con el schema del artículo. Debe proporcionar código de plantilla reutilizable en publicaciones del blog. Debe abordar cómo poblar campos dinámicos (fecha, autor, titular) desde el CMS.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Implementa el schema Article o BlogPosting",
+        "Incluye author, datePublished, image, publisher",
+        "Recomienda BreadcrumbList junto al schema",
+        "Proporciona código de plantilla reutilizable",
+        "Aborda la integración con el CMS para campos dinámicos"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Somos un sitio de comercio electrónico que vende productos físicos. ¿Qué marcado de schema necesitamos para nuestras páginas de productos?",
+      "expected_output": "Debe implementar el schema Product con propiedades completas: name, description, image, brand, sku, offers (con price, priceCurrency, availability, url). Debe recomendar AggregateRating si tienen reseñas, y el schema Review para reseñas individuales. Debe incluir BreadcrumbList para la navegación. Debe abordar los tipos de schema comunes para comercio electrónico: Product, Offer, AggregateRating, Review. Debe proporcionar código JSON-LD completo. Debe señalar que el schema Product puede habilitar resultados enriquecidos (precio, disponibilidad, calificaciones en la búsqueda).",
+      "assertions": [
+        "Implementa el schema Product con propiedades completas",
+        "Incluye Offer con price, availability",
+        "Recomienda AggregateRating y schema Review",
+        "Incluye BreadcrumbList",
+        "Proporciona código JSON-LD completo",
+        "Señala los beneficios de resultados enriquecidos para productos"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Agregamos marcado de schema a nuestro sitio pero no está mostrando resultados enriquecidos en Google. ¿Puedes ayudar a diagnosticar el problema?",
+      "expected_output": "Debe proporcionar un enfoque sistemático de depuración: primero validar con la Prueba de Resultados Enriquecidos de Google y el validador de Schema.org (errores de sintaxis), luego verificar problemas comunes (anidamiento incorrecto, propiedades requeridas faltantes, errores de ubicación del JSON-LD). Debe explicar que un schema válido no garantiza resultados enriquecidos: Google decide cuándo mostrarlos. Debe recomendar revisar los informes de datos estructurados en Search Console y los errores. Debe abordar escenarios comunes de depuración: schema no detectado, advertencias vs errores, elegible vs mostrado.",
+      "assertions": [
+        "Recomienda herramientas de validación para la depuración",
+        "Verifica errores comunes de schema",
+        "Explica que un schema válido no garantiza resultados enriquecidos",
+        "Recomienda los informes de datos estructurados de Search Console",
+        "Aborda la distinción entre advertencias y errores",
+        "Proporciona enfoque sistemático de depuración"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "El tráfico de búsqueda orgánica cayó después de un rediseño del sitio. ¿Puedes hacer una auditoría técnica de SEO?",
+      "expected_output": "Debe reconocer que esto es una solicitud de auditoría técnica de SEO, no una tarea de marcado de schema. Debe diferir o hacer referencia cruzada con la habilidad seo-audit, que maneja auditorías técnicas completas de SEO. El marcado de schema es un componente del SEO pero no aborda los problemas técnicos más amplios (redirecciones, rastreabilidad, indexación) que probablemente causaron la caída del tráfico.",
+      "assertions": [
+        "Reconoce que esto es una solicitud de auditoría técnica de SEO",
+        "Hace referencia o difiere a la habilidad seo-audit",
+        "No intenta realizar una auditoría completa de SEO usando patrones de schema markup"
+      ],
+      "files": []
+    }
+  ]
+}

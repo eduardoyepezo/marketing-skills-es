@@ -1,0 +1,90 @@
+{
+  "skill_name": "ai-seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "¿Cómo me aseguro de que nuestro producto SaaS aparezca en los resultados de búsqueda por IA? Somos una herramienta de gestión de proyectos y seguimos quedando fuera de las recomendaciones de ChatGPT y Perplexity cuando la gente pregunta sobre software de gestión de proyectos.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe aplicar el marco de los tres pilares: Estructura (hacer que el contenido sea extraíble), Autoridad (hacer que el contenido sea citable), Presencia (estar donde la IA busca). Debe ejecutar la lista de verificación de Auditoría de Visibilidad en IA en todas las plataformas (Google AI Overviews, ChatGPT, Perplexity, etc.). Debe verificar la extractabilidad del contenido (definiciones claras, comparaciones estructuradas, estadísticas). Debe hacer referencia a los hallazgos de la investigación GEO de Princeton (las citas mejoran la visibilidad en +40%, las estadísticas en +37%). Debe verificar el acceso de bots de IA en robots.txt. Debe proporcionar un plan de acción priorizado.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Aplica el marco de los tres pilares (Estructura, Autoridad, Presencia)",
+        "Ejecuta la Auditoría de Visibilidad en IA en varias plataformas",
+        "Verifica la extractabilidad del contenido",
+        "Hace referencia a los hallazgos de la investigación GEO de Princeton",
+        "Verifica el acceso de bots de IA en robots.txt",
+        "Proporciona un plan de acción priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Deberíamos bloquear los rastreadores de IA como GPTBot y PerplexityBot en nuestro robots.txt? Nos preocupa el robo de contenido.",
+      "expected_output": "Debe abordar directamente la pregunta sobre el acceso de bots de IA. Debe explicar el equilibrio: bloquear los bots de IA impide que entrenen con tu contenido, pero también impide que las plataformas de IA te citen y recomienden. Debe hacer referencia a los bots específicos y sus propósitos (GPTBot, Google-Extended, PerplexityBot, ClaudeBot, etc.). Debe proporcionar la configuración recomendada de robots.txt. Debe explicar que bloquear puede perjudicar la visibilidad en IA más de lo que protege el contenido. Debe ofrecer una recomendación matizada basada en los objetivos del negocio.",
+      "assertions": [
+        "Aborda directamente el equilibrio del bloqueo",
+        "Explica el impacto en la visibilidad en IA versus la protección del contenido",
+        "Lista los user agents específicos de bots de IA",
+        "Proporciona la configuración recomendada de robots.txt",
+        "Ofrece una recomendación matizada basada en los objetivos del negocio",
+        "Explica qué hace cada bot"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿Qué tipo de contenido es el más citado por los sistemas de IA? Queremos crear contenido específicamente optimizado para la búsqueda por IA.",
+      "expected_output": "Debe hacer referencia a los tipos de contenido más citados, incluidas las comparaciones (~33% de las citas de IA), las guías definitivas (~15%) y otros tipos de contenido con alta tasa de citas. Debe explicar por qué estos formatos funcionan (proporcionan la información estructurada, extraíble y autorizada que los sistemas de IA necesitan). Debe proporcionar recomendaciones específicas para crear contenido optimizado para IA: definiciones claras, datos estructurados, estadísticas originales, tablas comparativas, citas de expertos. Debe hacer referencia a la investigación GEO de Princeton sobre qué aumenta la probabilidad de ser citado.",
+      "assertions": [
+        "Hace referencia a tipos de contenido específicos con tasas de citas",
+        "Menciona las comparaciones como el formato más citado",
+        "Explica por qué estos formatos funcionan para la IA",
+        "Proporciona recomendaciones específicas para la creación de contenido",
+        "Hace referencia a la investigación GEO de Princeton",
+        "Menciona datos estructurados, estadísticas y definiciones claras"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "notamos que nuestros competidores aparecen en google AI overviews pero nosotros no. ¿qué tenemos que cambiar?",
+      "expected_output": "Debe activarse con phrasing informal. Debe enfocarse específicamente en la visibilidad en Google AI Overviews. Debe explicar cómo Google AI Overviews selecciona las fuentes (autoritativas, bien estructuradas, que responden directamente las consultas). Debe ejecutar la lista de verificación del pilar de Estructura: extractabilidad del contenido, jerarquía de encabezados, formato de respuesta directa, datos estructurados. Debe verificar las señales de Autoridad: autoridad de dominio, citas, E-E-A-T. Debe recomendar cambios específicos en la estructura del contenido. Debe sugerir un enfoque de monitoreo.",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Se enfoca específicamente en Google AI Overviews",
+        "Explica cómo Google AI Overviews selecciona las fuentes",
+        "Verifica el pilar de Estructura (extractabilidad, encabezados, respuesta directa)",
+        "Verifica las señales de Autoridad",
+        "Recomienda cambios específicos en la estructura del contenido",
+        "Sugiere un enfoque de monitoreo"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Puedes auditar nuestro sitio web para evaluar su preparación para la búsqueda por IA? Queremos saber qué tan visibles somos en ChatGPT, Perplexity, Google AI Overviews y otras plataformas de IA.",
+      "expected_output": "Debe ejecutar la Auditoría de Visibilidad en IA completa. Debe verificar cada plataforma del panorama (Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini, Copilot). Debe evaluar los tres pilares: Estructura (extractabilidad del contenido, JSON-LD, definiciones claras), Autoridad (citas, backlinks, señales E-E-A-T), Presencia (acceso de bots de IA, factores específicos de cada plataforma). Debe proporcionar los hallazgos organizados por pilar. Debe proporcionar un plan de acción priorizado con soluciones específicas.",
+      "assertions": [
+        "Ejecuta la Auditoría de Visibilidad en IA completa",
+        "Verifica múltiples plataformas de IA",
+        "Evalúa los tres pilares (Estructura, Autoridad, Presencia)",
+        "Verifica la extractabilidad del contenido",
+        "Verifica el acceso de bots de IA",
+        "Proporciona hallazgos organizados por pilar",
+        "Proporciona un plan de acción priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro tráfico de búsqueda orgánica cayó un 30% este trimestre. ¿Puedes hacer una auditoría completa de SEO para averiguar qué está pasando?",
+      "expected_output": "Debe reconocer que esto es una solicitud de auditoría SEO tradicional, no específicamente una tarea de AI SEO. Debe derivar o hacer referencia cruzada a la habilidad seo-audit, que gestiona las auditorías SEO tradicionales completas incluyendo rastreabilidad, fundamentos técnicos, optimización en página y calidad del contenido. Puede mencionar la búsqueda por IA como un factor a investigar, pero debe dejar claro que seo-audit es la habilidad principal para esta tarea.",
+      "assertions": [
+        "Reconoce que esto es una solicitud de auditoría SEO tradicional",
+        "Hace referencia o deriva a la habilidad seo-audit",
+        "No intenta realizar una auditoría SEO tradicional completa usando patrones de AI SEO",
+        "Puede mencionar la búsqueda por IA como un factor a considerar"
+      ],
+      "files": []
+    }
+  ]
+}

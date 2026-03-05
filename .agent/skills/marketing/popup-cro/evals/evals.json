@@ -1,0 +1,94 @@
+{
+  "skill_name": "popup-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a crear un popup de intención de salida para nuestra página de aterrizaje de SaaS. Queremos capturar correos electrónicos de visitantes que están a punto de irse sin registrarse. Nuestro producto es una herramienta de programación de redes sociales.",
+      "expected_output": "Debe verificar primero product-marketing-context.md. Debe identificar el tipo de popup como captura de correo electrónico por intención de salida. Debe aplicar la guía de diseño de popup de intención de salida: titular atractivo (abordar por qué se van u ofrecer valor adicional), imán de leads o incentivo (descuento, recurso gratuito, prueba extendida), campos de formulario mínimos (solo correo electrónico), CTA claro y opción de cierre fácil. Debe aplicar las fórmulas de copia de la habilidad. Debe abordar la configuración del activador (detección de intención de salida). Debe recomendar reglas de frecuencia (no mostrar de nuevo si se descarta). Debe incluir referencias de rendimiento (los popups de intención de salida tienen típicamente 3-10% de conversión).",
+      "assertions": [
+        "Verifica product-marketing-context.md",
+        "Identifica como tipo de popup de intención de salida",
+        "Incluye titular atractivo",
+        "Incluye imán de leads o incentivo",
+        "Campos de formulario mínimos (solo correo electrónico)",
+        "Aplica las fórmulas de copia de la habilidad",
+        "Aborda la configuración del activador",
+        "Recomienda reglas de frecuencia",
+        "Incluye referencias de rendimiento de conversión"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Queremos ofrecer un descuento del 10% a los visitantes por primera vez mediante un popup. ¿Cuándo deberíamos mostrarlo y qué debería decir?",
+      "expected_output": "Debe identificar esto como un tipo de popup de descuento/oferta. Debe aplicar la guía de estrategia de activación: recomendar en contra de mostrarlo inmediatamente al cargar la página (demasiado agresivo). Debe sugerir retraso basado en tiempo (30-60 segundos), activador basado en desplazamiento (50%+ de desplazamiento de página) o intención de salida como mejores alternativas. Debe aplicar la fórmula de copia para popups de descuento: titular que enmarque el valor, términos claros de la oferta, elemento de urgencia, captura de correo electrónico y CTA. Debe abordar el cumplimiento normativo (consentimiento de cookies GDPR si aplica). Debe recomendar el límite de frecuencia.",
+      "assertions": [
+        "Identifica como tipo de popup de descuento",
+        "Recomienda en contra del activador inmediato al cargar la página",
+        "Sugiere mejores alternativas de activación (tiempo, desplazamiento, salida)",
+        "Aplica la fórmula de copia para popups de descuento",
+        "Incluye elemento de urgencia",
+        "Aborda el límite de frecuencia",
+        "Aborda consideraciones de cumplimiento normativo"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "nuestros popups están molestando a todos. seguimos recibiendo quejas pero también obtenemos muchos registros de correo electrónico gracias a ellos. ¿cómo equilibramos esto?",
+      "expected_output": "Debe activarse con la frase informal. Debe aplicar la guía de frecuencia y reglas. Debe abordar el equilibrio: reducir la molestia preservando las conversiones. Debe recomendar: límite de frecuencia (una vez por sesión o una vez cada X días), no mostrar a visitantes que ya lo descartaron, no mostrar a suscriptores existentes, respetar la acción de 'cerrar', considerar formatos menos intrusivos (deslizante en lugar de modal completo, barra de anuncio en lugar de superposición). Debe abordar los requisitos de cumplimiento y accesibilidad. Debe sugerir pruebas A/B de diferentes activadores y formatos para encontrar el mejor equilibrio.",
+      "assertions": [
+        "Se activa con la frase informal",
+        "Aplica la guía de frecuencia y reglas",
+        "Aborda el equilibrio entre conversiones y experiencia de usuario",
+        "Recomienda el límite de frecuencia",
+        "Sugiere excluir a suscriptores existentes",
+        "Recomienda alternativas menos intrusivas",
+        "Sugiere pruebas A/B para optimizar"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Qué tipos de popups deberíamos usar en nuestro blog? Publicamos contenido sobre marketing por correo electrónico y queremos hacer crecer nuestra lista de correo.",
+      "expected_output": "Debe recomendar tipos de popups adecuados para blogs: popup activado por desplazamiento (mostrar después del 50-70% de desplazamiento que indica compromiso), popup de intención de salida, deslizante (menos intrusivo que el modal) y actualizaciones de contenido en línea. Debe recomendar imanes de leads relevantes para el tema del blog (plantillas de marketing por correo electrónico, lista de verificación, archivo de referencias). Debe abordar diferentes ubicaciones de popups: dentro del contenido, al final de la publicación, deslizante en barra lateral. Debe recomendar activadores basados en comportamiento en lugar de basados en tiempo para el contenido del blog. Debe aplicar fórmulas de copia con ganchos específicos para el blog.",
+      "assertions": [
+        "Recomienda tipos de popups adecuados para blogs",
+        "Incluye activado por desplazamiento e intención de salida",
+        "Sugiere formatos menos intrusivos (deslizante)",
+        "Recomienda imanes de leads relevantes",
+        "Aborda la ubicación de popups en páginas de blog",
+        "Recomienda activadores basados en comportamiento para el blog",
+        "Aplica fórmulas de copia"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Diseña un banner de anuncio para el lanzamiento de nuestra nueva funcionalidad. Queremos que se muestre en la parte superior del sitio durante 2 semanas.",
+      "expected_output": "Debe identificar esto como un tipo de popup de banner de anuncio. Debe aplicar la guía de diseño de banner: titular corto y claro que anuncie la función, descripción breve del beneficio, CTA para saber más o probarlo, opción de cierre. Debe recomendar el posicionamiento del banner (parte superior de la página, fijo o estático). Debe abordar la duración (2 semanas según lo indicado). Debe recomendar la segmentación del público (mostrar a usuarios existentes que se beneficiarían, no solo a todos). Debe proporcionar recomendaciones de copia.",
+      "assertions": [
+        "Identifica como tipo de banner de anuncio",
+        "Proporciona titular corto y claro",
+        "Incluye descripción breve del beneficio y CTA",
+        "Incluye opción de cierre",
+        "Aborda el posicionamiento del banner",
+        "Recomienda segmentación del público objetivo",
+        "Proporciona recomendaciones de copia"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Necesitamos optimizar el formulario de captura de leads dentro de nuestro popup. Actualmente solicita nombre, correo electrónico, empresa y número de teléfono. ¿Son demasiados campos?",
+      "expected_output": "Debe reconocer que esto se superpone con la optimización de formularios. Debe remitir o hacer referencia cruzada a la habilidad form-cro, que maneja la optimización de campos de formulario, el diseño y la conversión. Puede proporcionar contexto específico del popup (los popups necesitan campos mínimos debido a la atención fugaz) pero debe dejar claro que form-cro es la habilidad adecuada para la optimización detallada de formularios.",
+      "assertions": [
+        "Reconoce la superposición con la optimización de formularios",
+        "Hace referencia o remite a la habilidad form-cro",
+        "Señala que los popups necesitan campos mínimos debido al contexto",
+        "No intenta un rediseño detallado del formulario"
+      ],
+      "files": []
+    }
+  ]
+}

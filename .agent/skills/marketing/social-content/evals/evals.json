@@ -1,0 +1,92 @@
+{
+  "skill_name": "social-content",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a crear una estrategia de contenido para LinkedIn. Soy un fundador de SaaS que construye en público y quiero hacer crecer mi marca personal para generar conciencia sobre mi producto. Actualmente tengo 500 seguidores y publico quizás una vez a la semana.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe establecer pilares de contenido (3-5) apropiados para un fundador de SaaS que construye en público: perspectivas de la industria, detrás de cámaras, contenido educativo, historias personales, promocional (mínimo). Debe aplicar la referencia rápida de plataforma para LinkedIn (se recomiendan 3-5 veces/semana, los carruseles y las historias funcionan bien). Debe proporcionar fórmulas de gancho para publicaciones de LinkedIn. Debe crear un calendario de contenido semanal. Debe incluir estrategia de engagement (rutina diaria de 30 minutos). Debe abordar el paso de 1 vez/semana a 3-5 veces/semana con una estrategia de agrupación.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Establece 3-5 pilares de contenido",
+        "Aplica la guía de la plataforma LinkedIn",
+        "Proporciona fórmulas de gancho",
+        "Crea calendario de contenido semanal",
+        "Incluye estrategia de engagement",
+        "Aborda la estrategia de agrupación para consistencia",
+        "Recomienda aumentar de 1 vez a 3-5 veces por semana"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Escríbeme un hilo de Twitter/X sobre las lecciones que aprendí al llevar mi SaaS a $10k MRR de forma independiente. Incluye ganchos y un CTA al final.",
+      "expected_output": "Debe aplicar las fórmulas de gancho para un gancho de historia (por ejemplo, 'Hace 6 meses, tenía $0 MRR. Hoy llegué a $10k.'). Debe estructurar el hilo siguiendo las mejores prácticas de la plataforma: gancho fuerte en el tweet 1, cada tweet debe ser independiente pero fluir en conjunto, usar números y historias específicas, terminar con un CTA. Debe hacer referencia al pilar de contenido en el que encaja (detrás de cámaras / viaje del fundador). Debe proporcionar el contenido real del hilo con 8-12 tweets. Debe incluir invitaciones al engagement.",
+      "assertions": [
+        "Aplica las fórmulas de gancho de la habilidad",
+        "Usa un gancho de historia para el primer tweet",
+        "Estructura el hilo con tweets independientes pero que fluyen",
+        "Usa números e historias específicas",
+        "Termina con un CTA claro",
+        "Proporciona contenido del hilo de 8-12 tweets",
+        "Incluye invitaciones al engagement"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "tengo una publicación del blog que funcionó muy bien. ¿cómo la convierto en contenido de redes sociales para múltiples plataformas?",
+      "expected_output": "Debe activarse con lenguaje informal. Debe aplicar el sistema de reutilización de contenido. Debe usar el mapeo de Publicación de Blog → Contenido Social: LinkedIn (publicación de perspectiva clave + carrusel de puntos principales), Twitter/X (hilo de conclusiones clave), Instagram (carrusel con visuales + Reel que resume la publicación). Debe seguir el flujo de trabajo de reutilización: crear contenido pilar → extraer perspectivas clave (3-5) → adaptar a cada plataforma → programar durante la semana. Debe proporcionar recomendaciones de formato específico por plataforma.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Aplica el sistema de reutilización de contenido",
+        "Usa el mapeo de Publicación de Blog → Contenido Social",
+        "Proporciona formato para LinkedIn, Twitter/X e Instagram",
+        "Sigue el flujo de trabajo de reutilización",
+        "Extrae 3-5 perspectivas clave para reutilizar",
+        "Proporciona recomendaciones de formato específico por plataforma"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Mis publicaciones de LinkedIn obtienen como 200 impresiones y casi ningún engagement. ¿Qué estoy haciendo mal?",
+      "expected_output": "Debe aplicar la sección de análisis y optimización, específicamente la guía de 'si el engagement es bajo'. Debe diagnosticar posibles problemas: ganchos débiles (la primera línea no es convincente), publicar en horarios incorrectos, no hacer engagement con el contenido de otros, formato deficiente (sin saltos de línea, muros de texto), el contenido no resuena con la audiencia. Debe recomendar correcciones específicas: probar nuevas fórmulas de gancho, publicar en diferentes horarios, aumentar el engagement con otros (la rutina de engagement diaria), probar diferentes formatos (carruseles, historias). Debe proporcionar ejemplos de ganchos antes y después.",
+      "assertions": [
+        "Aplica la guía de análisis y optimización",
+        "Diagnostica posibles problemas de engagement",
+        "Aborda la calidad del gancho",
+        "Aborda el timing de las publicaciones",
+        "Recomienda la rutina de engagement diaria",
+        "Sugiere probar diferentes formatos de contenido",
+        "Proporciona ejemplos específicos de ganchos antes y después"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Ayúdame a hacer ingeniería inversa de lo que está funcionando para los principales creadores en el espacio de DevTools en Twitter. Quiero entender sus patrones de contenido.",
+      "expected_output": "Debe aplicar el marco de ingeniería inversa de contenido viral. Debe guiar a través del proceso: identificar 10-20 cuentas principales en DevTools, recopilar publicaciones de alto rendimiento, analizar patrones (ganchos, formatos, CTAs, temas, horarios de publicación), codificar un manual de patrones repetibles y luego incorporar la voz auténtica del usuario. Debe proporcionar orientación específica sobre qué buscar en el análisis. Debe recomendar herramientas o métodos para recopilar los datos.",
+      "assertions": [
+        "Aplica el marco de ingeniería inversa de contenido viral",
+        "Guía a través del proceso completo (encontrar, recopilar, analizar, codificar, aplicar)",
+        "Recomienda identificar 10-20 cuentas",
+        "Describe qué patrones analizar",
+        "Enfatiza incorporar la voz auténtica",
+        "Proporciona orientación para la recopilación de datos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Escríbeme una secuencia de 5 correos de bienvenida para nuevos suscriptores de correo electrónico que llegaron desde mi audiencia de LinkedIn.",
+      "expected_output": "Debe reconocer que esto es una tarea de secuencia de correos, no de contenido social. Debe diferir o hacer referencia cruzada con la habilidad email-sequence, que maneja secuencias de bienvenida, campañas de goteo y correos del ciclo de vida. Puede señalar el contexto del puente entre redes sociales y correo electrónico, pero debe dejar claro que email-sequence es la habilidad adecuada para escribir secuencias de correos.",
+      "assertions": [
+        "Reconoce que esto es trabajo de secuencia de correos",
+        "Hace referencia o difiere a la habilidad email-sequence",
+        "No intenta escribir la secuencia de correos usando patrones de contenido social",
+        "Puede señalar el contexto del puente entre redes sociales y correo electrónico"
+      ],
+      "files": []
+    }
+  ]
+}

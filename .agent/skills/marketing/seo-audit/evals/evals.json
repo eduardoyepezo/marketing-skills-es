@@ -1,0 +1,136 @@
+{
+  "skill_name": "seo-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "¿Puedes hacer una auditoría de SEO de nuestro sitio web SaaS? Recibimos aproximadamente 2.000 visitas orgánicas/mes pero sentimos que deberíamos estar recibiendo más. URL: https://example.com",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe hacer preguntas aclaratorias sobre palabras clave prioritarias, acceso a Search Console, cambios recientes y competidores. Debe seguir el orden de prioridades del marco de auditoría: Rastreabilidad e Indexación, Fundamentos Técnicos, Optimización en la Página, Calidad del Contenido, Autoridad y Vínculos. Debe verificar robots.txt, sitemap XML, arquitectura del sitio. Debe evaluar etiquetas de título, meta descripciones, estructura de encabezados y optimización del contenido. NO debe informar sobre schema markup basándose únicamente en web_fetch (debe señalar la limitación de detección). La salida debe seguir la Estructura del Informe de Auditoría: Resumen Ejecutivo, Hallazgos de SEO Técnico, Hallazgos de SEO en la Página, Hallazgos de Contenido y Plan de Acción Priorizado.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Hace preguntas aclaratorias sobre palabras clave, Search Console, cambios recientes",
+        "Sigue el orden de prioridades de la auditoría: rastreabilidad primero, luego técnico, en la página, contenido, autoridad",
+        "Verifica robots.txt y sitemap XML",
+        "Evalúa etiquetas de título, meta descripciones, estructura de encabezados",
+        "NO afirma 'sin schema encontrado' basándose solo en web_fetch",
+        "Señala la limitación de detección del marcado de schema",
+        "La salida tiene Resumen Ejecutivo",
+        "La salida tiene Plan de Acción Priorizado",
+        "Cada hallazgo tiene Problema, Impacto, Evidencia, Solución y Prioridad"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Por qué no estoy posicionando para 'software de gestión de proyectos'? Tenemos una página orientada a esa palabra clave pero está atascada en la página 3.",
+      "expected_output": "Debe activarse con la frase informal '¿por qué no estoy posicionando?'. Debe investigar tanto factores en la página como fuera de ella. En la página: verificar etiqueta de título, H1, alineación de URL con la palabra clave; evaluar profundidad del contenido vs competidores; verificar canibalización de palabras clave. Técnico: verificar estado de indexación, etiquetas canónicas, rastreabilidad. Calidad del contenido: evaluar señales E-E-A-T, profundidad del contenido, engagement de usuarios. Debe proporcionar correcciones específicas y accionables organizadas por prioridad. Debe mencionar análisis competitivo contra las páginas que actualmente se posicionan en primer lugar.",
+      "assertions": [
+        "Se activa con la frase informal '¿por qué no estoy posicionando?'",
+        "Verifica etiqueta de título, H1, alineación de URL con la palabra clave objetivo",
+        "Evalúa profundidad del contenido vs competidores",
+        "Verifica canibalización de palabras clave",
+        "Verifica estado de indexación y etiquetas canónicas",
+        "Evalúa señales E-E-A-T",
+        "Menciona análisis competitivo contra páginas mejor posicionadas",
+        "Proporciona correcciones accionables organizadas por prioridad"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Migramos de WordPress a Next.js y nuestro tráfico orgánico cayó un 40% en el último mes. ¡Ayuda!",
+      "expected_output": "Debe tratar esto como un diagnóstico urgente de migración. Debe verificar de inmediato: mapeo de redirecciones (301s desde URLs antiguas a nuevas), etiquetas canónicas en páginas nuevas, que robots.txt no bloquee a los rastreadores, sitemap XML enviado y actualizado, meta etiquetas preservadas. Debe verificar problemas comunes de migración: cadenas/bucles de redirección, errores 404 suaves, vínculos internos perdidos, estructuras de URL modificadas sin redirecciones. Debe hacer referencia al informe de cobertura de Search Console para problemas de indexación. Debe proporcionar un plan de recuperación priorizado con correcciones críticas primero. Debe mencionar las expectativas del cronograma de recuperación (la recuperación puede tardar semanas).",
+      "assertions": [
+        "Trata esto como un diagnóstico urgente de migración",
+        "Verifica el mapeo de redirecciones (301s)",
+        "Verifica etiquetas canónicas en páginas nuevas",
+        "Verifica que robots.txt no bloquee a los rastreadores",
+        "Verifica que el sitemap XML esté actualizado y enviado",
+        "Verifica cadenas o bucles de redirección",
+        "Verifica errores 404 suaves",
+        "Hace referencia al informe de cobertura de Search Console",
+        "Proporciona plan de recuperación priorizado",
+        "Menciona las expectativas del cronograma de recuperación"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Revisa el SEO técnico de nuestro sitio de comercio electrónico. Tenemos aproximadamente 50.000 productos y usamos navegación por facetas.",
+      "expected_output": "Debe enfocarse en problemas técnicos específicos del comercio electrónico: la navegación por facetas crea contenido duplicado, gestión del presupuesto de rastreo para catálogos de productos grandes, URLs parametrizadas, marcado de schema de producto (con la advertencia sobre las limitaciones de detección). Debe verificar páginas de categorías delgadas, descripciones de productos duplicadas, manejo de páginas de productos sin existencias. Debe abordar problemas del presupuesto de rastreo: paginación, manejo del scroll infinito, IDs de sesión en URLs. Debe proporcionar hallazgos estructurados con calificaciones de Impacto y correcciones específicas.",
+      "assertions": [
+        "Aborda el contenido duplicado por navegación por facetas",
+        "Aborda el presupuesto de rastreo para catálogos grandes",
+        "Verifica problemas de URLs parametrizadas",
+        "Menciona el schema de producto con advertencia sobre limitaciones de detección",
+        "Verifica páginas de categorías delgadas",
+        "Verifica descripciones de productos duplicadas",
+        "Aborda el manejo de páginas de productos sin existencias",
+        "Aborda paginación y scroll infinito",
+        "Los hallazgos incluyen calificaciones de Impacto y correcciones específicas"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Puedes revisar nuestras publicaciones del blog para detectar problemas de SEO en la página? Publicamos 4 entradas por semana pero el tráfico ha sido plano durante 6 meses.",
+      "expected_output": "Debe aplicar el marco para Sitios de Contenido/Blog: verificar contenido desactualizado no actualizado, canibalización de palabras clave, agrupación temática faltante, vínculos internos deficientes, páginas de autor faltantes. Debe auditar elementos en la página: etiquetas de título, meta descripciones, estructura de encabezados, orientación de palabras clave por publicación. Debe evaluar señales E-E-A-T para contenido de blog. Debe verificar problemas de profundidad del contenido y si las publicaciones responden a la intención de búsqueda. Debe recomendar un proceso de auditoría de contenido y proporcionar un plan de acción priorizado para la biblioteca de contenido existente.",
+      "assertions": [
+        "Aplica el marco para Sitios de Contenido/Blog",
+        "Verifica contenido desactualizado",
+        "Verifica canibalización de palabras clave",
+        "Verifica agrupación temática",
+        "Verifica la calidad de los vínculos internos",
+        "Verifica páginas de autor y señales E-E-A-T",
+        "Audita etiquetas de título, meta descripciones, estructura de encabezados",
+        "Evalúa si el contenido responde a la intención de búsqueda",
+        "Recomienda proceso de auditoría de contenido",
+        "Proporciona plan de acción priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Tengo un negocio local de plomería con 3 ubicaciones. Mi sitio web apenas aparece cuando la gente busca 'plomero cerca de mí' en nuestras áreas. ¿Qué está mal?",
+      "expected_output": "Debe aplicar el marco de tipo de sitio para Negocios Locales. Debe verificar: NAP (Nombre, Dirección, Teléfono) inconsistente en el sitio, marcado de schema local faltante (con advertencia sobre limitaciones de detección), optimización del Perfil de Empresa de Google, falta de páginas de ubicación individuales para cada una de las 3 ubicaciones y contenido local faltante. También debe verificar factores técnicos y en la página estándar. Debe recomendar correcciones específicas para negocios locales: páginas específicas por ubicación con contenido único, schema local en cada una, optimización del Perfil de Empresa de Google, consistencia de citaciones.",
+      "assertions": [
+        "Aplica el marco para Negocios Locales",
+        "Verifica la consistencia del NAP",
+        "Verifica el marcado de schema local con advertencia sobre detección",
+        "Aborda la optimización del Perfil de Empresa de Google",
+        "Recomienda páginas de ubicación individuales para cada ubicación",
+        "Recomienda estrategia de contenido local",
+        "También verifica factores técnicos estándar de SEO",
+        "Proporciona plan de acción de SEO local priorizado"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Nuestro sitio carga muy lentamente, especialmente en móviles. Las páginas tardan 5-6 segundos en cargar. ¿Esto está perjudicando nuestro SEO?",
+      "expected_output": "Debe enfocarse en la Velocidad del Sitio y los Core Web Vitals. Debe explicar los umbrales de CWV: LCP < 2,5s, INP < 200ms, CLS < 0,1, y que un tiempo de carga de 5-6s está muy por encima de lo aceptable. Debe investigar factores de velocidad: tiempo de respuesta del servidor (TTFB), optimización de imágenes, ejecución de JavaScript, entrega de CSS, encabezados de caché, uso de CDN, carga de fuentes. Debe recomendar herramientas específicas: PageSpeed Insights, WebPageTest, Chrome DevTools, informe de CWV de Search Console. Debe explicar que sí, la velocidad de página es un factor de posicionamiento y afecta directamente al SEO. Debe proporcionar correcciones priorizadas.",
+      "assertions": [
+        "Se enfoca en los Core Web Vitals",
+        "Explica los umbrales de CWV (LCP, INP, CLS)",
+        "Identifica 5-6s como muy por encima de lo aceptable",
+        "Investiga factores específicos de velocidad",
+        "Recomienda herramientas de diagnóstico específicas",
+        "Confirma que la velocidad de página afecta las posiciones SEO",
+        "Proporciona correcciones de velocidad priorizadas",
+        "Aborda el rendimiento específico en móviles"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Quiero agregar el schema de FAQ a mis páginas de productos. ¿Puedes ayudarme a configurarlo?",
+      "expected_output": "Debe reconocer que esto es una tarea de implementación de marcado de schema, no una auditoría de SEO. Debe diferir o hacer referencia cruzada con la habilidad schema-markup, que maneja específicamente la implementación de datos estructurados incluyendo el schema de FAQ. Puede mencionar brevemente que el schema de FAQ puede habilitar resultados enriquecidos, pero debe dejar claro que schema-markup es la habilidad adecuada para la implementación.",
+      "assertions": [
+        "Reconoce que esto es implementación de marcado de schema",
+        "Hace referencia o difiere a la habilidad schema-markup",
+        "No intenta realizar una auditoría completa de SEO",
+        "Puede mencionar brevemente los beneficios del schema de FAQ"
+      ],
+      "files": []
+    }
+  ]
+}

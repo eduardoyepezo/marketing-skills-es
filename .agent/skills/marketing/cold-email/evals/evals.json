@@ -1,0 +1,94 @@
+{
+  "skill_name": "cold-email",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Redacta un correo electrónico en frío para el VP de Marketing en empresas B2B SaaS de tamaño mediano. Vendemos una plataforma de analítica de contenidos que muestra qué publicaciones de blog realmente generan pipeline. Nuestro principal argumento con pruebas: los clientes ven un aumento de 3x en los ingresos atribuidos al contenido en 90 días.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe escribir como un par, no como un proveedor. Debe usar uno de los marcos de estructura (observación→problema→prueba→llamada a la acción o similar). El asunto debe ser de 2-4 palabras, en minúsculas, con apariencia interna. Cada oración debe justificar su presencia. La personalización debe conectar con el problema del prospecto, no solo con su nombre. Debe usar el argumento de 3x de ingresos como prueba social, no como reclamo de función. El CTA debe tener baja fricción (no 'reservar una demo'). Debe proporcionar 2-3 variaciones. Debe incluir una verificación de calidad según las pautas.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Escribe como un par, no como un proveedor",
+        "Utiliza un marco de estructura de la habilidad",
+        "El asunto es corto, en minúsculas, con apariencia interna",
+        "Cada oración justifica su presencia (conciso)",
+        "La personalización conecta con el problema del prospecto",
+        "Usa el argumento como prueba social",
+        "El CTA tiene baja fricción",
+        "Proporciona 2-3 variaciones"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Ayúdame a escribir un correo electrónico en frío para CTOs en empresas de nivel empresarial. Vendo capacitación en ciberseguridad. Mi correo actual tiene una tasa de apertura del 2% y una tasa de respuesta del 0%.",
+      "expected_output": "Debe diagnosticar los problemas probables del correo actual en base a la tasa de apertura del 2% (problema con el asunto) y la tasa de respuesta del 0% (problema con el cuerpo o la relevancia). Debe aplicar la calibración de voz para la audiencia de CTO (respetar su tiempo, credibilidad técnica, lenguaje de nivel ejecutivo). Debe proporcionar un correo completamente nuevo siguiendo los marcos de estructura. El asunto debe ser de 2-4 palabras, con apariencia interna. Debe adaptar el tono para los CTOs empresariales: más formal que para una audiencia de startups pero igualmente entre pares. Debe proporcionar el correo más un análisis de por qué funciona cada elemento.",
+      "assertions": [
+        "Diagnostica los problemas a partir de los datos de rendimiento",
+        "Identifica el asunto como probable causa del problema de apertura",
+        "Aplica la calibración de voz para la audiencia de CTO",
+        "El asunto es corto, en minúsculas, con apariencia interna",
+        "Adapta el tono para la audiencia empresarial",
+        "Utiliza el marco de estructura de la habilidad",
+        "Explica por qué funciona cada elemento"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "escríbeme una secuencia de seguimiento. el prospecto no respondió a mi primer correo sobre nuestro software de RRHH. ¿cuántos debo enviar y con qué frecuencia?",
+      "expected_output": "Debe activarse con phrasing informal. Debe aplicar la guía de secuencia de seguimiento: se recomiendan 3-5 seguimientos. Cada seguimiento debe añadir algo nuevo (nuevo ángulo, nuevo argumento de prueba, nuevo valor): no simplemente 'recordatorios' o 'ver si recibieron el correo'. Debe proporcionar recomendaciones de calendario entre correos. Debe proporcionar el texto real de cada seguimiento con ángulos diferentes. Debe incluir un correo de despedida al final. Debe señalar que cada seguimiento debe ser más breve que el anterior.",
+      "assertions": [
+        "Se activa con phrasing informal",
+        "Recomienda 3-5 correos de seguimiento",
+        "Cada seguimiento añade algo nuevo",
+        "No usa lenguaje de 'solo recordando' o 'solo comprobando'",
+        "Proporciona el calendario entre correos",
+        "Proporciona el texto real para cada seguimiento",
+        "Incluye un correo de despedida",
+        "Los seguimientos son progresivamente más breves"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Revisa este correo electrónico en frío y dime qué está mal: 'Estimado/a señor/a, Espero que este correo le encuentre bien. Quería contactarle para presentar nuestra innovadora plataforma basada en la nube que aprovecha la IA para optimizar sus operaciones empresariales. Hemos ayudado a más de 500 empresas a transformar sus flujos de trabajo. Me encantaría programar una llamada de 30 minutos para hablar sobre cómo podemos ayudar a su organización. Atentamente, Juan'",
+      "expected_output": "Debe aplicar el marco de verificación de calidad. Debe identificar múltiples problemas: 'Estimado/a señor/a' (sin personalización), 'Espero que este correo le encuentre bien' (relleno), 'innovadora plataforma basada en la nube' (jerga/palabras de moda), 'aprovecha la IA para optimizar' (lenguaje vago de proveedor), 'transformar sus flujos de trabajo' (no significa nada), 'llamada de 30 minutos' (demasiado para un correo en frío), todo el correo habla del remitente en lugar del prospecto. Debe reescribir siguiendo los principios: tono entre pares, estructura observación→problema→prueba→llamada a la acción, cada oración justifica su presencia, personalización conectada al problema del prospecto, CTA con baja fricción.",
+      "assertions": [
+        "Identifica la falta de personalización",
+        "Identifica las frases de relleno",
+        "Identifica la jerga y las palabras de moda",
+        "Identifica el lenguaje de proveedor frente al lenguaje entre pares",
+        "Identifica el CTA como de alta fricción",
+        "Señala que el correo está centrado en el remitente en lugar del prospecto",
+        "Proporciona una versión reescrita",
+        "La reescritura sigue los principios del correo en frío"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuáles son los mejores asuntos para correos electrónicos en frío? Quiero maximizar las tasas de apertura.",
+      "expected_output": "Debe aplicar las pautas para líneas de asunto: cortas (2-4 palabras), en minúsculas o con primera letra mayúscula, con apariencia interna (debe parecer que proviene de un colega, no de un proveedor). Debe proporcionar ejemplos siguiendo estos principios. Debe explicar por qué funcionan (evitan los filtros de promociones, generan curiosidad, no parecen marketing). Debe advertir contra los asuntos comunes malos (TODO EN MAYÚSCULAS, emojis, clickbait, asuntos largos). Debe señalar que el asunto logra que abran pero el cuerpo logra que respondan.",
+      "assertions": [
+        "Aplica las pautas de líneas de asunto (2-4 palabras, minúsculas, apariencia interna)",
+        "Proporciona ejemplos específicos",
+        "Explica por qué funciona el formato",
+        "Advierte contra los patrones comunes de asuntos malos",
+        "Señala la distinción entre tasa de apertura y tasa de respuesta"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Puedes ayudarme a configurar una campaña de correo electrónico automatizada en goteo para los leads que descargan nuestro whitepaper?",
+      "expected_output": "Debe reconocer que esto es una secuencia de correo electrónico de ciclo de vida o nutrición, no de contacto en frío. Debe derivar o hacer referencia cruzada a la habilidad email-sequence, que gestiona campañas de goteo, secuencias de nutrición de leads y correos del ciclo de vida. El correo en frío es específicamente para contacto saliente no solicitado a prospectos que no han dado su consentimiento. Debe dejar clara esta distinción.",
+      "assertions": [
+        "Reconoce que esto es un correo de ciclo de vida o nutrición, no contacto en frío",
+        "Hace referencia o deriva a la habilidad email-sequence",
+        "Explica la distinción entre el correo en frío y el correo del ciclo de vida",
+        "No intenta diseñar una secuencia de nutrición usando patrones de correo en frío"
+      ],
+      "files": []
+    }
+  ]
+}

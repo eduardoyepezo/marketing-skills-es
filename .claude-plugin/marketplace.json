@@ -1,0 +1,56 @@
+{
+  "name": "marketing-skills-es",
+  "owner": {
+    "name": "Eduardo Yepezo",
+    "url": "https://github.com/eduardoyepezo"
+  },
+  "metadata": {
+    "description": "32 marketing skills para agentes de IA en español — optimización de conversiones, copywriting, SEO, publicidad paga y growth. Basado en el trabajo original de Corey Haines (github.com/coreyhaines31/marketingskills), traducido y adaptado al español.",
+    "version": "1.0.0",
+    "repository": "https://github.com/eduardoyepezo/marketing-skills-es",
+    "original_work": "https://github.com/coreyhaines31/marketingskills",
+    "language": "es"
+  },
+  "plugins": [
+    {
+      "name": "marketing-skills-es",
+      "description": "32 marketing skills en español para agencias y marketers: CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos de anuncios, prevención de churn, estrategia de precios, programas de referidos, operaciones de ingresos, habilitación de ventas, arquitectura de sitio, y más.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agent/skills/marketing/ab-test-setup",
+        "./.agent/skills/marketing/ad-creative",
+        "./.agent/skills/marketing/ai-seo",
+        "./.agent/skills/marketing/analytics-tracking",
+        "./.agent/skills/marketing/churn-prevention",
+        "./.agent/skills/marketing/cold-email",
+        "./.agent/skills/marketing/competitor-alternatives",
+        "./.agent/skills/marketing/content-strategy",
+        "./.agent/skills/marketing/copy-editing",
+        "./.agent/skills/marketing/copywriting",
+        "./.agent/skills/marketing/email-sequence",
+        "./.agent/skills/marketing/form-cro",
+        "./.agent/skills/marketing/free-tool-strategy",
+        "./.agent/skills/marketing/launch-strategy",
+        "./.agent/skills/marketing/marketing-ideas",
+        "./.agent/skills/marketing/marketing-psychology",
+        "./.agent/skills/marketing/onboarding-cro",
+        "./.agent/skills/marketing/page-cro",
+        "./.agent/skills/marketing/paid-ads",
+        "./.agent/skills/marketing/paywall-upgrade-cro",
+        "./.agent/skills/marketing/popup-cro",
+        "./.agent/skills/marketing/pricing-strategy",
+        "./.agent/skills/marketing/product-marketing-context",
+        "./.agent/skills/marketing/programmatic-seo",
+        "./.agent/skills/marketing/referral-program",
+        "./.agent/skills/marketing/revops",
+        "./.agent/skills/marketing/sales-enablement",
+        "./.agent/skills/marketing/schema-markup",
+        "./.agent/skills/marketing/seo-audit",
+        "./.agent/skills/marketing/signup-flow-cro",
+        "./.agent/skills/marketing/site-architecture",
+        "./.agent/skills/marketing/social-content"
+      ]
+    }
+  ]
+}
