@@ -1,0 +1,97 @@
+{
+  "skill_name": "social-content-plan",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito el plan de contenido completo de mayo para mi cliente Estudio Pilates Forma. Están en Instagram y TikTok. En Instagram quieren 4 posts por semana (mezcla de reels y carruseles) y en TikTok 3 videos por semana. Su objetivo es conseguir nuevas alumnas. El tono es motivador y cercano. Pilares: bienestar femenino, transformación física, comunidad, tips de movimiento y promociones del estudio.",
+      "expected_output": "Debe verificar si existe product-marketing-context.md. Debe generar el plan completo de mayo: Semana 1 al 4 con todos los posts escritos (4/sem Instagram + 3/sem TikTok = 28 posts totales). Cada post debe tener: fecha, plataforma, formato, copy completo redactado, hashtags (10-15 para Instagram, 3-5 para TikTok), CTA y brief visual. Los Reels y videos de TikTok deben tener guion completo (hook, setup, valor, CTA). Debe variar formatos: no mismo formato dos días seguidos. Debe distribuir los 5 pilares de forma equilibrada. Debe incluir tabla resumen al final. Debe guardar el archivo como plan-contenido-estudio-pilates-forma-mayo-2026.md o similar. Debe terminar ofreciendo branded-deliverable.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Genera posts para las 4 semanas completas de mayo",
+        "Genera 4 posts por semana para Instagram",
+        "Genera 3 posts por semana para TikTok",
+        "Cada post tiene copy completo redactado (no solo descripción del tema)",
+        "Los videos y reels tienen guion completo con hook, setup, valor y CTA",
+        "Incluye hashtags apropiados por plataforma",
+        "Incluye brief visual en cada post",
+        "Varía los formatos a lo largo del mes",
+        "Distribuye los 5 pilares de forma equilibrada",
+        "Incluye tabla resumen al final",
+        "Termina ofreciendo la habilidad branded-deliverable"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "dame el plan de contenido para linkedin de junio para SoftwareB2B una empresa que vende CRM para pymes. quiero 3 posts por semana, tono profesional pero cercano. que el contenido eduque sobre ventas, CRM y productividad.",
+      "expected_output": "Debe activarse con lenguaje informal. Debe verificar si existe product-marketing-context.md. Debe generar 3 posts semanales × 4 semanas = 12 posts de LinkedIn para junio. Cada post: fecha, copy completo de LinkedIn (900-1300 caracteres), hashtags (3-5), CTA y brief visual. Debe aplicar fórmulas de hook (curiosidad, historia, valor, contrario). Debe distribuir los pilares: ventas, CRM, productividad. Debe variar formatos: texto, carrusel, video. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer branded-deliverable al final.",
+      "assertions": [
+        "Se activa con lenguaje informal",
+        "Genera 12 posts de LinkedIn (3 por semana por 4 semanas)",
+        "Cada post tiene copy completo con longitud adecuada para LinkedIn",
+        "Aplica fórmulas de hook variadas",
+        "Incluye hashtags (3-5 para LinkedIn)",
+        "Varía formatos entre texto, carrusel y video",
+        "Distribuye los pilares de ventas, CRM y productividad",
+        "Incluye tabla resumen al final",
+        "Ofrece branded-deliverable al terminar"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Quiero el plan de redes sociales de julio para Restaurante Casa Blanca. Plataformas: Instagram y Facebook. Instagram: 5 posts semanales (reels, carruseles e imágenes). Facebook: 3 posts semanales. Objetivo: aumentar reservaciones. Tono: cálido, sofisticado, que invite a vivir la experiencia. Pilares: platos del chef, historia y tradición, experiencias de clientes, ingredientes frescos, eventos especiales.",
+      "expected_output": "Debe generar el plan completo de julio para Instagram (5x/sem = 20 posts) y Facebook (3x/sem = 12 posts) = 32 posts totales. Cada post escrito con copy completo adaptado al tono cálido y sofisticado. Los reels deben tener guion con hook visual, setup, valor y CTA. Las imágenes deben tener caption completa. Facebook debe tener copy adaptado (no simplemente copiar el de Instagram). Debe distribuir los 5 pilares. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer branded-deliverable.",
+      "assertions": [
+        "Genera 20 posts para Instagram (5 por semana)",
+        "Genera 12 posts para Facebook (3 por semana)",
+        "El copy de Facebook no es copia directa del de Instagram",
+        "Los reels tienen guion completo",
+        "El tono es cálido y sofisticado en todo el copy",
+        "Distribuye los 5 pilares del restaurante",
+        "Incluye brief visual relevante para restaurante (platos, ambiente, etc.)",
+        "Incluye tabla resumen al final",
+        "Ofrece branded-deliverable al terminar"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Escríbeme un post de LinkedIn sobre tendencias de inteligencia artificial para el 2026.",
+      "expected_output": "Debe reconocer que esta es una solicitud de un post individual, no de un plan mensual completo. Debe referirse a la habilidad social-content para crear posts individuales de LinkedIn. No debe generar el plan de contenido mensual completo para una solicitud de un solo post.",
+      "assertions": [
+        "Reconoce que es una solicitud de post individual",
+        "Refiere a la habilidad social-content",
+        "No genera un plan mensual completo para una solicitud de un solo post"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "No sé qué pilares de contenido debería usar para mi empresa de consultoría de RH. ¿Me ayudas a definirlos?",
+      "expected_output": "Debe reconocer que esta es una tarea de estrategia de contenido, no de planificación mensual. Debe referirse a la habilidad content-strategy para definir pilares y estrategia. Puede mencionar que una vez definidos los pilares podrá usar social-content-plan para generar el contenido mensual.",
+      "assertions": [
+        "Reconoce que es una tarea de estrategia de contenido",
+        "Refiere a la habilidad content-strategy",
+        "Puede mencionar social-content-plan como siguiente paso después de definir la estrategia"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Tengo los pilares de contenido listos para mi cliente FitApp. Quiero generar el plan de agosto para Instagram solamente, 4 posts por semana. Los pilares son: motivación fitness, nutrición práctica, historias de transformación de usuarios, tips de entrenamiento en casa, y promociones de la app.",
+      "expected_output": "Debe generar 4 posts semanales × 4 semanas = 16 posts de Instagram para agosto. Debe mezclar formatos: reels, carruseles e imágenes. Cada post con copy completo, hashtags (10-15), CTA y brief visual. Los reels deben tener guion. Debe usar los 5 pilares proporcionados. Debe distribuir los pilares de forma equilibrada. Debe incluir tabla resumen. Debe terminar ofreciendo branded-deliverable.",
+      "assertions": [
+        "Genera exactamente 16 posts de Instagram (4 por semana × 4 semanas)",
+        "Mezcla formatos: reels, carruseles e imágenes",
+        "Cada post tiene copy completo redactado",
+        "Incluye hashtags adecuados para Instagram",
+        "Incluye brief visual en cada post",
+        "Usa los 5 pilares proporcionados distribuidos equilibradamente",
+        "Incluye tabla resumen al final",
+        "Ofrece branded-deliverable al terminar"
+      ],
+      "files": []
+    }
+  ]
+}
