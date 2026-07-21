@@ -397,6 +397,7 @@ Skills Master/
     ├── video/                        # Creativo: producción de video con IA
     ├── image/                        # Creativo: generación de imágenes con IA
     ├── content-strategy/             # Estrategia: qué crear
+    ├── customer-research/            # Investigación: personas, JTBD, minería de reseñas
     ├── seo-audit/                    # SEO: diagnosticar problemas
     ├── ai-seo/                       # SEO: optimizar para búsqueda de IA
     ├── programmatic-seo/             # SEO: generación de páginas a escala
@@ -414,7 +415,9 @@ Skills Master/
     ├── marketing-psychology/         # Estrategia: lente de ciencia del comportamiento
     ├── launch-strategy/              # Estrategia: lanzamientos de productos
     ├── pricing-strategy/             # Estrategia: precios y empaquetado
-    ├── brand-identity/               # Estrategia: voz e identidad
+    ├── offers/                       # Estrategia: diseño de ofertas, garantías, bonos
+    ├── marketing-plan/               # Estrategia: plan integral AARRR de 13 secciones
+    ├── marketing-loops/              # Estrategia: workflows de marketing recurrentes
     ├── revops/                       # Ventas: operaciones de ingresos
     ├── sales-enablement/             # Ventas: pitch decks, objeciones
     └── tools/

@@ -1,0 +1,101 @@
+{
+  "skill_name": "marketing-loops",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quiero configurar un loop recurrente que vigile nuestro SEO y me diga qué hacer cada semana. Somos un SaaS B2B con un sitio centrado en contenido.",
+      "expected_output": "Debe revisar product-marketing.md primero. Debe reconocer que esto corresponde a los loops de SEO del catálogo (keyword-gap, ranking-drop watch, content-decay) y proponer el/los más cercanos. Debe presentar el loop usando la anatomía de nueve partes: cadencia de revisión, actúa-cuando (condición de acción), propósito, habilidades usadas, cuerpo del loop, autoverificación, estado/idempotencia, parada/salida, y salida. Debe fijar una cadencia semanal (acorde a lo lento que se mueven los rankings) y explicar la regla de cadencia. Debe incluir una parada/salida y notar que la mayoría de las corridas pueden no encontrar ninguna acción. Debe referenciar la habilidad seo-audit para la ejecución.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Selecciona el/los loop(s) de SEO apropiados del catálogo",
+        "Presenta el loop con la anatomía de nueve partes",
+        "Incluye estado/idempotencia (marcador de última ejecución o deduplicación)",
+        "Incluye una condición explícita de parada/salida",
+        "Fija una cadencia semanal y la justifica mediante la regla de cadencia",
+        "Referencia seo-audit u habilidades relacionadas para la ejecución"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Quiero automatizar mi marketing para que básicamente se ejecute solo. ¿Por dónde empiezo?",
+      "expected_output": "Debe aclarar el resultado a proteger o hacer crecer antes de volcar loops (adquisición, activación, retención, ingresos, referidos). Debe cuestionar amablemente el encuadre de 'se ejecuta solo' y evitar el vocabulario prohibido ('configúralo y olvídalo', 'totalmente autónomo'). Debe recomendar empezar con UN solo loop y demostrar que se gana su lugar en vez de construir varios a la vez. Debe describir los loops como sistemas disciplinados con checkpoints, no piloto automático. Probablemente debe sugerir el loop de weekly-marketing-review como un buen primer loop de heartbeat, y explicar los checkpoints humanos para cualquier cosa que gaste o publique.",
+      "assertions": [
+        "Pregunta por el resultado objetivo / etapa del funnel antes de recomendar",
+        "Evita el vocabulario prohibido de piloto automático",
+        "Recomienda empezar con un loop, no con varios",
+        "Presenta los loops como sistemas con checkpoints, no como magia",
+        "Enfatiza los checkpoints humanos para acciones de gasto/publicación",
+        "Puede sugerir el loop de weekly-marketing-review como punto de partida"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Configura un loop de newsjacking que encuentre historias en tendencia y publique automáticamente nuestra postura en X y la presente a periodistas.",
+      "expected_output": "Debe construir el loop de newsjacking pero negarse a hacerlo totalmente autónomo. Debe incluir la lista de veto (omitir tragedias, muertes, desastres, crisis activas, historias con carga política/social a menos que la marca tome esas posturas, y temas sensibles legal/médico/financieramente) y exigir fuentes verificadas. Debe exigir aprobación humana antes de cualquier pitch o publicación en lugar de auto-publicar. Debe incluir estado/idempotencia (deduplicación por historia, un ángulo por historia) y notar que la mayoría de los días correctamente se omitirá la acción. Debe referenciar la habilidad public-relations.",
+      "assertions": [
+        "Construye el loop de newsjacking con la anatomía de nueve partes",
+        "Incluye una lista de veto explícita para tipos de historias sensibles",
+        "Exige aprobación humana antes de presentar (pitch) o publicar",
+        "No habilita la publicación totalmente autónoma",
+        "Incluye deduplicación/estado para que las historias no se vuelvan a presentar",
+        "Referencia la habilidad public-relations"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cómo programo realmente estos loops para que corran por su cuenta?",
+      "expected_output": "Debe explicar que el cuerpo del loop es agnóstico al agente pero que la programación depende del entorno. Debe cubrir las opciones: primitivas nativas de Claude Code (/loop, ScheduleWakeup, CronCreate), cualquier agente + cron (con un ejemplo de expresión cron), y cadencia manual para loops de alto juicio. Por defecto debe usar cron a hora fija para loops de tipo revisión y ritmo dinámico para loops de tipo monitorear-hasta-el-umbral. Debe tratar una habilidad dedicada de mecánica de loops como loopify como un complemento opcional, no una dependencia obligatoria, y no asumir que está instalada.",
+      "assertions": [
+        "Explica que la programación depende del entorno",
+        "Cubre las opciones nativas de Claude Code y cron simple",
+        "Incluye la cadencia manual como una opción válida",
+        "Da una guía por defecto de cron vs. ritmo dinámico",
+        "Trata loopify como opcional, no como una dependencia requerida"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Puedes hacerme un loop que mejore continuamente nuestro posicionamiento de marca y genere nuestras grandes ideas de campaña?",
+      "expected_output": "Debe cuestionar la petición: la estrategia, el posicionamiento y la dirección creativa son los casos de 'cuándo NO usar un loop.' Los loops mantienen y optimizan; no definen el posicionamiento ni inventan campañas. Debe explicar por qué (alto juicio, baja frecuencia, no impulsado por señales) y redirigir: eso pertenece al trabajo de estrategia, mientras que los loops pueden operacionalizar el seguimiento ejecucional (p. ej., competitor-watch para informar el posicionamiento, content-calendar refill, campaign-postmortem para acumular aprendizajes). No debe inventar un loop de posicionamiento como si encajara bien.",
+      "assertions": [
+        "Identifica esto como un caso de 'cuándo NO usar un loop'",
+        "Explica que los loops optimizan/mantienen en lugar de definir estrategia o creatividad",
+        "Redirige la estrategia/creatividad al trabajo apropiado que no es de loop",
+        "Sugiere loops operativos adyacentes que realmente encajan",
+        "No fuerza un loop de posicionamiento/ideación de campañas que no encaja"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Seguimos perdiendo clientes por pagos fallidos y tarjetas vencidas. Configura algo que recupere esos ingresos automáticamente.",
+      "expected_output": "Debe seleccionar el loop de failed-payment/dunning. Debe dispararse ante un pago fallido o un vencimiento de tarjeta próximo, correr un calendario de reintentos con mensajería de actualización de tarjeta escalada, e incluir estado (rastrear la etapa de dunning por cuenta, detenerse al recuperar el pago). Debe incluir una parada/salida para que no corra para siempre (escalar/desactivar tras el reintento final) y una autoverificación para distinguir fallos involuntarios de cancelaciones intencionales (no perseguir con dunning a alguien que eligió irse). Debe referenciar las habilidades revops y email-sequence. Puede notar que este suele ser el loop de retención con mayor ROI.",
+      "assertions": [
+        "Selecciona el loop de failed-payment/dunning",
+        "Se dispara ante un pago fallido o vencimiento de tarjeta",
+        "Incluye un calendario de reintentos con estado de etapa de dunning",
+        "Tiene una condición de parada para que no corra para siempre",
+        "La autoverificación separa fallos involuntarios de cancelaciones intencionales",
+        "Referencia las habilidades revops y/o email-sequence"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Quiero un loop que mantenga corriendo nuestro programa de pruebas A/B — generando hipótesis, corriendo pruebas, y analizando resultados cada semana.",
+      "expected_output": "Debe reconocer el fuerte solapamiento con la habilidad ab-test-setup y tratar el loop de experiment-backlog únicamente como un envoltorio delgado. El loop debe mantener y volver a priorizar el backlog de hipótesis y gestionar la cadencia de traspaso, pero delegar el diseño de pruebas, el análisis estadístico, y la gestión de velocidad a la habilidad ab-test-setup en lugar de duplicarlos. Debe incluir priorización ICE para el backlog y deduplicación de hipótesis entrantes, y evitar iniciar pruebas en conflicto.",
+      "assertions": [
+        "Reconoce el solapamiento con la habilidad ab-test-setup",
+        "Mantiene el loop como un envoltorio delgado que delega en ab-test-setup",
+        "No duplica el diseño de pruebas ni el análisis estadístico en el loop",
+        "Incluye priorización del backlog (ICE) y deduplicación de hipótesis",
+        "Referencia la habilidad ab-test-setup como dueña de la ejecución"
+      ],
+      "files": []
+    }
+  ]
+}

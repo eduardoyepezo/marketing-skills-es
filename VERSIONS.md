@@ -14,13 +14,17 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 | content-strategy | 1.1.0 | 2026-02-27 |
 | copy-editing | 1.1.0 | 2026-02-27 |
 | copywriting | 1.1.0 | 2026-02-27 |
+| customer-research | 2.0.1 | 2026-07-21 |
 | email-sequence | 1.1.0 | 2026-02-27 |
 | form-cro | 1.1.0 | 2026-02-27 |
 | free-tool-strategy | 1.1.0 | 2026-02-27 |
 | image | 2.0.1 | 2026-07-21 |
 | launch-strategy | 1.1.0 | 2026-02-27 |
 | marketing-ideas | 1.1.0 | 2026-02-27 |
+| marketing-loops | 1.2.0 | 2026-07-21 |
+| marketing-plan | 1.1.0 | 2026-07-21 |
 | marketing-psychology | 1.1.0 | 2026-02-27 |
+| offers | 1.0.0 | 2026-07-21 |
 | onboarding-cro | 1.1.0 | 2026-02-27 |
 | page-cro | 1.1.0 | 2026-02-27 |
 | paid-ads | 1.1.0 | 2026-02-27 |
@@ -41,7 +45,14 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 
 ## Cambios Recientes
 
-### 2026-07-21
+### 2026-07-21 (Tier 2)
+- Se agregaron las skills `customer-research` (2.0.1), `offers` (1.0.0), `marketing-loops` (1.2.0) y `marketing-plan` (1.1.0), traducidas desde el repo de Corey Haines
+- `marketing-plan` no tenía campo de versión en el original en inglés — se le agregó `1.1.0` (el número que sí aparece en el VERSIONS.md upstream) para mantener consistencia con el resto de este repo
+- `offers` no tiene carpeta `evals/` — tampoco la tiene en el repo original
+- Verificadas ~150 referencias cruzadas entre skills en `marketing-plan` contra el mapeo de nombres locales; sin nombres rotos
+- Confirmado que las menciones a `typefully`, `copycraft`, `marketing-website-design`, `diagram-maker`, `website-copy` en `marketing-plan` son referencias intencionales a herramientas de otros marketplaces de Claude Code, no errores
+
+### 2026-07-21 (Tier 1)
 - Se agregaron las skills `video` (2.1.0) e `image` (2.0.1), traducidas desde el repo de Corey Haines — generación de video e imágenes con IA para producción creativa
 - `social-content` renombrada a `social` y retraducida completa (1.1.0 → 2.2.0): agrega social listening, triage de engagement, frameworks de carrusel, ingeniería inversa de videos virales
 - `ad-creative` retraducida completa (1.1.0 → 2.8.0): página de revisión de creativos en HTML, loop de estrategia creativa, formatos de video reveal nativos de iOS (iMessage, ChatGPT, Apple Notes, AirDrop)

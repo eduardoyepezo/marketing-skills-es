@@ -64,13 +64,17 @@ Consulta la sección **Related Skills** de cada skill para ver el mapa de depend
 | [content-strategy](.agent/skills/marketing/content-strategy/) | Cuando el usuario quiere planificar una estrategia de contenido, decidir qué contenido crear, o determinar qué temas cubrir. También usar... |
 | [copy-editing](.agent/skills/marketing/copy-editing/) | Cuando el usuario quiere editar, revisar o mejorar copy de marketing existente. También usar cuando el usuario menciona 'edita este copy,... |
 | [copywriting](.agent/skills/marketing/copywriting/) | Cuando el usuario quiere escribir, reescribir o mejorar copy de marketing para cualquier página — incluyendo homepage, landing pages, pág... |
+| [customer-research](.agent/skills/marketing/customer-research/) | Cuando el usuario quiere realizar, analizar o sintetizar investigación de clientes. Usar cuando el usuario menciona "investigación de cli... |
 | [email-sequence](.agent/skills/marketing/email-sequence/) | Cuando el usuario quiere crear u optimizar una secuencia de email, campaña drip, flujo de email automatizado o programa de email de ciclo... |
 | [form-cro](.agent/skills/marketing/form-cro/) | Cuando el usuario quiere optimizar cualquier formulario que NO sea de registro/sign-up — incluyendo formularios de captura de leads, form... |
 | [free-tool-strategy](.agent/skills/marketing/free-tool-strategy/) | Cuando el usuario quiere planificar, evaluar o construir una herramienta gratuita con fines de marketing — generación de leads, valor de ... |
 | [image](.agent/skills/marketing/image/) | Cuando el usuario quiere crear, generar, editar u optimizar imágenes para marketing — imágenes hero de blog, gráficos para redes sociales... |
 | [launch-strategy](.agent/skills/marketing/launch-strategy/) | Cuando el usuario quiere planificar un lanzamiento de producto, anuncio de función o estrategia de lanzamiento. También usar cuando el us... |
 | [marketing-ideas](.agent/skills/marketing/marketing-ideas/) | Cuando el usuario necesita ideas de marketing, inspiración o estrategias para su producto SaaS o software. También usar cuando el usuario... |
+| [marketing-loops](.agent/skills/marketing/marketing-loops/) | Cuando el usuario quiere configurar un flujo de trabajo de marketing recurrente y autoejecutable — un loop repetible que un agente de IA ... |
+| [marketing-plan](.agent/skills/marketing/marketing-plan/) | Cuando el usuario necesita un plan de marketing integral para un cliente, una empresa que asesora, o su propio producto. También usar cua... |
 | [marketing-psychology](.agent/skills/marketing/marketing-psychology/) | Cuando el usuario quiere aplicar principios psicológicos, modelos mentales o ciencia del comportamiento al marketing. También usar cuando... |
+| [offers](.agent/skills/marketing/offers/) | Cuando el usuario quiere diseñar, construir o mejorar una oferta — lo que realmente vende — incluyendo enfoque de valor, apilamiento de b... |
 | [onboarding-cro](.agent/skills/marketing/onboarding-cro/) | Cuando el usuario quiere optimizar el onboarding post-registro, la activación de usuarios, la experiencia de primer uso o el tiempo de ob... |
 | [page-cro](.agent/skills/marketing/page-cro/) | Cuando el usuario quiere optimizar, mejorar o aumentar las conversiones en cualquier página de marketing — incluyendo homepage, landing p... |
 | [paid-ads](.agent/skills/marketing/paid-ads/) | Cuando el usuario quiere ayuda con campañas de publicidad pagada en Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X u otras pl... |
@@ -246,11 +250,17 @@ También puedes invocar las skills directamente:
 - `free-tool-strategy` - Herramientas de marketing y calculadoras
 - `referral-program` - Programas de referidos y afiliados
 
+### Investigación y Planeación Estratégica
+- `customer-research` - Investigación de clientes, personas, JTBD, minería de reseñas
+- `marketing-plan` - Plan de marketing integral AARRR de 13 secciones
+- `marketing-loops` - Workflows de marketing recurrentes y autoejecutables
+
 ### Estrategia y Monetización
 - `marketing-ideas` - 140 ideas de marketing para SaaS
 - `marketing-psychology` - Modelos mentales y psicología
 - `launch-strategy` - Lanzamientos de productos y anuncios
 - `pricing-strategy` - Precios, empaquetado y monetización
+- `offers` - Diseño de ofertas, garantías, apilamiento de bonos (servicios y agencias)
 
 ### Ventas y RevOps
 - `revops` - Ciclo de vida de leads, puntuación, enrutamiento, gestión de pipeline

@@ -1,0 +1,162 @@
+{
+  "skill_name": "customer-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tengo 20 transcripciones de entrevistas a clientes. Ayúdame a analizarlas.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe preguntar sobre el objetivo antes de analizar (mejorar mensajería, construir personas, encontrar brechas de producto, etc.). Debe aplicar el marco de extracción: jobs to be done, puntos de dolor, eventos disparadores, resultados deseados, lenguaje/vocabulario, alternativas consideradas. Debe recomendar agrupar por tema, puntuación de frecuencia + intensidad, e identificar las citas más valiosas. Debe preguntar qué entregable se necesita.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Pregunta sobre el objetivo antes de comenzar (mejorar mensajería, construir personas, encontrar brechas, etc.)",
+        "Menciona extraer jobs to be done, puntos de dolor y resultados deseados",
+        "Sugiere organizar citas por tema",
+        "Hace referencia a la puntuación de frecuencia e intensidad",
+        "Pregunta qué entregable se necesita"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Quiero hacer investigación de ICP pero todavía no tengo entrevistas a clientes.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe recomendar la investigación en puntos de encuentro digitales como punto de partida. Debe mencionar Reddit, G2, Capterra, foros, o comunidades de nicho como fuentes. Debe ofrecerse a planear un enfoque de investigación y explicar qué extraer de fuentes en línea. Debe notar que esto es el Modo 2 y preguntar qué producto o categoría investigar.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Recomienda la investigación en puntos de encuentro digitales como alternativa",
+        "Menciona Reddit, G2, o sitios de reseñas como puntos de partida",
+        "Pregunta qué producto o categoría investigar",
+        "Se ofrece a ayudar a extraer insights de fuentes en línea"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Mina Reddit y G2 para entender qué es lo que la gente odia del software de gestión de proyectos.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe identificar subreddits relevantes (r/projectmanagement, r/productivity, r/agile) y estrategias de búsqueda. Debe recomendar leer reseñas de G2 de 3 y 1 estrella y reseñas de 4 estrellas de competidores. Debe planear extraer citas textuales, temas de dolor, y disparadores de cambio. Debe aplicar la tabla de extracción (fuente, cita, contexto, sentimiento, etiqueta de tema, señales de perfil).",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Identifica subreddits relevantes o estrategias de búsqueda para gestión de proyectos",
+        "Sugiere leer reseñas de G2 de 3 y 1 estrella",
+        "Recomienda reseñas de 4 estrellas de competidores para quejas escondidas",
+        "Planea extraer citas textuales y temas de dolor",
+        "Menciona qué buscar: quejas, workarounds, disparadores de cambio"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Constrúyeme una persona de cliente para una marketing manager en una empresa SaaS B2B.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe preguntar si hay investigación existente sobre la cual construir antes de generar una persona. Debe advertir contra inventar detalles sin datos. Debe usar la estructura de persona: perfil, JTBD principal, eventos disparadores, principales dolores, resultados deseados, objeciones, alternativas, vocabulario clave, cómo alcanzarlos. Debe notar que las personas deben construirse con al menos 5-10 puntos de datos.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Pregunta si hay investigación existente sobre la cual construir antes de inventar detalles",
+        "Advierte contra crear personas sin datos",
+        "Incluye jobs to be done, dolores, disparadores y resultados deseados en la estructura de la persona",
+        "Menciona la necesidad de capturar el vocabulario real del cliente",
+        "Señala el umbral mínimo de datos (5-10 puntos de datos)"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Tengo 6 meses de tickets de soporte al cliente. ¿Qué insights puedo extraer de ellos?",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe recomendar categorizar los tickets antes de analizarlos (bugs vs. confusión vs. solicitudes de funciones vs. desajustes de expectativas). Debe advertir contra tratar todos los tickets como la misma señal. Debe sugerir extraer lenguaje recurrente, patrones, y frases de 'ojalá pudiera…'. Debe preguntar sobre el objetivo — mejora de producto, mensajería, reducir carga de soporte, u otra cosa.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Recomienda categorizar los tickets antes de analizarlos (bugs vs. confusión vs. solicitudes de funciones)",
+        "Advierte contra tratar todos los tickets como la misma señal",
+        "Menciona extraer lenguaje recurrente y patrones",
+        "Pregunta sobre el objetivo — mejora de producto, mensajería, u otra cosa"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Qué están diciendo los clientes sobre mis competidores en sitios de reseñas?",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe preguntar qué competidores investigar. Debe recomendar G2 y Capterra como fuentes principales. Debe mencionar específicamente leer las reseñas de 4 estrellas de competidores en busca de quejas escondidas. Debe describir qué extraer: qué aman (inteligencia para battlecard), qué los frustra (oportunidades), necesidades insatisfechas. Debe usar la plantilla de minería de reseñas.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Recomienda leer las reseñas de 4 estrellas de competidores específicamente para quejas escondidas",
+        "Menciona G2 o Capterra como fuentes",
+        "Describe qué extraer: qué aman, qué los frustra, necesidades insatisfechas",
+        "Lo enmarca como insumo de inteligencia competitiva"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Ayúdame a hacer investigación de voz del cliente para un SaaS nuevo en el espacio de RRHH.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe preguntar sobre el segmento específico de ICP dentro de RRHH (reclutador, generalista de RRHH, CHRO, etc.). Debe sugerir puntos de encuentro digitales relevantes: r/humanresources, r/recruiting, comunidades de Slack de RRHH, categoría de RRHH en G2, LinkedIn. Debe planear extraer lenguaje textual para uso en copy. Debe ofrecer producir un banco de citas VOC como entregable.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Pregunta sobre el segmento de ICP objetivo dentro de RRHH",
+        "Sugiere puntos de encuentro digitales relevantes (subreddits, categorías de G2, comunidades)",
+        "Planea extraer lenguaje textual para uso en copy",
+        "Menciona organizar los hallazgos en un banco de citas VOC"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Quiero entender por qué cancelan los clientes. Tengo resultados de encuestas de salida.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe recomendar segmentar las razones de cancelación antes de analizar — no promediar entre distintas causas. Debe sugerir emparejar las respuestas abiertas con datos cuantitativos. Debe preguntar si también hay disponibles datos de entrevistas de ganancia/pérdida o tickets de soporte. Debe aplicar etiquetas de confianza (alta/media/baja) según el tamaño de muestra y la consistencia de la fuente.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Recomienda segmentar las razones de cancelación antes de analizar",
+        "Advierte contra promediar entre distintas causas de cancelación",
+        "Sugiere emparejar las respuestas abiertas con datos cuantitativos",
+        "Pregunta si también hay disponibles datos de entrevistas de ganancia/pérdida"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Encuentra los puntos de encuentro digitales donde los ingenieros de DevOps hablan de su trabajo.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe identificar comunidades específicas relevantes: r/devops, r/sysadmin, Hacker News, grupos de Discord/Slack enfocados en DevOps, LinkedIn, Stack Overflow. Debe sugerir qué buscar en esas comunidades. Debe describir qué señal extraer de cada tipo de fuente y hacer referencia a source-guides.md para playbooks detallados.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Menciona comunidades específicas relevantes (r/devops, Hacker News, LinkedIn, Discord)",
+        "Sugiere qué buscar en esas comunidades",
+        "Describe qué señal extraer de cada tipo de fuente"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Convierte mi investigación de clientes en mensajería que pueda usar en mi homepage.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe extraer el lenguaje VOC y los temas principales antes de pasar al copy. Debe identificar las citas y patrones de lenguaje de mayor señal. Debe producir un resumen VOC o banco de citas, y luego derivar a la habilidad de copywriting para el paso de escritura de copy en sí, en lugar de escribir el copy de la homepage directamente.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Extrae el lenguaje y los temas de VOC primero antes de saltar al copy",
+        "Identifica las citas de mayor señal para la mensajería",
+        "Hace referencia a la habilidad de copywriting para el paso de escritura de copy en sí"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Tengo una app móvil de fitness y quiero entender por qué los usuarios abandonan después de la semana 2.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe reconocer esto como un escenario de investigación B2C. Debe sugerir fuentes apropiadas para B2C: reseñas de app stores (1-3 estrellas), comunidades de fitness en Reddit, secciones de comentarios de YouTube en apps de fitness, comentarios de TikTok/Instagram. Debe también recomendar encuestas in-app y analizar tickets de soporte/reseñas. Debe enmarcarlo en torno a la investigación de activación y formación de hábitos.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Reconoce esto como un escenario de investigación B2C",
+        "Sugiere las reseñas de app stores como fuente principal",
+        "Menciona Reddit o fuentes de comunidad relevantes para fitness/apps de consumo",
+        "Lo enmarca en torno a entender los disparadores de abandono y los resultados deseados"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "No tengo investigación existente y todavía no sé quiénes son mis mejores clientes.",
+      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe tratar esto como un escenario de investigación desde cero. Debe recomendar formar hipótesis antes de reunir datos. Debe sugerir un plan de investigación mínimo viable: 5-10 entrevistas a clientes + un escaneo de puntos de encuentro digitales. Debe proporcionar tips de reclutamiento para entrevistas y qué preguntas hacer. Debe advertir contra construir personas antes de recopilar cualquier dato.",
+      "assertions": [
+        "Verifica si existe product-marketing-context.md",
+        "Reconoce esto como un escenario de investigación desde cero, sin datos previos",
+        "Recomienda formar hipótesis antes de reunir datos",
+        "Sugiere un plan de investigación mínimo viable (entrevistas + fuentes en línea)",
+        "Advierte contra construir personas sin ningún dato"
+      ],
+      "files": []
+    }
+  ]
+}

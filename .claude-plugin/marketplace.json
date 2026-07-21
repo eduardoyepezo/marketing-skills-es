@@ -5,8 +5,8 @@
     "url": "https://github.com/eduardoyepezo"
   },
   "metadata": {
-    "description": "36 marketing skills para agentes de IA en español — optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA (video, imagen) y growth. Basado en el trabajo original de Corey Haines (github.com/coreyhaines31/marketingskills), traducido y adaptado al español.",
-    "version": "1.1.0",
+    "description": "40 marketing skills para agentes de IA en español — optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA (video, imagen), investigación de clientes, diseño de ofertas, planes de marketing y growth. Basado en el trabajo original de Corey Haines (github.com/coreyhaines31/marketingskills), traducido y adaptado al español.",
+    "version": "1.2.0",
     "repository": "https://github.com/eduardoyepezo/marketing-skills-es",
     "original_work": "https://github.com/coreyhaines31/marketingskills",
     "language": "es"
@@ -14,7 +14,7 @@
   "plugins": [
     {
       "name": "marketing-skills-es",
-      "description": "36 marketing skills en español para agencias y marketers: CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos de anuncios, producción de video e imagen con IA, prevención de churn, estrategia de precios, programas de referidos, operaciones de ingresos, habilitación de ventas, arquitectura de sitio, y más.",
+      "description": "40 marketing skills en español para agencias y marketers: CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos de anuncios, producción de video e imagen con IA, investigación de clientes, diseño de ofertas, planes de marketing AARRR, loops de marketing recurrentes, prevención de churn, estrategia de precios, programas de referidos, operaciones de ingresos, habilitación de ventas, arquitectura de sitio, y más.",
       "source": "./",
       "strict": false,
       "skills": [
@@ -29,13 +29,17 @@
         "./.agent/skills/marketing/content-strategy",
         "./.agent/skills/marketing/copy-editing",
         "./.agent/skills/marketing/copywriting",
+        "./.agent/skills/marketing/customer-research",
         "./.agent/skills/marketing/email-sequence",
         "./.agent/skills/marketing/form-cro",
         "./.agent/skills/marketing/free-tool-strategy",
         "./.agent/skills/marketing/image",
         "./.agent/skills/marketing/launch-strategy",
         "./.agent/skills/marketing/marketing-ideas",
+        "./.agent/skills/marketing/marketing-loops",
+        "./.agent/skills/marketing/marketing-plan",
         "./.agent/skills/marketing/marketing-psychology",
+        "./.agent/skills/marketing/offers",
         "./.agent/skills/marketing/onboarding-cro",
         "./.agent/skills/marketing/page-cro",
         "./.agent/skills/marketing/paid-ads",

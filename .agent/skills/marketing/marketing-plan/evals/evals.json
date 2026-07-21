@@ -1,0 +1,96 @@
+{
+  "skill_name": "marketing-plan",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Estoy comenzando un engagement de CMO fraccional con un B2B SaaS Series A que factura $2M de ARR, equipo de 12 personas con 1 marketer, presupuesto de marketing de $20K/mes. Quieren un plan de marketing para compartir con el equipo y el board. Constrúyelo.",
+      "expected_output": "Debe verificar primero si existe product-marketing.md. Debe pedir el nombre del cliente o usar un slug. Debe recorrer el flujo de tres fases (INIT → REVIEW → FINALIZE), comenzando con un intake que cubra estado de financiamiento, equipo, presupuesto, canales, qué está hecho, en curso, stack de herramientas. Debe producir un plan de 13 secciones estructurado por AARRR: resumen ejecutivo, marco estratégico, estado actual (puntuado contra la rúbrica embebida de 17 secciones), Adquisición, Activación, Retención, Referidos, Ingresos, roadmap a 90 días con movidas asignadas a un owner, perspectiva a 12 meses con desbloqueos de capacidad por etapa de financiamiento, stack de operaciones de marketing mapeando skills + MCPs a las etapas de AARRR, banco táctico de ideas cruzando las 139 marketing-ideas con AARRR + estado específico del cliente, marco de medición con norte + indicadores líderes + RACI + decisiones abiertas. Debe tener ~8–12K palabras, listo para pegar en Notion. Debe ser específico para el cliente (su presupuesto, su equipo, sus canales), no genérico.",
+      "assertions": [
+        "Verifica si existe product-marketing.md",
+        "Pide el nombre del cliente o usa un slug",
+        "Recorre la fase INIT con un intake estructurado",
+        "Produce un plan de 13 secciones estructurado por AARRR",
+        "La Sección 3 puntúa contra la rúbrica embebida de 17 secciones",
+        "La Sección 9 (roadmap a 90 días) tiene movidas asignadas a un owner, no solo acciones",
+        "La Sección 10 nombra explícitamente los desbloqueos de capacidad por etapa de financiamiento",
+        "La Sección 11 mapea skills de marketing + MCPs a cada etapa de AARRR",
+        "La Sección 12 cruza las 139 marketing-ideas con estado específico del cliente",
+        "La salida es un markdown listo para pegar en Notion",
+        "El plan es específico para el cliente (su presupuesto, su equipo, sus canales actuales), no genérico"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Somos pre-seed bootstrapped, $0 de presupuesto de marketing pagado, equipo de 4 personas construyendo una app de consumo D2C. El founder quiere un plan a 90 días + roadmap a 12 meses para mostrar a inversionistas durante la próxima ronda. El producto está en beta.",
+      "expected_output": "Debe reconocer el perfil de financiamiento Tier 1 (pre-seed) y omitir recomendaciones de adquisición pagada hasta que se desbloquee presupuesto. Debe inclinar la Adquisición hacia orgánico + lifecycle + movidas de ambassador. Debe mapear explícitamente qué se desbloquea cuando cierre el seed (presupuesto de prueba pagado $5–15K/mes, primera contratación de marketing, etc.). Debe respetar que el producto está en beta y considerar gates de activación/throttling. Debe incluir el diagnóstico AARRR — la restricción vinculante probable en esta etapa es Activación (onboarding) y Referidos. El plan debe ser amigable para inversionistas: el resumen ejecutivo debe poder incorporarse a una actualización.",
+      "assertions": [
+        "Reconoce el nivel pre-seed y usa el perfil de presupuesto Tier 1",
+        "Omite recomendaciones de adquisición pagada hasta que se desbloquee presupuesto",
+        "Inclina la Adquisición hacia orgánico + lifecycle + ambassador",
+        "Nombra qué se desbloquea cuando cierre el seed",
+        "Considera que el producto está en beta",
+        "Identifica la etapa AARRR de restricción vinculante (probablemente Activación o Referidos)",
+        "El resumen ejecutivo puede incorporarse a una actualización de inversionistas",
+        "El plan es operativamente honesto — no finge que existe presupuesto pagado"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "ya tenemos una auditoría hecha — ¿puedes tomar eso y convertirlo en un plan real?",
+      "expected_output": "Debe pedir la salida de la auditoría (ruta del archivo o pegado). Debe reconocer que el puntaje de estado actual ya existe e incorporarlo directamente en la Sección 3 — no volver a puntuar. Debe anotar la fecha del puntaje en caso de que el material haya cambiado desde entonces. Debe proceder con la generación del plan completo de 13 secciones usando los hallazgos de la auditoría para informar el roadmap a 90 días y las secciones AARRR (las brechas de la auditoría se convierten en movidas del plan).",
+      "assertions": [
+        "Pide la salida de la auditoría",
+        "Incorpora el puntaje de la auditoría previa directamente en la Sección 3",
+        "No vuelve a puntuar lo que ya fue puntuado",
+        "Anota la fecha del puntaje y marca cualquier material que haya cambiado",
+        "Usa las brechas de la auditoría para informar el roadmap a 90 días y las movidas de las secciones AARRR",
+        "Aun así produce un plan completo de 13 secciones, no solo la Sección 3"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "/marketing-plan acme-saas — retoma donde quedamos",
+      "expected_output": "Debe leer ~/marketing-plans/acme-saas/progress.md para determinar la fase de la máquina de estados. Debe retomar desde la siguiente sección sin terminar en la fase REVIEW, o pasar a FINALIZE si todas las secciones están aprobadas. NO debe reiniciar silenciosamente desde cero. Si progress.md falta o muestra 'finalizado', debe preguntar: revisar como v{N+1}, empezar de nuevo, o reabrir una sección.",
+      "assertions": [
+        "Lee ~/marketing-plans/acme-saas/progress.md",
+        "Retoma desde la siguiente sección sin terminar según la máquina de estados",
+        "No reinicia silenciosamente desde cero",
+        "Maneja el estado finalizado preguntando al usuario cómo proceder (revisar / nuevo / reabrir)",
+        "Guarda cada sección recién confirmada en el archivo de progreso"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesito un plan para una empresa híbrida de hardware+software de bienestar. Venden un producto físico y una app por suscripción. Series A, $100K/mes de presupuesto de marketing, equipo de 8 personas incluyendo un lead de marketing.",
+      "expected_output": "Debe reconocer el arquetipo híbrido hardware+software y consultar references/client-types.md para los énfasis específicos del arquetipo. La Adquisición se inclina hacia PR + retail + Amazon + SEO de Shopify + pago. La Activación = unboxing + configuración + primera sesión + paywall. La Retención = lifecycle + comunidad. Los Referidos = regalar + reseñas. Los Ingresos = LTV combinado (hardware + suscripción + accesorios). Debe reconocer el nivel Series A y recomendar el gasto pagado apropiado. Debe incluir movidas transversales de marca + customer-research. El banco de ideas debe omitir ideas que entren en conflicto con el posicionamiento premium o las restricciones de hardware.",
+      "assertions": [
+        "Reconoce el arquetipo híbrido hardware+software",
+        "La Adquisición se inclina hacia PR, retail, Amazon, SEO de Shopify, pago",
+        "La Activación cubre unboxing, configuración, primera sesión, paywall",
+        "La Retención cubre lifecycle, comunidad",
+        "Los Referidos cubren regalar, reseñas",
+        "Los Ingresos cubren LTV combinado con hardware + suscripción + accesorios",
+        "Reconoce el nivel Series A en las recomendaciones de presupuesto",
+        "El banco de ideas omite ideas que entran en conflicto con el ajuste de marca, con justificación explícita"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Solo dame un plan de marketing rápido. No lo hagas largo.",
+      "expected_output": "Debe resistirse a producir por defecto un plan corto. Debe explicar que un marketing-plan es el artefacto integral tipo fCMO (~10K palabras) y que, para un plan rápido de un solo canal, la skill específica del canal es la herramienta correcta (email-sequence, paid-ads, seo-audit, etc.). Debe ofrecer alternativas: (a) el marketing-plan completo tal como está diseñado, o (b) apuntar a una skill específica para la necesidad real del usuario. NO debe producir silenciosamente un plan reducido de 3K palabras que se pierda el stack de operaciones o el banco de ideas.",
+      "assertions": [
+        "Se resiste a la solicitud de plan corto y explica por qué",
+        "Nombra a marketing-plan como el artefacto integral tipo fCMO",
+        "Recomienda skills específicas por canal para planes rápidos de un solo canal",
+        "Ofrece alternativas claramente",
+        "No produce silenciosamente un plan reducido"
+      ],
+      "files": []
+    }
+  ]
+}
