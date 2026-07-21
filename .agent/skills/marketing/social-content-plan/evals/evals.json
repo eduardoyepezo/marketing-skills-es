@@ -58,10 +58,10 @@
     {
       "id": 4,
       "prompt": "Escríbeme un post de LinkedIn sobre tendencias de inteligencia artificial para el 2026.",
-      "expected_output": "Debe reconocer que esta es una solicitud de un post individual, no de un plan mensual completo. Debe referirse a la habilidad social-content para crear posts individuales de LinkedIn. No debe generar el plan de contenido mensual completo para una solicitud de un solo post.",
+      "expected_output": "Debe reconocer que esta es una solicitud de un post individual, no de un plan mensual completo. Debe referirse a la habilidad social para crear posts individuales de LinkedIn. No debe generar el plan de contenido mensual completo para una solicitud de un solo post.",
       "assertions": [
         "Reconoce que es una solicitud de post individual",
-        "Refiere a la habilidad social-content",
+        "Refiere a la habilidad social",
         "No genera un plan mensual completo para una solicitud de un solo post"
       ],
       "files": []

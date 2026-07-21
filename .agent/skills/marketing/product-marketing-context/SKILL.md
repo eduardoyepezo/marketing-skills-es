@@ -1,6 +1,7 @@
 ---
 name: product-marketing-context
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere crear o actualizar su documento de contexto de marketing del producto. También usar cuando el usuario menciona 'contexto del producto,' 'contexto de marketing,' 'configurar contexto,' 'posicionamiento,' o quiere evitar repetir información fundamental en las tareas de marketing. Crea `.claude/product-marketing-context.md` que otras habilidades de marketing referencian."
 ---
 

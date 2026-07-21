@@ -1,6 +1,7 @@
 ---
 name: marketing-ideas
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario necesita ideas de marketing, inspiración o estrategias para su producto SaaS o software. También usar cuando el usuario pide 'ideas de marketing,' 'ideas de crecimiento,' 'cómo hacer marketing,' 'estrategias de marketing,' 'tácticas de marketing,' 'formas de promocionar,' o 'ideas para crecer.' Esta habilidad proporciona 139 enfoques de marketing probados organizados por categoría."
 ---
 

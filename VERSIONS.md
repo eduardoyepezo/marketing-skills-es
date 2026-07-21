@@ -5,7 +5,7 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 | Skill | Versión | Última Actualización |
 |-------|---------|----------------------|
 | ab-test-setup | 1.1.0 | 2026-02-27 |
-| ad-creative | 1.1.0 | 2026-02-27 |
+| ad-creative | 2.8.0 | 2026-07-21 |
 | ai-seo | 1.1.0 | 2026-02-27 |
 | analytics-tracking | 1.1.0 | 2026-02-27 |
 | churn-prevention | 1.1.0 | 2026-02-27 |
@@ -17,6 +17,7 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 | email-sequence | 1.1.0 | 2026-02-27 |
 | form-cro | 1.1.0 | 2026-02-27 |
 | free-tool-strategy | 1.1.0 | 2026-02-27 |
+| image | 2.0.1 | 2026-07-21 |
 | launch-strategy | 1.1.0 | 2026-02-27 |
 | marketing-ideas | 1.1.0 | 2026-02-27 |
 | marketing-psychology | 1.1.0 | 2026-02-27 |
@@ -35,9 +36,19 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 | seo-audit | 1.1.0 | 2026-02-27 |
 | signup-flow-cro | 1.1.0 | 2026-02-27 |
 | site-architecture | 1.1.0 | 2026-02-27 |
-| social-content | 1.1.0 | 2026-02-27 |
+| social | 2.2.0 | 2026-07-21 |
+| video | 2.1.0 | 2026-07-21 |
 
 ## Cambios Recientes
+
+### 2026-07-21
+- Se agregaron las skills `video` (2.1.0) e `image` (2.0.1), traducidas desde el repo de Corey Haines — generación de video e imágenes con IA para producción creativa
+- `social-content` renombrada a `social` y retraducida completa (1.1.0 → 2.2.0): agrega social listening, triage de engagement, frameworks de carrusel, ingeniería inversa de videos virales
+- `ad-creative` retraducida completa (1.1.0 → 2.8.0): página de revisión de creativos en HTML, loop de estrategia creativa, formatos de video reveal nativos de iOS (iMessage, ChatGPT, Apple Notes, AirDrop)
+- Se agregaron las guías de herramientas `heygen.md` y `hyperframes.md` (video con IA) al registro de herramientas
+- Se corrigieron referencias cruzadas rotas a `social-content` en `video`, `cold-email`, `content-strategy`, `social-content-plan` y `tools/integrations/supermetrics.md`
+- Se corrigieron rutas rotas en la tabla de skills de README.md (apuntaban a `skills/` en vez de `.agent/skills/marketing/`)
+- Se agregaron `content-plan-html` y `social-content-plan` (skills propias, no del repo de Corey) al manifiesto de instalación — nunca se habían registrado
 
 ### 2026-02-27
 - Migración de la ruta de contexto de `.claude/` a `.agents/` para compatibilidad agnóstica al agente

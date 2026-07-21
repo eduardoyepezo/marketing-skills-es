@@ -1,6 +1,7 @@
 ---
 name: free-tool-strategy
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere planificar, evaluar o construir una herramienta gratuita con fines de marketing — generación de leads, valor de SEO o awareness de marca. También usar cuando el usuario menciona "engineering as marketing," "herramienta gratuita," "herramienta de marketing," "calculadora," "generador," "herramienta interactiva," "herramienta de generación de leads," "construir una herramienta para leads," o "recurso gratuito." Esta habilidad conecta ingeniería y marketing — útil para fundadores y marketers técnicos.
 ---
 

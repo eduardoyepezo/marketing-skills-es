@@ -1,6 +1,7 @@
 ---
 name: content-strategy
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere planificar una estrategia de contenido, decidir qué contenido crear, o determinar qué temas cubrir. También usar cuando el usuario menciona "estrategia de contenido," "qué debería escribir," "ideas de contenido," "estrategia de blog," "clusters de temas," "planificación de contenido," "content strategy," "what should I write about," o "content planning." Para escribir piezas individuales, ver copywriting. Para auditorías de SEO específicas, ver seo-audit.
 ---
 
@@ -290,4 +291,4 @@ Representación visual o estructurada de cómo se interconecta el contenido.
 - **seo-audit**: Para SEO técnico y optimización on-page
 - **programmatic-seo**: Para generación de contenido a escala
 - **email-sequence**: Para contenido basado en correo electrónico
-- **social-content**: Para contenido de redes sociales
+- **social**: Para contenido de redes sociales

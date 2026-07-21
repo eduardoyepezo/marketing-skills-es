@@ -1,6 +1,7 @@
 ---
 name: ab-test-setup
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere planear, diseñar o implementar una prueba A/B o experimento. También usar cuando el usuario menciona "prueba A/B," "split test," "experimento," "probar este cambio," "variante," "prueba multivariable," "hipótesis," "A/B test," "split test," "experiment," "test this change," o "multivariate test." Para implementación de seguimiento, ver analytics-tracking.
 ---
 

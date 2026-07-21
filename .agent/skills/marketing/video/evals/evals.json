@@ -1,0 +1,103 @@
+{
+  "skill_name": "video",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesitamos un video demo de producto de 2 minutos para el homepage de nuestro SaaS. ¿Cuál es la forma más rápida de producirlo?",
+      "expected_output": "Debe revisar primero product-marketing.md. Debe recorrer el flujo de Video Demo de Producto: guion de las funciones clave y propuestas de valor (referencia cruzada a la habilidad copywriting), grabación de pantalla del flujo del producto, overlay programático con Hyperframes o Remotion para títulos/callouts/transiciones, B-roll opcional con IA usando Veo/Runway para tomas de establecimiento, voz en off vía grabación o avatar de IA (HeyGen) para la narración, exportar con especificaciones apropiadas para la plataforma (16:9 para el homepage). Debe recomendar Hyperframes por su compatibilidad con agentes (HTML plano, sin DSL de React). Debe recordar: no usar IA para las pantallas de UI del producto (los modelos alucinan la UI) — usar grabación de pantalla real. Debe mencionar que los subtítulos son esenciales (85% del video social se ve sin sonido — aplica también al homepage).",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Recorre los pasos del flujo Demo de Producto",
+        "Usa grabación de pantalla real, no UI generada por IA",
+        "Recomienda una herramienta de overlay programático",
+        "Menciona los subtítulos",
+        "Hace referencia cruzada a la habilidad copywriting"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Queremos hacer videos semanales de actualización de producto. De unos 60 segundos cada uno. No queremos salir en cámara. Recomienda una configuración.",
+      "expected_output": "Debe recomendar un flujo de avatar de IA dado el cadencia semanal recurrente y la preferencia de no salir en cámara. Debe recomendar HeyGen específicamente: mejor lip-sync, tiene servidor MCP (para que los agentes generen videos directamente), más de 230 avatares, más de 140 idiomas, el plan Creator soporta videos ilimitados de 5 minutos. Debe explicar los avatares personalizados (subir 2-5 min de ti mismo para un gemelo digital) como opción para consistencia de marca. Debe delinear el pipeline recurrente: guion escrito a partir del contexto del producto, HeyGen genera el video de avatar, overlay programático opcional con Hyperframes para capturas de UI/callouts, exportar y distribuir. Debe mencionar que este es exactamente el caso donde brillan los avatares de IA frente a otros enfoques (contenido recurrente, versiones multilingües, outreach personalizado a escala). Debe advertir: si el contenido auténtico de fundador importa más que la escala, filmarse a uno mismo en su lugar.",
+      "assertions": [
+        "Recomienda el enfoque de avatar de IA",
+        "Nombra específicamente a HeyGen",
+        "Menciona el servidor MCP de HeyGen para agentes",
+        "Menciona la opción de avatares personalizados",
+        "Identifica el caso como recurrente",
+        "Advierte sobre el trade-off de autenticidad"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Quiero generar un clip de 10 segundos de una persona escribiendo en un laptop en una cafetería para nuestra landing page. ¿Qué herramienta de IA?",
+      "expected_output": "Debe aplicar la comparación de modelos de Generación de Video con IA. Debe recomendar Veo 3 por la mejor calidad con audio sincronizado, Runway Gen-4 por control de movimiento y consistencia temporal (punto óptimo de ~10 seg/generación), o Kling 3.0 por producción de volumen a menor costo. Debe dar un ejemplo de prompt de video estructurado siguiendo el patrón Sujeto + Acción + Cámara + Estilo + Mood: 'A close-up shot of hands typing on a laptop keyboard in a cozy coffee shop, shallow depth of field, warm afternoon lighting through a window, camera holds steady, cinematic color grading, 4K.' Debe advertir sobre errores comunes de prompting: demasiado vago, ignorar el movimiento de cámara, olvidar el estilo, pedir texto legible. Debe mencionar que Sora ha tenido disponibilidad limitada — verificar el estado actual.",
+      "assertions": [
+        "Compara Veo, Runway y Kling",
+        "Provee un ejemplo de prompt de video estructurado",
+        "Sigue el patrón Sujeto + Acción + Cámara + Estilo + Mood",
+        "Advierte sobre errores comunes de prompting",
+        "Señala las salvedades de fiabilidad de Sora"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Acabamos de hacer un webinar de 60 minutos. ¿Cómo sacamos clips cortos de ahí para redes sociales?",
+      "expected_output": "Debe aplicar el Flujo de Reutilización: contenido long-form → Descript (limpiar, quitar muletillas, pulir) → Opus Clip (extraer automáticamente 5-10 mejores momentos, puntúa el potencial de viralidad) → CapCut (agregar subtítulos, efectos, estilo de plataforma) → distribuir a TikTok, Reels, Shorts, LinkedIn. Debe explicar cuándo usar cada herramienta: Descript para edición basada en transcripción, Opus Clip para encontrar los mejores momentos a escala, CapCut para pulido nativo de plataforma, Captions.ai para subtítulos automáticos y corrección de contacto visual si se necesita. Debe mencionar que el 85% del video social se ve sin sonido — los subtítulos son esenciales. Debe mencionar que el aspect ratio importa: 9:16 para TikTok/Reels/Shorts, 1:1 o 9:16 para LinkedIn. Debe recomendar enganchar en los primeros 3 segundos — referencia cruzada a la habilidad social.",
+      "assertions": [
+        "Aplica el flujo de reutilización",
+        "Nombra Descript, Opus Clip, CapCut en secuencia",
+        "Menciona que los subtítulos son esenciales",
+        "Especifica los aspect ratios por plataforma",
+        "Menciona enganchar en los primeros 3 segundos",
+        "Puede hacer referencia cruzada a la habilidad social"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Necesitamos generar 50 videos de intro personalizados para outreach de ventas. Cada uno menciona un nombre de empresa y un pain point distinto.",
+      "expected_output": "Debe recomendar un pipeline nativo para agentes que combine HeyGen MCP (o API) para la narración con avatar + Hyperframes para overlays visuales. Debe explicar: preparar una plantilla de guion maestra con variables, correr un loop generando 50 videos de HeyGen cada uno con un guion personalizado, overlays programáticos opcionales vía Hyperframes para el logo de la empresa o contexto visual. Debe señalar que HeyGen es apto para outreach personalizado a escala y tiene servidor MCP. Debe advertir sobre trade-offs de calidad a volumen y recomendar probar los primeros 5 manualmente antes de generar los 50. Debe mencionar el seguimiento de respuestas para medir el ROI vs. correos fríos de texto — estos son costosos de producir así que deberían superar significativamente al email para justificar el esfuerzo. Debe mencionar los subtítulos para los videos.",
+      "assertions": [
+        "Recomienda el pipeline HeyGen + Hyperframes",
+        "Nombra el servidor MCP de HeyGen",
+        "Sugiere el enfoque de plantilla + loop",
+        "Recomienda probar 5 manualmente primero",
+        "Menciona el seguimiento de respuestas / ROI",
+        "Menciona los subtítulos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Debería usar Hyperframes o Remotion para video programático?",
+      "expected_output": "Debe comparar ambos con base en la tabla Cuál Elegir. Debe recomendar Hyperframes si: el flujo es guiado por agentes (HTML/CSS plano, sin DSL de React — los modelos de IA generan mejor HTML que componentes de React), curva de aprendizaje mínima, necesidades de animación básicas, el renderizado local es suficiente, se quiere licencia Apache 2.0. Debe recomendar Remotion si: ya es un equipo de React, se necesitan animaciones complejas (Spring, interpolate), se necesita renderizado en lote a gran escala vía Lambda para escala AWS, se puede manejar la curva de aprendizaje de React + API de Remotion, se está cómodo con la licencia de empresa para uso comercial. Debe señalar que Hyperframes es de HeyGen y nativo para LLM por diseño. Debe preguntar sobre el stack técnico del usuario y la complejidad de animación para recomendar una elección final.",
+      "assertions": [
+        "Compara ambos con la tabla Cuál Elegir",
+        "Señala que Hyperframes usa HTML/CSS plano",
+        "Señala que Remotion soporta Lambda para escala",
+        "Menciona Apache 2.0 vs. licencia de empresa",
+        "Recomienda Hyperframes para flujos guiados por agentes",
+        "Pregunta sobre el stack o las necesidades de animación"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Hay un estilo de edit de TikTok que me encanta — cortes rápidos, subtítulos de una palabra que aparecen con fuerza, un whoosh en cada cambio de escena. Tengo mi propio clip de talking-head. Desglosa cómo funciona ese edit para poder replicar el estilo. Aquí está la referencia: [link]",
+      "expected_output": "Debe aplicar references/edit-anatomy.md (hacer ingeniería inversa del edit en un spec reutilizable), no solo describirlo. Debe extraer la referencia con watch-video (visual/multimodal para leer frames + estilo de subtítulos + timing de cortes) o social-fetch — no conformarse solo con la transcripción. Debe extraer la anatomía del edit beat por beat a través de las dimensiones (toma/encuadre, ritmo de corte/cortes por segundo, texto en pantalla contenido+ubicación+timing, estilo de subtítulos, movimiento/punch-ins, b-roll/overlays, diseño de sonido, el hook de los primeros 2s, la curva de ritmo) y entregar TANTO una tabla beat sheet por beat COMO un resumen breve de estilo con los 3-5 movimientos característicos. Debe enfatizar patrones sobre el registro de instancias individuales. Debe presentar la beat sheet para una aprobación de revisión única (si el texto en pantalla dice lo que quieres; si los cambios de escena caen donde quieres) antes de ejecutar, y señalar que el spec puede ejecutarse en Remotion/Hyperframes, CapCut, o una herramienta de reestilizado con IA. Debe aplicar el resguardo de originalidad: copiar la gramática de edición aplicada al propio footage/mensaje del usuario, nunca el footage, guion o música de la referencia.",
+      "assertions": [
+        "Aplica el método de ingeniería inversa de edit-anatomy, no una descripción simple",
+        "Extrae la referencia con watch-video/social-fetch para leer los frames reales, no solo la transcripción",
+        "Extrae la anatomía del edit a través de las dimensiones y expresa patrones (no una lista cruda de timestamps de corte)",
+        "Entrega una beat sheet por beat Y un resumen de estilo de los movimientos característicos",
+        "Presenta la beat sheet para una aprobación de revisión única antes de ejecutar",
+        "Señala las vías de ejecución (Remotion/Hyperframes, CapCut, o herramienta de reestilizado con IA)",
+        "Aplica el resguardo de originalidad — copia la gramática de edición aplicada al propio footage del usuario, nunca el footage/guion/música de la referencia"
+      ],
+      "files": []
+    }
+  ]
+}

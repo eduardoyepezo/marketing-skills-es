@@ -142,4 +142,4 @@ GET https://api.supermetrics.com/enterprise/v2/users
 - paid-ads
 - seo-audit
 - content-strategy
-- social-content
+- social

@@ -1,6 +1,7 @@
 ---
 name: signup-flow-cro
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere optimizar flujos de registro, creación de cuenta o activación de prueba. También usar cuando el usuario menciona "conversiones de registro," "fricción en el registro," "optimización del formulario de registro," "registro de prueba gratis," "reducir abandono en el registro," o "flujo de creación de cuenta." Para onboarding post-registro, ver onboarding-cro. Para formularios de captura de leads (no creación de cuenta), ver form-cro.
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: paywall-upgrade-cro
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere crear u optimizar paywalls dentro de la app, pantallas de actualización, modales de upsell o puertas de funciones. También usar cuando el usuario menciona "paywall," "pantalla de actualización," "modal de actualización," "upsell," "puerta de función," "convertir gratis a pagado," "conversión freemium," "pantalla de expiración de prueba," "pantalla de límite alcanzado," "prompt de actualización de plan," o "precios dentro de la app." Distinto de las páginas de precios públicas (ver page-cro) — esta habilidad se enfoca en momentos de actualización dentro del producto donde el usuario ya ha experimentado valor.
 ---
 

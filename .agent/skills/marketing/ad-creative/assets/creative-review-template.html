@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--
+  Creative Review Page — a shareable ad-creative approval artifact.
+
+  HOW TO USE (agents): replace the JSON inside <script id="review-data"> below
+  with the real project. Everything else renders from it. The file is
+  self-contained — no build, no network, no dependencies. Open it in a browser,
+  host it on any static host (Vercel/Netlify/GitHub Pages), or hand off the
+  single .html file.
+
+  THE DATA BLOCK IS JSON, NOT JAVASCRIPT:
+    - double-quoted keys and strings, no comments, no trailing commas
+    - it is inert data (parsed with JSON.parse), so a value can never execute
+    - SECURITY: escape every literal "<" in your text values as < so a
+      value like "</script>" can never break out of the tag. All values are
+      also HTML-escaped again at render time.
+
+  DATA SHAPE — see references/creative-review-page.md for the annotated spec.
+  Images: each frame's "image" may be a URL, a relative path, or a data URI.
+  If omitted (or the file is missing), a placeholder shows the frame label +
+  the image prompt — use this for concepts not yet rendered to image.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Revisión de Creatividades</title>
+<style>
+  :root {
+    --bg: #f4f3f0; --card: #ffffff; --ink: #16150f; --muted: #6b6a63;
+    --line: #e4e2dc; --accent: #2f6fed; --accent-soft: #eaf0fe;
+    --radius: 14px; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.05);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 80px; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  a { color: var(--accent); }
+
+  header.project { margin-bottom: 28px; }
+  header.project h1 { font-size: 20px; margin: 6px 0 2px; letter-spacing: -.01em; }
+  header.project .sub { color: var(--muted); font-size: 13px; }
+
+  .concepts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin: 14px 0 28px; }
+  .concept { text-align: left; background: var(--card); border: 1.5px solid var(--line); border-radius: var(--radius);
+    padding: 14px 16px; cursor: pointer; transition: border-color .12s, box-shadow .12s; font: inherit; color: inherit; }
+  .concept:hover { border-color: #cfcdc6; }
+  .concept[aria-selected="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); background: #fff; }
+  .concept .row1 { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .concept .num { font-size: 11px; font-weight: 700; color: var(--muted); }
+  .concept .frames { font-size: 11px; color: var(--muted); }
+  .concept .name { font-weight: 650; font-size: 15px; margin: 4px 0 3px; }
+  .concept .tag { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
+
+  .grid { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: start; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  .col-label { margin-bottom: 10px; }
+
+  .toggles { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 12px; }
+  .seg { display: inline-flex; background: #ecebe6; border-radius: 999px; padding: 3px; }
+  .seg button { border: 0; background: transparent; font: inherit; font-size: 12.5px; font-weight: 600; color: var(--muted);
+    padding: 5px 12px; border-radius: 999px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  .seg .lbl { align-self: center; font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
+
+  .post { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+  .post .top { display: flex; align-items: center; gap: 10px; padding: 11px 12px; }
+  .post .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center; font-weight: 700; font-size: 13px; overflow: hidden; flex: none; }
+  .post .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .post .who { line-height: 1.2; }
+  .post .who .name { font-weight: 650; font-size: 13.5px; }
+  .post .who .partner { font-size: 11.5px; color: var(--muted); }
+  .post .dots { margin-left: auto; color: var(--muted); font-weight: 700; letter-spacing: 2px; }
+  .frame { position: relative; aspect-ratio: 4/5; background: #ded9d0; display: grid; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; grid-area: 1/1; z-index: 1; }
+  .frame .ph { grid-area: 1/1; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;
+    background: linear-gradient(135deg,#efece5,#e2ddd2); }
+  .frame .ph .plabel { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #948e80; }
+  .frame .ph .pprompt { font-size: 13px; color: #5f5a4e; line-height: 1.4; }
+  .frame .badge { position: absolute; top: 12px; left: 12px; z-index: 2; background: rgba(255,255,255,.92);
+    font-size: 11.5px; font-weight: 600; padding: 5px 10px; border-radius: 999px; display: flex; align-items: center; gap: 5px; }
+  .frame .counter { position: absolute; top: 12px; right: 12px; z-index: 2; background: rgba(0,0,0,.6); color: #fff; font-size: 11px;
+    font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+  .frame .headline { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 18px 16px 20px; color: #fff;
+    font-size: 21px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em;
+    background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,0)); }
+  .frame .headline.light { color: var(--ink); background: linear-gradient(to top, rgba(255,255,255,.85), rgba(255,255,255,0)); }
+
+  /* Instagram chrome */
+  .ig-cta { display: flex; align-items: center; justify-content: space-between; padding: 12px; border-top: 1px solid var(--line);
+    font-weight: 600; font-size: 13.5px; }
+  .ig-cta .chev { color: var(--muted); }
+  .ig-actions { display: flex; gap: 16px; padding: 10px 12px 2px; color: #26251f; }
+  .ig-actions svg { width: 22px; height: 22px; }
+  .ig-actions .save { margin-left: auto; }
+  .likes { padding: 6px 12px 2px; font-weight: 650; font-size: 13px; }
+  .caption { padding: 2px 12px 14px; font-size: 13px; line-height: 1.4; }
+  .caption .h { font-weight: 650; }
+  .caption .more { color: var(--muted); }
+
+  /* Facebook chrome — link card below image + text actions */
+  .fb-card { display: flex; align-items: center; gap: 12px; padding: 12px; background: #f3f4f6; border-top: 1px solid var(--line); }
+  .fb-card .meta { min-width: 0; flex: 1; }
+  .fb-card .dom { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  .fb-card .hl { font-size: 14px; font-weight: 650; line-height: 1.25; margin-top: 2px; overflow: hidden; }
+  .fb-card .btn { flex: none; background: #e4e6eb; color: #050505; font-weight: 650; font-size: 12.5px; padding: 8px 14px; border-radius: 7px; }
+  .fb-actions { display: flex; padding: 4px 12px; border-top: 1px solid var(--line); }
+  .fb-actions span { flex: 1; text-align: center; padding: 8px 0; font-size: 13px; font-weight: 600; color: var(--muted); }
+
+  .board { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); margin-bottom: 20px; }
+  .board .frames-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+  @media (max-width: 480px) { .board .frames-grid { grid-template-columns: repeat(2, 1fr); } }
+  .thumb { border: 0; background: transparent; padding: 0; cursor: pointer; text-align: left; font: inherit; color: inherit; }
+  .thumb .box { aspect-ratio: 4/5; border-radius: 9px; overflow: hidden; border: 2px solid transparent; background: #e7e2d8;
+    display: grid; transition: border-color .12s; }
+  .thumb[aria-current="true"] .box { border-color: var(--accent); }
+  .thumb .box img { width: 100%; height: 100%; object-fit: cover; grid-area: 1/1; z-index: 1; }
+  .thumb .box .mini { grid-area: 1/1; padding: 8px; font-size: 10.5px; color: #7a7566; line-height: 1.3;
+    background: linear-gradient(135deg,#efece5,#e2ddd2); overflow: hidden; }
+  .thumb .cap { margin-top: 6px; font-size: 12px; }
+  .thumb .cap .n { color: var(--muted); font-weight: 700; margin-right: 6px; }
+
+  .copy { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+  .copy .block { padding: 14px 0; border-top: 1px solid var(--line); }
+  .copy .block:first-of-type { border-top: 0; padding-top: 4px; }
+  .headline-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; font: inherit; color: inherit;
+    background: #faf9f6; border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 13px; cursor: pointer; margin-top: 8px; }
+  .headline-opt[aria-pressed="true"] { border-color: var(--accent); background: #fff; box-shadow: 0 0 0 3px var(--accent-soft); }
+  .headline-opt .n { font-size: 11px; font-weight: 700; color: var(--muted); margin-top: 2px; }
+  .headline-opt .t { font-size: 14px; line-height: 1.35; }
+  .kv { font-size: 13.5px; line-height: 1.5; }
+  .kv .dest { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+  .steps { margin: 8px 0 0; padding: 0; list-style: none; }
+  .steps li { display: flex; gap: 10px; padding: 5px 0; font-size: 13px; line-height: 1.4; }
+  .steps li .i { flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center; font-size: 11px; font-weight: 700; }
+  .grounding { background: #f6f5ef; border: 1px dashed #cfcabb; border-radius: 10px; padding: 12px 14px; font-size: 12.5px; color: #5f5a4e; line-height: 1.45; margin-top: 8px; }
+  .err { background: #fbeaea; border: 1px solid #e6b7b7; color: #8a2b2b; border-radius: 10px; padding: 14px 16px; font-size: 13px; }
+  footer { margin-top: 40px; text-align: center; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- DATA — replace this JSON with your project (see the comment at the top of the file). -->
+<script type="application/json" id="review-data">
+{
+  "project": {
+    "brand": "Truvani",
+    "agency": "Light Labs",
+    "date": "2026-07-12",
+    "note": "Conceptos de social paga whitelist para revisión"
+  },
+  "platforms": ["instagram", "facebook"],
+  "concepts": [
+    {
+      "name": "Prueba de Metales Pesados",
+      "tagline": "Lifestyle hero, luego los resultados del laboratorio",
+      "handles": [
+        { "name": "truvani", "partner": "Colaboración pagada con lightlabs", "initials": "TV" },
+        { "name": "Light Labs", "partner": "Colaboración pagada con truvani", "initials": "LL" }
+      ],
+      "frames": [
+        { "label": "Hook", "prompt": "Toma hero de la bolsa de producto sobre rosa suave, overlay de encaje dorado", "headline": "Por fin — una proteína a base de plantas probada por terceros contra metales pesados.", "headlineTheme": "dark" },
+        { "label": "El problema", "prompt": "Tarjeta editorial: 'Las plantas absorben más que nutrientes' + chips de Pb/As/Cd" },
+        { "label": "Entra Light Labs", "prompt": "Tarjeta limpia: 'Así que lo enviamos a Light Labs' + nota de laboratorio independiente" },
+        { "label": "Los resultados", "prompt": "Tabla de resultados: Arsénico / Cadmio / Plomo, todos dentro de los límites, check verde" },
+        { "label": "Para contexto", "prompt": "Barra de comparación 'Menos arsénico que tu desayuno'" },
+        { "label": "El ask", "prompt": "Un producto en el que finalmente puedes confiar — cuadro de CTA", "headline": "Una proteína en la que finalmente puedes confiar." }
+      ],
+      "headlines": [
+        "Por fin — una proteína a base de plantas probada por terceros contra metales pesados.",
+        "Probamos nuestra proteína contra metales pesados. Esto encontró un laboratorio independiente.",
+        "La mayoría de los polvos de proteína nunca se prueban contra metales pesados. El nuestro sí."
+      ],
+      "primaryText": "Probamos nuestra Proteína a Base de Plantas contra los metales pesados que se esconden en los polvos “limpios” — plomo, arsénico y cadmio. Esto es exactamente lo que midió un laboratorio independiente.",
+      "destination": { "url": "shop.truvani.com", "cta": "Comprar ahora", "offer": "72% OFF Kit Inicial de Proteína" },
+      "rollout": {
+        "title": "Cómo funciona el whitelist",
+        "steps": [
+          "Truvani revisa y aprueba la creatividad — Light Labs la construye.",
+          "Truvani envía una solicitud de partnership en Meta que le da acceso a Light Labs solo a este anuncio.",
+          "Light Labs lo lanza bajo el handle de co-marca.",
+          "Reportamos el rendimiento de vuelta — encuadrado como una primera prueba gratuita y mutuamente beneficiosa."
+        ]
+      },
+      "grounding": "Los resultados son el panel real de Light Labs de Truvani (Vainilla, probado el 13 de noviembre de 2025). Las imágenes son fotografía propia de producto y lifestyle de Truvani."
+    },
+    {
+      "name": "Más Limpio Que el Arroz",
+      "tagline": "Lidera con la comparación de arroz integral",
+      "frames": [
+        { "label": "Hook", "prompt": "Visual dividido: arroz integral vs. cucharada de proteína", "headline": "¿Tu proteína de arroz integral “limpia”? Pruébala.", "headlineTheme": "dark" },
+        { "label": "La afirmación", "prompt": "Tarjeta de estadística comparando niveles de arsénico" },
+        { "label": "La prueba", "prompt": "Tabla de resultados de Light Labs" },
+        { "label": "El contexto", "prompt": "Qué significan los números, en términos simples" },
+        { "label": "El ask", "prompt": "Cuadro de oferta del kit inicial", "headline": "Confía en la etiqueta. Luego confía en la prueba." }
+      ],
+      "headlines": [
+        "¿Tu proteína de arroz integral “limpia”? Pruébala.",
+        "La proteína de arroz integral suele ser la peor opción en cuanto a arsénico. Revisamos la nuestra.",
+        "“A base de plantas” no significa “limpio.” Tenemos el panel de laboratorio para probar que la nuestra sí lo es."
+      ],
+      "primaryText": "La proteína de arroz integral es una de las fuentes más comunes de arsénico dietario. Así que enviamos la nuestra a un laboratorio independiente. Aquí está el panel.",
+      "destination": { "url": "shop.truvani.com", "cta": "Comprar ahora", "offer": "72% OFF Kit Inicial de Proteína" },
+      "grounding": "Las cifras de comparación provienen del panel de Light Labs de Truvani y de rangos publicados de arsénico dietario. No se nombra a ningún competidor."
+    }
+  ]
+}
+</script>
+
+<div class="wrap">
+  <header class="project" id="project"></header>
+  <div class="eyebrow">Concepto creativo · alterna entre ideas</div>
+  <div class="concepts" id="concepts" role="tablist"></div>
+  <div class="grid">
+    <section>
+      <div class="eyebrow col-label" id="preview-label">Vista previa in-feed</div>
+      <div class="toggles" id="toggles"></div>
+      <div class="post" id="post"></div>
+    </section>
+    <section>
+      <div class="board">
+        <div class="eyebrow" id="board-label">Storyboard · toca para saltar</div>
+        <div class="frames-grid" id="frames-grid"></div>
+      </div>
+      <div class="copy" id="copy"></div>
+    </section>
+  </div>
+  <footer id="footer"></footer>
+</div>
+
+<script>
+/* ============================================================================
+   RENDER — generic; no need to edit when swapping the DATA JSON above.
+   ========================================================================== */
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, c => (
+  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const PLATFORMS = { instagram: "Instagram", facebook: "Facebook" };
+
+let DATA;
+try {
+  DATA = JSON.parse(document.getElementById("review-data").textContent);
+} catch (e) {
+  document.querySelector(".wrap").innerHTML =
+    '<div class="err"><b>No se pudieron leer los datos de revisión.</b><br/>El bloque <code>#review-data</code> debe ser JSON válido — claves y strings entre comillas dobles, sin comentarios, sin comas colgantes. El parser dijo: ' + esc(e.message) + '</div>';
+  throw e;
+}
+
+const state = { concept: 0, frame: 0, platform: null, handle: 0, headline: 0 };
+const concept = () => DATA.concepts[state.concept];
+
+// platforms restricted to the ones we can render; default to first valid
+const platformList = () => (DATA.platforms || ["instagram"]).filter(p => PLATFORMS[p]);
+state.platform = platformList()[0] || "instagram";
+
+const heart = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+const comment = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-11.8 7.7L3 21l1.9-6.2A8.4 8.4 0 1 1 21 11.5z"/></svg>';
+const share = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
+const bookmark = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+
+function renderProject() {
+  const p = DATA.project || {};
+  const line = [p.brand, p.agency && `× ${p.agency}`].filter(Boolean).join(" ");
+  document.getElementById("project").innerHTML =
+    `<div class="eyebrow">Revisión de creatividades${p.date ? " · " + esc(p.date) : ""}</div>
+     <h1>${esc(line || "Creatividad publicitaria")}</h1>${p.note ? `<div class="sub">${esc(p.note)}</div>` : ""}`;
+  document.getElementById("footer").innerHTML =
+    `Revisión de creatividades${p.agency ? " · " + esc(p.agency) : ""} — conceptos para aprobación. Nada aquí está activo hasta que elijas.`;
+}
+
+function renderConcepts() {
+  document.getElementById("concepts").innerHTML = DATA.concepts.map((c, i) => `
+    <button class="concept" role="tab" aria-selected="${i === state.concept}" data-i="${i}">
+      <div class="row1"><span class="num">${String(i + 1).padStart(2, "0")}</span>
+        <span class="frames">${c.frames.length} cuadro${c.frames.length === 1 ? "" : "s"}</span></div>
+      <div class="name">${esc(c.name)}</div>
+      <div class="tag">${esc(c.tagline || "")}</div>
+    </button>`).join("");
+  document.querySelectorAll(".concept").forEach(b =>
+    b.onclick = () => { state.concept = +b.dataset.i; state.frame = 0; state.handle = 0; state.headline = 0; renderAll(); });
+}
+
+function handles() {
+  return concept().handles || [{
+    name: DATA.project?.brand || "marca",
+    partner: DATA.project?.agency ? "Colaboración pagada con " + DATA.project.agency.toLowerCase() : "Patrocinado",
+    initials: (DATA.project?.brand || "AD").slice(0, 2).toUpperCase()
+  }];
+}
+
+function renderToggles() {
+  const plats = platformList(), hs = handles();
+  let html = "";
+  if (plats.length > 1) {
+    html += `<div class="seg" role="group">${plats.map(p =>
+      `<button data-plat="${esc(p)}" aria-pressed="${p === state.platform}">${esc(PLATFORMS[p])}</button>`).join("")}</div>`;
+  }
+  if (hs.length > 1) {
+    html += `<div class="seg" role="group"><span class="lbl">Handle</span>${hs.map((h, i) =>
+      `<button data-handle="${i}" aria-pressed="${i === state.handle}">${esc(h.name)}</button>`).join("")}</div>`;
+  }
+  const el = document.getElementById("toggles");
+  el.innerHTML = html;
+  el.querySelectorAll("[data-plat]").forEach(b => b.onclick = () => { state.platform = b.dataset.plat; renderToggles(); renderPost(); });
+  el.querySelectorAll("[data-handle]").forEach(b => b.onclick = () => { state.handle = +b.dataset.handle; renderToggles(); renderPost(); });
+  document.getElementById("preview-label").textContent = (hs.length > 1 ? "Anuncio whitelist · " : "") + "Vista previa in-feed";
+}
+
+// placeholder underneath + image on top; a missing/broken image removes itself → placeholder shows
+function frameVisual(f, phCls) {
+  const ph = `<div class="${phCls}"><div class="plabel">${esc(f.label)}</div><div class="pprompt">${esc(f.prompt || "")}</div></div>`;
+  const img = f.image ? `<img src="${esc(f.image)}" alt="${esc(f.label)}" onerror="this.remove()" />` : "";
+  return ph + img;
+}
+
+function frameHTML(c, f) {
+  const total = c.frames.length;
+  const headlineText = state.frame === 0 ? (c.headlines?.[state.headline] || f.headline || "") : (f.headline || "");
+  const theme = f.headlineTheme === "light" ? " light" : "";
+  return `<div class="frame">
+      ${frameVisual(f, "ph")}
+      <span class="counter">${state.frame + 1}/${total}</span>
+      ${headlineText ? `<div class="headline${theme}">${esc(headlineText)}</div>` : ""}
+    </div>`;
+}
+
+function renderPost() {
+  const c = concept(), f = c.frames[state.frame], h = handles()[state.handle] || handles()[0];
+  const dest = c.destination || {};
+  const top = `<div class="top">
+      <div class="avatar">${h.initials ? esc(h.initials) : ""}</div>
+      <div class="who"><div class="name">${esc(h.name)}</div><div class="partner">${esc(h.partner || "Patrocinado")}</div></div>
+      <div class="dots">···</div>
+    </div>`;
+
+  let chrome;
+  if (state.platform === "facebook") {
+    const domain = dest.url ? esc(dest.url) : "";
+    const hl = c.headlines?.[state.headline] || f.headline || dest.offer || "";
+    chrome = `<div class="fb-card">
+        <div class="meta"><div class="dom">${domain}</div><div class="hl">${esc(hl)}</div></div>
+        ${dest.cta ? `<div class="btn">${esc(dest.cta)}</div>` : ""}
+      </div>
+      <div class="fb-actions"><span>Me gusta</span><span>Comentar</span><span>Compartir</span></div>`;
+  } else {
+    chrome = `<div class="ig-cta"><span>${esc(dest.cta || "Más información")}</span><span class="chev">›</span></div>
+      <div class="ig-actions">${heart}${comment}${share}<span class="save">${bookmark}</span></div>
+      <div class="likes">6,240 Me gusta</div>
+      <div class="caption"><span class="h">${esc(h.name)}</span> ${esc((c.primaryText || "").slice(0, 90))}<span class="more"> … más</span></div>`;
+  }
+
+  document.getElementById("post").innerHTML = top + frameHTML(c, f) + chrome;
+  document.getElementById("board-label").textContent = `${c.name} · ${state.frame + 1}/${c.frames.length} · toca para saltar`;
+}
+
+function renderBoard() {
+  const c = concept();
+  document.getElementById("frames-grid").innerHTML = c.frames.map((f, i) => `
+    <button class="thumb" aria-current="${i === state.frame}" data-i="${i}">
+      <div class="box">${frameVisual(f, "mini")}</div>
+      <div class="cap"><span class="n">${String(i + 1).padStart(2, "0")}</span>${esc(f.label)}</div>
+    </button>`).join("");
+  document.querySelectorAll(".thumb").forEach(b =>
+    b.onclick = () => { state.frame = +b.dataset.i; renderPost(); renderBoard(); });
+}
+
+function renderCopy() {
+  const c = concept(), dest = c.destination || {};
+  let html = "";
+  if (c.headlines?.length) {
+    html += `<div class="block"><div class="eyebrow">Titular — toca para previsualizar</div>${c.headlines.map((h, i) =>
+      `<button class="headline-opt" aria-pressed="${i === state.headline}" data-i="${i}">
+        <span class="n">${String(i + 1).padStart(2, "0")}</span><span class="t">${esc(h)}</span></button>`).join("")}</div>`;
+  }
+  if (c.primaryText) html += `<div class="block"><div class="eyebrow">Texto principal</div><div class="kv" style="margin-top:8px">${esc(c.primaryText)}</div></div>`;
+  if (dest.url || dest.cta) {
+    html += `<div class="block"><div class="eyebrow">Destino</div><div class="kv" style="margin-top:8px">
+      ${dest.url ? `<span class="dest">${esc(dest.url)}</span><br/>` : ""}
+      ${dest.cta ? `CTA: ${esc(dest.cta)}` : ""}${dest.offer ? ` → ${esc(dest.offer)}` : ""}</div></div>`;
+  }
+  if (c.rollout?.steps?.length) {
+    html += `<div class="block"><div class="eyebrow">${esc(c.rollout.title || "Cómo funciona")}</div>
+      <ol class="steps">${c.rollout.steps.map((s, i) => `<li><span class="i">${i + 1}</span><span>${esc(s)}</span></li>`).join("")}</ol></div>`;
+  }
+  if (c.grounding) html += `<div class="block"><div class="eyebrow">Datos reales · assets reales</div><div class="grounding">${esc(c.grounding)}</div></div>`;
+  const el = document.getElementById("copy");
+  el.innerHTML = html;
+  el.querySelectorAll(".headline-opt").forEach(b =>
+    b.onclick = () => { state.headline = +b.dataset.i; state.frame = 0; renderPost(); renderBoard(); renderCopy(); });
+}
+
+function renderAll() { renderConcepts(); renderToggles(); renderPost(); renderBoard(); renderCopy(); }
+renderProject();
+renderAll();
+</script>
+</body>
+</html>

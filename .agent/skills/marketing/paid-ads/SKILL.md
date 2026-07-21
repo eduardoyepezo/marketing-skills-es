@@ -1,6 +1,7 @@
 ---
 name: paid-ads
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere ayuda con campañas de publicidad pagada en Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X u otras plataformas publicitarias. También usar cuando el usuario menciona 'PPC,' 'medios pagados,' 'copy de anuncios,' 'creatividad de anuncios,' 'ROAS,' 'CPA,' 'campaña publicitaria,' 'retargeting,' o 'segmentación de audiencia.' Esta habilidad cubre estrategia de campaña, creación de anuncios, segmentación de audiencia y optimización."
 ---
 

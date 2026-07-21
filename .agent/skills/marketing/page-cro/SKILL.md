@@ -1,6 +1,7 @@
 ---
 name: page-cro
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere optimizar, mejorar o aumentar las conversiones en cualquier página de marketing — incluyendo homepage, landing pages, páginas de precios, páginas de funciones o posts de blog. También usar cuando el usuario dice "CRO," "optimización de tasa de conversión," "esta página no convierte," "mejorar conversiones," o "por qué no funciona esta página." Para flujos de registro/registro, ver signup-flow-cro. Para activación post-registro, ver onboarding-cro. Para formularios fuera del registro, ver form-cro. Para popups/modales, ver popup-cro.
 ---
 

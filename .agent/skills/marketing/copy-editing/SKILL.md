@@ -1,6 +1,7 @@
 ---
 name: copy-editing
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere editar, revisar o mejorar copy de marketing existente. También usar cuando el usuario menciona 'edita este copy,' 'revisa mi copy,' 'retroalimentación de copy,' 'corrige el estilo,' 'pulidlo,' 'mejora esto,' o 'revisión de copy.' Esta habilidad proporciona un enfoque sistemático para editar copy de marketing mediante múltiples pasadas enfocadas."
 ---
 

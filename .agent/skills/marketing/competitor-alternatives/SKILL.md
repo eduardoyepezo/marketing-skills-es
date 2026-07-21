@@ -1,6 +1,7 @@
 ---
 name: competitor-alternatives
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere crear páginas de comparación con competidores o páginas de alternativas para SEO y habilitación de ventas. También usar cuando el usuario menciona 'página de alternativas,' 'página de comparación vs,' 'comparación de competidores,' 'página comparativa,' '[Producto] vs [Producto],' 'alternativa a [Producto],' o 'landing pages competitivas.' Cubre cuatro formatos: alternativa singular, alternativas plural, tú vs competidor, y competidor vs competidor. Hace énfasis en investigación profunda, arquitectura de contenido modular y variedad de secciones más allá de tablas de características."
 ---
 

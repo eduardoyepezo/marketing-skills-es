@@ -1,6 +1,7 @@
 ---
 name: launch-strategy
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere planificar un lanzamiento de producto, anuncio de función o estrategia de lanzamiento. También usar cuando el usuario menciona 'lanzamiento,' 'Product Hunt,' 'lanzamiento de función,' 'anuncio,' 'go-to-market,' 'lanzamiento beta,' 'acceso anticipado,' 'lista de espera,' o 'actualización de producto.' Esta habilidad cubre lanzamientos por fases, estrategia de canales y momentum continuo de lanzamiento."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: form-cro
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere optimizar cualquier formulario que NO sea de registro/sign-up — incluyendo formularios de captura de leads, formularios de contacto, formularios de solicitud de demo, formularios de aplicación, formularios de encuesta, o formularios de checkout. También usar cuando el usuario menciona "optimización de formularios," "conversiones de formulario de leads," "fricción en formularios," "campos del formulario," "tasa de completación del formulario," o "formulario de contacto." Para formularios de sign-up/registro, ver signup-flow-cro. Para popups que contienen formularios, ver popup-cro.
 ---
 

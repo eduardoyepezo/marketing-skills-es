@@ -1,6 +1,7 @@
 ---
 name: schema-markup
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere agregar, corregir u optimizar schema markup y datos estructurados en su sitio. También usar cuando el usuario menciona "schema markup," "datos estructurados," "JSON-LD," "rich snippets," "schema.org," "FAQ schema," "schema de producto," "schema de reseñas," o "schema de breadcrumb." Para problemas más amplios de SEO, ver seo-audit.
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: onboarding-cro
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere optimizar el onboarding post-registro, la activación de usuarios, la experiencia de primer uso o el tiempo de obtención de valor. También usar cuando el usuario menciona "flujo de onboarding," "tasa de activación," "activación de usuarios," "experiencia de primer uso," "estados vacíos," "lista de verificación de onboarding," "momento aha," o "experiencia de nuevos usuarios." Para optimización de registro/sign-up, ver signup-flow-cro. Para secuencias de email continuas, ver email-sequence.
 ---
 

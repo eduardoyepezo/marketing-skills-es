@@ -74,6 +74,8 @@ Referencia rápida para que los agentes de IA descubran las capacidades de las h
 | airops | Contenido con IA | ✓ | - | [✓](clis/airops.js) | - | [airops.md](integrations/airops.md) |
 | buffer | Redes Sociales | ✓ | - | [✓](clis/buffer.js) | - | [buffer.md](integrations/buffer.md) |
 | wistia | Video | ✓ | - | [✓](clis/wistia.js) | - | [wistia.md](integrations/wistia.md) |
+| heygen | Video (Avatares IA) | ✓ | ✓ | - | ✓ | [heygen.md](integrations/heygen.md) |
+| hyperframes | Video (Programático) | - | - | ✓ | ✓ | [hyperframes.md](integrations/hyperframes.md) |
 | trustpilot | Reseñas | ✓ | - | [✓](clis/trustpilot.js) | - | [trustpilot.md](integrations/trustpilot.md) |
 | g2 | Reseñas | ✓ | - | [✓](clis/g2.js) | - | [g2.md](integrations/g2.md) |
 | onesignal | Notificaciones Push | ✓ | - | [✓](clis/onesignal.js) | ✓ | [onesignal.md](integrations/onesignal.md) |
@@ -250,13 +252,15 @@ Programación, gestión y analítica de redes sociales.
 
 ### Video
 
-Alojamiento de video, analítica y engagement.
+Alojamiento de video, generación con IA, y video programático.
 
 | Herramienta | Ideal para | Notas |
 |------|----------|-------|
 | **wistia** | Alojamiento de video, analítica de marketing | El mejor para video de marketing |
+| **heygen** | Videos con avatares de IA, talking-head desde guion | MCP hospedado, sin instalación local |
+| **hyperframes** | Video programático desde HTML/CSS/JS, contenido en lote | Código abierto, sin costo por render |
 
-**Recomendación del agente**: Wistia para alojamiento de video de marketing con analítica.
+**Recomendación del agente**: Wistia para alojamiento de video de marketing con analítica. HeyGen para videos de presentador con avatar de IA (explicativos, anuncios de producto, prospección personalizada). Hyperframes para generar video programáticamente desde datos (plantillas en lote, contenido data-driven) cuando un agente de IA está produciendo el video directamente.
 
 ### Data Enrichment
 
@@ -419,6 +423,7 @@ Estas herramientas tienen servidores del Protocolo de Contexto de Modelo disponi
 - **coupler** - Pipelines de datos de marketing
 - **outreach** - Secuencias de engagement de ventas
 - **crossbeam** - Datos del ecosistema de socios
+- **heygen** - Generación de video con avatares de IA
 
 Para usar herramientas MCP, asegúrate de que el servidor MCP apropiado esté configurado en tu entorno.
 

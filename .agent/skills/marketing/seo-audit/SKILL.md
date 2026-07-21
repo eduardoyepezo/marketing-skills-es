@@ -1,6 +1,7 @@
 ---
 name: seo-audit
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere auditar, revisar o diagnosticar problemas de SEO en su sitio. También usar cuando el usuario menciona "auditoría de SEO," "SEO técnico," "por qué no estoy posicionando," "problemas de SEO," "SEO on-page," "revisión de meta tags," o "chequeo de salud de SEO." Para construir páginas a escala y apuntar a keywords, ver programmatic-seo. Para agregar datos estructurados, ver schema-markup.
 ---
 

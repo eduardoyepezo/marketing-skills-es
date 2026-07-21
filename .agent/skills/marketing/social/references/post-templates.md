@@ -1,24 +1,24 @@
-# Plantillas de Formato de Posts
+# Plantillas de Formato de Post
 
 Plantillas listas para usar para diferentes plataformas y tipos de contenido.
 
-## Contenidos
-- Plantillas para Posts de LinkedIn (El Post de Historia, La Opinión Contraria, El Post de Lista, El Cómo Hacerlo)
-- Plantillas de Hilos para Twitter/X (El Hilo Tutorial, El Hilo de Historia, El Hilo de Análisis)
-- Plantillas para Instagram (El Hook del Carousel, El Guion para Reel)
+## Contenido
+- Plantillas de Post de LinkedIn (El Post de Historia, La Toma Contraria, El Post de Lista, El Cómo-Hacerlo)
+- Plantillas de Hilo de Twitter/X (El Hilo Tutorial, El Hilo de Historia, El Hilo de Análisis)
+- Plantillas de Instagram (El Hook de Carrusel, El Guion de Reel)
 - Fórmulas de Hook (Hooks de Curiosidad, Hooks de Historia, Hooks de Valor, Hooks Contrarios, Hooks de Prueba Social)
 
-## Plantillas para Posts de LinkedIn
+## Plantillas de Post de LinkedIn
 
 ### El Post de Historia
 ```
 [Hook: Resultado inesperado o lección]
 
-[Contextualizar: Cuándo/dónde ocurrió esto]
+[Plantea la escena: Cuándo/dónde ocurrió esto]
 
 [El desafío que enfrentaste]
 
-[Qué intentaste / qué sucedió]
+[Qué intentaste / qué pasó]
 
 [El punto de inflexión]
 
@@ -29,24 +29,24 @@ Plantillas listas para usar para diferentes plataformas y tipos de contenido.
 [Pregunta para generar engagement]
 ```
 
-### La Opinión Contraria
+### La Toma Contraria
 ```
-[Opinión impopular expresada de forma atrevida]
+[Opinión impopular declarada con firmeza]
 
-Por qué:
+Aquí está el porqué:
 
 [Razón 1]
 [Razón 2]
 [Razón 3]
 
-[Lo que recomiendas en su lugar]
+[Qué recomiendas en su lugar]
 
-[Invitar a la discusión: "¿Estoy equivocado?"]
+[Invita a la discusión: "¿Me equivoco?"]
 ```
 
 ### El Post de Lista
 ```
-[X cosas que aprendí sobre [tema] después de [argumento de credibilidad]:
+[X cosas que aprendí sobre [tema] después de [elemento de credibilidad]:
 
 1. [Punto] — [Breve explicación]
 
@@ -56,15 +56,15 @@ Por qué:
 
 [Insight de cierre]
 
-¿Cuál resuena más contigo?
+¿Cuál te resuena más?
 ```
 
-### El Cómo Hacerlo
+### El Cómo-Hacerlo
 ```
-Cómo [lograr resultado] en [plazo de tiempo]:
+Cómo [lograr el resultado] en [tiempo]:
 
 Paso 1: [Acción]
-↳ [Por qué importa esto]
+↳ [Por qué esto importa]
 
 Paso 2: [Acción]
 ↳ [Detalle clave]
@@ -79,64 +79,66 @@ Paso 3: [Acción]
 
 ---
 
-## Plantillas de Hilos para Twitter/X
+## Plantillas de Hilo de Twitter/X
 
 ### El Hilo Tutorial
 ```
 Tweet 1: [Hook + promesa de valor]
 
-"Aquí está exactamente cómo [resultado] (paso a paso):"
+"Así es exactamente cómo [resultado] (paso a paso):"
 
 Tweets 2-7: [Un paso por tweet con detalles]
 
 Tweet final: [Resumen + CTA]
 
-"Si fue útil, sígueme para más sobre [tema]"
+"Si esto te sirvió, sígueme para más sobre [tema]"
 ```
 
 ### El Hilo de Historia
 ```
 Tweet 1: [Hook intrigante]
 
-"Hace [tiempo], [ocurrió algo inesperado]. Aquí está la historia completa:"
+"Hace [tiempo], [cosa inesperada sucedió]. Aquí está la historia completa:"
 
-Tweets 2-6: [Momentos de la historia, aumentando la tensión]
+Tweets 2-6: [Momentos de la historia, construyendo tensión]
 
 Tweet 7: [Resolución y lección]
 
-Tweet final: [Conclusión + invitación a interactuar]
+Tweet final: [Conclusión + pedido de engagement]
 ```
 
 ### El Hilo de Análisis
 ```
 Tweet 1: [Empresa/persona] acaba de [hacer algo].
 
-Aquí está por qué es genial (y lo que puedes aprender):
+Aquí está por qué es genial (y qué puedes aprender):
 
 Tweets 2-6: [Puntos de análisis]
 
 Tweet 7: [Tu conclusión clave]
 
-"[Insight relacionado + CTA para seguir]"
+"[Insight relacionado + CTA de seguir]"
 ```
 
 ---
 
-## Plantillas para Instagram
+## Plantillas de Instagram
 
-### El Hook del Carousel
+### El Hook de Carrusel
 ```
 [Slide 1: Declaración atrevida o pregunta]
 [Slides 2-9: Un punto por slide, visual + texto]
 [Slide 10: Resumen + CTA]
 
-Caption: [Ampliar el tema, agregar contexto, incluir CTA]
+Caption: [Expande el tema, agrega contexto, incluye CTA]
 ```
 
-### El Guion para Reel
+Esta es la forma genérica. Para cinco arquitecturas narrativas completas slide por slide (Value-Stack, Problem-Proof, Hack List, Rant Callout, Demo Walkthrough) con guía de selección y slots de copy por slide, ver [carousel-frameworks.md](carousel-frameworks.md).
+
+### El Guion de Reel
 ```
 Hook (0-2 seg): [Interrupción de patrón o afirmación atrevida]
-Setup (2-5 seg): [Contexto para el consejo]
+Planteamiento (2-5 seg): [Contexto para el tip]
 Valor (5-25 seg): [El consejo/contenido real]
 CTA (25-30 seg): [Seguir, comentar, compartir, link]
 ```
@@ -151,12 +153,12 @@ La primera línea determina si alguien lee el resto.
 - "Estaba equivocado sobre [creencia común]."
 - "La verdadera razón por la que [resultado] sucede no es lo que piensas."
 - "[Resultado impresionante] — y solo tomó [tiempo sorprendentemente corto]."
-- "Nadie habla sobre [conocimiento interno]."
+- "Nadie habla de [conocimiento interno]."
 
 ### Hooks de Historia
 - "La semana pasada, [cosa inesperada] ocurrió."
 - "Casi [gran error/fracaso]."
-- "Hace 3 años, [estado pasado]. Hoy, [estado actual]."
+- "Hace 3 años, yo [estado pasado]. Hoy, [estado actual]."
 - "[Persona] me dijo algo que nunca olvidaré."
 
 ### Hooks de Valor
@@ -167,11 +169,11 @@ La primera línea determina si alguien lee el resto.
 
 ### Hooks Contrarios
 - "Opinión impopular: [declaración atrevida]"
-- "[Consejo común] está equivocado. Aquí está por qué:"
+- "[Consejo común] está equivocado. Esta es la razón:"
 - "Dejé de [práctica común] y [resultado positivo]."
 - "Todos dicen [X]. La verdad es [Y]."
 
 ### Hooks de Prueba Social
-- "Logramos [resultado] en [plazo de tiempo]. Aquí está la historia completa:"
-- "[Número] personas me preguntaron sobre [tema]. Aquí está mi respuesta:"
+- "[Logramos un resultado] en [tiempo]. Aquí está la historia completa:"
+- "[Número] personas me preguntaron sobre [tema]. Esta es mi respuesta:"
 - "[Figura de autoridad] me enseñó [lección]."

@@ -1,7 +1,8 @@
 ---
 name: social-content-plan
-version: 1.0.0
-description: "Cuando el usuario quiere generar el contenido completo de redes sociales para todo un mes con el copy redactado y listo para publicar, no solo un calendario con temas o ideas. Usar cuando el usuario menciona 'plan de contenido mensual', 'planificación de contenido', 'contenido del mes completo', 'todos los posts del mes escritos', 'generar el contenido de redes sociales del mes', 'planificación mensual', 'quiero el copy de todos mis posts', 'content plan para el mes', 'posts de abril escritos', 'planificar el contenido de [mes]', 'dame todos los posts', 'contenido para instagram del mes', o 'arma el plan de redes del mes'. Esta habilidad ensambla y formatea en una estructura mensual lo que producen content-strategy (qué publicar) y social-content (cómo escribirlo). Para crear posts individuales, ver social-content. Para definir pilares y estrategia, ver content-strategy."
+metadata:
+  version: 1.0.0
+description: "Cuando el usuario quiere generar el contenido completo de redes sociales para todo un mes con el copy redactado y listo para publicar, no solo un calendario con temas o ideas. Usar cuando el usuario menciona 'plan de contenido mensual', 'planificación de contenido', 'contenido del mes completo', 'todos los posts del mes escritos', 'generar el contenido de redes sociales del mes', 'planificación mensual', 'quiero el copy de todos mis posts', 'content plan para el mes', 'posts de abril escritos', 'planificar el contenido de [mes]', 'dame todos los posts', 'contenido para instagram del mes', o 'arma el plan de redes del mes'. Esta habilidad ensambla y formatea en una estructura mensual lo que producen content-strategy (qué publicar) y social (cómo escribirlo). Para crear posts individuales, ver social. Para definir pilares y estrategia, ver content-strategy."
 ---
 
 # Plan de Contenido Mensual
@@ -9,7 +10,7 @@ description: "Cuando el usuario quiere generar el contenido completo de redes so
 Eres el orquestador del plan de contenido mensual. Tu función no es generar contenido nuevo — es ensamblar y formatear en una estructura mensual coherente lo que producen dos habilidades especializadas:
 
 - **content-strategy** define qué publicar: pilares temáticos, tipos de contenido, distribución por etapa del comprador.
-- **social-content** escribe cómo publicarlo: copy completo, hooks, guiones de reel/video, hashtags, especificaciones por plataforma.
+- **social** escribe cómo publicarlo: copy completo, hooks, guiones de reel/video, hashtags, especificaciones por plataforma.
 
 Tu rol es: leer los outputs de esas skills, asignar fechas y plataformas, y ensamblar todo en un plan de 4 semanas con formato consistente y listo para entregar.
 
@@ -59,13 +60,13 @@ Asigna qué pilar cubre cada post de cada semana antes de escribir el copy.
 
 ---
 
-## Paso 4: Generar el Copy con social-content
+## Paso 4: Generar el Copy con social
 
-Para cada post asignado, usa la habilidad **social-content** para escribir el copy:
+Para cada post asignado, usa la habilidad **social** para escribir el copy:
 
 - El **tipo de post** (educativo, historia, evidencia, opinión, comunidad) lo determina el pilar y el foco semanal — viene de content-strategy.
-- El **copy completo**, el **hook**, los **hashtags**, el **guion de reel/video** y el **brief visual** los produce social-content aplicando sus frameworks de plataforma.
-- No escribas el copy de forma independiente. Si social-content está disponible, todo el copy pasa por sus marcos.
+- El **copy completo**, el **hook**, los **hashtags**, el **guion de reel/video** y el **brief visual** los produce social aplicando sus frameworks de plataforma.
+- No escribas el copy de forma independiente. Si social está disponible, todo el copy pasa por sus marcos.
 
 **Para especificaciones de plataforma, límites de caracteres y estructuras de guion**: Ver [references/post-formats.md](references/post-formats.md)
 
@@ -235,7 +236,7 @@ Siempre terminar con:
 ## Habilidades Relacionadas
 
 - **content-strategy**: Produce los pilares y tipos de contenido que este plan organiza — insumo obligatorio antes de planificar
-- **social-content**: Escribe el copy de cada post que este plan ensambla — todo el copy pasa por sus marcos
+- **social**: Escribe el copy de cada post que este plan ensambla — todo el copy pasa por sus marcos
 - **content-plan-html**: Convierte este plan en un HTML listo para imprimir como PDF, con los colores de marca del cliente
-- **product-marketing-context**: Captura el contexto de marca que alimenta tanto content-strategy como social-content
+- **product-marketing-context**: Captura el contexto de marca que alimenta tanto content-strategy como social
 - **copywriting**: Para piezas de formato largo que luego se reutilizan en las redes sociales

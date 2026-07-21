@@ -1,8 +1,8 @@
 ---
 name: ad-creative
-description: "Cuando el usuario quiere generar, iterar o escalar creatividades publicitarias — titulares, descripciones, texto principal o variaciones completas de anuncios — para cualquier plataforma de publicidad paga. También usar cuando el usuario menciona 'variaciones de anuncios,' 'creatividades,' 'generar titulares,' 'titulares para RSA,' 'copys en volumen,' 'iteraciones de anuncios,' 'pruebas de creatividades,' 'optimización de anuncios,' 'escríbeme anuncios,' 'copy para Facebook,' 'titulares de Google Ads,' 'texto para LinkedIn Ads,' 'ad copy variations,' 'ad creative,' 'bulk ad copy,' o 'necesito más variaciones.' Usar siempre que alguien necesite producir copys de anuncios a escala o iterar sobre anuncios existentes. Para estrategia y segmentación de campañas, ver paid-ads. Para copy de páginas de aterrizaje, ver copywriting."
+description: "Cuando el usuario quiere generar, iterar o escalar creatividades publicitarias — titulares, descripciones, texto principal o variaciones completas de anuncios — para cualquier plataforma de publicidad paga. También usar cuando el usuario menciona 'variaciones de anuncios,' 'creatividades,' 'generar titulares,' 'titulares para RSA,' 'pruebas de creatividades,' 'escríbeme anuncios,' 'titulares de Google Ads,' 'anuncios estáticos,' 'plantillas de anuncios,' 'anuncio de iMessage,' 'anuncio de AirDrop,' 'estrategia de creatividades,' 'roadmap de creatividades,' 'retro de creatividades,' 'escritura de hooks,' 'página de revisión de creatividades,' 'presentar creatividades para aprobación,' 'video ad de motion,' 'motion collage,' o 'necesito más variaciones de anuncios.' Usar siempre que alguien necesite producir copys de anuncios a escala o iterar sobre anuncios existentes. Para estrategia y segmentación de campañas, ver paid-ads. Para copy de páginas de aterrizaje, ver copywriting."
 metadata:
-  version: 1.1.0
+  version: 2.8.0
 ---
 
 # Creatividad Publicitaria
@@ -11,8 +11,8 @@ Eres un experto en estrategia de creatividades para performance. Tu objetivo es 
 
 ## Antes de Comenzar
 
-**Revisar el contexto de marketing primero:**
-Si existe `.agents/product-marketing-context.md` (o `.claude/product-marketing-context.md` en configuraciones antiguas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
+**Revisar el contexto de marketing del producto primero:**
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
 
 Recopila este contexto (pregunta si no se proporciona):
 
@@ -46,7 +46,7 @@ Recopila este contexto (pregunta si no se proporciona):
 
 ## Cómo Funciona Esta Habilidad
 
-Esta habilidad admite dos modos:
+Esta habilidad admite cuatro modos:
 
 ### Modo 1: Generar desde Cero
 Al comenzar desde cero, se genera un conjunto completo de creatividades publicitarias basado en el contexto del producto, los insights de la audiencia y las mejores prácticas de la plataforma.
@@ -59,6 +59,38 @@ El ciclo central:
 ```
 Extraer datos de rendimiento → Identificar patrones ganadores → Generar nuevas variaciones → Validar especificaciones → Entregar
 ```
+
+### Modo 3: Lotes Estáticos a Escala (Con Base en Insumos Reales)
+Para producción recurrente de anuncios estáticos a volumen (por ejemplo, 50 conceptos por lote), trabaja a partir de un **corpus de insumos con base en la realidad (grounded)** y la [biblioteca de plantillas de anuncios estáticos](references/static-ad-templates.md). Cada concepto debe poder trazarse a material fuente real — ver "Insumos con Base en la Realidad" más abajo. Para correr esto con cadencia diaria o semanal, ver el loop de daily-creative-drop en **marketing-loops**. Para presentar un lote para aprobación de cliente o stakeholder, produce una [página de revisión de creatividades](references/creative-review-page.md).
+
+### Modo 4: Loop de Estrategia de Creatividades
+Para decidir **qué anuncios vale la pena hacer antes de hacerlos**: sintetiza tres fuentes de señales (rendimiento de cuenta, lenguaje de clientes, orgánico externo) en conceptos rankeados por evidencia, ramifica el mix de creatividades según el estado de la cuenta (exploración vs. escalamiento), mantiene un roadmap con capacidad verificada y niveles de producción, y corre una retro mensual que alimenta el próximo slate. El sistema completo vive en [references/creative-roadmap.md](references/creative-roadmap.md); para generación de hooks y diagnóstico por etapa de funnel dentro de cualquier modo, carga [references/hook-system.md](references/hook-system.md).
+
+---
+
+## Insumos con Base en la Realidad (Grounded Inputs)
+
+La mayoría de la generación de anuncios con IA falla en el anclaje de los insumos (grounding), no en la calidad del output: la generación sin anclaje produce anuncios que suenan plausibles basados en datos de entrenamiento, no en lo que realmente convierte para esta marca. Para producción a escala (Modo 3), mantén un corpus de insumos duradero:
+
+```
+inputs/
+  winning-ads/   10-20 capturas de los anuncios de mejor rendimiento de los últimos 90 días
+  reviews/       50-100 reseñas de clientes (Trustpilot, G2, Amazon, App Store) como .md/.txt
+  comments/      Los comentarios principales de campañas de anuncios existentes — objeciones, elogios no solicitados, ángulos que los clientes mencionan
+brand/           Documento de voz de marca, códigos hex, logo, assets de producto/capturas
+outputs/         Carpetas de lote fechadas (outputs/YYYY-MM-DD/)
+```
+
+**Por qué importa cada insumo:**
+- **Anuncios ganadores** llevan los hooks, estructuras y ángulos ya probados para esta marca
+- **Reseñas** llevan el lenguaje exacto que usan los compradores para hablar de dolor, transformación y beneficios inesperados — extrae el copy literalmente en vez de parafrasear
+- **Comentarios en anuncios** son el insumo más pasado por alto y de mayor valor: las objeciones ("¿pero funciona para X?") se convierten en anuncios FAQ Card, y los elogios no solicitados revelan ángulos que no habías escrito
+
+**Reglas de anclaje:**
+- Cada concepto cita su fuente (a qué reseña, anuncio ganador o comentario se traza)
+- Ninguna afirmación, estadística o testimonio inventado — nunca
+- Si `inputs/winning-ads/` o `inputs/reviews/` está vacío, detente y pide al usuario que lo llene antes de generar. No generes conceptos sin anclaje como respaldo.
+- Los insumos se degradan: refresca `inputs/winning-ads/` a medida que nuevos anuncios escalan; refresca `inputs/reviews/` y `inputs/comments/` mensualmente
 
 ---
 
@@ -85,7 +117,7 @@ Las plataformas rechazan o truncan las creatividades que superan estos límites,
 
 | Elemento | Límite | Notas |
 |----------|--------|-------|
-| Texto principal | 125 caracteres visibles (hasta 2,200) | Pon el gancho al inicio |
+| Texto principal | 125 caracteres visibles (hasta 2,200) | Pon el hook al inicio |
 | Titular | 40 caracteres recomendados | Debajo de la imagen |
 | Descripción | 30 caracteres recomendados | Debajo del titular |
 | Enlace de display | 40 caracteres | Opcional |
@@ -119,7 +151,13 @@ Para especificaciones detalladas y variaciones de formato, ver [references/platf
 
 ## Generación de Creatividades Visuales
 
-Para creatividades de imagen y video, usar herramientas de IA generativa y renderizado de video por código. Ver [references/generative-tools.md](references/generative-tools.md) para la guía completa que cubre:
+**Para estructura de anuncios estáticos**, usa la biblioteca de 15 plantillas en [references/static-ad-templates.md](references/static-ad-templates.md) — frameworks de layout (Nosotros vs. Ellos, Stat Callout, Review Card, Antes/Después, Mensaje del Fundador, FAQ Card, y más) con slots de copy, ejemplos DTC y SaaS, y formato de output por concepto. Recorre las 15 en vez de concentrarte en tus favoritas: la diversidad de plantillas es diversidad de ángulos.
+
+**Para video ads de revelación nativos de iOS** — revelaciones de chat en iMessage (hilo scripteado que se despliega burbuja por burbuja: captura hook → un amigo pregunta "¿qué app es esa?" → revelación de marca + código promocional → end card), revelaciones de ChatGPT (pregunta escrita → respuesta en streaming), revelaciones de Apple Notes (una nota confesional escrita en vivo) y revelaciones de AirDrop (una recepción entrante donde el tap de aceptar es la revelación) — ver [references/imessage-video-ads.md](references/imessage-video-ads.md) para selección de superficie, los seis ángulos de concepto, reglas de guion y ritmo, rutas de producción (listo para usar, pipeline con Playwright + ffmpeg, Remotion), detalles de craft que venden la ilusión, y las reglas de anclaje/cumplimiento para conversaciones dramatizadas (las más estrictas para respuestas de IA fabricadas).
+
+**Para video ads de estilo motion sin rostro** — videos de concepto/explicativos totalmente generados de 15–45s (stills tipo poster estilizados → "vivos" con motion image-to-video → narración TTS → subtítulos sincronizados por palabra; aproximadamente $3–6 y ~15 minutos por video terminado) — ver [references/motion-video-ads.md](references/motion-video-ads.md) para el pipeline agnóstico de proveedor, una biblioteca de nueve estilos visuales con fórmulas de prompt de llenado — cinco looks con carácter propio (collage de serigrafía, explicativo vector plano, diorama de papercraft, cómic pop-art, claymation) más cuatro estilos flexibles de marca guiados por tokens (editorial monolínea, tipográfico suizo, wireglow, serigrafía duotono) impulsados por un contrato de slots de marca (FIELD / INK / ACCENT / TYPE FEEL) — la fórmula de prompt de motion, y gotchas de control de calidad ganados a pulso (intrusión de "manos de fabricante", drift en los últimos dos segundos, colisión de subtítulo/label, palabras similares entre TTS y whisper).
+
+Para herramientas de generación de imagen y video, ver [references/generative-tools.md](references/generative-tools.md) para la guía completa que cubre:
 
 - **Generación de imágenes** — Nano Banana Pro (Gemini), Flux, Ideogram para imágenes estáticas
 - **Generación de video** — Veo, Kling, Runway, Sora, Seedance, Higgsfield para anuncios en video
@@ -273,6 +311,23 @@ titular_1,titular_2,titular_3,descripcion_1,descripcion_2,plataforma
 "Deja los Reportes Manuales","Automatiza en 5 Minutos","Únete a 10K+ Equipos","Ahorra 10+ hrs/semana en reportes. Empieza gratis.","Conecta datos una vez. Reportes para siempre.","google_ads"
 ```
 
+### Salida de Lote Estático (Modo 3)
+
+Para lotes estáticos a escala, guardar en una carpeta fechada con un índice:
+
+```
+outputs/YYYY-MM-DD/
+  INDEX.md        # cada concepto: tipo de plantilla + fuente de anclaje, escaneable en 2 min
+  concepts/       # un .md por concepto: titular, cuerpo, descripción visual, prompt de imagen, anclaje
+  images/         # imágenes generadas, si hay una herramienta de imagen configurada
+```
+
+El formato por concepto está definido en [references/static-ad-templates.md](references/static-ad-templates.md). El flujo de trabajo humano que esto soporta: abrir la carpeta, escanear INDEX.md, elegir los mejores 5-10 para pruebas — elegir 5 ganadores entre 50 conceptos produce mejores creatividades que elegir 5 entre 10.
+
+### Página de Revisión de Creatividades (aprobación de cliente / stakeholder)
+
+Cuando alguien que no eres tú necesita revisar y elegir — un cliente, un partner, un stakeholder — produce una **página de revisión de creatividades**: un artefacto HTML autocontenido que presenta cada concepto como un mockup de plataforma in-feed (Instagram/Facebook, con toggle de handle para whitelist), descompone los carruseles en un storyboard etiquetado cuadro por cuadro, permite alternar entre variaciones de titular/copy, y divulga qué está anclado en assets reales. Es la mejora visual de INDEX.md — una decisión que se toma desde un solo link en lugar de leyendo markdown. La plantilla está en [assets/creative-review-template.html](assets/creative-review-template.html) (un solo archivo, sin build, hospedable en cualquier lugar); llena su objeto `DATA` con tus conceptos generados. El modelo de datos completo, las reglas de anclaje (el bloque de divulgación es obligatorio), y la entrega están en [references/creative-review-page.md](references/creative-review-page.md).
+
 ### Informe de Iteración
 
 Al iterar, incluir un resumen:
@@ -293,12 +348,12 @@ Al iterar, incluir un resumen:
 
 ---
 
-## Flujo de Trabajo para Generación a Granel
+## Flujo de Trabajo para Generación en Lote
 
-Para producción de creatividades a gran escala:
+Para producción de creatividades a gran escala (el equipo de growth de Anthropic genera más de 100 variaciones por ciclo):
 
 ### 1. Dividir en Sub-tareas
-- **Generación de titulares** — Enfocado en CTR
+- **Generación de titulares** — Enfocado en clics
 - **Generación de descripciones** — Enfocado en conversión
 - **Generación de texto principal** — Enfocado en engagement (Meta/LinkedIn)
 
@@ -320,9 +375,11 @@ Para producción de creatividades a gran escala:
 - **Escribir titulares que solo funcionan juntos** — Los titulares de RSA se combinan aleatoriamente
 - **Ignorar los límites de caracteres** — Las plataformas truncan sin advertencia
 - **Todas las variaciones suenan igual** — Variar ángulos, no solo la elección de palabras
-- **Sin titulares con CTA** — Los RSA necesitan titulares orientados a la acción; incluir al menos 2-3
+- **Sin titulares con CTA** — Los RSA necesitan titulares orientados a la acción para generar clics; incluir al menos 2-3
 - **Descripciones genéricas** — "Conoce más sobre nuestra solución" desperdicia el espacio
 - **Iterar sin datos** — El instinto es menos confiable que las métricas
+- **Generar sin anclaje** — Los conceptos sin anclaje se leen como cualquier otro anuncio del feed; alimenta la habilidad con anuncios ganadores, reseñas y comentarios primero
+- **Saltarse el insumo de comentarios** — Los comentarios en anuncios contienen las objeciones y ángulos que los propios clientes plantean; esos suelen convertir mejor
 - **Probar demasiadas cosas a la vez** — Cambiar una variable por ciclo de prueba
 - **Retirar creatividades demasiado pronto** — Permitir 1,000+ impresiones antes de evaluar
 
@@ -356,6 +413,8 @@ node tools/clis/google-ads.js reports get --type ad_performance --date-range las
 ## Habilidades Relacionadas
 
 - **paid-ads**: Para estrategia de campaña, segmentación, presupuestos y optimización
+- **marketing-loops**: Para correr generación de lotes estáticos en una cadencia recurrente (el loop de daily-creative-drop)
+- **customer-research**: Para minar reseñas y comentarios al construir el corpus de insumos con base en la realidad
 - **copywriting**: Para copy de la página de aterrizaje (donde aterriza el tráfico del anuncio)
 - **ab-test-setup**: Para estructurar pruebas de creatividades con rigor estadístico
 - **marketing-psychology**: Para principios psicológicos detrás de las creatividades de alto rendimiento

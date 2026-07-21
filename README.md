@@ -53,38 +53,42 @@ Consulta la sección **Related Skills** de cada skill para ver el mapa de depend
 <!-- SKILLS:START -->
 | Skill | Descripción |
 |-------|-------------|
-| [ab-test-setup](skills/ab-test-setup/) | Cuando el usuario quiere planificar, diseñar o implementar una prueba A/B o experimento. También se usa cuando el usuario menciona "A/B... |
-| [ad-creative](skills/ad-creative/) | Cuando el usuario quiere generar, iterar o escalar creativos publicitarios — titulares, descripciones, texto principal o anuncios completos... |
-| [ai-seo](skills/ai-seo/) | Cuando el usuario quiere optimizar contenido para motores de búsqueda de IA, ser citado por LLMs, o aparecer en respuestas generadas por IA.... |
-| [analytics-tracking](skills/analytics-tracking/) | Cuando el usuario quiere configurar, mejorar o auditar el seguimiento de analítica y medición. También se usa cuando el usuario menciona... |
-| [churn-prevention](skills/churn-prevention/) | Cuando el usuario quiere reducir la deserción, crear flujos de cancelación, configurar ofertas de retención, recuperar pagos fallidos, o... |
-| [cold-email](skills/cold-email/) | Escribe correos electrónicos fríos B2B y secuencias de seguimiento que obtienen respuestas. Úsalo cuando el usuario quiere escribir correos de prospección en frío,... |
-| [competitor-alternatives](skills/competitor-alternatives/) | Cuando el usuario quiere crear páginas de comparación con competidores o páginas de alternativas para SEO y habilitación de ventas. También se usa cuando... |
-| [content-strategy](skills/content-strategy/) | Cuando el usuario quiere planificar una estrategia de contenido, decidir qué contenido crear o determinar qué temas cubrir. También... |
-| [copy-editing](skills/copy-editing/) | Cuando el usuario quiere editar, revisar o mejorar el copy de marketing existente. También se usa cuando el usuario menciona 'edita este... |
-| [copywriting](skills/copywriting/) | Cuando el usuario quiere escribir, reescribir o mejorar el copy de marketing para cualquier página — incluyendo homepage, landing pages,... |
-| [email-sequence](skills/email-sequence/) | Cuando el usuario quiere crear u optimizar una secuencia de correos, campaña de drip, flujo de email automatizado o email de ciclo de vida... |
-| [form-cro](skills/form-cro/) | Cuando el usuario quiere optimizar cualquier formulario que NO sea de registro — incluyendo formularios de captura de leads, formularios de contacto,... |
-| [free-tool-strategy](skills/free-tool-strategy/) | Cuando el usuario quiere planificar, evaluar o construir una herramienta gratuita para propósitos de marketing — generación de leads, valor SEO, o... |
-| [launch-strategy](skills/launch-strategy/) | Cuando el usuario quiere planificar el lanzamiento de un producto, anuncio de funcionalidad o estrategia de release. También se usa cuando el usuario... |
-| [marketing-ideas](skills/marketing-ideas/) | Cuando el usuario necesita ideas de marketing, inspiración o estrategias para su producto SaaS o de software. También se usa cuando el... |
-| [marketing-psychology](skills/marketing-psychology/) | Cuando el usuario quiere aplicar principios psicológicos, modelos mentales o ciencia del comportamiento al marketing. También se usa cuando... |
-| [onboarding-cro](skills/onboarding-cro/) | Cuando el usuario quiere optimizar el onboarding post-registro, la activación de usuarios, la experiencia de primera ejecución o el tiempo hasta el valor. También... |
-| [page-cro](skills/page-cro/) | Cuando el usuario quiere optimizar, mejorar o aumentar las conversiones en cualquier página de marketing — incluyendo homepage, landing... |
-| [paid-ads](skills/paid-ads/) | Cuando el usuario quiere ayuda con campañas de publicidad paga en Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X,... |
-| [paywall-upgrade-cro](skills/paywall-upgrade-cro/) | Cuando el usuario quiere crear u optimizar paywalls dentro de la aplicación, pantallas de actualización, modales de upsell o bloqueos de funcionalidades. También se usa cuando... |
-| [popup-cro](skills/popup-cro/) | Cuando el usuario quiere crear u optimizar popups, modales, overlays, slide-ins o banners para propósitos de conversión. También... |
-| [pricing-strategy](skills/pricing-strategy/) | Cuando el usuario quiere ayuda con decisiones de precios, empaquetado o estrategia de monetización. También se usa cuando el usuario menciona... |
-| [product-marketing-context](skills/product-marketing-context/) | Cuando el usuario quiere crear o actualizar su documento de contexto de marketing de producto. También se usa cuando el usuario menciona... |
-| [programmatic-seo](skills/programmatic-seo/) | Cuando el usuario quiere crear páginas impulsadas por SEO a escala usando plantillas y datos. También se usa cuando el usuario menciona... |
-| [referral-program](skills/referral-program/) | Cuando el usuario quiere crear, optimizar o analizar un programa de referidos, programa de afiliados o estrategia de marketing de boca en boca.... |
-| [revops](skills/revops/) | Cuando el usuario quiere ayuda con operaciones de ingresos, gestión del ciclo de vida de leads, o procesos de traspaso de marketing a ventas.... |
-| [sales-enablement](skills/sales-enablement/) | Cuando el usuario quiere crear materiales de ventas, pitch decks, one-pagers, documentos de manejo de objeciones o scripts de demo. También... |
-| [schema-markup](skills/schema-markup/) | Cuando el usuario quiere agregar, corregir u optimizar schema markup y datos estructurados en su sitio. También se usa cuando el usuario... |
-| [seo-audit](skills/seo-audit/) | Cuando el usuario quiere auditar, revisar o diagnosticar problemas de SEO en su sitio. También se usa cuando el usuario menciona "SEO... |
-| [signup-flow-cro](skills/signup-flow-cro/) | Cuando el usuario quiere optimizar flujos de registro, creación de cuenta o activación de prueba. También se usa cuando el... |
-| [site-architecture](skills/site-architecture/) | Cuando el usuario quiere planificar, mapear o reestructurar la jerarquía de páginas, navegación, estructura de URLs o enlaces internos de su sitio web... |
-| [social-content](skills/social-content/) | Cuando el usuario quiere ayuda para crear, programar u optimizar contenido de redes sociales para LinkedIn, Twitter/X, Instagram,... |
+| [ab-test-setup](.agent/skills/marketing/ab-test-setup/) | Cuando el usuario quiere planear, diseñar o implementar una prueba A/B o experimento. También usar cuando el usuario menciona "prueba A/B... |
+| [ad-creative](.agent/skills/marketing/ad-creative/) | Cuando el usuario quiere generar, iterar o escalar creatividades publicitarias — titulares, descripciones, texto principal o variaciones ... |
+| [ai-seo](.agent/skills/marketing/ai-seo/) | Cuando el usuario quiere optimizar contenido para motores de búsqueda de IA, ser citado por LLMs, o aparecer en respuestas generadas por ... |
+| [analytics-tracking](.agent/skills/marketing/analytics-tracking/) | Cuando el usuario quiere configurar, mejorar o auditar el seguimiento de analíticas y medición. También usar cuando el usuario menciona "... |
+| [churn-prevention](.agent/skills/marketing/churn-prevention/) | Cuando el usuario quiere reducir la cancelación, construir flujos de cancelación, configurar ofertas de retención, recuperar pagos fallid... |
+| [cold-email](.agent/skills/marketing/cold-email/) | Escribir correos de prospección B2B y secuencias de seguimiento que obtienen respuestas. Usar cuando el usuario quiere escribir correos d... |
+| [competitor-alternatives](.agent/skills/marketing/competitor-alternatives/) | Cuando el usuario quiere crear páginas de comparación con competidores o páginas de alternativas para SEO y habilitación de ventas. Tambi... |
+| [content-plan-html](.agent/skills/marketing/content-plan-html/) | Cuando el usuario quiere convertir un plan de contenido mensual en formato MD a un archivo HTML listo para imprimir como PDF. Usar cuando... |
+| [content-strategy](.agent/skills/marketing/content-strategy/) | Cuando el usuario quiere planificar una estrategia de contenido, decidir qué contenido crear, o determinar qué temas cubrir. También usar... |
+| [copy-editing](.agent/skills/marketing/copy-editing/) | Cuando el usuario quiere editar, revisar o mejorar copy de marketing existente. También usar cuando el usuario menciona 'edita este copy,... |
+| [copywriting](.agent/skills/marketing/copywriting/) | Cuando el usuario quiere escribir, reescribir o mejorar copy de marketing para cualquier página — incluyendo homepage, landing pages, pág... |
+| [email-sequence](.agent/skills/marketing/email-sequence/) | Cuando el usuario quiere crear u optimizar una secuencia de email, campaña drip, flujo de email automatizado o programa de email de ciclo... |
+| [form-cro](.agent/skills/marketing/form-cro/) | Cuando el usuario quiere optimizar cualquier formulario que NO sea de registro/sign-up — incluyendo formularios de captura de leads, form... |
+| [free-tool-strategy](.agent/skills/marketing/free-tool-strategy/) | Cuando el usuario quiere planificar, evaluar o construir una herramienta gratuita con fines de marketing — generación de leads, valor de ... |
+| [image](.agent/skills/marketing/image/) | Cuando el usuario quiere crear, generar, editar u optimizar imágenes para marketing — imágenes hero de blog, gráficos para redes sociales... |
+| [launch-strategy](.agent/skills/marketing/launch-strategy/) | Cuando el usuario quiere planificar un lanzamiento de producto, anuncio de función o estrategia de lanzamiento. También usar cuando el us... |
+| [marketing-ideas](.agent/skills/marketing/marketing-ideas/) | Cuando el usuario necesita ideas de marketing, inspiración o estrategias para su producto SaaS o software. También usar cuando el usuario... |
+| [marketing-psychology](.agent/skills/marketing/marketing-psychology/) | Cuando el usuario quiere aplicar principios psicológicos, modelos mentales o ciencia del comportamiento al marketing. También usar cuando... |
+| [onboarding-cro](.agent/skills/marketing/onboarding-cro/) | Cuando el usuario quiere optimizar el onboarding post-registro, la activación de usuarios, la experiencia de primer uso o el tiempo de ob... |
+| [page-cro](.agent/skills/marketing/page-cro/) | Cuando el usuario quiere optimizar, mejorar o aumentar las conversiones en cualquier página de marketing — incluyendo homepage, landing p... |
+| [paid-ads](.agent/skills/marketing/paid-ads/) | Cuando el usuario quiere ayuda con campañas de publicidad pagada en Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X u otras pl... |
+| [paywall-upgrade-cro](.agent/skills/marketing/paywall-upgrade-cro/) | Cuando el usuario quiere crear u optimizar paywalls dentro de la app, pantallas de actualización, modales de upsell o puertas de funcione... |
+| [popup-cro](.agent/skills/marketing/popup-cro/) | Cuando el usuario quiere crear u optimizar popups, modales, overlays, slide-ins o banners con fines de conversión. También usar cuando el... |
+| [pricing-strategy](.agent/skills/marketing/pricing-strategy/) | Cuando el usuario quiere ayuda con decisiones de precios, empaquetado o estrategia de monetización. También usar cuando el usuario mencio... |
+| [product-marketing-context](.agent/skills/marketing/product-marketing-context/) | Cuando el usuario quiere crear o actualizar su documento de contexto de marketing del producto. También usar cuando el usuario menciona '... |
+| [programmatic-seo](.agent/skills/marketing/programmatic-seo/) | Cuando el usuario quiere crear páginas orientadas a SEO a escala usando plantillas y datos. También usar cuando el usuario menciona "SEO ... |
+| [referral-program](.agent/skills/marketing/referral-program/) | Cuando el usuario quiere crear, optimizar o analizar un programa de referidos, programa de afiliados o estrategia de boca a boca. También... |
+| [revops](.agent/skills/marketing/revops/) | Cuando el usuario quiere ayuda con operaciones de ingresos, gestión del ciclo de vida del lead, o procesos de traspaso de marketing a ven... |
+| [sales-enablement](.agent/skills/marketing/sales-enablement/) | Cuando el usuario quiere crear material de ventas, pitch decks, one-pagers, documentos de manejo de objeciones o scripts de demo. También... |
+| [schema-markup](.agent/skills/marketing/schema-markup/) | Cuando el usuario quiere agregar, corregir u optimizar schema markup y datos estructurados en su sitio. También usar cuando el usuario me... |
+| [seo-audit](.agent/skills/marketing/seo-audit/) | Cuando el usuario quiere auditar, revisar o diagnosticar problemas de SEO en su sitio. También usar cuando el usuario menciona "auditoría... |
+| [signup-flow-cro](.agent/skills/marketing/signup-flow-cro/) | Cuando el usuario quiere optimizar flujos de registro, creación de cuenta o activación de prueba. También usar cuando el usuario menciona... |
+| [site-architecture](.agent/skills/marketing/site-architecture/) | Cuando el usuario quiere planificar, mapear o reestructurar la jerarquía de páginas, navegación, estructura de URLs o enlazado interno de... |
+| [social](.agent/skills/marketing/social/) | Cuando el usuario quiere ayuda para crear, programar u optimizar contenido de redes sociales para LinkedIn, Twitter/X, Instagram, TikTok,... |
+| [social-content-plan](.agent/skills/marketing/social-content-plan/) | Cuando el usuario quiere generar el contenido completo de redes sociales para todo un mes con el copy redactado y listo para publicar, no... |
+| [video](.agent/skills/marketing/video/) | Cuando el usuario quiere crear, generar o producir contenido de video usando herramientas de IA o frameworks programáticos. También usar ... |
 <!-- SKILLS:END -->
 
 ## Instalación
@@ -210,7 +214,13 @@ También puedes invocar las skills directamente:
 - `copy-editing` - Editar y pulir copy existente
 - `cold-email` - Correos fríos B2B y secuencias de prospección
 - `email-sequence` - Flujos de email automatizados
-- `social-content` - Contenido para redes sociales
+- `social` - Contenido para redes sociales, social listening
+- `social-content-plan` - Plan de contenido mensual completo, listo para publicar
+- `content-plan-html` - Plan de contenido MD → HTML listo para imprimir como PDF
+
+### Producción Creativa con IA
+- `video` - Generación y producción de video con IA (avatares, video programático)
+- `image` - Generación y optimización de imágenes con IA para marketing
 
 ### SEO y Descubrimiento
 - `seo-audit` - SEO técnico y on-page
@@ -223,7 +233,7 @@ También puedes invocar las skills directamente:
 ### Publicidad Paga y Distribución
 - `paid-ads` - Campañas de anuncios en Google, Meta, LinkedIn
 - `ad-creative` - Generación e iteración masiva de creativos publicitarios
-- `social-content` - Programación y estrategia de redes sociales
+- `social` - Programación y estrategia de redes sociales
 
 ### Medición y Pruebas
 - `analytics-tracking` - Configuración de seguimiento de eventos

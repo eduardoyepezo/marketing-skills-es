@@ -1,0 +1,89 @@
+{
+  "skill_name": "image",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito una imagen hero para un post de blog sobre entregabilidad de email. Que sea visualmente llamativa.",
+      "expected_output": "Debe verificar primero si existe product-marketing.md. Debe recomendar la generación con IA como enfoque para una imagen hero única. Debe proponer un concepto de metáfora visual que represente la entregabilidad de email (por ejemplo, cartas siendo clasificadas en un laberinto, señales atravesando una pared, un inbox brillando). Debe especificar 1200x630 (funciona tanto para hero como para imagen OG). Debe recomendar Flux o Gemini para fotorrealista, o Ideogram si se necesita texto en la imagen. Debe proporcionar un prompt siguiendo el patrón Sujeto + Escenario + Estilo + Iluminación + Composición + Técnico. Debe mencionar la optimización WebP (apuntar a <200KB, fallback JPEG). No debe sugerir usar IA para screenshots de UI de producto.",
+      "assertions": [
+        "Verifica si existe product-marketing.md",
+        "Recomienda generación con IA para hero único",
+        "Propone metáfora visual para el tema",
+        "Especifica dimensiones 1200x630",
+        "Recomienda Flux, Gemini o Ideogram",
+        "Proporciona un prompt estructurado",
+        "Menciona la optimización WebP"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Genérame una imagen del dashboard de nuestra app.",
+      "expected_output": "Debe rechazar usar generación con IA para screenshots de UI de producto y explicar por qué: los modelos alucinan interfaces, el resultado no coincidirá con la UI real. Debe recomendar el flujo de trabajo de Mockups y Screenshots de Producto: capturar screenshots reales del producto a resolución 2x, enmarcar en mockups de dispositivo (frame de navegador, laptop, teléfono), agregar flechas de llamada o etiquetas de funciones para dar contexto, hacer overlay de anotaciones de forma programática con Hyperframes o HTML/CSS. Debe sugerir herramientas: screenshot de Browser DevTools, Shottr, CleanShot X, o CLI screencapture. Debe advertir que esto es el Error Común #1: usar IA para UI de producto.",
+      "assertions": [
+        "Rechaza usar generación con IA para UI de producto",
+        "Explica que los modelos alucinan la UI",
+        "Recomienda screenshots reales a resolución 2x",
+        "Menciona mockups de dispositivo para enmarcar",
+        "Sugiere herramientas específicas de screenshot",
+        "Señala esto como un error común"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Necesito un banner de header para Twitter/X de nuestra empresa. Solo queremos mostrar nuestro producto y el tagline.",
+      "expected_output": "Debe especificar las dimensiones del header de Twitter/X: 1500x500 (relación de aspecto 3:1). Debe advertir que el banner queda parcialmente tapado por el avatar — centrar el contenido crítico y evitar elementos importantes cerca del área de superposición con el avatar. Debe recomendar mantener el texto al mínimo (se ve en tamaños pequeños en móvil). Debe sugerir herramientas de diseño (Canva o Figma) por encima de la generación con IA ya que la consistencia de marca importa. Debe recomendar Ideogram si se necesita renderizado de texto intenso, ya que otros modelos de IA arruinan el texto. Debe sugerir usar colores de marca + tagline + foto de producto opcional. Debe recordar probar en el tamaño real de visualización alejando el zoom.",
+      "assertions": [
+        "Especifica dimensiones 1500x500",
+        "Advierte sobre el área de superposición con el avatar",
+        "Recomienda texto mínimo",
+        "Sugiere Canva o Figma por encima de IA",
+        "Menciona Ideogram para diseños con mucho texto",
+        "Recomienda probar en el tamaño de visualización"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Necesito 5 versiones de la misma imagen hero para Twitter, LinkedIn, Instagram feed, Instagram stories y Facebook. ¿Cuál es la forma más rápida?",
+      "expected_output": "Debe recomendar el flujo de trabajo de Canva Magic Resize por encima de generar 5 imágenes separadas. Debe listar las dimensiones: Twitter/X 1200x675 (16:9), LinkedIn 1200x627 (1.91:1), Instagram feed 1080x1080 (1:1 — nota: 1080x1350 / 4:5 también funciona bien), Instagram Stories 1080x1920 (9:16), Facebook 1200x630 (1.91:1). Debe explicar el flujo de trabajo: crear el concepto hero en la resolución más alta necesaria, usar Canva Magic Resize para las variantes, recortar manualmente si es necesario, agregar overlays de texto de forma programática si se requiere (Ideogram o post-procesamiento), exportar según las specs de cada plataforma. Debe señalar que esto es exactamente para lo que está diseñado Canva Magic Resize.",
+      "assertions": [
+        "Recomienda Canva Magic Resize",
+        "Lista las dimensiones para las 5 plataformas",
+        "Señala la variante 4:5 de Instagram",
+        "Sugiere overlays de texto programáticos para las variantes",
+        "Dice empezar en la resolución más alta"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuál es el mejor formato de imagen para nuestro sitio web?",
+      "expected_output": "Debe recomendar WebP como opción por defecto con fallback JPEG/PNG. Debe explicar la guía de formatos: WebP para fotos y gráficos (con y sin pérdida, ~96% de soporte de navegador), AVIF para máxima compresión (~94% de soporte, más nuevo), JPEG como fallback universal (solo con pérdida), PNG para transparencia y screenshots (sin pérdida, universal), SVG para logos e íconos (vectorial, escala, universal). Debe hacer referencia al checklist de optimización: redimensionar al tamaño de visualización, comprimir (apuntar a calidad 75-85% para fotos), lazy load bajo el pliegue, definir atributos explícitos de width/height (previene el CLS), usar un CDN con auto-optimización (Cloudflare, Vercel, Imgix, Cloudinary), agregar texto alternativo descriptivo. Debe proporcionar un comando rápido de cwebp o mogrify. Debe señalar que saltarse la optimización de imágenes es el asesino #1 de la velocidad de página.",
+      "assertions": [
+        "Recomienda WebP por defecto",
+        "Menciona la estrategia de fallback JPEG/PNG",
+        "Lista elementos del checklist de optimización",
+        "Menciona el lazy loading",
+        "Menciona las dimensiones explícitas para prevenir el CLS",
+        "Proporciona un ejemplo de comando de línea de comandos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Somos una SaaS que acaba de lanzar. Necesitamos imágenes OG para cada post de blog que publicamos — unos 2 por semana. Hacerlo manualmente nos está matando.",
+      "expected_output": "Debe recomendar el enfoque programático de Imágenes OG Dinámicas. Debe explicar las opciones: Vercel OG (@vercel/og) genera imágenes en el edge usando JSX — lo mejor para SEO programático ya que puedes extraer dinámicamente el título del post, autor e imagen en una plantilla; Satori convierte HTML/CSS a SVG (impulsa a Vercel OG); Cloudinary para overlay de texto basado en URL sobre imágenes de plantilla. Debe explicar que construyes la plantilla una vez con tu branding y luego se generan imágenes OG únicas por página usando los metadatos del post. Debe mencionar los meta tags requeridos: og:image (1200x630), og:image:width, og:image:height, twitter:card summary_large_image, twitter:image. Debe señalar que esto es lo mejor para SEO programático.",
+      "assertions": [
+        "Recomienda generación programática de imágenes OG",
+        "Nombra Vercel OG, Satori o Cloudinary",
+        "Menciona el enfoque de plantilla + datos dinámicos",
+        "Lista los meta tags requeridos de og:image",
+        "Especifica dimensiones 1200x630",
+        "Señala que esto es lo mejor para blogs de alto volumen"
+      ],
+      "files": []
+    }
+  ]
+}

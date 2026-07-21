@@ -1,6 +1,7 @@
 ---
 name: analytics-tracking
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere configurar, mejorar o auditar el seguimiento de analíticas y medición. También usar cuando el usuario menciona "configurar tracking," "GA4," "Google Analytics," "seguimiento de conversiones," "tracking de eventos," "parámetros UTM," "tag manager," "GTM," "implementación de analíticas," "plan de seguimiento," "set up tracking," "event tracking," o "analytics implementation." Para medición de pruebas A/B, ver ab-test-setup.
 ---
 

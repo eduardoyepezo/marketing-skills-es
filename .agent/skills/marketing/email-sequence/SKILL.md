@@ -1,6 +1,7 @@
 ---
 name: email-sequence
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere crear u optimizar una secuencia de email, campaña drip, flujo de email automatizado o programa de email de ciclo de vida. También usar cuando el usuario menciona "secuencia de email," "campaña drip," "secuencia de nurture," "emails de onboarding," "secuencia de bienvenida," "emails de re-engagement," "automatización de email," o "emails de ciclo de vida." Para onboarding en la app, ver onboarding-cro.
 ---
 

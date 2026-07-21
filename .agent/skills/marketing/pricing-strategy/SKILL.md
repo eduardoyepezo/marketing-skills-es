@@ -1,6 +1,7 @@
 ---
 name: pricing-strategy
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere ayuda con decisiones de precios, empaquetado o estrategia de monetización. También usar cuando el usuario menciona 'precios,' 'niveles de precios,' 'freemium,' 'prueba gratis,' 'empaquetado,' 'aumento de precios,' 'métrica de valor,' 'Van Westendorp,' 'disposición a pagar,' o 'monetización.' Esta habilidad cubre investigación de precios, estructura de niveles y estrategia de empaquetado."
 ---
 

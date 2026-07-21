@@ -3,45 +3,45 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Genera creatividades publicitarias para nuestra campaña en Meta (Facebook/Instagram). Vendemos un asistente de escritura con IA para profesionales de marketing de contenidos. Propuesta de valor principal: redactar publicaciones de blog 5 veces más rápido. Audiencia objetivo: gerentes de marketing de contenidos en empresas B2B SaaS. Presupuesto: 5.000 USD al mes.",
-      "expected_output": "Debe verificar primero si existe product-marketing-context.md. Debe generar creatividades siguiendo el enfoque basado en ángulos: identificar 3-5 ángulos (velocidad, calidad, ROI, el dolor de la página en blanco, ventaja competitiva). Para cada ángulo, debe generar texto principal (≤125 caracteres), titular (≤40 caracteres) y descripción (≤30 caracteres) respetando los límites de caracteres de Meta. Debe proporcionar múltiples variaciones por ángulo. Debe sugerir la dirección visual o de imagen para cada uno. Debe organizar el resultado con el nombre del ángulo, gancho, cuerpo y CTA para cada variación. Debe recomendar qué ángulos probar primero.",
+      "prompt": "Genera creatividades publicitarias para nuestra campaña en Meta (Facebook/Instagram). Vendemos un asistente de escritura con IA para marketers de contenido. Propuesta de valor principal: escribir posts de blog 5 veces más rápido. Audiencia objetivo: gerentes de marketing de contenido en empresas B2B SaaS. Presupuesto: $5k/mes.",
+      "expected_output": "Debe revisar primero si existe product-marketing.md. Debe generar creatividades siguiendo el enfoque basado en ángulos: identificar 3-5 ángulos (velocidad, calidad, ROI, el dolor de la página en blanco, ventaja competitiva). Para cada ángulo, debe generar texto principal (≤125 caracteres), titular (≤40 caracteres) y descripción (≤30 caracteres) respetando los límites de caracteres de Meta. Debe proporcionar múltiples variaciones por ángulo. Debe sugerir dirección de imagen/visual para cada una. Debe organizar el output con nombre de ángulo, hook, cuerpo y CTA para cada variación. Debe recomendar qué ángulos probar primero.",
       "assertions": [
-        "Verifica si existe product-marketing-context.md",
-        "Utiliza el enfoque de generación basado en ángulos",
+        "Revisa si existe product-marketing.md",
+        "Usa el enfoque de generación basado en ángulos",
         "Identifica múltiples ángulos (3-5)",
         "Respeta los límites de caracteres de Meta (125/40/30)",
         "Genera múltiples variaciones por ángulo",
-        "Sugiere la dirección visual o de imagen",
-        "Incluye gancho, cuerpo y CTA para cada uno",
+        "Sugiere dirección de imagen o visual",
+        "Incluye hook, cuerpo y CTA para cada una",
         "Recomienda qué ángulos probar primero"
       ],
       "files": []
     },
     {
       "id": 2,
-      "prompt": "Necesito texto para Google Ads de nuestro producto CRM. Nos dirigimos a la palabra clave 'mejor CRM para pequeñas empresas'. Necesito anuncios de búsqueda responsivos.",
-      "expected_output": "Debe generar creatividades para Google RSA respetando los límites de caracteres: titulares (≤30 caracteres cada uno, se necesitan 10-15 variaciones) y descripciones (≤90 caracteres cada una, se necesitan 4+ variaciones). Debe señalar que la fijación de posición debe usarse con moderación ya que reduce la optimización. Debe incluir la palabra clave objetivo en los titulares. Debe proporcionar múltiples variaciones basadas en ángulos. Debe sugerir extensiones de anuncio (vínculos de sitio, textos destacados, fragmentos estructurados). Debe seguir las mejores prácticas de Google Ads para RSA.",
+      "prompt": "Necesito copy de Google Ads para nuestro producto CRM. Estamos apuntando a la palabra clave 'mejor CRM para pequeñas empresas'. Necesito anuncios de búsqueda responsivos.",
+      "expected_output": "Debe generar creatividades RSA de Google respetando los límites de caracteres: titulares (≤30 caracteres cada uno, se necesitan 10-15 variaciones) y descripciones (≤90 caracteres cada una, se necesitan 4+ variaciones). Debe señalar que fijar posiciones (pinning) debe usarse con moderación porque reduce la optimización. Debe incluir la palabra clave objetivo en los titulares. Debe proporcionar múltiples variaciones basadas en ángulos. Debe sugerir extensiones de anuncio (sitelinks, callouts, structured snippets). Debe seguir las mejores prácticas de Google Ads para RSA.",
       "assertions": [
-        "Respeta los límites de caracteres de Google RSA (30 caracteres en titulares, 90 en descripciones)",
+        "Respeta los límites de caracteres de RSA de Google (titulares de 30 caracteres, descripciones de 90 caracteres)",
         "Genera 10-15 variaciones de titular",
         "Genera 4+ variaciones de descripción",
         "Incluye la palabra clave objetivo en los titulares",
-        "Señala que la fijación debe usarse con moderación según la guía de la habilidad",
+        "Señala que el pinning debe usarse con moderación según la guía de la habilidad",
         "Sugiere extensiones de anuncio",
-        "Utiliza el enfoque de variación basado en ángulos"
+        "Usa el enfoque de variación basado en ángulos"
       ],
       "files": []
     },
     {
       "id": 3,
-      "prompt": "Aquí están los datos de rendimiento de nuestros anuncios: Anuncio A (ángulo de punto de dolor) - CTR 2,1%, CPC 3,20 USD, tasa de conversión 4,5%. Anuncio B (ángulo de prueba social) - CTR 1,4%, CPC 4,10 USD, tasa de conversión 6,2%. Anuncio C (ángulo de características) - CTR 0,8%, CPC 5,50 USD, tasa de conversión 2,1%. Ayúdame a iterar sobre estos.",
-      "expected_output": "Debe activar el modo de iteración a partir del rendimiento (no generar desde cero). Debe analizar los datos: el Anuncio A tiene el mejor CTR, el Anuncio B tiene la mejor tasa de conversión (mayor eficiencia a pesar del CTR más bajo), el Anuncio C está bajo rendimiento en todas las métricas. Debe recomendar apostar por el ángulo de punto de dolor (alto CTR) y el de prueba social (alta conversión), mientras se pausa o se renueva el ángulo de características. Debe generar nuevas variaciones que combinen los elementos ganadores (gancho de punto de dolor + prueba social). Debe sugerir iteraciones específicas en el Anuncio A y el Anuncio B.",
+      "prompt": "Aquí están nuestros datos de rendimiento de anuncios: Anuncio A (ángulo de punto de dolor) - CTR 2.1%, CPC $3.20, tasa de conversión 4.5%. Anuncio B (ángulo de prueba social) - CTR 1.4%, CPC $4.10, tasa de conversión 6.2%. Anuncio C (ángulo de características) - CTR 0.8%, CPC $5.50, tasa de conversión 2.1%. Ayúdame a iterar sobre estos.",
+      "expected_output": "Debe activar el modo de iteración a partir de rendimiento (no generar desde cero). Debe analizar los datos: el Anuncio A tiene el mejor CTR, el Anuncio B tiene la mejor tasa de conversión (mayor eficiencia a pesar de un CTR más bajo), el Anuncio C tiene bajo rendimiento en todas las métricas. Debe recomendar reforzar el ángulo de punto de dolor (CTR alto) y el ángulo de prueba social (conversión alta), mientras pausa o rehace el ángulo de características. Debe generar nuevas variaciones que combinen elementos ganadores (hook de punto de dolor + prueba social). Debe sugerir iteraciones específicas sobre el Anuncio A y el Anuncio B.",
       "assertions": [
-        "Activa el modo de iteración basado en los datos de rendimiento",
+        "Activa el modo de iteración basado en datos de rendimiento",
         "Analiza CTR, CPC y tasa de conversión de cada anuncio",
         "Identifica los ángulos ganadores a partir de los datos",
-        "Recomienda pausar o renovar la creatividad con bajo rendimiento",
-        "Genera nuevas variaciones combinando los elementos ganadores",
+        "Recomienda pausar o rehacer las creatividades de bajo rendimiento",
+        "Genera nuevas variaciones combinando elementos ganadores",
         "Proporciona iteraciones específicas sobre los mejores resultados"
       ],
       "files": []
@@ -49,40 +49,114 @@
     {
       "id": 4,
       "prompt": "necesitamos anuncios de linkedin para nuestro producto de seguridad empresarial. la audiencia son CISOs y directores de TI.",
-      "expected_output": "Debe activarse con phrasing informal. Debe generar creatividades para anuncios de LinkedIn respetando los límites de caracteres: texto introductorio (≤150 caracteres), titular (≤70 caracteres), descripción (≤100 caracteres). Debe adaptar el tono y los mensajes para la audiencia de seguridad empresarial (CISOs, directores de TI): lenguaje más formal, enfocado en cumplimiento normativo y reducción de riesgos. Debe proporcionar múltiples ángulos relevantes para compradores de seguridad (reducción de riesgos, cumplimiento, tiempo de respuesta a incidentes, costo de brechas de seguridad). Debe sugerir recomendaciones de formato de anuncio para LinkedIn (contenido patrocinado, anuncios de mensaje, etc.).",
+      "expected_output": "Debe activarse con lenguaje casual. Debe generar creatividades de anuncio de LinkedIn respetando los límites de caracteres: texto introductorio (≤150 caracteres), titular (≤70 caracteres), descripción (≤100 caracteres). Debe adaptar el tono y el mensaje para una audiencia de seguridad empresarial (CISOs, directores de TI) — lenguaje más formal, enfocado en cumplimiento y reducción de riesgo. Debe proporcionar múltiples ángulos relevantes para compradores de seguridad (reducción de riesgo, cumplimiento, tiempo de respuesta a incidentes, costo de brechas). Debe sugerir recomendaciones de formato de anuncio para LinkedIn (contenido patrocinado, message ads, etc.).",
       "assertions": [
-        "Se activa con phrasing informal",
+        "Se activa con lenguaje casual",
         "Respeta los límites de caracteres de LinkedIn (150/70/100)",
-        "Adapta el tono para la audiencia de seguridad empresarial",
-        "Utiliza lenguaje de reducción de riesgos y cumplimiento normativo",
+        "Adapta el tono para una audiencia de seguridad empresarial",
+        "Usa lenguaje de reducción de riesgo y cumplimiento",
         "Proporciona múltiples ángulos relevantes para compradores de seguridad",
-        "Sugiere recomendaciones de formato de anuncio para LinkedIn"
+        "Sugiere recomendaciones de formato de anuncio de LinkedIn"
       ],
       "files": []
     },
     {
       "id": 5,
-      "prompt": "Necesito generar un gran lote de variaciones de anuncios para una campaña multiplataforma que se lanza la próxima semana. Somos un servicio de entrega de comidas dirigido a profesionales ocupados. Necesito anuncios para Google, Meta y TikTok.",
-      "expected_output": "Debe activar el flujo de trabajo de generación en lote. Debe generar creatividades para las tres plataformas respetando los límites de caracteres de cada una: Google RSA (30/90), Meta (125/40/30), TikTok (80 caracteres recomendados, 100 como máximo). Debe identificar 3-5 ángulos que funcionen en todas las plataformas (conveniencia, salud, ahorro de tiempo, variedad, costo frente a comer fuera). Debe generar variaciones por ángulo por plataforma. Debe señalar las consideraciones creativas específicas de cada plataforma (TikTok necesita conceptos de video, no solo texto). Debe organizar el resultado claramente por plataforma.",
+      "prompt": "Necesito generar un lote grande de variaciones de anuncios para una campaña multiplataforma que lanza la próxima semana. Somos un servicio de entrega de comidas dirigido a profesionales ocupados. Necesito anuncios para Google, Meta y TikTok.",
+      "expected_output": "Debe activar el flujo de trabajo de generación en lote. Debe generar creatividades para las tres plataformas respetando los límites de caracteres de cada una: Google RSA (30/90), Meta (125/40/30), TikTok (80 caracteres recomendados, 100 máx.). Debe identificar 3-5 ángulos que funcionen en todas las plataformas (conveniencia, salud, ahorro de tiempo, variedad, costo vs. comer afuera). Debe generar variaciones por ángulo por plataforma. Debe señalar consideraciones creativas específicas de plataforma (TikTok necesita conceptos de video, no solo texto). Debe organizar el output claramente por plataforma.",
       "assertions": [
         "Activa el flujo de trabajo de generación en lote",
         "Genera para las tres plataformas",
         "Respeta los límites de caracteres de cada plataforma",
-        "Identifica ángulos que funcionen en todas las plataformas",
+        "Identifica ángulos que funcionan en todas las plataformas",
         "Señala que TikTok necesita conceptos de video",
-        "Organiza el resultado por plataforma",
+        "Organiza el output por plataforma",
         "Genera múltiples variaciones por ángulo por plataforma"
       ],
       "files": []
     },
     {
       "id": 6,
-      "prompt": "Ayúdame a planificar nuestra estrategia general de publicidad de pago. Tenemos un presupuesto mensual de 20.000 USD y queremos determinar qué plataformas usar y cómo distribuir el gasto.",
-      "expected_output": "Debe reconocer que esto es una tarea de estrategia publicitaria de pago, no de generación de creatividades. Debe derivar o hacer referencia cruzada a la habilidad paid-ads, que gestiona la estrategia de campaña, la selección de plataformas y la asignación de presupuesto. Puede mencionar brevemente las consideraciones creativas pero debe dejar claro que paid-ads es la habilidad adecuada para la estrategia.",
+      "prompt": "Ayúdame a planear nuestra estrategia general de publicidad paga. Tenemos un presupuesto mensual de $20k y queremos definir qué plataformas usar y cómo asignar el gasto.",
+      "expected_output": "Debe reconocer que esta es una tarea de estrategia de publicidad paga, no de generación de creatividades. Debe remitir o hacer referencia cruzada a la habilidad ads, que maneja estrategia de campaña, selección de plataforma y asignación de presupuesto. Puede mencionar brevemente consideraciones creativas, pero debe dejar claro que ads es la habilidad correcta para estrategia.",
       "assertions": [
-        "Reconoce que esto es una estrategia de publicidad de pago, no generación de creatividades",
-        "Hace referencia o deriva a la habilidad paid-ads",
-        "No intenta desarrollar una estrategia de campaña completa usando patrones de generación de creatividades"
+        "Reconoce que esto es estrategia de ads pagados, no generación de creatividades",
+        "Hace referencia o remite a la habilidad ads",
+        "No intenta hacer estrategia de campaña completa usando patrones de generación de creatividades"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Quiero hacer uno de esos video ads estilo iMessage para Meta — de los que una conversación de texto falsa revela el producto y un código promocional. Vendemos un anillo de seguimiento del sueño. Nuestro código promocional es RESTED.",
+      "expected_output": "Debe cargar references/imessage-video-ads.md. Debe empezar eligiendo un ángulo de concepto del catálogo de seis ángulos (resultado-como-captura, setup flex, momento de cancelación, feature-como-punchline, amigo-le-pregunta-a-amigo inverso, recibo-como-hook) antes de escribir las burbujas — probablemente resultado-como-captura (un puntaje de sueño) para este producto. Debe redactar un guion de 8-14 burbujas en voz de texteo real donde la marca aparece solo después de que el peer pregunta, con el código RESTED entregado de forma conversacional dentro de una burbuja y repetido en un end card estático. Debe aplicar las reglas de anclaje: cualquier afirmación de mejora del sueño en el hilo debe trazarse a un resultado real de cliente o hecho del producto, y el hilo no debe presentarse como un testimonio real. Debe presentar opciones de ruta de producción (habilidad lista para usar, pipeline Playwright+ffmpeg, o Remotion) en vez de asumir una, y mencionar reglas de craft clave (el SFX reconocible de enviar/recibir, indicadores de escritura silenciosos, 9:16 1080x1920).",
+      "assertions": [
+        "Carga o aplica la referencia imessage-video-ads",
+        "Selecciona un ángulo de concepto antes de escribir el guion",
+        "El guion tiene 8-14 burbujas en voz de texteo auténtica",
+        "El nombre de la marca aparece solo después de que el peer pregunta",
+        "El código promocional RESTED aparece en una burbuja y en el end card",
+        "Aplica las reglas de anclaje — sin afirmaciones fabricadas, no presentado como testimonio real",
+        "Menciona al menos una ruta de producción y reglas de craft clave (SFX, indicador de escritura silencioso, 9:16)"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Vendemos un suplemento para la menopausia. Vi esos anuncios donde alguien le pregunta a ChatGPT sobre un tema de salud y la respuesta recomienda el producto — haz uno de esos para nosotros. También tengo curiosidad por la versión de Apple Notes.",
+      "expected_output": "Debe cargar references/imessage-video-ads.md y aplicar la sección Other iOS-Native Reveal Surfaces. Debe señalar de forma prominente la restricción de cumplimiento ANTES de redactar: una respuesta de IA fabricada que hace afirmaciones de salud es la versión de mayor riesgo de este formato — cada afirmación necesita sustentación, el consejo de salud/médico en una respuesta falsa de ChatGPT necesita revisión legal, y el intercambio no debe presentarse como un output real y no solicitado de ChatGPT que respalda el producto. Puede proponer un ángulo cumplido (educación sobre mecanismo anclada en hechos documentados) o dirigir hacia el formato de confesión en Apple Notes como el ajuste de menor riesgo para una historia de transformación. Para la versión de Notes: título-como-hook, lista en primera persona con el producto como la línea menos entusiasta, audio solo de teclas, realizaciones ancladas en reseñas reales. Debe aplicar la guía de selección de superficie en lugar de tratar los tres formatos como intercambiables.",
+      "assertions": [
+        "Aplica la sección de superficies de revelación nativas de iOS de la referencia imessage-video-ads",
+        "Señala el riesgo de afirmación de salud/sustentación para la respuesta fabricada de ChatGPT antes o durante la redacción",
+        "No presenta el intercambio de ChatGPT como un output real no solicitado que respalda el producto",
+        "Recomienda revisión legal o un replanteamiento cumplido para el consejo de salud en la respuesta de IA",
+        "Guía de Apple Notes: título-como-hook, confesión en primera persona, el producto como un ítem de lista poco entusiasta, audio solo de teclas",
+        "Ancla afirmaciones y realizaciones en hechos documentados/reseñas (Insumos con Base en la Realidad)",
+        "Da razonamiento de selección de superficie (ChatGPT vs. Notes) en lugar de tratar los formatos como intercambiables"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Nuestra cuenta de Meta está estancada — probamos 30 anuncios en dos meses y nada le gana al control. Tengo nuestras reseñas exportadas y acceso a los datos de nuestra cuenta de anuncios. Constrúyeme un plan de creatividades para el próximo mes.",
+      "expected_output": "Debe aplicar el Modo 4 / references/creative-roadmap.md en lugar de saltar directo a generar anuncios. Debe identificar la cuenta en estado de exploración (nada está funcionando) y dar forma al plan en consecuencia: mayormente conceptos nuevos en distintos segmentos/ángulos, iteraciones mínimas, redefinición de victoria por métrica (un aumento en hold-rate o una caída de CPC cuenta como un hit que vale la pena seguir). Debe sintetizar las tres señales (rendimiento de cuenta a partir de los datos de anuncios, lenguaje de clientes a partir de las reseñas, orgánico externo — pidiendo o minando contenido orgánico de nicho) en conceptos rankeados por nivel de evidencia, cada uno con una fuente citada. Debe producir un slate mensual con capacidad verificada y niveles de producción (favoreciendo pruebas de baja fidelidad T1/T2 según la escalera de fidelidad) y señalar las causas raíz comunes del estado de exploración a revisar (creatividad aburrida, mensaje demasiado complicado, UVP poco clara, CPMs castigadores). Debe terminar con el plan de retro para evaluar el slate a fin de mes. No debe inventar lenguaje de clientes ni afirmaciones — los insights deben trazarse a las reseñas/datos proporcionados.",
+      "assertions": [
+        "Aplica el loop de estrategia de creatividades (Modo 4) en lugar de solo generar copy de anuncios",
+        "Diagnostica el estado de exploración y recomienda un mix amplio, mayormente de conceptos nuevos, con iteraciones mínimas",
+        "Redefine las victorias por métrica para una cuenta estancada",
+        "Sintetiza las tres fuentes de señales o solicita explícitamente la que falta",
+        "Los conceptos están rankeados por evidencia con fuentes citadas (sin insights inventados)",
+        "El slate mensual tiene capacidad verificada y niveles de producción, favoreciendo pruebas de baja fidelidad",
+        "Incluye un plan de retro de fin de mes que alimenta el próximo slate"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Generamos cuatro conceptos de anuncios para un cliente (una marca de cuidado de la piel orgánico) y necesitamos enviarles algo que puedan realmente ver y aprobar — con el preview de Instagram, los cuadros del carrusel y las diferentes opciones de titular que puedan comparar. ¿Puedes armar eso?",
+      "expected_output": "Debe reconocer esto como una solicitud de página de revisión de creatividades y aplicar references/creative-review-page.md + la plantilla assets/creative-review-template.html en lugar de producir markdown plano. Debe copiar la plantilla a la carpeta de output y llenar su objeto DATA con los cuatro conceptos como pestañas, cada uno con un preview in-feed de Instagram, un storyboard etiquetado cuadro por cuadro (cuadros etiquetados por función narrativa — Hook / Problema / Prueba / Ask — no por contenido representado), variaciones de titular seleccionables, texto principal, y destino/CTA. Debe curar a un número revisable de conceptos (2-4) en lugar de volcar todo. Debe incluir una divulgación de anclaje obligatoria por concepto que indique qué es real (fotografía de producto, cualquier afirmación/resultado) y etiquetar la prueba ilustrativa como ilustrativa — nunca presentar estadísticas inventadas o imágenes de stock como propias de la marca. Debe usar placeholders estilizados para cuadros aún no renderizados a imagen, y mantener las rutas de imagen relativas. Debe explicar cómo entregarlo (abrir localmente, hospedar en un host estático, o entregar el archivo).",
+      "assertions": [
+        "Produce una página de revisión de creatividades a partir de la plantilla HTML, no markdown plano",
+        "Llena el objeto DATA (pestañas de concepto, preview in-feed, storyboard de cuadros, variaciones de titular, copy, destino)",
+        "Etiqueta los cuadros del storyboard por función narrativa en lugar de por contenido representado",
+        "Incluye una línea de anclaje/divulgación obligatoria por concepto; etiqueta la prueba ilustrativa como ilustrativa",
+        "No presenta estadísticas inventadas o imágenes de stock como assets reales de la marca",
+        "Usa placeholders para cuadros no renderizados y mantiene las rutas de imagen relativas",
+        "Explica cómo entregar la página (abrir localmente / hospedar / entregar el archivo)"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Quiero hacer uno de esos video ads estilo AirDrop — donde un teléfono recibe un AirDrop entrante y tocas aceptar. Vendemos un lanzamiento limitado de tenis.",
+      "expected_output": "Debe aplicar la superficie de AirDrop en references/imessage-video-ads.md (la familia de revelaciones nativas de iOS), sin tratarla como un formato novedoso. Debe construir el anuncio alrededor de la interacción: una tarjeta de AirDrop entrante (hoja translúcida, nombre del dispositivo del remitente, una miniatura de vista previa, Rechazar en gris / Aceptar en azul) desde el punto de vista del receptor, con el tap de Aceptar como el beat de revelación y el anillo de progreso de transferencia como el motion distintivo. Debe hacer que la miniatura de vista previa se gane el tap (la toma money-shot de los tenis / el lanzamiento), elegir un nombre de remitente humano y cercano en vez de la marca, usar el sonido swoosh de AirDrop (no los tritonos de iMessage) con la nota sobre trade dress de Apple, y mantenerlo corto. Debe aplicar las reglas de anclaje/divulgación de la familia (una dramatización de un compartir, no un respaldo real; afirmaciones sustentadas). Puede señalar el punto de vista del receptor por defecto vs. el punto de vista del remitente como flex.",
+      "assertions": [
+        "Aplica la superficie de revelación nativa de iOS de AirDrop, no un formato desde cero",
+        "Construye alrededor de la interacción tarjeta-de-AirDrop-entrante + tap-de-aceptar-como-revelación (punto de vista del receptor)",
+        "La miniatura de vista previa se trata como el hook que debe ganarse el tap de aceptar",
+        "Elige un nombre de remitente humano y cercano, no la marca, en la tarjeta entrante",
+        "Usa el sonido swoosh de AirDrop + la nota de trade dress de Apple, no los tritonos de iMessage",
+        "Aplica las reglas de anclaje/divulgación de la familia (compartir dramatizado, afirmaciones sustentadas, no un respaldo real)"
       ],
       "files": []
     }

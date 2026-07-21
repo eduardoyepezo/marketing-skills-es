@@ -1,0 +1,107 @@
+{
+  "skill_name": "social",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ayúdame a crear una estrategia de contenido para LinkedIn. Soy fundador de una SaaS construyendo en público y quiero hacer crecer mi marca personal para impulsar el awareness de mi producto. Actualmente tengo 500 seguidores y publico quizás una vez por semana.",
+      "expected_output": "Debe revisar primero product-marketing.md. Debe establecer pilares de contenido (3-5) apropiados para un fundador de SaaS construyendo en público: insights de industria, detrás de cámaras, contenido educativo, historias personales, promocional (mínimo). Debe aplicar la referencia rápida de plataforma para LinkedIn (se recomienda 3-5x/semana, los carruseles y stories funcionan bien). Debe proporcionar fórmulas de hook para posts de LinkedIn. Debe crear un calendario de contenido semanal. Debe incluir estrategia de engagement (rutina diaria de 30 min). Debe abordar cómo pasar de 1x/semana a 3-5x/semana con una estrategia de batching.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Establece 3-5 pilares de contenido",
+        "Aplica la guía de plataforma de LinkedIn",
+        "Proporciona fórmulas de hook",
+        "Crea un calendario de contenido semanal",
+        "Incluye estrategia de engagement",
+        "Aborda la estrategia de batching para consistencia",
+        "Recomienda aumentar de 1x a 3-5x por semana"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Escríbeme un hilo de Twitter/X sobre las lecciones que aprendí haciendo bootstrapping de mi SaaS hasta $10k MRR. Incluye hooks y un CTA al final.",
+      "expected_output": "Debe aplicar las fórmulas de hook para un hook de historia (p. ej., 'Hace 6 meses, tenía $0 de MRR. Hoy, llegué a $10k.'). Debe estructurar el hilo siguiendo las mejores prácticas de la plataforma: hook fuerte en el tweet 1, cada tweet debe funcionar por sí solo pero fluir en conjunto, usar números y historias específicas, terminar con un CTA. Debe hacer referencia al pilar de contenido en el que encaja (detrás de cámaras / viaje del fundador). Debe proporcionar el contenido real del hilo con 8-12 tweets. Debe incluir prompts de engagement.",
+      "assertions": [
+        "Aplica las fórmulas de hook de la skill",
+        "Usa un hook de historia para el primer tweet",
+        "Estructura el hilo con tweets independientes pero fluidos",
+        "Usa números e historias específicas",
+        "Termina con un CTA claro",
+        "Proporciona contenido de hilo de 8-12 tweets",
+        "Incluye prompts de engagement"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "tengo un post de blog que le fue muy bien. ¿cómo lo convierto en contenido de redes sociales para varias plataformas?",
+      "expected_output": "Debe activarse con lenguaje casual. Debe aplicar el sistema de reutilización de contenido. Debe usar el mapeo de Post de Blog → Contenido Social: LinkedIn (post de insight clave + carrusel con los puntos principales), Twitter/X (hilo de conclusiones clave), Instagram (carrusel con visuales + Reel resumiendo el post). Debe seguir el flujo de reutilización: crear contenido pilar → extraer insights clave (3-5) → adaptar a cada plataforma → programar a lo largo de la semana. Debe proporcionar recomendaciones de formato específicas por plataforma.",
+      "assertions": [
+        "Se activa con lenguaje casual",
+        "Aplica el sistema de reutilización de contenido",
+        "Usa el mapeo de Post de Blog → Contenido Social",
+        "Proporciona formato para LinkedIn, Twitter/X e Instagram",
+        "Sigue el flujo de reutilización",
+        "Extrae 3-5 insights clave para reutilizar",
+        "Proporciona recomendaciones de formato específicas por plataforma"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Mis posts de LinkedIn tienen como 200 impresiones y casi nada de engagement. ¿Qué estoy haciendo mal?",
+      "expected_output": "Debe aplicar la sección de analytics y optimización, específicamente la guía de 'si el engagement es bajo'. Debe diagnosticar posibles problemas: hooks débiles (la primera línea no es convincente), publicar en los horarios equivocados, no hacer engagement con el contenido de otros, mal formato (sin saltos de línea, muros de texto), contenido que no resuena con la audiencia. Debe recomendar soluciones específicas: probar nuevas fórmulas de hook, publicar en diferentes horarios, aumentar el engagement con otros (la rutina diaria de engagement), probar diferentes formatos (carruseles, stories). Debe proporcionar ejemplos de hooks antes/después.",
+      "assertions": [
+        "Aplica la guía de analytics y optimización",
+        "Diagnostica posibles problemas de engagement",
+        "Aborda la calidad del hook",
+        "Aborda el timing de publicación",
+        "Recomienda la rutina diaria de engagement",
+        "Sugiere probar diferentes formatos de contenido",
+        "Proporciona ejemplos específicos de hooks antes/después"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Ayúdame a hacer ingeniería inversa de lo que está funcionando para los mejores creadores del espacio DevTools en Twitter. Quiero entender sus patrones de contenido.",
+      "expected_output": "Debe aplicar el framework de ingeniería inversa de contenido viral. Debe recorrer el proceso: identificar 10-20 cuentas top en DevTools, recopilar posts de alto rendimiento, analizar patrones (hooks, formatos, CTAs, temas, horarios de publicación), codificar un playbook de patrones repetibles, y luego añadir la voz auténtica del usuario. Debe proporcionar guía específica sobre qué buscar en el análisis. Debe recomendar herramientas o métodos para recopilar los datos.",
+      "assertions": [
+        "Aplica el framework de ingeniería inversa de contenido viral",
+        "Recorre el proceso completo (encontrar, recopilar, analizar, codificar, aplicar)",
+        "Recomienda identificar 10-20 cuentas",
+        "Describe qué patrones analizar",
+        "Enfatiza añadir la voz auténtica",
+        "Proporciona guía de recopilación de datos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Escríbeme una secuencia de bienvenida de 5 correos para nuevos suscriptores de email que llegaron desde mi audiencia de LinkedIn.",
+      "expected_output": "Debe reconocer que esto es una tarea de secuencia de email, no de contenido social. Debe derivar o hacer referencia a la skill de emails, que maneja secuencias de bienvenida, campañas drip y emails de ciclo de vida. Puede señalar el contexto del puente social-a-email, pero debe dejar claro que emails es la skill correcta para escribir secuencias de email.",
+      "assertions": [
+        "Reconoce esto como trabajo de secuencia de email",
+        "Hace referencia o deriva a la skill de emails",
+        "No intenta escribir la secuencia de email usando patrones de contenido social",
+        "Puede señalar el contexto del puente social-a-email"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Quiero convertir nuestra nueva guía de precios en un carrusel de LinkedIn. Tiene 9 tácticas de negociación para compradores de SaaS. Ayúdame a estructurar las slides.",
+      "expected_output": "Debe cargar references/carousel-frameworks.md y elegir un framework ANTES de escribir las slides — una lista de 9 tácticas nombradas encaja con Hack List (o Value-Stack; debe justificar la elección), no con Rant Callout ni Demo Walkthrough. Debe producir una estructura slide por slide: portada contraria o de conteo exacto (slide 1 escrita como un scroll-stopper independiente), una táctica nombrada por slide, y un cierre de síntesis + un solo CTA. Debe aplicar las notas de document post de LinkedIn (subida en PDF, se tolera texto más denso, el texto del post escrito como su propio hook en lugar de 'ver adjunto'). Debe mantener exactamente el conteo prometido en la portada y señalar que las estadísticas/afirmaciones deben ser reales. Debe mencionar medir el rendimiento por guardados/finalización en lugar de likes.",
+      "assertions": [
+        "Carga o aplica la referencia carousel-frameworks",
+        "Selecciona un framework apropiado (Hack List o Value-Stack) con una razón declarada antes de redactar las slides",
+        "La slide 1 está escrita como un scroll-stopper independiente con el conteo o la afirmación contraria",
+        "Una táctica/idea por slide, cada una nombrada",
+        "La slide final tiene una síntesis y exactamente un CTA",
+        "Aplica la guía de document post de LinkedIn (PDF, texto del post como su propio hook)",
+        "No inventa estadísticas ni infla el conteo de tácticas"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -153,6 +153,6 @@ Usar estos datos para informar tu escritura — no como una lista de verificaci�
 
 - **copywriting**: Para páginas de aterrizaje y copy web
 - **email-sequence**: Para secuencias de correo de ciclo de vida/nurture (no outreach en frío)
-- **social-content**: Para LinkedIn y posts en redes sociales
+- **social**: Para LinkedIn y posts en redes sociales
 - **product-marketing-context**: Para establecer el posicionamiento fundamental
 - **revops**: Para puntuación de leads, enrutamiento y gestión del pipeline

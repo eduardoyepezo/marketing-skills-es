@@ -79,7 +79,7 @@ Límites de caracteres completos, requisitos de formato y mejores prácticas par
 - **Audience Network**: Varía según el publisher
 
 **Mejores prácticas:**
-- Poner el gancho al inicio del texto principal (primeros 125 chars)
+- Poner el hook al inicio del texto principal (primeros 125 chars)
 - Usar saltos de línea para legibilidad en texto principal más largo
 - Emojis: probar, pero no abusar — 1-2 por anuncio como máximo
 - Las preguntas en el texto principal aumentan el engagement
@@ -208,6 +208,6 @@ Al crear para múltiples plataformas simultáneamente, comenzar con el formato m
 1. **Titulares de búsqueda de Google** (30 chars) — obliga al mensaje más ajustado
 2. **Expandir a titulares de Meta** (40 chars) — agregar una o dos palabras
 3. **Expandir a texto introductorio de LinkedIn** (150 chars) — agregar contexto y prueba
-4. **Expandir a texto principal de Meta** (125+ chars) — gancho completo y propuesta de valor
+4. **Expandir a texto principal de Meta** (125+ chars) — hook completo y propuesta de valor
 
 Este enfoque en cascada asegura que tu mensaje central funcione en todas partes, y luego se enriquece para las plataformas que permiten más espacio.

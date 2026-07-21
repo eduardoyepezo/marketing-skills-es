@@ -1,6 +1,7 @@
 ---
 name: programmatic-seo
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere crear páginas orientadas a SEO a escala usando plantillas y datos. También usar cuando el usuario menciona "SEO programático," "páginas de plantilla," "páginas a escala," "páginas de directorio," "páginas de ubicación," "páginas de [keyword] + [ciudad]," "páginas de comparación," "páginas de integración," o "construir muchas páginas para SEO." Para auditar problemas de SEO existentes, ver seo-audit.
 ---
 

@@ -86,11 +86,11 @@ Seis skills que cubren cada etapa del embudo de conversión:
 | `copy-editing` | Estás editando y puliendo copy existente |
 | `cold-email` | Estás escribiendo correos fríos B2B y secuencias de seguimiento |
 | `email-sequence` | Estás creando campañas de drip automatizadas y flujos de email de ciclo de vida |
-| `social-content` | Estás creando y optimizando publicaciones sociales para LinkedIn, Twitter/X, Instagram |
+| `social` | Estás creando y optimizando publicaciones sociales para LinkedIn, Twitter/X, Instagram |
 | `content-strategy` | Estás planificando qué contenido crear y qué temas cubrir |
 | `brainstorming` | Estás generando ideas amplias de marketing cuando no sabes por dónde empezar |
 
-**Cómo se conectan:** `copywriting` ↔ `page-cro` — úsalas juntas al reconstruir una página. `cold-email` + `email-sequence` cubren el panorama completo de prospección y nurture. `content-strategy` alimenta a `copywriting` y `social-content` con dirección.
+**Cómo se conectan:** `copywriting` ↔ `page-cro` — úsalas juntas al reconstruir una página. `cold-email` + `email-sequence` cubren el panorama completo de prospección y nurture. `content-strategy` alimenta a `copywriting` y `social` con dirección.
 
 ---
 
@@ -115,7 +115,7 @@ Seis skills que cubren cada etapa del embudo de conversión:
 |---|---|
 | `paid-ads` | Estás ejecutando campañas en Google, Meta, LinkedIn, TikTok o Twitter/X |
 | `ad-creative` | Estás generando, iterando o escalando creativos publicitarios en volumen |
-| `social-content` | Estás distribuyendo contenido orgánico a través de canales sociales |
+| `social` | Estás distribuyendo contenido orgánico a través de canales sociales |
 
 **Cómo se conectan:** `paid-ads` y `ad-creative` están muy vinculadas — usa `paid-ads` para la estrategia y estructura de la campaña, `ad-creative` para generar los titulares, copy y variantes creativas reales. Ambas se nutren de los principios de `copywriting`.
 
@@ -163,7 +163,7 @@ Seis skills que cubren cada etapa del embudo de conversión:
 | `pricing-strategy` | Estás tomando decisiones de precios, empaquetado o monetización |
 | `brand-identity` | Estás definiendo o refinando la voz de marca, identidad visual y design tokens |
 
-**Cómo se conectan:** `marketing-psychology` informa a todas las demás skills — es una lente, no un flujo de trabajo. `launch-strategy` se nutre de `copywriting`, `paid-ads`, `email-sequence` y `social-content` como capas de ejecución. `pricing-strategy` se conecta con `paywall-upgrade-cro` y `churn-prevention`.
+**Cómo se conectan:** `marketing-psychology` informa a todas las demás skills — es una lente, no un flujo de trabajo. `launch-strategy` se nutre de `copywriting`, `paid-ads`, `email-sequence` y `social` como capas de ejecución. `pricing-strategy` se conecta con `paywall-upgrade-cro` y `churn-prevention`.
 
 ---
 
@@ -197,7 +197,7 @@ site-architecture    onboarding-cro ◄─────────── email-s
     │                    │                           │
 programmatic-seo     ab-test-setup ◄──────────── cold-email
     │                    │                           │
-schema-markup        analytics-tracking          social-content
+schema-markup        analytics-tracking          social
     │                    │
 competitor-alternatives  │
                          │
@@ -219,7 +219,7 @@ competitor-alternatives  │
 - `seo-audit` → `site-architecture` → `programmatic-seo` + `schema-markup` — la secuencia de construcción SEO
 - `revops` ↔ `cold-email` ↔ `sales-enablement` — el stack de ingresos B2B
 - `analytics-tracking` → `ab-test-setup` → todas las skills de CRO — la medición lo habilita todo
-- `launch-strategy` se nutre de copywriting, paid-ads, email-sequence, social-content
+- `launch-strategy` se nutre de copywriting, paid-ads, email-sequence, social
 
 ---
 
@@ -324,7 +324,7 @@ node --check tools/clis/ga4.js
 1. `/launch-strategy` — construye el plan de lanzamiento completo
 2. `/copywriting` — escribe el copy del anuncio
 3. `/email-sequence` — redacta los correos de anuncio y nurture
-4. `/social-content` — crea publicaciones sociales de soporte
+4. `/social` — crea publicaciones sociales de soporte
 5. `/paid-ads` — configura cualquier amplificación paga
 
 ### Mejorar Conversiones
@@ -391,7 +391,11 @@ Skills Master/
     ├── copy-editing/                 # Copy: editar copy existente
     ├── cold-email/                   # Copy: secuencias de prospección B2B
     ├── email-sequence/               # Copy: flujos de email automatizados
-    ├── social-content/               # Copy: contenido para redes sociales
+    ├── social/                       # Copy: contenido para redes sociales, social listening
+    ├── social-content-plan/          # Copy: plan de contenido mensual completo (custom)
+    ├── content-plan-html/            # Copy: plan de contenido MD → HTML para PDF (custom)
+    ├── video/                        # Creativo: producción de video con IA
+    ├── image/                        # Creativo: generación de imágenes con IA
     ├── content-strategy/             # Estrategia: qué crear
     ├── seo-audit/                    # SEO: diagnosticar problemas
     ├── ai-seo/                       # SEO: optimizar para búsqueda de IA

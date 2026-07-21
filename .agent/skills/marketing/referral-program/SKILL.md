@@ -1,6 +1,7 @@
 ---
 name: referral-program
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere crear, optimizar o analizar un programa de referidos, programa de afiliados o estrategia de boca a boca. También usar cuando el usuario menciona 'referido,' 'afiliado,' 'embajador,' 'boca a boca,' 'bucle viral,' 'recomendar a un amigo,' o 'programa de partners.' Esta habilidad cubre diseño del programa, estructura de incentivos y optimización del crecimiento."
 ---
 

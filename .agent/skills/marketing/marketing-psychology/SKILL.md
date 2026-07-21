@@ -1,6 +1,7 @@
 ---
 name: marketing-psychology
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: "Cuando el usuario quiere aplicar principios psicológicos, modelos mentales o ciencia del comportamiento al marketing. También usar cuando el usuario menciona 'psicología,' 'modelos mentales,' 'sesgo cognitivo,' 'persuasión,' 'ciencia del comportamiento,' 'por qué compra la gente,' 'toma de decisiones,' o 'comportamiento del consumidor.' Esta habilidad proporciona más de 70 modelos mentales organizados para aplicación en marketing."
 ---
 

@@ -1,6 +1,7 @@
 ---
 name: copywriting
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: Cuando el usuario quiere escribir, reescribir o mejorar copy de marketing para cualquier página — incluyendo homepage, landing pages, páginas de precios, páginas de funciones, páginas del equipo o páginas de productos. También usar cuando el usuario dice "escribe copy para," "mejora este copy," "reescribe esta página," "copy de marketing," "ayuda con el titular," o "copy del CTA." Para copy de email, ver email-sequence. Para copy de popup, ver popup-cro.
 ---
 

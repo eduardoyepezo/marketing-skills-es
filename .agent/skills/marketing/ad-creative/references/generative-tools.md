@@ -8,7 +8,7 @@ Referencia para usar generadores de imágenes con IA, generadores de video y her
 
 | Necesidad | Categoría de Herramienta | Mejor Opción |
 |-----------|--------------------------|--------------|
-| Imágenes estáticas para anuncios (banners, redes sociales) | Generación de imágenes | Nano Banana Pro, Flux, Ideogram |
+| Imágenes estáticas para anuncios (banners, redes sociales) | Generación de imágenes | ChatGPT Images 2.0, Nano Banana Pro, Flux, Ideogram |
 | Imágenes de anuncios con texto superpuesto | Generación de imágenes (con capacidad de texto) | Ideogram, Nano Banana Pro |
 | Anuncios en video cortos (6-30 seg) | Generación de video | Veo, Kling, Runway, Sora, Seedance |
 | Anuncios en video con locución | Gen. de video + voz | Veo/Sora (nativo), o Runway + ElevenLabs |
