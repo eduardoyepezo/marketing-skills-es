@@ -1,0 +1,122 @@
+{
+  "skill_name": "prospecting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Somos un B2B SaaS que vende herramientas de RevOps a $30K ACV. Constrúyeme una lista de 25 prospectos.",
+      "expected_output": "Debe revisar product-marketing.md primero. Debe identificar esto como la rama SaaS. Debe correr la Fase 1 de definición de ICP tomando del contexto de product-marketing o haciendo preguntas específicas (industria objetivo, rango de headcount, señales de tech stack, etapa de financiamiento). Debe proponer fuentes de discovery apropiadas para SaaS a $30K ACV: Apollo para amplitud, Clay para enriquecimiento en cascada (waterfall), Crunchbase para señales de financiamiento, BuiltWith/Wappalyzer para tech stack, LinkedIn Sales Nav para mapeo de tomadores de decisiones (manual). Debe preguntar sobre el acceso a herramientas del usuario antes de asumir. Debe obtener 50-75 candidatos (2-3x el objetivo) antes de calificar. Debe marcar que la validación de email vía Truelist o similar no es negociable antes de la lista final. Debe entregar columnas de tabla en chat de la rama SaaS (Score | Company | Industry | Size | Signal | Contact | Email status | Confidence) seguido de los 3-5 leads Hot principales con racional de una oración cada uno. Debe referenciar references/saas-prospecting.md.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Identifica la rama SaaS",
+        "Corre la Fase 1 de definición de ICP",
+        "Recomienda discovery multi-fuente (Apollo, Clay, Crunchbase, BuiltWith)",
+        "Pregunta sobre el acceso a herramientas del usuario",
+        "Obtiene 2-3x candidatos antes de calificar",
+        "Requiere validación de email antes de la lista final",
+        "Entrega columnas de tabla en chat de la rama SaaS",
+        "Incluye los 3-5 targets de outreach principales con racional",
+        "Referencia saas-prospecting.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Encuéntrame 25 empresas SaaS que acaban de levantar una Serie B en los últimos 60 días y usan HubSpot.",
+      "expected_output": "Debe reconocer esto como una tarea de prospección de la rama SaaS con señales muy específicas. Debe identificar el evento disparador (Serie B en los últimos 60 días) y el filtro tecnográfico (usa HubSpot). Debe recomendar un flujo de trabajo: (1) Crunchbase o Pitchbook para el filtro de señal de financiamiento (Serie B + fecha), (2) BuiltWith o el waterfall de Clay para verificación de tech stack (usa HubSpot), (3) verificación cruzada vía sitios web de las empresas y LinkedIn. Debe notar que este es un ICP ajustado que debería producir matches de alta confianza si las fuentes de datos están actualizadas. Debe marcar preocupaciones de frescura de datos: los datos de Crunchbase dependen de auto-reporte, los ciclos de actualización de BuiltWith no son en tiempo real. Debe recomendar verificación cruzada entre fuentes específicamente para la fecha de financiamiento. Debe entregar una tabla en chat de la rama SaaS con la ronda de financiamiento + fecha en la columna Signal. Debe incluir validación de email verificada antes de entregar.",
+      "assertions": [
+        "Identifica la rama SaaS",
+        "Identifica la señal de financiamiento + filtro de tech stack",
+        "Recomienda Crunchbase o Pitchbook para financiamiento",
+        "Recomienda BuiltWith o Clay para verificación de HubSpot",
+        "Nota preocupaciones de frescura de datos",
+        "Recomienda verificación cruzada entre fuentes",
+        "Entrega columna de señal mostrando ronda + fecha",
+        "Requiere validación de email"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Tengo una agencia de marketing. Encuéntrame 25 manufactureras mid-market en el Medio Oeste de EE.UU. que recientemente contrataron un nuevo CMO.",
+      "expected_output": "Debe identificar esto como la rama B2B (manufactureras, no SaaS). Debe correr la Fase 1 de definición de ICP: industria (manufactura, con código NAICS si la precisión importa), tamaño (mid-market = típicamente 200-2000 empleados), geografía (estados del Medio Oeste de EE.UU.), evento disparador (contratación de CMO en los últimos 90-180 días). Debe proponer discovery: Apollo o ZoomInfo para filtro firmográfico, LinkedIn Sales Nav para detección de contratación de CMO (cambios de trabajo), Google Alerts sobre comunicados de prensa para eventos disparadores. Debe advertir que las contrataciones de CMO no siempre están en bases de datos públicas — las alertas de cambio de trabajo de LinkedIn Sales Nav son la fuente más confiable. Debe entregar una tabla en chat de la rama B2B con el disparador de CMO como la señal. Debe referenciar references/b2b-prospecting.md. Debe mencionar cumplimiento: GDPR menos probable (solo EE.UU.), CAN-SPAM aplica, capturar URL fuente + fecha para cada contacto.",
+      "assertions": [
+        "Identifica la rama B2B (no SaaS)",
+        "Corre la Fase 1 de definición de ICP con clasificación NAICS o de industria",
+        "Especifica la banda de tamaño mid-market",
+        "Especifica la geografía del Medio Oeste de EE.UU.",
+        "Identifica el evento disparador (contratación de CMO)",
+        "Recomienda Apollo/ZoomInfo + LinkedIn Sales Nav",
+        "Nota que las contrataciones de CMO a menudo solo están en LinkedIn",
+        "Entrega tabla en chat de la rama B2B",
+        "Menciona CAN-SPAM y captura de URL fuente",
+        "Referencia b2b-prospecting.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Le vendemos a distribuidores industriales. Constrúyeme una lista de 25 prospectos.",
+      "expected_output": "Debe identificar esto como la rama B2B. Debe correr la Fase 1 de definición de ICP haciendo preguntas específicas: tamaño del distribuidor, geografía, especialidad vertical, patrones de compra. Debe proponer discovery: Apollo o ZoomInfo para profundidad firmográfica, directorios específicos de la industria (ej. NAW para distribuidores mayoristas, ISA para agencias de ventas industriales), listas de expositores de ferias comerciales. Debe notar registros estatales de negocios y la Cámara de Comercio como fuentes de verificación. Debe proponer eventos disparadores: nueva ubicación, adquisición reciente, cambio de liderazgo, publicación de RFPs. Debe advertir que los datos de distribuidores industriales suelen ser irregulares en las bases de datos principales — verificar cruzadamente con el sitio web de la empresa + LinkedIn para señales de tamaño y propiedad. Debe entregar una tabla en chat de la rama B2B. Debe notar que la precisión del fit de ICP importa más que el volumen inicial para este tipo de prospección nicho.",
+      "assertions": [
+        "Identifica la rama B2B",
+        "Corre la Fase 1 de definición de ICP haciendo preguntas específicas",
+        "Recomienda directorios específicos de la industria más allá de Apollo/ZoomInfo",
+        "Menciona listas de expositores de ferias comerciales",
+        "Identifica eventos disparadores relevantes",
+        "Advierte sobre la irregularidad de datos para lo industrial",
+        "Recomienda verificación cruzada con sitios web de empresas + LinkedIn",
+        "Nota que la precisión del fit de ICP importa más que el volumen"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Construyo sitios web para negocios locales. Encuéntrame 15 prospectos cerca de Austin, TX que no tengan sitio web.",
+      "expected_output": "Debe identificar como la rama Local SMB. Debe correr la Fase 1 de definición de ICP: categoría de negocio (preguntar al usuario — gimnasios, restaurantes, salones, etc. importan), radio (por defecto 20 km desde Austin), cantidad objetivo (15). Debe correr el flujo de investigación con navegador: buscar en Google Maps por categoría + Austin, construir lista de candidatos de los resultados visibles, verificar cruzadamente vía búsqueda web del nombre del negocio + ciudad para verificar el estado del sitio web. Debe aplicar la clasificación de 4 niveles de estado del sitio web (Sin sitio encontrado / Solo redes sociales / Sitio débil / Tiene sitio) — priorizar Sin sitio + Solo redes sociales como Hot. Debe puntuar: Hot (sin sitio + activo + teléfono + dentro del radio), Warm (sitio débil), Cold (tiene sitio), Skip (cerrado/duplicado/fuera de alcance). Debe entregar tabla en chat de Local SMB (Score | Business | Category | Area | Distance | Website status | Website/Social | Phone | Why prospect | Confidence). Debe agregar 'Mejores targets de primer outreach' con los 3 principales y su razonamiento. Debe referenciar references/local-prospecting.md. Debe advertir contra el scraping masivo de Google Maps (violación de ToS) — solo investigación asistida por navegador.",
+      "assertions": [
+        "Identifica la rama Local SMB",
+        "Pregunta sobre la categoría de negocio si no se especifica",
+        "Establece el radio por defecto en 20km",
+        "Corre el flujo de investigación con navegador",
+        "Aplica la clasificación de 4 niveles de estado del sitio web",
+        "Usa puntuación Hot/Warm/Cold/Skip",
+        "Entrega columnas de tabla en chat de Local SMB",
+        "Agrega los 3 targets de outreach principales",
+        "Referencia local-prospecting.md",
+        "Advierte contra el scraping masivo de Google Maps"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Tengo una lista de 200 emails de prospectos de Apollo. ¿Cómo sé cuáles son entregables antes de empezar el outreach?",
+      "expected_output": "Debe explicar el paso de validación de entregabilidad en la Fase 3. Debe recomendar Truelist (la integración en este pack) para validación masiva. Debe explicar la clasificación de salida email_state: ok (entregable), email_invalid (rebota, excluir), risky (entregable con riesgo como rol o desechable, incluir con cautela), unknown (no se pudo determinar, saltar o re-verificar), accept_all (dominio catch-all, incluir con cautela). Debe advertir que la precisión de datos de Apollo típicamente es 60-80% — enviar sin validación va a hundir la reputación del remitente (tasa de rebote >2% dispara throttling de ISP y daño a la reputación). Debe recomendar el flujo de trabajo: POST masivo a /api/v1/verify o carga de CSV → mantener ok, incluir risky/accept_all con cautela, excluir email_invalid, re-verificar unknown → entregar a outreach. Debe notar que Truelist también tiene un servidor MCP oficial para validación dirigida por agentes. Debe notar que la reputación de cold email es difícil de recuperar una vez dañada — la validación no es opcional, es no negociable. Debe mencionar Hunter y Snov como alternativas con verificación integrada. Debe referenciar la guía de integración truelist.md.",
+      "assertions": [
+        "Recomienda Truelist para validación masiva",
+        "Explica los valores de email_state (ok, email_invalid, risky, unknown, accept_all)",
+        "Advierte que la precisión de Apollo es 60-80%",
+        "Cita el umbral de tasa de rebote del 2% para daño a la reputación",
+        "Recomienda el flujo: validar, mantener ok, excluir email_invalid",
+        "Menciona el servidor MCP de Truelist para flujos de agentes",
+        "Menciona que la reputación de cold email es difícil de recuperar",
+        "Referencia truelist.md o data-sources.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Acabo de construir una herramienta que automatiza el seguimiento de pagos fallidos para dueños de gimnasios. No tengo clientes todavía. Ayúdame a encontrar a mis primeros diez — la gente que está lidiando con este problema ahora mismo.",
+      "expected_output": "Debe seleccionar la rama Señal de demanda (etapa temprana, primeros clientes, evidencia de demanda) y cargar references/demand-signals.md — NO las ramas de construcción de lista SMB/B2B. Debe empezar con un brief de producto, luego minar los cinco buckets de señales (demanda explícita / dolor / workaround / cambio / timing) a través del discurso público (foros, comunidades, reseñas, issues de GitHub, ofertas de empleo) — usando last30days para recencia, social-fetch/scraping para leer las páginas originales, sin calificar a partir de fragmentos. Debe puntuar a los prospectos en fit de demanda (dolor 25 / fit de producto 25 / timing 20 / alcanzabilidad 15 / calidad de evidencia 15, 0-100 con bandas) en lugar de fit de ICP Hot/Warm/Cold, y requerir una señal pública citada para cada prospecto en la shortlist primaria. Debe redactar aperturas basadas en la fuente pero nunca enviarlas automáticamente. Debe producir un reporte de evidencia (veredicto → ICP → prospecto principal → shortlist con fuentes+puntajes → patrones repetidos → plan de outreach manual de 7 días → límites) y etiquetar a los prospectos como 'cliente potencial basado en señales públicas,' no compradores confirmados. Debe respetar las barreras de cumplimiento incluyendo la prohibición de data brokers/datos filtrados y de segmentación por rasgos sensibles.",
+      "assertions": [
+        "Selecciona la rama Señal de demanda, no las ramas de construcción de lista SMB/B2B/SaaS",
+        "Mina los cinco buckets de señales del discurso público en lugar de bases de datos de contactos",
+        "Usa herramientas de recencia/fuente original (last30days, social-fetch, scraping) y no califica a partir de fragmentos",
+        "Puntúa con la rúbrica de fit de demanda (0-100 ponderado), no fit de ICP Hot/Warm/Cold",
+        "Requiere una señal pública citada para cada prospecto en la shortlist primaria",
+        "Redacta aperturas pero nunca las envía automáticamente; etiqueta a los prospectos como potenciales-basados-en-señales-públicas",
+        "Produce la estructura del reporte de evidencia con un plan de outreach manual de 7 días y límites"
+      ],
+      "files": []
+    }
+  ]
+}

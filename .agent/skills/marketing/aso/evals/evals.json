@@ -1,0 +1,91 @@
+{
+  "skill_name": "aso",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Aquí está nuestra app en el App Store: https://apps.apple.com/us/app/example/id123456789. ¿Puedes auditar nuestra ficha y decirnos qué corregir?",
+      "expected_output": "Debe verificar primero product-marketing.md. Debe detectar que esta es una URL de Apple App Store y ejecutar el flujo completo de auditoría ASO. Debe obtener la ficha y extraer los campos específicos de Apple (título 30 caracteres, subtítulo 30 caracteres, descripción, texto promocional 170 caracteres, categoría, screenshots, video, ratings). Debe clasificar el nivel de madurez de marca de la app (Dominante/Establecida/Retadora) antes de calificar. Debe calificar las 6 dimensiones (Título y Subtítulo 20%, Descripción 15%, Elementos Visuales 25%, Ratings y Reviews 20%, Metadata y Frescura 10%, Señales de Conversión 10%) con un total ponderado sobre 100 y un grado. Debe entregar una tarjeta de puntaje, top 3 quick wins, hallazgos detallados, sugerencias de keywords, recomendaciones visuales, y un plan de acción priorizado con recomendaciones específicas en formato 'cambia X por Y' incluyendo conteos de caracteres.",
+      "assertions": [
+        "Verifica product-marketing.md",
+        "Identifica la URL como Apple App Store",
+        "Clasifica el nivel de madurez de marca",
+        "Califica las 6 dimensiones con sus pesos",
+        "Entrega una tarjeta de puntaje con grado",
+        "Lista el top 3 de quick wins",
+        "Las recomendaciones incluyen conteos de caracteres",
+        "Las recomendaciones son específicas (formato X a Y)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Somos una startup fintech pequeña con unas 5,000 descargas. Nuestra ficha en Play Store tiene un rating de 2.8 y no hemos actualizado la descripción en 8 meses. Ayúdanos a decidir qué corregir primero.",
+      "expected_output": "Debe reconocer esto como una app de Google Play de nivel Retadora. Debe marcar de inmediato los problemas de bandera siempre: rating por debajo de 4.0 (crítico), última actualización hace más de 3 meses. Debe aplicar la calificación estricta de nivel Retadora contra las mejores prácticas de manual. Debe enfocarse en guía específica de Google Play: la descripción completa se indexa para búsqueda (apuntar a densidad de keywords de 2-3%), no hay campo de keywords oculto, el feature graphic es requerido (1024x500), máximo 8 screenshots, Android Vitals afecta el ranking. Debe priorizar corregir el problema del rating (estrategia de respuesta, prompts de review dentro de la app) y refrescar la descripción con estrategia de keywords. Debe recomendar actualizar la ficha pronto para romper la señal de obsolescencia de más de 3 meses.",
+      "assertions": [
+        "Identifica que es una app de Google Play",
+        "Clasifica el nivel como Retadora",
+        "Marca el rating por debajo de 4.0",
+        "Marca la actualización obsoleta (>3 meses)",
+        "Anota que Google Play indexa la descripción completa",
+        "Menciona el requisito del feature graphic",
+        "Recomienda estrategia de keywords en la descripción",
+        "Prioriza la mejora del rating"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "La ficha de Instagram en el App Store solo tiene 'Instagram' como título y apenas keywords. ¿Deberían corregir eso?",
+      "expected_output": "Debe clasificar a Instagram como una app de nivel Dominante y aplicar la calificación ajustada por nivel. Debe explicar que los títulos solo de marca son válidos para apps Dominantes (calificación 8+ si la marca ES la keyword) porque los usuarios buscan por nombre de marca, no por keywords genéricas. NO debe marcar esto como una oportunidad perdida. Debe explicar el principio clave: '¿Es esto un error o una elección deliberada de un equipo que tiene datos que yo no tengo?'. Debe anotar que las demás dimensiones (screenshots, descripción, novedades) también se evalúan según el nivel — la fotografía de lifestyle/marca y las notas de lanzamiento breves son aceptables para apps Dominantes. Debe contrastar con lo que sería un problema para una app Retadora.",
+      "assertions": [
+        "Clasifica a Instagram como nivel Dominante",
+        "Explica que los títulos solo de marca son válidos para Dominante",
+        "NO marca el título como un problema",
+        "Contrasta el trato Dominante vs. Retadora",
+        "Cita el principio de 'error vs. elección deliberada'"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Compara nuestra app https://apps.apple.com/us/app/ourapp/id111 contra estos dos competidores: https://apps.apple.com/us/app/competitor1/id222 y https://apps.apple.com/us/app/competitor2/id333",
+      "expected_output": "Debe ejecutar la Fase 3 de comparación con competidores. Debe obtener y calificar las tres apps con el mismo framework de 6 dimensiones. Debe construir una tabla comparativa lado a lado destacando dónde la app del usuario es más débil o más fuerte en cada dimensión. Debe identificar brechas de keywords — términos que los competidores apuntan y que la app del usuario no. Debe producir una lista priorizada de cambios informados por la competencia. Debe señalar consideraciones específicas de plataforma de forma consistente en las tres apps.",
+      "assertions": [
+        "Califica las 3 apps con el mismo framework",
+        "Construye una tabla comparativa",
+        "Identifica dónde la app del usuario es más débil",
+        "Identifica brechas de keywords vs. competidores",
+        "Produce una lista de acción informada por la competencia"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Solo tenemos 3 screenshots y ningún video de vista previa. ¿Realmente importa tanto eso?",
+      "expected_output": "Debe explicar que la cantidad de screenshots y la presencia de video tienen un peso alto en la dimensión de Elementos Visuales (25% del puntaje total). Debe citar datos específicos: Apple permite hasta 10 screenshots por dispositivo con los primeros 3 visibles en búsqueda, y el 90% de los usuarios nunca hace scroll pasado el 3ro. Debe anotar que los captions de screenshots de Apple se indexan para búsqueda desde junio de 2025. Debe citar el benchmark de conversión: el video de vista previa entrega un lift de +20-40% en conversión en iOS (anotar que el video en Google Play tiene menor ROI — solo ~6% toca play). Debe recomendar agregar de 5-8 screenshots como mínimo con texto de caption, y un video de vista previa de 15-30s. Debe marcar menos de 5 screenshots como un problema de bandera siempre en todos los niveles.",
+      "assertions": [
+        "Anota que Elementos Visuales es el 25% del puntaje",
+        "Cita que los primeros 3 screenshots son los más importantes",
+        "Menciona la indexación de captions de screenshots (Apple, 2025)",
+        "Cita el benchmark de lift de conversión del video",
+        "Anota que el video de Google Play tiene menor ROI",
+        "Recomienda una cantidad específica de screenshots y specs de video",
+        "Marca menos de 5 screenshots como problema de bandera siempre"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Debería correr un experimento de Custom Product Page en iOS para nuestras campañas de búsqueda paga?",
+      "expected_output": "Debe referenciar datos específicos de Apple: Custom Product Pages (CPP) — hasta 70 — aparecen en búsqueda orgánica desde julio de 2025 con +5.9% de lift promedio en conversión. Debe explicar que las CPPs permiten probar variantes de screenshots, video y texto promocional contra fuentes de tráfico específicas (p. ej., keywords de búsqueda paga). Debe recomendar hacer coincidir las variantes de CPP con la intención de keyword de la campaña. Debe hacer referencia cruzada a la skill ab-test-setup para el diseño correcto del experimento y a la skill paid-ads para el lado de la campaña. Debe anotar que esta es una función exclusiva de iOS (Google Play tiene Store Listing Experiments y Custom Store Listings como equivalentes).",
+      "assertions": [
+        "Identifica las Custom Product Pages como específicas de iOS",
+        "Cita el benchmark de +5.9% de lift en conversión",
+        "Explica que la CPP puede coincidir con la intención de la fuente de tráfico",
+        "Hace referencia cruzada a la skill ab-test-setup o paid-ads",
+        "Anota los equivalentes de Google Play"
+      ],
+      "files": []
+    }
+  ]
+}

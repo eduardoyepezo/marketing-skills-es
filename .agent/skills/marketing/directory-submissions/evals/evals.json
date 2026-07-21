@@ -1,0 +1,94 @@
+{
+  "skill_name": "directory-submissions",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Vamos a lanzar nuestro SaaS de IA en 3 semanas. Ayúdame a planear todos los directorios a los que deberíamos enviarlo.",
+      "expected_output": "Debe revisar primero product-marketing.md. Debe ejecutar la evaluación de preparación de Fase 0 con las 9 preguntas antes de recomendar envíos. Debe rechazar el envío si alguno de los ítems 1-7 es 'no' (bloqueo duro) y explicar por qué. Debe recomendar la mezcla de tiers: Tier 1 lanzamiento insignia (~15 — Product Hunt como ancla, BetaList, HN Show HN, Fazier, DevHunt), Tier 2 startup/SaaS (~50), Tier 3 directorios de IA (~40 — TAAFT, Futurepedia, Toolify), Tier 4 MCP/agente si aplica. Debe mapear el cronograma de preparación de 3 semanas de Product Hunt a fechas de calendario. Debe advertir contra enviar antes de que existan las páginas de destino. Debe hacer referencia a references/directory-list.md y references/positioning-variations.md. Debe recomendar el protocolo de reseñas 10-en-30 para G2/Capterra. Debe fijar objetivos de día 30 y día 90 de la tabla de KPIs.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Ejecuta la evaluación de preparación de Fase 0",
+        "Recomienda una mezcla de tiers apropiada para un SaaS de IA",
+        "Mapea el cronograma de 3 semanas de PH a fechas de calendario",
+        "Nombra a Product Hunt como ancla",
+        "Recomienda el protocolo de reseñas 10-en-30",
+        "Fija objetivos de KPI de día 30 y día 90",
+        "Hace referencia a directory-list.md o positioning-variations.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Puedo simplemente copiar y pegar la misma descripción en cada directorio?",
+      "expected_output": "Debe rechazar la idea y explicar la Regla 3: el posicionamiento varía según el tipo de directorio. Debe explicar que los motores de IA penalizan el contenido duplicado — los directorios cruzados por Claude, ChatGPT, Perplexity degradarán el copy repetitivo. Debe explicar el framing distinto por superficie: los directorios de startups lideran con resultado (la audiencia son founders), los directorios SaaS lideran con framing de alternativa (la gente busca 'alternativa a [competidor]'), los directorios de IA lideran con arquitectura AI-first, los directorios de agentes/MCP lideran con el ángulo agente/MCP, los sitios de reseñas B2B lideran con ROI + caso de uso. Debe recomendar preparar variantes distintas por tier: tagline de menos de 10 palabras, descripción corta de 60 caracteres, descripción larga de 150 palabras, 5-8 tags de categoría. Debe hacer referencia a references/positioning-variations.md.",
+      "assertions": [
+        "Rechaza la solicitud",
+        "Cita la Regla 3 (el posicionamiento varía según el tipo de directorio)",
+        "Señala que los motores de IA penalizan el contenido duplicado",
+        "Lista el framing distinto por tipo de superficie",
+        "Especifica las longitudes de variante (tagline, corta, larga)",
+        "Hace referencia a positioning-variations.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿Deberíamos pagar por uno de esos servicios de envío a directorios que envían a 200 directorios por $99?",
+      "expected_output": "Debe decir que no, citando la regla 1 de 'Qué NO Hacer': no pagar por servicios de envío a directorios. Debe explicar que todo el punto es que son gratis — es una tarde de copiar y pegar. Debe advertir que los servicios de envío masivo típicamente envían a directorios spam de baja calidad (DR menor a 10, sin tráfico, sin calidad editorial) que diluyen el perfil de backlinks y pueden activar la detección de spam de Google. Debe recomendar la alternativa: enviar manualmente a directorios Tier 1-4 con las variantes de posicionamiento apropiadas y el tracker. Debe reforzar que el valor viene de directorios de calidad con estándares editoriales, no de volumen bruto.",
+      "assertions": [
+        "Rechaza el servicio",
+        "Cita la regla de 'no pagar por servicios de envío'",
+        "Advierte sobre directorios spam de bajo DR",
+        "Advierte sobre el riesgo de penalización de spam de Google",
+        "Recomienda el envío manual a directorios de calidad"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Guíame en cómo lanzar en Product Hunt el próximo mes. Nunca lo hemos hecho.",
+      "expected_output": "Debe aplicar el playbook de Análisis Profundo de Product Hunt. Debe mapear el cronograma de preparación de 3 semanas: Día -21 a -14 (calentar la cuenta de hunter, dar upvote y comentar en 3 lanzamientos/día), Día -14 (crear página Upcoming), Día -10 (opcional reservar un hunter — intercambio, no efectivo), Día -7 (redactar assets del día de lanzamiento: imágenes de galería 1270x760, tagline, descripción de 260 caracteres, primer comentario), Día -3 (calentamiento de la lista de email), Día -1 (chequeo final). Debe explicar el día de lanzamiento: lanzar a las 12:01 AM hora del Pacífico solo martes/miércoles/jueves, las primeras 2 horas lo son todo (necesitas 50+ apoyos), publicar el primer comentario tú mismo, responder a cada comentario en menos de 30 minutos, compartir en múltiples canales. Debe advertir nunca pedir upvotes — pedir feedback. Debe advertir no enviar DMs a desconocidos — la comunidad marca esto. Debe explicar el post-lanzamiento: escribir un post de recapitulación con números + aprendizajes, cross-postear en Indie Hackers, solo enviar a Show HN si hay un ángulo técnico. Debe señalar que el 80% de los lanzamientos fallidos fallan por falta de audiencia cálida o por pedir upvotes.",
+      "assertions": [
+        "Mapea el cronograma de 3 semanas con marcadores de día específicos",
+        "Señala el lanzamiento a las 12:01 AM hora del Pacífico",
+        "Restringe a martes/miércoles/jueves",
+        "Enfatiza las primeras 2 horas / 50+ apoyos",
+        "Advierte nunca pedir upvotes",
+        "Recomienda pedir feedback",
+        "Advierte contra enviar DMs a desconocidos",
+        "Incluye recapitulación post-lanzamiento y cross-posting"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Queremos listarnos en G2 pero solo tenemos 4 clientes ahora mismo. ¿Vale la pena?",
+      "expected_output": "Debe explicar que los listados de G2 y Capterra son inútiles sin reseñas — 10 reseñas es el umbral mágico para aparecer en el Grid. Debe recomendar NO enviar todavía, o reclamar el listado pero planear una campaña de reseñas en paralelo. Debe explicar el protocolo 10-en-30: identificar 20 usuarios que completaron una acción significativa, enviar a cada uno un email personal con URL de reseña directa (reduce la fricción ~70%), ofrecer un agradecimiento modesto (tarjeta de regalo de Amazon de $25 permitida por G2/TrustRadius), hacer un solo seguimiento después de 5 días, objetivo de 50% de conversión. Debe señalar que el badge Users Love Us es gratis (20 reseñas con 4.0+) pero los badges Grid/Momentum/Index/Award requieren un plan pagado de G2 ($2,999+/año desde el verano de 2025) — y recomendar NO gastar en G2 pagado el primer año. Debe mencionar las fechas límite del reporte de verano ~28 de abril y de otoño ~28 de julio. Debe sugerir esperar hasta que ~10 usuarios sean realistas antes de enviar.",
+      "assertions": [
+        "Explica el umbral de 10 reseñas para el Grid",
+        "Recomienda NO enviar todavía O reclamar + planear campaña de reseñas",
+        "Expone el protocolo 10-en-30",
+        "Señala que el incentivo (tarjeta de $25) está permitido",
+        "Menciona los requisitos del badge Users Love Us",
+        "Advierte contra pagar por el plan de G2 el primer año",
+        "Menciona las fechas límite de reportes de verano/otoño"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Enviamos a 50 directorios la semana pasada. ¿Ahora qué?",
+      "expected_output": "Debe advertir contra tratar los envíos como la estrategia. Debe hacer referencia a la regla 11 de 'Qué NO Hacer': no sobreindexar en el pico del lanzamiento. El flywheel es plantillas + alternativas + reseñas + contenido continuo. Debe recomendar verificar el estado dofollow de los backlinks obtenidos (curl -sIL | grep -i rel=). Debe pivotar hacia la distribución continua: estrategia de páginas de destino (páginas de alternativas convirtiendo 5-15%, páginas de caso de uso/ICP, galería de plantillas si aplica, listicles 'lo mejor de' que tú mismo escribas, páginas de integración), tácticas GEO para citación de IA (H1 único, schema de FAQ, tablas de comparación, conseguir citas en Reddit/HN, reclamar Crunchbase/LinkedIn/Wikidata), presencia continua en comunidad (regla 90/10 de Reddit, LinkedIn 3-5 posts/semana, build-in-public en Twitter, Indie Hackers, Dev.to/Hashnode). Debe recordar rastrear KPIs semanales (DR, dominios referentes, páginas indexadas, clics orgánicos, registros desde referidos de directorios) e investigar si los números no se mueven en lugar de enviar más.",
+      "assertions": [
+        "Advierte contra sobreindexar en el pico del lanzamiento",
+        "Recomienda verificar el estado dofollow de los backlinks",
+        "Pivota hacia la estrategia de páginas de destino",
+        "Menciona tácticas GEO",
+        "Incluye distribución continua en comunidad",
+        "Recomienda rastrear KPIs semanales",
+        "Dice investigar antes de enviar más"
+      ],
+      "files": []
+    }
+  ]
+}

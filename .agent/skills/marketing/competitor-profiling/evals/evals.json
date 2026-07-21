@@ -1,0 +1,85 @@
+{
+  "skill_name": "competitor-profiling",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Perfila a estos tres competidores para nosotros: https://competitor1.com, https://competitor2.com, https://competitor3.com. Lo necesitamos para sales enablement y para encontrar brechas de posicionamiento.",
+      "expected_output": "Debe revisar primero si existe product-marketing.md. Debe ejecutar el proceso de investigación completo: Fase 1 de scraping del sitio (Firecrawl map + scrape de homepage, precios, funciones, acerca de, clientes, integraciones, changelog), Fase 2 de datos de SEO y mercado (DataForSEO para backlinks, keywords posicionadas, tráfico, competidores), Fase 3 de síntesis. Debe guardar los datos crudos en competitor-profiles/raw/<slug>/<YYYY-MM-DD>/ con subcarpetas scrapes/, seo/, reviews/ antes de sintetizar. Debe producir un archivo markdown por competidor siguiendo la plantilla de perfil (At a Glance, Positioning & Messaging, Product & Features, Pricing, Customers & Social Proof, SEO & Content Strategy, Strengths & Weaknesses, Competitive Implications). Debe producir un _summary.md después de los perfiles individuales con tabla comparativa, mapa de posicionamiento, conclusiones clave, brechas y oportunidades. Debe paralelizar el scraping al manejar múltiples competidores y usar métricas consistentes en los tres para que sean comparables.",
+      "assertions": [
+        "Revisa si existe product-marketing.md",
+        "Ejecuta las tres fases (scraping, datos de SEO, síntesis)",
+        "Guarda los datos crudos en competitor-profiles/raw/ con subcarpeta de fecha",
+        "Produce un perfil individual por competidor",
+        "Produce _summary.md después de los perfiles individuales",
+        "Usa métricas consistentes entre competidores",
+        "Paraleliza el scraping cuando es posible"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tenemos 12 competidores. Perfílalos a todos.",
+      "expected_output": "Debe recomendar priorizar en lugar de perfilar a los 12. Debe sugerir perfilar primero a los 5 principales según el solapamiento de dominio o la similitud de mercado (guía de manejo de múltiples competidores). Debe usar por defecto el modo de escaneo rápido para una lista de este tamaño, no el perfil profundo. Debe explicar la diferencia: el escaneo rápido cubre homepage + precios + resumen de rango de dominio + resumen de keywords posicionadas, el perfil profundo agrega reseñas, stack tecnológico, detalles de backlinks. Debe ofrecer el perfil profundo solo si el usuario lo solicita o para 3 o menos competidores. Debe preguntar cuáles competidores son de mayor prioridad si el usuario quiere reducir la lista.",
+      "assertions": [
+        "Recomienda priorizar en lugar de perfilar a los 12",
+        "Sugiere los 5 principales según relevancia",
+        "Usa por defecto el escaneo rápido para una lista grande",
+        "Explica la diferencia entre escaneo rápido y perfil profundo",
+        "Pide al usuario que priorice"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Tengo un perfil existente de Notion de hace 4 meses. ¿Debo actualizarlo o empezar de cero?",
+      "expected_output": "Debe explicar el proceso de actualización de perfiles de la sección Updating Profiles. Debe recomendar actualizar en lugar de empezar de cero — preserva el historial y permite comparar (diffing). Debe explicar qué volver a extraer: la página de precios primero (lo más volátil), las métricas de SEO (el tráfico y el posicionamiento cambian mensualmente), escaneo del changelog en busca de cambios de producto. Debe actualizar la fecha de Generated. Debe agregar una sección Change Log al final anotando qué cambió desde el último perfil. También debe guardar los nuevos datos crudos en una carpeta <YYYY-MM-DD> nueva en lugar de sobrescribir los datos anteriores — esto permite comparar a lo largo del tiempo.",
+      "assertions": [
+        "Recomienda actualizar en lugar de empezar de cero",
+        "Lista qué volver a extraer (precios, SEO, changelog)",
+        "Menciona agregar la sección Change Log",
+        "Dice que hay que guardar los datos crudos en una nueva carpeta de fecha",
+        "Dice que nunca hay que sobrescribir los datos de una fecha anterior"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Qué páginas debo scrapear para un perfil de competidor?",
+      "expected_output": "Debe listar los tipos de página priorizados de la Fase 1: homepage, página de precios, páginas de funciones/producto, página de acerca de/empresa, blog (nivel superior, para señales de estrategia de contenido), página de clientes/casos de estudio, página de integraciones, changelog/novedades (si existe). Debe explicar qué extraer de cada una: homepage (titular, propuesta de valor, CTA principal, prueba social, señales de audiencia objetivo), precios (niveles, precios, desglose de funciones, opciones de facturación, detalles del nivel gratuito/prueba), funciones (categorías, capacidades clave, cómo describen cada función), acerca de (historia de fundación, tamaño del equipo, financiamiento, misión, sede), clientes (clientes con nombre, logos, industrias, temas de casos de estudio), integraciones (cantidad, integraciones clave, categorías), changelog (velocidad de lanzamientos, áreas de enfoque recientes, señales de dirección del producto). Debe mencionar el scraping opcional de reseñas (G2, Capterra, Product Hunt, TrustRadius).",
+      "assertions": [
+        "Lista todos los tipos de página clave en orden de prioridad",
+        "Especifica qué extraer de cada tipo de página",
+        "Incluye el changelog como señal de dirección del producto",
+        "Menciona el scraping opcional de reseñas",
+        "Hace referencia al flujo de Firecrawl Map y luego Scrape"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Quiero un perfil pero no me importan los datos de SEO — solo precios, posicionamiento y logos de clientes. ¿Puedes omitir las llamadas a DataForSEO?",
+      "expected_output": "Debe aceptar la solicitud acotada y omitir la Fase 2. Debe ejecutar la Fase 1 (scraping con Firecrawl de las páginas de homepage, precios, clientes) y solo la Fase 3 de síntesis. Debe explicar que sin datos de SEO, el perfil no incluirá Domain Rank, estimaciones de tráfico orgánico, keywords posicionadas, dominios de referencia ni páginas orgánicas principales — pero las secciones de posicionamiento, precios y clientes estarán completas. Debe producir un perfil abreviado marcando la sección de SEO como 'no recopilada a solicitud del usuario' en lugar de dejar placeholders. Debe seguir guardando los scrapes crudos en disco para reutilizarlos.",
+      "assertions": [
+        "Omite la Fase 2 (DataForSEO) según lo solicitado",
+        "Ejecuta la Fase 1 y la Fase 3",
+        "Explica qué falta sin los datos de SEO",
+        "Marca la sección de SEO como omitida, no en blanco",
+        "Sigue guardando los datos crudos"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Debo confiar en el muro de logos de clientes en la homepage del competidor como evidencia de quiénes son sus clientes?",
+      "expected_output": "Debe aplicar los principios de 'Hechos Sobre Opiniones' y 'Evaluación Honesta'. Debe explicar que los logos de clientes son una afirmación de posicionamiento, no necesariamente un desglose preciso de clientes — las empresas suelen mostrar sus logos más conocidos sin importar su participación en los ingresos. Debe recomendar cruzar la información: revisar los casos de estudio para detalles reales de uso, buscar comunicados de prensa que nombren clientes, revisar las reseñas de clientes en G2/Capterra/TrustRadius en busca de señales de nombres de empresas, revisar su LinkedIn para publicaciones sobre clientes. Debe señalar: si afirman tener '10,000 clientes' pero tienen un perfil débil de tráfico/backlinks, la afirmación debe marcarse en el perfil. Debe distinguir entre clientes con nombre (afirmaciones verificables) e 'industrias atendidas' (declaración de posicionamiento). Siempre incluir la fecha en que se extrajeron los datos.",
+      "assertions": [
+        "Trata los logos como una afirmación de posicionamiento, no un desglose de clientes",
+        "Recomienda cruzar la información con casos de estudio y reseñas",
+        "Menciona revisar el perfil de tráfico/backlinks contra la escala de la afirmación",
+        "Distingue entre clientes con nombre verificables y afirmaciones",
+        "Señala incluir la fecha de extracción"
+      ],
+      "files": []
+    }
+  ]
+}

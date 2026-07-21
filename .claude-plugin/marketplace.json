@@ -5,8 +5,8 @@
     "url": "https://github.com/eduardoyepezo"
   },
   "metadata": {
-    "description": "40 marketing skills para agentes de IA en español — optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA (video, imagen), investigación de clientes, diseño de ofertas, planes de marketing y growth. Basado en el trabajo original de Corey Haines (github.com/coreyhaines31/marketingskills), traducido y adaptado al español.",
-    "version": "1.2.0",
+    "description": "50 marketing skills para agentes de IA en español — el set completo del repo de Corey Haines (47 skills) más 3 skills propias de agencia. Optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA, investigación de clientes, PR, prospección, ASO, y growth completo. Traducido y adaptado al español.",
+    "version": "1.3.0",
     "repository": "https://github.com/eduardoyepezo/marketing-skills-es",
     "original_work": "https://github.com/coreyhaines31/marketingskills",
     "language": "es"
@@ -14,7 +14,7 @@
   "plugins": [
     {
       "name": "marketing-skills-es",
-      "description": "40 marketing skills en español para agencias y marketers: CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos de anuncios, producción de video e imagen con IA, investigación de clientes, diseño de ofertas, planes de marketing AARRR, loops de marketing recurrentes, prevención de churn, estrategia de precios, programas de referidos, operaciones de ingresos, habilitación de ventas, arquitectura de sitio, y más.",
+      "description": "50 marketing skills en español: el catálogo completo de Corey Haines traducido — CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos con IA, video e imagen con IA, investigación de clientes, ofertas, planes de marketing AARRR, PR y medios ganados, ASO, prospección, marketing comunitario, co-marketing, lead magnets, directorios, consejo de asesores simulado, y más.",
       "source": "./",
       "strict": false,
       "skills": [
@@ -22,19 +22,26 @@
         "./.agent/skills/marketing/ad-creative",
         "./.agent/skills/marketing/ai-seo",
         "./.agent/skills/marketing/analytics-tracking",
+        "./.agent/skills/marketing/aso",
         "./.agent/skills/marketing/churn-prevention",
+        "./.agent/skills/marketing/co-marketing",
         "./.agent/skills/marketing/cold-email",
+        "./.agent/skills/marketing/community-marketing",
         "./.agent/skills/marketing/competitor-alternatives",
+        "./.agent/skills/marketing/competitor-profiling",
         "./.agent/skills/marketing/content-plan-html",
         "./.agent/skills/marketing/content-strategy",
         "./.agent/skills/marketing/copy-editing",
         "./.agent/skills/marketing/copywriting",
         "./.agent/skills/marketing/customer-research",
+        "./.agent/skills/marketing/directory-submissions",
         "./.agent/skills/marketing/email-sequence",
         "./.agent/skills/marketing/form-cro",
         "./.agent/skills/marketing/free-tool-strategy",
         "./.agent/skills/marketing/image",
         "./.agent/skills/marketing/launch-strategy",
+        "./.agent/skills/marketing/lead-magnets",
+        "./.agent/skills/marketing/marketing-council",
         "./.agent/skills/marketing/marketing-ideas",
         "./.agent/skills/marketing/marketing-loops",
         "./.agent/skills/marketing/marketing-plan",
@@ -48,6 +55,8 @@
         "./.agent/skills/marketing/pricing-strategy",
         "./.agent/skills/marketing/product-marketing-context",
         "./.agent/skills/marketing/programmatic-seo",
+        "./.agent/skills/marketing/prospecting",
+        "./.agent/skills/marketing/public-relations",
         "./.agent/skills/marketing/referral-program",
         "./.agent/skills/marketing/revops",
         "./.agent/skills/marketing/sales-enablement",
@@ -55,6 +64,7 @@
         "./.agent/skills/marketing/seo-audit",
         "./.agent/skills/marketing/signup-flow-cro",
         "./.agent/skills/marketing/site-architecture",
+        "./.agent/skills/marketing/sms",
         "./.agent/skills/marketing/social",
         "./.agent/skills/marketing/social-content-plan",
         "./.agent/skills/marketing/video"

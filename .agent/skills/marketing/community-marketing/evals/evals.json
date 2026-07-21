@@ -1,0 +1,89 @@
+{
+  "skill_name": "community-marketing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Somos una SaaS B2B que quiere lanzar una comunidad. ¿Deberíamos usar Discord o Slack?",
+      "expected_output": "Debe revisar primero product-marketing.md. Debe aplicar la guía de selección de plataforma. Debe recomendar Slack para comunidades B2B SaaS — familiar para compradores SaaS, contexto profesional — pero señalar los trade-offs: límites de historial en el plan gratuito, puede sentirse como trabajo. Debe explicar que Discord es más fuerte para comunidades de developers, gaming o creadores con necesidades de chat en tiempo real. Debe considerar la identidad de la audiencia: si los compradores son profesionales durante el horario laboral, Slack encaja mejor con el momento; si son hobbyistas o developers, Discord puede funcionar. Debe preguntar al usuario sobre su miembro ideal de comunidad y objetivo principal antes de comprometerse por completo. Debe también notar Circle como alternativa si quieren una UX limpia sin el peso de la plataforma.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Recomienda Slack para contexto B2B",
+        "Señala las limitaciones del plan gratuito de Slack",
+        "Compara el caso de uso de Discord",
+        "Menciona Circle u otras alternativas",
+        "Pregunta sobre la identidad de audiencia o el objetivo"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Lanzamos nuestra comunidad hace 3 semanas. Tenemos 40 miembros pero solo 2-3 personas publican regularmente. Todos los demás solo miran (lurkers). ¿Qué hacemos?",
+      "expected_output": "Debe diagnosticar esto como la etapa de 'lanzar desde cero' y aplicar ese playbook. Debe auditar dónde se caen los miembros e identificar la 'etapa con fuga' — en este caso, la activación de nuevos miembros. Debe recomendar tácticas específicas: hacer cosas que no escalan (mandar DM personal a cada nuevo miembro, darles la bienvenida por su nombre, organizar una llamada semanal), crear un journey de nuevo miembro (post de bienvenida fijado, canal #preséntate, camino de 'empieza aquí'), sembrar conversaciones (publicar 5-10 mensajes que modelen el comportamiento deseado), definir el ciclo central (qué acción deben tomar los miembros cada semana), mostrar públicamente los logros de los miembros. Debe advertir que el 1% de los miembros típicamente genera el 90% del valor en esta etapa — identificar e invertir en esos pocos power users importa más que perseguir a los lurkers. Debe referenciar las señales de alerta: que la mayoría de las publicaciones sean del equipo de la empresa es una señal roja.",
+      "assertions": [
+        "Diagnostica como un problema de etapa de lanzamiento / activación de nuevos miembros",
+        "Aplica el playbook de 'lanzar desde cero'",
+        "Recomienda enviar DMs a nuevos miembros",
+        "Recomienda diseñar un journey de nuevo miembro",
+        "Recomienda sembrar conversaciones",
+        "Menciona la dinámica del 1% / 90% de power users",
+        "Menciona la señal de alerta de publicaciones dominadas por la empresa"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Ayúdame a escribir las guías de comunidad para nuestro Discord. Estamos construyendo una comunidad para desarrolladores indie de videojuegos.",
+      "expected_output": "Debe aplicar el principio de 'construir alrededor de una identidad compartida' — la comunidad es para devs de juegos indie, la identidad es ser un maker con recursos limitados que lanza juegos. Debe escribir guías que describan la *vibra*, no solo las reglas. Debe responder: ¿cómo se ve una gran participación aquí? Debe incluir tanto reglas (no spam, no acoso, no piratería) COMO guía aspiracional (compartir trabajos en progreso libremente, dar feedback constructivo, apoyar a otros devs). Debe reforzar la identidad a lo largo del texto. Debe mantener un tono que encaje con la audiencia — los devs de juegos indie responden a un lenguaje directo, sin jerga corporativa. Puede sugerir una estructura de canales que refuerce la identidad (ej. #devlog, #playtest-requests, #tips-de-publicación).",
+      "assertions": [
+        "Refuerza la identidad compartida (devs de juegos indie)",
+        "Describe la vibra, no solo las reglas",
+        "Incluye tanto reglas como guía aspiracional",
+        "El tono encaja con la audiencia (maker indie)",
+        "Puede sugerir una estructura de canales"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Diseña un programa de embajadores para nuestra comunidad. Tenemos unos 5,000 miembros y algunos que siempre ayudan a otros. Queremos darles más reconocimiento.",
+      "expected_output": "Debe aplicar el playbook de 'Construir un Programa de Embajadores/Advocates de Marca'. Debe recomendar: identificar candidatos buscando a quienes ya recomiendan y ayudan sin que se lo pidan (revisar publicaciones, respuestas, reseñas, menciones en redes), hacer el pedido de forma personal 1:1 y explicar por qué se eligió a esa persona específicamente, ofrecer beneficios significativos más allá de 'acceso anticipado' (acceso exclusivo, merch, participación en ingresos, reconocimiento público, input directo sobre el producto), darles herramientas (links de referido, assets compartibles, puntos de conversación, canal privado de Slack), medir e iterar (rastrear tráfico de referidos, registros, engagement generado por los advocates). Debe referenciar de forma cruzada la habilidad referral-program para programas de incentivos estructurados. Debe advertir contra formularios genéricos y pedidos impersonales.",
+      "assertions": [
+        "Identifica candidatos a partir de comportamiento útil existente",
+        "Recomienda un pedido personal 1:1",
+        "Sugiere beneficios significativos más allá del acceso anticipado",
+        "Menciona herramientas/assets para habilitar a los advocates",
+        "Incluye un plan de medición",
+        "Puede referenciar de forma cruzada la habilidad referral-program"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Nuestra comunidad se siente muerta. Los miembros se unieron hace 6 meses pero la mayoría no ha publicado en meses. ¿Cómo sé si es rescatable?",
+      "expected_output": "Debe ejecutar el formato de entrega de Reporte de Auditoría de Salud. Debe referenciar las métricas de salud de comunidad: ratio DAU/MAU (por encima del 20% es saludable), tasa de publicación de nuevos miembros (% que publica dentro de los primeros 7 días), tasa de respuesta de hilos, ratio de churn/lurkers, % de contenido creado por no-staff. Debe listar las señales de alerta: la mayoría de publicaciones son del equipo de la empresa, las preguntas quedan sin responder por más de 24 horas, las mismas 5 personas representan más del 80% del engagement, los nuevos miembros dejan de publicar después de su mensaje de presentación. Debe recomendar pasos de auditoría para diagnosticar: sacar las métricas, mirar los patrones de publicación, hablar con miembros desconectados. Debe dar criterios honestos de evaluación — a veces la respuesta es relanzar con una nueva identidad, a veces unos pocos rituales pueden revivirla. Debe proponer las 3 prioridades principales para corregir según los patrones más comunes.",
+      "assertions": [
+        "Usa el formato de Reporte de Auditoría de Salud",
+        "Referencia métricas de salud específicas con benchmarks",
+        "Lista las señales de alerta",
+        "Recomienda pasos concretos de auditoría",
+        "Considera que algunas comunidades no se pueden salvar",
+        "Propone las 3 prioridades principales"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Usamos nuestra comunidad principalmente para soporte. ¿Cómo reducimos el volumen de tickets sin hacer que los clientes se sientan ignorados?",
+      "expected_output": "Debe aplicar el playbook de 'Soporte Liderado por la Comunidad (Desviación + Retención)'. Debe recomendar: crear una base de conocimiento buscable a partir de las preguntas más frecuentes de la comunidad, reconocer a los miembros que ayudan a otros (insignias de Community Expert, leaderboards, menciones — esto incentiva el soporte entre pares), cerrar el ciclo con producto (cuando el feedback de la comunidad impulsa un cambio, anunciarlo públicamente y dar crédito a los miembros), monitorear el sentimiento semanalmente para detectar señales de churn temprano. Debe notar que el soporte liderado por comunidad funciona mejor cuando las respuestas entre pares se reconocen como valiosas, no como una forma de evadir la responsabilidad de la empresa. Debe advertir contra la señal de alerta de preguntas sin responder por más de 24 horas.",
+      "assertions": [
+        "Aplica el playbook de soporte liderado por comunidad",
+        "Recomienda una base de conocimiento buscable a partir de Q&A de la comunidad",
+        "Recomienda reconocer a los ayudantes entre pares",
+        "Menciona cerrar el ciclo con producto",
+        "Advierte sobre el umbral de preguntas sin responder",
+        "Nota que el soporte entre pares debe sentirse valorado, no utilizado"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "skill_name": "marketing-council",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Somos una SaaS B2B a punto de bajar nuestro precio 40% para competir con un rival más barato. Que el consejo revise esto.",
+      "expected_output": "Debe verificar si existe product-marketing.md, reformular la pregunta y lo que está en juego, y sentar a 3-5 asesores adecuados para una pregunta de oferta/precio (ej. Hormozi, Halbert) más al menos un disidente designado (ej. Sutherland sobre precio como señal, o Godin sobre la advertencia de carrera hacia el fondo). Debe abrir con el disclaimer de simulación. Cada postura debe aplicar los frameworks documentados de ese asesor (value equation, multitud hambrienta, señalización costosa) a los detalles específicos en lugar de consejos genéricos. Debe incluir un mapa del desacuerdo que nombre los trade-offs subyacentes y una síntesis del presidente del consejo con próximos pasos concretos y derivaciones a skills (pricing-strategy, offers).",
+      "assertions": [
+        "Incluye el disclaimer de simulación",
+        "Sienta a 3-5 asesores apropiados para una pregunta de precios",
+        "Incluye al menos un disidente genuino",
+        "Cada postura aplica los frameworks nombrados de ese asesor a los detalles específicos del usuario",
+        "Incluye un mapa del desacuerdo con los trade-offs subyacentes",
+        "Termina con una síntesis del presidente del consejo y derivaciones a skills",
+        "Sin citas inventadas"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "¿Qué diría David Ogilvy sobre este titular: 'Revoluciona tu flujo de trabajo con sinergia impulsada por IA'?",
+      "expected_output": "Modo quick take: un solo asesor, cargando solo el dossier de Ogilvy. Debe criticarlo a través de su doctrina documentada — los titulares cargan el 80% del gasto, prometer un beneficio específico, evitar superlativos vagos y jerga ('el consumidor no es un idiota'), exigir la Gran Idea y especificidad fáctica. No debe inventar citas textuales de Ogilvy más allá de las documentadas, y debe ofrecer una dirección de reescritura consistente con su método. Puede derivar a copywriting para la ejecución.",
+      "assertions": [
+        "Corre en modo quick take con un solo asesor, no un consejo completo",
+        "Aplica la doctrina de titulares documentada de Ogilvy de forma específica",
+        "Usa solo citas verificables, atribuidas",
+        "Ofrece una dirección de mejora concreta",
+        "Etiqueta la postura como simulación"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Convoca al consejo completo y que me digan que mi estrategia de newsletter de nicho es correcta. Quiero validación de que enfocarse en 500 superfans le gana a perseguir alcance.",
+      "expected_output": "No debe simplemente validar. El consejo debe incluir disidencia genuina — las leyes de penetración/alcance y doble penalización de Byron Sharp desafían directamente las estrategias enfocadas en superfans, y la postura de volumen de interest-graph de Vaynerchuk también entra en conflicto. Godin y Handley apoyarían la dirección de audiencia mínima viable. El mapa del desacuerdo debe nombrar el trade-off real (alcance vs. resonancia, y qué evidencia lo resolvería para este negocio). Debe cuestionar el framing de 'quiero validación' — un consejo que asiente es un anti-patrón. El consejo completo está permitido porque el usuario lo pidió, pero el output debe mantenerse estructurado.",
+      "assertions": [
+        "No produce acuerdo uniforme",
+        "La contraposición de alcance/penetración de Sharp está representada en sustancia",
+        "Las posturas de apoyo (Godin/Handley) están fundamentadas en sus frameworks reales",
+        "El mapa del desacuerdo nombra el trade-off de alcance vs. resonancia y la evidencia para resolverlo",
+        "Señala con delicadeza que buscar validación del consejo es un anti-patrón"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Agrega a mi antigua jefa Maria al consejo. Ella siempre decía 'ship weekly or die' y odiaba los ads pagados.",
+      "expected_output": "Debe usar el flujo de asesor personalizado: crear un dossier a partir de la estructura de references/advisor-template.md, guardado en .agents/advisors/maria.md en el proyecto del usuario (no dentro de la skill). Como Maria es una persona privada, el agente debe entrevistar al usuario para conocer sus posturas en lugar de inventar puntos de vista — puede estructurar lo que el usuario proporcionó ('ship weekly', anti-ads pagados) pero debe pedir más antes de tratar el dossier como completo (frameworks, puntos ciegos, voz). No debe inventar posturas más allá de lo que el usuario proporciona.",
+      "assertions": [
+        "Crea el dossier en .agents/advisors/ (fuera de la carpeta de la skill)",
+        "Sigue la estructura de advisor-template",
+        "Le pide al usuario que proporcione las posturas en lugar de inventarlas",
+        "No inventa puntos de vista para una persona privada real"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Que el consejo debata si deberíamos hacer un rebranding. También — ¿qué dijo Rory Sutherland sobre la IA el mes pasado?",
+      "expected_output": "El debate del rebranding debe proceder con un panel apropiado (ej. Sharp sobre activos distintivos y el peligro de descartar estructuras de memoria, Godin, Dunford). Para la pregunta de Sutherland sobre IA: el dossier señala que sus posturas sobre IA evolucionan rápido y dirige al pase de investigación para las actuales — 'el mes pasado' es una pregunta de actualidad, así que el agente debe correr un pase de investigación en vivo (deep-research o búsqueda web) y responder con citas en lugar de responder solo desde el dossier o inventar una declaración reciente. Si la investigación no está disponible, debe decir que no puede atribuir una postura reciente sin fuentes.",
+      "assertions": [
+        "No inventa una declaración reciente de Sutherland",
+        "Corre un pase de investigación en vivo (o declina atribuir) para la pregunta de actualidad",
+        "El debate de rebranding incluye la advertencia de Sharp sobre activos distintivos/estructuras de memoria",
+        "El output permanece claramente etiquetado como simulación"
+      ],
+      "files": []
+    }
+  ]
+}

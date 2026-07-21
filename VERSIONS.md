@@ -4,46 +4,66 @@ Versiones actuales de todas las skills. Los agentes pueden comparar con las vers
 
 | Skill | Versión | Última Actualización |
 |-------|---------|----------------------|
-| ab-test-setup | 1.1.0 | 2026-02-27 |
+| ab-test-setup | 1.0.0 | 2026-02-27 |
 | ad-creative | 2.8.0 | 2026-07-21 |
 | ai-seo | 1.1.0 | 2026-02-27 |
-| analytics-tracking | 1.1.0 | 2026-02-27 |
+| analytics-tracking | 1.0.0 | 2026-02-27 |
+| aso | 2.0.0 | 2026-07-21 |
 | churn-prevention | 1.1.0 | 2026-02-27 |
+| co-marketing | 2.0.0 | 2026-07-21 |
 | cold-email | 1.1.0 | 2026-02-27 |
-| competitor-alternatives | 1.1.0 | 2026-02-27 |
-| content-strategy | 1.1.0 | 2026-02-27 |
-| copy-editing | 1.1.0 | 2026-02-27 |
-| copywriting | 1.1.0 | 2026-02-27 |
+| community-marketing | 2.0.0 | 2026-07-21 |
+| competitor-alternatives | 1.0.0 | 2026-02-27 |
+| competitor-profiling | 2.0.0 | 2026-07-21 |
+| content-plan-html | 1.0.0 | 2026-02-27 |
+| content-strategy | 1.0.0 | 2026-02-27 |
+| copy-editing | 1.0.0 | 2026-02-27 |
+| copywriting | 1.0.0 | 2026-02-27 |
 | customer-research | 2.0.1 | 2026-07-21 |
-| email-sequence | 1.1.0 | 2026-02-27 |
-| form-cro | 1.1.0 | 2026-02-27 |
-| free-tool-strategy | 1.1.0 | 2026-02-27 |
+| directory-submissions | 2.0.0 | 2026-07-21 |
+| email-sequence | 1.0.0 | 2026-02-27 |
+| form-cro | 1.0.0 | 2026-02-27 |
+| free-tool-strategy | 1.0.0 | 2026-02-27 |
 | image | 2.0.1 | 2026-07-21 |
-| launch-strategy | 1.1.0 | 2026-02-27 |
-| marketing-ideas | 1.1.0 | 2026-02-27 |
+| launch-strategy | 1.0.0 | 2026-02-27 |
+| lead-magnets | 2.0.0 | 2026-07-21 |
+| marketing-council | 1.0.0 | 2026-07-21 |
+| marketing-ideas | 1.0.0 | 2026-02-27 |
 | marketing-loops | 1.2.0 | 2026-07-21 |
 | marketing-plan | 1.1.0 | 2026-07-21 |
-| marketing-psychology | 1.1.0 | 2026-02-27 |
+| marketing-psychology | 1.0.0 | 2026-02-27 |
 | offers | 1.0.0 | 2026-07-21 |
-| onboarding-cro | 1.1.0 | 2026-02-27 |
-| page-cro | 1.1.0 | 2026-02-27 |
-| paid-ads | 1.1.0 | 2026-02-27 |
-| paywall-upgrade-cro | 1.1.0 | 2026-02-27 |
-| popup-cro | 1.1.0 | 2026-02-27 |
-| pricing-strategy | 1.1.0 | 2026-02-27 |
-| product-marketing-context | 1.1.0 | 2026-02-27 |
-| programmatic-seo | 1.1.0 | 2026-02-27 |
-| referral-program | 1.1.0 | 2026-02-27 |
+| onboarding-cro | 1.0.0 | 2026-02-27 |
+| page-cro | 1.0.0 | 2026-02-27 |
+| paid-ads | 1.0.0 | 2026-02-27 |
+| paywall-upgrade-cro | 1.0.0 | 2026-02-27 |
+| popup-cro | 1.0.0 | 2026-02-27 |
+| pricing-strategy | 1.0.0 | 2026-02-27 |
+| product-marketing-context | 1.0.0 | 2026-02-27 |
+| programmatic-seo | 1.0.0 | 2026-02-27 |
+| prospecting | 1.1.0 | 2026-07-21 |
+| public-relations | 1.0.0 | 2026-07-21 |
+| referral-program | 1.0.0 | 2026-02-27 |
 | revops | 1.1.0 | 2026-02-27 |
 | sales-enablement | 1.1.0 | 2026-02-27 |
-| schema-markup | 1.1.0 | 2026-02-27 |
-| seo-audit | 1.1.0 | 2026-02-27 |
-| signup-flow-cro | 1.1.0 | 2026-02-27 |
+| schema-markup | 1.0.0 | 2026-02-27 |
+| seo-audit | 1.0.0 | 2026-02-27 |
+| signup-flow-cro | 1.0.0 | 2026-02-27 |
 | site-architecture | 1.1.0 | 2026-02-27 |
+| sms | 1.0.0 | 2026-07-21 |
 | social | 2.2.0 | 2026-07-21 |
+| social-content-plan | 1.0.0 | 2026-02-27 |
 | video | 2.1.0 | 2026-07-21 |
 
 ## Cambios Recientes
+
+### 2026-07-21 (Tier 3 — sincronización completa)
+- Se agregaron las últimas 10 skills del repo de Corey Haines, completando el set de 47: `aso` (2.0.0), `co-marketing` (2.0.0), `community-marketing` (2.0.0), `competitor-profiling` (2.0.0), `directory-submissions` (2.0.0), `lead-magnets` (2.0.0), `marketing-council` (1.0.0, incluye 12 dossiers de asesores simulados), `prospecting` (1.1.0), `public-relations` (1.0.0), `sms` (1.0.0)
+- `public-relations` no tiene carpeta `evals/` — tampoco la tiene en el repo original
+- `prospecting/references/compliance.md` y `sms/references/compliance.md` contienen reglas legales (CAN-SPAM, GDPR, CASL, TCPA, A2P 10DLC) traducidas con precisión exacta, verificadas contra el original
+- `directory-submissions/references/submission-tracker-template.csv`: solo encabezados traducidos, datos de directorios intactos
+- Este repo ahora tiene el catálogo completo de las 47 skills de Corey Haines (más 3 propias de agencia: `content-plan-html`, `social-content-plan`), todas traducidas al español — 50 skills en total
+- Nota: al regenerar esta tabla completa se corrigió un desfase pre-existente entre las 24 skills originales y esta tabla — algunas mostraban `1.1.0` aquí pero `1.0.0` en su `SKILL.md` real; la tabla ahora refleja el número real de cada archivo
 
 ### 2026-07-21 (Tier 2)
 - Se agregaron las skills `customer-research` (2.0.1), `offers` (1.0.0), `marketing-loops` (1.2.0) y `marketing-plan` (1.1.0), traducidas desde el repo de Corey Haines

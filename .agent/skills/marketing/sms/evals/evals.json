@@ -1,0 +1,100 @@
+{
+  "skill_name": "sms",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Somos una marca DTC en Shopify que factura $5M/año en skincare. Tenemos 80K suscriptores de email pero aún no tenemos un programa de SMS. ¿Por dónde empezamos?",
+      "expected_output": "Debe revisar primero si existe product-marketing.md. Debe ejecutar un chequeo de cumplimiento de Fase 0: si son de US, si el registro A2P 10DLC está iniciado, si el mecanismo de opt-in está planeado. Debe recomendar Klaviyo SMS o Postscript dado que son ecommerce DTC en Shopify (Klaviyo si ya están en Klaviyo email, Postscript para profundidad SMS-first). Debe priorizar los flujos por ROI para skincare: (1) secuencia de carrito abandonado primero (flujo de mayor ROI), (2) post-compra + reabastecimiento (skincare tiene ciclos predecibles), (3) flujo de bienvenida de opt-in con incentivo de captura, (4) win-back a los 60-90 días. Debe advertir sobre tratar el SMS como email (límite de frecuencia, umbral de relevancia, costo real por envío ~$0.0075-$0.04). Debe hacer referencia a compliance.md para el lenguaje de divulgación de opt-in y el horario de silencio.",
+      "assertions": [
+        "Revisa si existe product-marketing.md",
+        "Ejecuta chequeo de preparación de cumplimiento/A2P 10DLC",
+        "Recomienda Klaviyo SMS o Postscript con justificación",
+        "Prioriza el carrito abandonado como flujo de mayor ROI",
+        "Menciona el reabastecimiento específicamente para skincare",
+        "Advierte sobre tratar el SMS como email",
+        "Hace referencia a compliance.md o a los requisitos de divulgación de opt-in",
+        "Menciona la economía del costo por envío"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Escríbeme una secuencia de SMS de carrito abandonado. Vendemos ropa personalizada, con un pedido promedio de $80.",
+      "expected_output": "Debe generar una secuencia de 3 mensajes siguiendo el patrón de references/sequence-templates.md. Debe especificar los tiempos: Envío 1 a los 30 min después del abandono (sin descuento, recordatorio suave), Envío 2 a las 4 horas (urgencia suave, sin descuento), Envío 3 a las 24 horas (descuento permitido). Debe incluir el copy real del SMS con conteos de caracteres (apuntar a 160 GSM-7 para 1 segmento). Cada mensaje debe empezar con el ID del remitente 'From [Brand]:', tener un solo CTA + enlace corto, y el primer mensaje debe incluir el pie de cumplimiento 'Responde STOP para darte de baja'. Debe advertir contra el descuento en el primer envío (entrena a los clientes a abandonar). Debe mencionar las reglas de exclusión: detener la secuencia al ocurrir una compra, un opt-out, o al pasar 48 horas. Debe recomendar el etiquetado UTM para atribución y hacer referencia cruzada a la skill analytics-tracking para medición.",
+      "assertions": [
+        "Genera una secuencia de 3 mensajes con tiempos",
+        "Envío 1 a los 30 min, Envío 2 a las 4 horas, Envío 3 a las 24 horas",
+        "Sin descuento en el Envío 1",
+        "Cada mensaje tiene ID de remitente + CTA único + enlace corto",
+        "Se muestran conteos de caracteres, apuntando a ~160 GSM-7",
+        "Pie de cumplimiento en el primer envío (STOP para darte de baja)",
+        "Advierte sobre el descuento en el primer envío",
+        "Menciona las reglas de exclusión",
+        "Menciona el etiquetado UTM o la atribución"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "¿Puedo simplemente enviar SMS sin ningún opt-in si los clientes me dieron su número de teléfono al pagar?",
+      "expected_output": "Debe rechazar la propuesta y explicar que TCPA requiere consentimiento expreso por escrito para SMS de marketing. Debe distinguir el SMS de marketing (requiere consentimiento expreso por escrito) del SMS transaccional/de cuenta (actualizaciones de pedido, autenticación — el consentimiento implícito durante la transacción está bien si está directamente relacionado). Debe explicar los requisitos del consentimiento expreso por escrito: divulgación clara adyacente al campo de teléfono, expectativa de frecuencia, aviso de tarifas de mensajes y datos, instrucciones de STOP/HELP, enlace a los términos, capturado electrónicamente con timestamp. Debe mencionar la exposición a sanciones de TCPA: $500-$1,500 por mensaje, las demandas colectivas alcanzan 7-8 cifras. Debe recomendar implementar un flujo de opt-in conforme: checkbox + texto de divulgación, doble opt-in opcional pero más limpio. Debe hacer referencia a compliance.md para la plantilla completa de divulgación. Debe advertir que 'los clientes dieron su número al pagar' NO es suficiente para SMS de marketing — solo es suficiente para las comunicaciones específicas de esa transacción.",
+      "assertions": [
+        "Rechaza el enfoque sin opt-in",
+        "Distingue el SMS de marketing del SMS transaccional",
+        "Enumera los requisitos del consentimiento expreso por escrito",
+        "Menciona la exposición a sanciones de TCPA ($500-$1,500 por mensaje)",
+        "Menciona el riesgo de demanda colectiva",
+        "Recomienda un flujo de opt-in conforme",
+        "Hace referencia a compliance.md",
+        "Aclara que la captura del teléfono al pagar no es consentimiento de marketing"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Nuestra lista de SMS es de 50K suscriptores. Enviamos 3 mensajes promocionales por semana. La tasa de opt-out subió a 4% por envío. ¿Qué está mal?",
+      "expected_output": "Debe diagnosticar esto como fatiga de audiencia por sobre-envío. Debe hacer referencia a los benchmarks saludables: la tasa de opt-out debería ser <2% por envío y <0.5% para envíos promocionales — 4% es significativamente elevado. Debe revisar la frecuencia de envío: 3 envíos promocionales/semana es alto; recomendar reducir a 1-2/semana, especialmente para suscriptores nuevos. Debe auditar la relevancia: ¿los envíos están segmentados o van a toda la lista? Los blasts genéricos a una lista de 50K quemarán a los 30K inactivos. Debe recomendar segmentar por engagement (recién activo vs frío), recencia de compra, y fuente del opt-in. Debe sugerir reactivar a los suscriptores fríos con un flujo de re-engagement antes de enviar más promociones. Debe advertir que un 4% de opt-out por envío significa que la lista se está destruyendo a un ritmo de ~2K/semana. Debe hacer referencia cruzada a analytics-tracking para la medición adecuada y el principio 'cada envío debe justificarse a sí mismo'.",
+      "assertions": [
+        "Diagnostica como sobre-envío / fatiga de audiencia",
+        "Cita el benchmark saludable (<2% de opt-out por envío, <0.5% promocional)",
+        "Recomienda reducir la frecuencia de envío",
+        "Recomienda segmentación por engagement",
+        "Sugiere un flujo de reactivación para suscriptores fríos",
+        "Calcula el impacto de la erosión de la lista",
+        "Menciona el principio 'cada envío debe justificarse a sí mismo'"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Acabamos de enviar nuestro registro A2P 10DLC y nuestros envíos están funcionando. ¿Podemos empezar a escalar a 100K+ mensajes por día?",
+      "expected_output": "Debe preguntar sobre el tipo de número telefónico actualmente en uso: 10DLC, toll-free, o short code. Debe explicar los límites de throughput: 10DLC marca standard ~4-10 msg/seg, marca verificada ~75-100+ msg/seg, toll-free ~3 msg/seg, short code 100+ msg/seg. Debe calcular: 100K mensajes a 10 msg/seg = ~2.8 horas de envío continuo, puede toparse con el corte del horario de silencio. Debe recomendar el arrendamiento de short code para volumen sostenido de 100K+/día. Debe advertir sobre el filtrado de carriers en envíos en ráfaga — usar el throttling de la plataforma. Debe mencionar que el texto de mensaje de muestra del registro A2P debe coincidir con los envíos reales o los carriers lo marcarán. Debe recomendar monitorear el trust score y los dashboards de deliverability. Debe hacer referencia a platforms.md para el detalle de aprovisionamiento de short code.",
+      "assertions": [
+        "Pregunta sobre el tipo de número telefónico (10DLC vs toll-free vs short code)",
+        "Explica los límites de throughput con números específicos de msg/seg",
+        "Calcula el tiempo de envío para el volumen de 100K",
+        "Menciona consideraciones del horario de silencio",
+        "Recomienda short code para volumen sostenido alto",
+        "Advierte sobre el filtrado/throttling de carriers",
+        "Menciona el requisito de alineación del texto de muestra de A2P",
+        "Hace referencia a platforms.md o al monitoreo del trust score"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "¿Deberíamos poner emojis en nuestros mensajes de SMS? Otras marcas parecen usarlos mucho.",
+      "expected_output": "Debe explicar el trade-off de costo: los emojis fuerzan la codificación UCS-2, que reduce el tamaño del segmento de 160 caracteres GSM-7 a 70 caracteres. Un mensaje de 100 caracteres con un emoji se convierte en 2 segmentos facturados en lugar de 1 — efectivamente duplicando el costo por envío. Debe aconsejar: máximo 1 emoji por mensaje, situacionalmente relevante, solo cuando el emoji genuinamente se gane su costo de segmento (promocional de alta energía, encaje con la personalidad de la marca, etc.). Debe advertir contra el desorden de emojis — señala 'envío masivo' en lugar de personal. Debe notar que algunos caracteres acentuados (comillas curvas, guiones largos) también fuerzan UCS-2 — copiar y pegar desde Word/Google Docs es una causa silenciosa común de costos duplicados. Debe recomendar probar en la vista previa de la plataforma para verificar el conteo de segmentos antes de programar. Debe recordar que el conteo de segmentos importa a escala: 100K envíos a 2 segmentos en lugar de 1 = $750-$4,000 en costo extra por campaña.",
+      "assertions": [
+        "Explica el costo de la codificación UCS-2",
+        "Especifica los tamaños de segmento de 160 GSM-7 vs 70 UCS-2",
+        "Recomienda máximo 1 emoji por mensaje",
+        "Advierte sobre el costo duplicado por envío",
+        "Menciona que los caracteres acentuados / comillas curvas también disparan UCS-2",
+        "Recomienda previsualizar el conteo de segmentos",
+        "Calcula el impacto de costo a escala"
+      ],
+      "files": []
+    }
+  ]
+}

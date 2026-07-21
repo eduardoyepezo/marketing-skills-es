@@ -1,0 +1,87 @@
+{
+  "skill_name": "lead-magnets",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Somos una SaaS B2B que vende software de gestión de proyectos a agencias de marketing. ¿Qué lead magnet deberíamos crear?",
+      "expected_output": "Debe verificar primero si existe product-marketing.md. Debe preguntar sobre la generación de leads actual, los activos de contenido existentes y el objetivo principal (crecimiento de lista, calidad de leads, educación de producto). Debe aplicar los Principios de Lead Magnets: resolver un problema específico (no 'marketing de agencias'), coincidir con la etapa del comprador, alto valor percibido + baja inversión de tiempo, camino natural al producto. Debe recomendar un formato específico adecuado para una audiencia de agencia ocupada — probablemente una plantilla (Notion/spreadsheet) o checklist en lugar de un ebook. Ejemplos: 'Calculadora de Rentabilidad de Proyectos para Agencias' (etapa de decisión, lleva naturalmente al software de gestión de proyectos), 'Checklist de Onboarding de Clientes para Agencias' (consideración), 'Plantilla de Planificación de Capacidad para Agencias' (etapa de decisión). Debe justificar la elección emparejando etapa del comprador y relación esfuerzo/valor. Debe esquematizar el plan de contenido, gating, landing page, distribución y medición.",
+      "assertions": [
+        "Verifica si existe product-marketing.md",
+        "Pregunta sobre la etapa del comprador y el objetivo",
+        "Aplica los 5 principios",
+        "Recomienda un formato específico con justificación",
+        "Los ejemplos coinciden con la audiencia y el producto",
+        "Esquematiza las 5 secciones de salida (recomendación, contenido, gating, distribución, medición)"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tenemos un ebook de 50 páginas que nos tomó 3 meses escribir. La conversión en la landing page es solo del 4%. ¿Deberíamos seguir iterando?",
+      "expected_output": "Debe diagnosticar esto como un probable desajuste con los Principios de Lead Magnets, especialmente el #3 (alto valor percibido, baja inversión de tiempo — consumible en menos de 30 minutos, idealmente menos de 10). Debe advertir que 50 páginas puede señalar demasiado esfuerzo para consumir — marcar esto como una posible causa. Debe recomendar hacer una prueba A/B de formato (dividir el ebook en un mini-curso de email de 5 partes, lanzarlo como combo de checklist + ebook, o dividirlo en guías más cortas por tema específico). Debe revisar la estructura de la landing page: titular, preview/mockup, qué incluye, prueba social, campos del formulario, FAQ. Debe sugerir probar gate parcial (preview de las primeras 5 páginas) vs gate completo. Debe preguntar sobre la fuente de tráfico — 4% en tráfico frío podría ser aceptable mientras que 4% en tráfico cálido es bajo. Debe hacer referencia a la skill page-cro para optimización de landing page y ab-test-setup para el diseño de la prueba.",
+      "assertions": [
+        "Diagnostica la causa probable como desajuste de extensión/esfuerzo",
+        "Recomienda una prueba A/B de formato",
+        "Sugiere dividir en formatos más cortos",
+        "Revisa la estructura de la landing page",
+        "Pregunta sobre la fuente de tráfico (frío vs cálido)",
+        "Hace referencia cruzada a la skill page-cro o ab-test-setup"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Nuestro formulario de leads pide nombre, email, empresa, rol, tamaño de empresa y teléfono. No estamos recibiendo suficientes registros. ¿Podría ser el formulario el problema?",
+      "expected_output": "Debe marcar inmediatamente la extensión del formulario como un probable culpable. Debe citar la regla general: cada campo adicional reduce la conversión entre un 5-10%. Debe recomendar reducir al mínimo necesario: idealmente solo email (mayor conversión), o email + nombre si la personalización importa. Debe explicar cuándo se justifica el multi-campo (solo para ofertas de alto valor como webinars o demos). Debe preguntar qué información se usa realmente en el seguimiento — los campos que no se usan deberían eliminarse. Debe sugerir progressive profiling: capturar el email ahora, pedir más campos después vía enriquecimiento o formularios de seguimiento. Debe hacer referencia a la skill page-cro para optimización de formularios específicamente.",
+      "assertions": [
+        "Marca la extensión del formulario como probable culpable",
+        "Cita la regla de 5-10% por campo",
+        "Recomienda reducir a email o email + nombre",
+        "Pregunta qué campos se usan realmente",
+        "Sugiere progressive profiling",
+        "Hace referencia cruzada a la skill page-cro"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "¿Cuál es la diferencia entre un lead magnet y una herramienta gratuita? ¿Debería construir una u otra?",
+      "expected_output": "Debe explicar la distinción: los lead magnets son ofertas de contenido estático (ebooks, checklists, plantillas) mientras que las herramientas gratuitas son interactivas (calculadoras, graders, quizzes). Debe explicar cuándo construir cada una. Lead magnets: más rápidos de lanzar (horas-días), funcionan bien para educación de awareness/consideración, menor mantenimiento continuo, la calidad del lead varía. Herramientas gratuitas: tiempo de construcción más largo (semanas-meses), mayor engagement y capacidad de compartir, segmentan naturalmente a los leads según el uso de la herramienta, pueden posicionar en SEO ('calculadora de X', 'grader de Y'), mayor calidad de lead típicamente. Debe recomendar lead magnet primero si la velocidad importa, herramienta gratuita si puedes invertir el tiempo de construcción y tienes inputs de usuario repetibles que producen un output significativo. Debe remitir a la skill free-tool-strategy para estrategia de herramientas específicamente.",
+      "assertions": [
+        "Distingue contenido estático de herramienta interactiva",
+        "Compara el esfuerzo de construcción",
+        "Compara características de SEO y capacidad de compartir",
+        "Recomienda según el trade-off velocidad vs inversión",
+        "Remite a la skill free-tool-strategy"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Tenemos un post de blog de alto rendimiento sobre líneas de asunto de email. ¿Podemos usarlo como lead magnet?",
+      "expected_output": "Debe recomendar crear un content upgrade específico para el post en lugar de gatear el post mismo (los content upgrades específicos por post convierten 2-5x mejor que los CTAs genéricos de sidebar). Debe sugerir ideas de upgrade específicas: '50 Plantillas de Líneas de Asunto de Email' (formato de plantilla, etapa de decisión), 'Cheat Sheet de Líneas de Asunto en PDF' (formato de cheat sheet, awareness/consideración), 'Swipe File de Líneas de Asunto' (colección de ejemplos de alto rendimiento con anotaciones). Debe explicar que los content upgrades convierten mejor porque coinciden con lo que el lector ya está consumiendo — la relevancia y el intent son más altos que en ofertas genéricas. Debe recomendar mantener el post de blog sin gate (preservar el SEO) y ofrecer el upgrade como CTA inline o al final del post. Debe hacer referencia a page-cro para la ubicación y copywriting para el upgrade en sí.",
+      "assertions": [
+        "Recomienda content upgrade en lugar de gatear el post",
+        "Cita la mejora de 2-5x vs CTAs genéricos",
+        "Sugiere formatos de upgrade específicos con justificación",
+        "Mantiene el post de blog sin gate para preservar el SEO",
+        "Explica por qué los upgrades convierten mejor"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro checklist tiene muchas descargas pero muy pocas de esas personas se registran para una prueba. ¿Está roto el lead magnet?",
+      "expected_output": "Debe diagnosticar esto como un problema de desajuste de calidad de lead / etapa del comprador. Debe preguntar si el checklist es contenido de etapa de awareness que atrae a personas que no están listas para comprar. Debe revisar las Señales de Calidad de Lead: engagement de email superior al promedio, los leads avanzan a trial/demo a las tasas esperadas, baja tasa de unsubscribe, los leads coinciden con la demografía del ICP. Debe revisar el principio: los lead magnets deben crear un camino natural al producto. Si un checklist para principiantes totales atrae a principiantes, eso está funcionando como fue diseñado pero no convertirán rápido — necesitan nurture. Debe recomendar revisar la secuencia de nurture (referencia cruzada a la skill email-sequence) y verificar si la oferta coincide con la etapa correcta del comprador para el objetivo. Puede sugerir crear un lead magnet de etapa de consideración o decisión (plantilla, calculadora de ROI, spreadsheet comparativo) que atraiga leads de mayor intent. Debe hacer seguimiento del tiempo de conversión por fuente del lead magnet.",
+      "assertions": [
+        "Diagnostica como desajuste de calidad de lead / etapa del comprador",
+        "Pregunta sobre el ajuste ICP de los leads",
+        "Hace referencia a las Señales de Calidad de Lead",
+        "Hace referencia cruzada a la skill email-sequence para nurture",
+        "Sugiere una alternativa de lead magnet de etapa de decisión",
+        "Menciona el seguimiento del tiempo de conversión por fuente"
+      ],
+      "files": []
+    }
+  ]
+}

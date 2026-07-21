@@ -403,7 +403,10 @@ Skills Master/
     ├── programmatic-seo/             # SEO: generación de páginas a escala
     ├── site-architecture/            # SEO: estructura y navegación
     ├── competitor-alternatives/      # SEO + ventas: páginas de comparación
+    ├── competitor-profiling/         # Investigación: perfiles de competidores desde URLs
     ├── schema-markup/                # SEO: datos estructurados
+    ├── aso/                          # SEO: optimización de ficha App Store / Google Play
+    ├── directory-submissions/        # SEO: envío a directorios para backlinks
     ├── paid-ads/                     # Pago: estrategia de campaña
     ├── ad-creative/                  # Pago: generación de creativos
     ├── analytics-tracking/           # Medición: seguimiento de eventos
@@ -411,6 +414,11 @@ Skills Master/
     ├── churn-prevention/             # Retención: flujos de cancelación, dunning
     ├── referral-program/             # Crecimiento: referidos y afiliados
     ├── free-tool-strategy/           # Crecimiento: marketing con herramientas gratuitas
+    ├── lead-magnets/                 # Crecimiento: ebooks/checklists para captura de leads
+    ├── co-marketing/                 # Crecimiento: partnerships y campañas conjuntas
+    ├── community-marketing/          # Crecimiento: comunidades online
+    ├── prospecting/                  # Ventas: listas de prospectos calificados
+    ├── public-relations/             # PR: pitch a periodistas, HARO, newsjacking
     ├── marketing-ideas/              # Estrategia: más de 140 ideas indexadas
     ├── marketing-psychology/         # Estrategia: lente de ciencia del comportamiento
     ├── launch-strategy/              # Estrategia: lanzamientos de productos
@@ -418,6 +426,7 @@ Skills Master/
     ├── offers/                       # Estrategia: diseño de ofertas, garantías, bonos
     ├── marketing-plan/               # Estrategia: plan integral AARRR de 13 secciones
     ├── marketing-loops/              # Estrategia: workflows de marketing recurrentes
+    ├── marketing-council/            # Estrategia: consejo simulado de marketers legendarios
     ├── revops/                       # Ventas: operaciones de ingresos
     ├── sales-enablement/             # Ventas: pitch decks, objeciones
     └── tools/

@@ -57,19 +57,26 @@ Consulta la sección **Related Skills** de cada skill para ver el mapa de depend
 | [ad-creative](.agent/skills/marketing/ad-creative/) | Cuando el usuario quiere generar, iterar o escalar creatividades publicitarias — titulares, descripciones, texto principal o variaciones ... |
 | [ai-seo](.agent/skills/marketing/ai-seo/) | Cuando el usuario quiere optimizar contenido para motores de búsqueda de IA, ser citado por LLMs, o aparecer en respuestas generadas por ... |
 | [analytics-tracking](.agent/skills/marketing/analytics-tracking/) | Cuando el usuario quiere configurar, mejorar o auditar el seguimiento de analíticas y medición. También usar cuando el usuario menciona "... |
+| [aso](.agent/skills/marketing/aso/) | Cuando el usuario quiere auditar u optimizar una ficha de App Store o Google Play. También usar cuando el usuario menciona 'auditoría ASO... |
 | [churn-prevention](.agent/skills/marketing/churn-prevention/) | Cuando el usuario quiere reducir la cancelación, construir flujos de cancelación, configurar ofertas de retención, recuperar pagos fallid... |
+| [co-marketing](.agent/skills/marketing/co-marketing/) | Cuando el usuario quiere encontrar partners de co-marketing, planear campañas conjuntas o generar ideas de oportunidades de partnership. ... |
 | [cold-email](.agent/skills/marketing/cold-email/) | Escribir correos de prospección B2B y secuencias de seguimiento que obtienen respuestas. Usar cuando el usuario quiere escribir correos d... |
+| [community-marketing](.agent/skills/marketing/community-marketing/) | Construye y aprovecha comunidades online para impulsar el crecimiento del producto y la lealtad de marca. Usar cuando el usuario quiere c... |
 | [competitor-alternatives](.agent/skills/marketing/competitor-alternatives/) | Cuando el usuario quiere crear páginas de comparación con competidores o páginas de alternativas para SEO y habilitación de ventas. Tambi... |
+| [competitor-profiling](.agent/skills/marketing/competitor-profiling/) | Cuando el usuario quiere investigar, perfilar o analizar competidores a partir de sus URLs. También usar cuando el usuario menciona 'perf... |
 | [content-plan-html](.agent/skills/marketing/content-plan-html/) | Cuando el usuario quiere convertir un plan de contenido mensual en formato MD a un archivo HTML listo para imprimir como PDF. Usar cuando... |
 | [content-strategy](.agent/skills/marketing/content-strategy/) | Cuando el usuario quiere planificar una estrategia de contenido, decidir qué contenido crear, o determinar qué temas cubrir. También usar... |
 | [copy-editing](.agent/skills/marketing/copy-editing/) | Cuando el usuario quiere editar, revisar o mejorar copy de marketing existente. También usar cuando el usuario menciona 'edita este copy,... |
 | [copywriting](.agent/skills/marketing/copywriting/) | Cuando el usuario quiere escribir, reescribir o mejorar copy de marketing para cualquier página — incluyendo homepage, landing pages, pág... |
 | [customer-research](.agent/skills/marketing/customer-research/) | Cuando el usuario quiere realizar, analizar o sintetizar investigación de clientes. Usar cuando el usuario menciona "investigación de cli... |
+| [directory-submissions](.agent/skills/marketing/directory-submissions/) | Cuando el usuario quiere enviar su producto a directorios de startups, SaaS, IA, agentes, MCP, no-code o reseñas para conseguir backlinks... |
 | [email-sequence](.agent/skills/marketing/email-sequence/) | Cuando el usuario quiere crear u optimizar una secuencia de email, campaña drip, flujo de email automatizado o programa de email de ciclo... |
 | [form-cro](.agent/skills/marketing/form-cro/) | Cuando el usuario quiere optimizar cualquier formulario que NO sea de registro/sign-up — incluyendo formularios de captura de leads, form... |
 | [free-tool-strategy](.agent/skills/marketing/free-tool-strategy/) | Cuando el usuario quiere planificar, evaluar o construir una herramienta gratuita con fines de marketing — generación de leads, valor de ... |
 | [image](.agent/skills/marketing/image/) | Cuando el usuario quiere crear, generar, editar u optimizar imágenes para marketing — imágenes hero de blog, gráficos para redes sociales... |
 | [launch-strategy](.agent/skills/marketing/launch-strategy/) | Cuando el usuario quiere planificar un lanzamiento de producto, anuncio de función o estrategia de lanzamiento. También usar cuando el us... |
+| [lead-magnets](.agent/skills/marketing/lead-magnets/) | Cuando el usuario quiere crear, planificar u optimizar un lead magnet para captura de emails o generación de leads. También usar cuando e... |
+| [marketing-council](.agent/skills/marketing/marketing-council/) | Cuando el usuario quiere múltiples perspectivas de expertos sobre una decisión de marketing — un consejo simulado de asesores formado por... |
 | [marketing-ideas](.agent/skills/marketing/marketing-ideas/) | Cuando el usuario necesita ideas de marketing, inspiración o estrategias para su producto SaaS o software. También usar cuando el usuario... |
 | [marketing-loops](.agent/skills/marketing/marketing-loops/) | Cuando el usuario quiere configurar un flujo de trabajo de marketing recurrente y autoejecutable — un loop repetible que un agente de IA ... |
 | [marketing-plan](.agent/skills/marketing/marketing-plan/) | Cuando el usuario necesita un plan de marketing integral para un cliente, una empresa que asesora, o su propio producto. También usar cua... |
@@ -83,6 +90,8 @@ Consulta la sección **Related Skills** de cada skill para ver el mapa de depend
 | [pricing-strategy](.agent/skills/marketing/pricing-strategy/) | Cuando el usuario quiere ayuda con decisiones de precios, empaquetado o estrategia de monetización. También usar cuando el usuario mencio... |
 | [product-marketing-context](.agent/skills/marketing/product-marketing-context/) | Cuando el usuario quiere crear o actualizar su documento de contexto de marketing del producto. También usar cuando el usuario menciona '... |
 | [programmatic-seo](.agent/skills/marketing/programmatic-seo/) | Cuando el usuario quiere crear páginas orientadas a SEO a escala usando plantillas y datos. También usar cuando el usuario menciona "SEO ... |
+| [prospecting](.agent/skills/marketing/prospecting/) | Cuando el usuario quiere encontrar, calificar y construir una lista de prospectos a quienes contactar — ya sea B2B SaaS, B2B general, o p... |
+| [public-relations](.agent/skills/marketing/public-relations/) | Cuando el usuario quiere ayuda con relaciones públicas, earned media, cobertura de prensa, contacto con periodistas o estrategia de medio... |
 | [referral-program](.agent/skills/marketing/referral-program/) | Cuando el usuario quiere crear, optimizar o analizar un programa de referidos, programa de afiliados o estrategia de boca a boca. También... |
 | [revops](.agent/skills/marketing/revops/) | Cuando el usuario quiere ayuda con operaciones de ingresos, gestión del ciclo de vida del lead, o procesos de traspaso de marketing a ven... |
 | [sales-enablement](.agent/skills/marketing/sales-enablement/) | Cuando el usuario quiere crear material de ventas, pitch decks, one-pagers, documentos de manejo de objeciones o scripts de demo. También... |
@@ -90,6 +99,7 @@ Consulta la sección **Related Skills** de cada skill para ver el mapa de depend
 | [seo-audit](.agent/skills/marketing/seo-audit/) | Cuando el usuario quiere auditar, revisar o diagnosticar problemas de SEO en su sitio. También usar cuando el usuario menciona "auditoría... |
 | [signup-flow-cro](.agent/skills/marketing/signup-flow-cro/) | Cuando el usuario quiere optimizar flujos de registro, creación de cuenta o activación de prueba. También usar cuando el usuario menciona... |
 | [site-architecture](.agent/skills/marketing/site-architecture/) | Cuando el usuario quiere planificar, mapear o reestructurar la jerarquía de páginas, navegación, estructura de URLs o enlazado interno de... |
+| [sms](.agent/skills/marketing/sms/) | Cuando el usuario quiere planear, construir u optimizar marketing por SMS o MMS — incluyendo flujos de bienvenida, mensajes de carrito ab... |
 | [social](.agent/skills/marketing/social/) | Cuando el usuario quiere ayuda para crear, programar u optimizar contenido de redes sociales para LinkedIn, Twitter/X, Instagram, TikTok,... |
 | [social-content-plan](.agent/skills/marketing/social-content-plan/) | Cuando el usuario quiere generar el contenido completo de redes sociales para todo un mes con el copy redactado y listo para publicar, no... |
 | [video](.agent/skills/marketing/video/) | Cuando el usuario quiere crear, generar o producir contenido de video usando herramientas de IA o frameworks programáticos. También usar ... |
@@ -233,6 +243,8 @@ También puedes invocar las skills directamente:
 - `site-architecture` - Jerarquía de páginas, navegación, estructura de URLs
 - `competitor-alternatives` - Páginas de comparación y alternativas
 - `schema-markup` - Datos estructurados
+- `aso` - Optimización de ficha de App Store y Google Play
+- `directory-submissions` - Envío a directorios de startups/SaaS para backlinks
 
 ### Publicidad Paga y Distribución
 - `paid-ads` - Campañas de anuncios en Google, Meta, LinkedIn
@@ -249,11 +261,21 @@ También puedes invocar las skills directamente:
 ### Growth Engineering
 - `free-tool-strategy` - Herramientas de marketing y calculadoras
 - `referral-program` - Programas de referidos y afiliados
+- `lead-magnets` - Ebooks, checklists y plantillas descargables para captura de leads
+- `co-marketing` - Partnerships y campañas conjuntas entre marcas
+- `community-marketing` - Comunidades online (Discord/Slack/foros) para crecimiento y lealtad
 
 ### Investigación y Planeación Estratégica
 - `customer-research` - Investigación de clientes, personas, JTBD, minería de reseñas
+- `competitor-profiling` - Perfiles de competidores a partir de URLs
 - `marketing-plan` - Plan de marketing integral AARRR de 13 secciones
 - `marketing-loops` - Workflows de marketing recurrentes y autoejecutables
+
+### Ventas y Prospección
+- `prospecting` - Listas de prospectos calificados (B2B, SaaS, negocios locales)
+
+### PR y Medios Ganados
+- `public-relations` - Pitch a periodistas, HARO/Qwoted, newsjacking, press kits
 
 ### Estrategia y Monetización
 - `marketing-ideas` - 140 ideas de marketing para SaaS
@@ -261,6 +283,7 @@ También puedes invocar las skills directamente:
 - `launch-strategy` - Lanzamientos de productos y anuncios
 - `pricing-strategy` - Precios, empaquetado y monetización
 - `offers` - Diseño de ofertas, garantías, apilamiento de bonos (servicios y agencias)
+- `marketing-council` - Consejo simulado de marketers legendarios para perspectivas múltiples
 
 ### Ventas y RevOps
 - `revops` - Ciclo de vida de leads, puntuación, enrutamiento, gestión de pipeline

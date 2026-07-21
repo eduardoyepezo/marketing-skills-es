@@ -1,0 +1,84 @@
+{
+  "skill_name": "co-marketing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hacemos una herramienta de gestión de proyectos para agencias de diseño. ¿Qué deberíamos buscar en partners de co-marketing?",
+      "expected_output": "Debe revisar primero product-marketing.md. Debe aplicar el Framework de Identificación de Partners con análisis de solapamiento de audiencia. Debe identificar características del partner ideal: mismo buyer persona (agencias de diseño), problema diferente resuelto, adyacente en el flujo de trabajo. Debe sugerir categorías de partners específicas: herramientas de diseño (Figma, Adobe), herramientas de propuestas/contratos (Bonsai, HoneyBook), comunicación con clientes (Notion, Slack), facturación/pagos (Stripe, FreshBooks), almacenamiento/entrega de archivos (Dropbox, Frame.io). Debe recomendar criterios de puntuación de audiencia. Debe sugerir fuentes para encontrar partners: ecosistema de integraciones, Crossbeam/Reveal para solapamiento de cuentas, encuestas a clientes, categorías vecinas en G2/Capterra, podcasts/newsletters que patrocinan.",
+      "assertions": [
+        "Revisa product-marketing.md",
+        "Identifica la característica de mismo persona / problema diferente",
+        "Sugiere categorías de partners específicas en el flujo de trabajo",
+        "Menciona Crossbeam o datos de solapamiento de cuentas",
+        "Lista múltiples fuentes para encontrar partners",
+        "Aplica criterios de puntuación"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Nos vamos a asociar con un competidor — espera, no es un competidor, es una empresa de CRM complementaria. Ayúdanos a generar 5 ideas de campaña que podamos hacer juntos.",
+      "expected_output": "Debe aplicar el framework de generación de ideas: momentos compartidos de audiencia, propuestas de valor combinadas, activos únicos que aporta cada uno. Debe proponer ideas de campaña a través de múltiples tipos de las tablas de tipos de campaña (partnerships de contenido, webinars/eventos, marketing de producto/integración, comunidad/redes sociales). Debe sugerir ideas específicas como: post de blog co-escrito o informe de investigación, webinar conjunto, landing page de integración 'mejor juntos', caso de estudio conjunto con cliente compartido, lanzamiento de integración, bundle/descuento, stand compartido en conferencia. Debe usar los prompts de generación de ideas de campaña: qué crearíamos si tuviéramos que lanzar algo en 2 semanas, qué contenido necesitan desesperadamente ambas audiencias, qué datos tenemos ambos que armarían una historia convincente.",
+      "assertions": [
+        "Aplica el framework de generación de ideas",
+        "Propone campañas a través de múltiples tipos (contenido, eventos, integración, comunidad)",
+        "Sugiere ideas específicas y accionables",
+        "Menciona el ángulo de integración o 'mejor juntos'",
+        "Usa los prompts de generación de ideas"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Redacta un correo de outreach en frío para un potencial partner de co-marketing. Son una plataforma de gestión de contenido y nosotros hacemos una herramienta de analítica de marketing. Ambos servimos a equipos de marketing B2B.",
+      "expected_output": "Debe usar la estructura de la plantilla de outreach en frío. Debe incluir: línea de asunto con ambos nombres de empresa, breve introducción de rol, observación específica sobre el solapamiento de audiencia (no genérica), una idea de campaña concreta (no 'hagamos algo juntos'), pedido claro para una llamada rápida. Debe mantenerse corto y personal. Debe mencionar opcionalmente la preparación para la llamada: datos de solapamiento de cuentas (Crossbeam/Reveal), 2-3 ideas de campaña específicas, métricas de audiencia, ejemplos de partnerships anteriores, pedido claro de qué se quiere y qué se ofrece.",
+      "assertions": [
+        "Incluye asunto con ambos nombres de empresa",
+        "Observación específica sobre el solapamiento de audiencia",
+        "Incluye una idea de campaña concreta",
+        "Incluye un pedido claro para una llamada",
+        "Se mantiene corto y personal",
+        "Menciona qué preparar para la llamada"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Identificamos 5 potenciales partners pero solo tenemos tiempo para una campaña este trimestre. ¿Cómo deberíamos elegir?",
+      "expected_output": "Debe aplicar los criterios de puntuación de partners: encaje de audiencia, tamaño de audiencia, alineación de marca, calidad de engagement, potencial de reciprocidad, facilidad de ejecución. Debe recomendar puntuar a cada partner de 1-5 en estos criterios. Debe ponderar según el objetivo actual (por ejemplo, si la generación de leads es prioridad, ponderar más el tamaño y encaje de audiencia; si es construcción de relación, ponderar más la alineación de marca y calidad de engagement). Debe considerar el historial de co-marketing del partner — quienes tienen equipos de partnerships y actividades de co-marketing previas ejecutan más rápido. Debe recomendar hacer primero un partnership de contenido pequeño (bajo esfuerzo) para probar la relación antes de compromisos mayores.",
+      "assertions": [
+        "Aplica los criterios de puntuación de partners",
+        "Incluye las 6 dimensiones de puntuación",
+        "Pondera según el objetivo",
+        "Considera la facilidad de ejecución / historial de partnership",
+        "Recomienda empezar con un formato de bajo esfuerzo"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Nuestro webinar de partnership con otra empresa SaaS consiguió 200 registros. ¿Cómo dividimos los leads?",
+      "expected_output": "Debe abordar la pregunta de manejo de leads de la sección Estructurar el Partnership. Debe explicar divisiones comunes: cada partner conserva sus propios registros (más limpio pero pierde la polinización cruzada), todos los leads se comparten entre ambos (máximo alcance, requiere un traspaso claro de MQL/SQL), división por fuente de audiencia (tu lista vs. la suya). Debe recomendar documentar esto por adelantado en un acuerdo de co-marketing que cubra: descripción de la campaña, responsabilidades, cronograma, manejo de leads, promoción, branding, costos, reparto de métricas. Debe notar la medición del éxito: leads generados por partner, calidad de leads (tasa de conversión MQL/SQL), ingresos atribuidos. Debe recomendar un debrief post-campaña y discutir la colaboración futura si funcionó.",
+      "assertions": [
+        "Explica las opciones de división de leads",
+        "Recomienda documentar en un acuerdo",
+        "Lista los componentes del acuerdo",
+        "Menciona medir la calidad de leads, no solo el volumen",
+        "Recomienda un debrief post-campaña"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Nuestro equipo de customer success quiere que lancemos un programa de referidos. ¿Nos puedes ayudar a diseñar uno?",
+      "expected_output": "Debe reconocer que esto se trata de referidos de clientes, no de co-marketing entre empresas. Debe redirigir a la habilidad referral-program, que maneja específicamente programas de referidos y afiliados de clientes (clientes refiriendo clientes). Debe notar que el co-marketing es marketing entre partners mientras que los referidos son boca a boca impulsado por clientes. Puede ofrecer contexto breve de co-marketing si es relevante para la estrategia, pero debe dejar claro que referral-program es la habilidad correcta para la tarea.",
+      "assertions": [
+        "Reconoce que esto es un referido de clientes, no co-marketing",
+        "Deriva a la habilidad referral-program",
+        "Distingue co-marketing de programas de referidos",
+        "No intenta una estrategia completa de co-marketing"
+      ],
+      "files": []
+    }
+  ]
+}
