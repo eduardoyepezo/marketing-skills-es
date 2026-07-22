@@ -5,8 +5,8 @@
     "url": "https://github.com/eduardoyepezo"
   },
   "metadata": {
-    "description": "50 marketing skills para agentes de IA en español — el set completo del repo de Corey Haines (47 skills) más 3 skills propias de agencia. Optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA, investigación de clientes, PR, prospección, ASO, y growth completo. Traducido y adaptado al español.",
-    "version": "1.3.0",
+    "description": "50 marketing skills para agentes de IA en español — sistema completo de optimización de conversiones, copywriting, SEO, publicidad paga, producción creativa con IA, investigación de clientes, PR, prospección, ASO, y growth para agencias de marketing.",
+    "version": "1.3.1",
     "repository": "https://github.com/eduardoyepezo/marketing-skills-es",
     "original_work": "https://github.com/coreyhaines31/marketingskills",
     "language": "es"
@@ -14,7 +14,7 @@
   "plugins": [
     {
       "name": "marketing-skills-es",
-      "description": "50 marketing skills en español: el catálogo completo de Corey Haines traducido — CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos con IA, video e imagen con IA, investigación de clientes, ofertas, planes de marketing AARRR, PR y medios ganados, ASO, prospección, marketing comunitario, co-marketing, lead magnets, directorios, consejo de asesores simulado, y más.",
+      "description": "50 skills de marketing en español para agencias y equipos de marketing: CRO, copywriting, cold email, SEO, AI SEO, publicidad paga, creativos con IA, producción de video e imagen con IA, investigación de clientes, diseño de ofertas, planes de marketing AARRR, PR y medios ganados, ASO, prospección, marketing comunitario, co-marketing, lead magnets, directorios, consejo de asesores simulado, y más.",
       "source": "./",
       "strict": false,
       "skills": [
