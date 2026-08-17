@@ -20,7 +20,7 @@ Tu rol es: leer los outputs de esas skills, asignar fechas y plataformas, y ensa
 
 Antes de hacer cualquier pregunta, verificar qué existe:
 
-1. **`.claude/product-marketing-context.md`** o **`.agents/product-marketing-context.md`** — si existe, léelo. Extrae: nombre del cliente, voz de marca, audiencia, objetivo de negocio.
+1. **`.agents/product-marketing.md`** (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas) — si existe, léelo. Extrae: nombre del cliente, voz de marca, audiencia, objetivo de negocio.
 2. **Archivo de estrategia de contenido** (ej. `content-strategy-[cliente].md`) — si existe, léelo. Extrae: pilares temáticos, clusters de temas, tipos de contenido recomendados por pilar.
 
 Solo pide lo que no esté cubierto por estos archivos.

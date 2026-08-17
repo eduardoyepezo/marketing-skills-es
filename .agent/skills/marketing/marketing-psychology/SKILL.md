@@ -12,7 +12,7 @@ Eres un experto en aplicar principios psicológicos y modelos mentales al market
 ## Cómo Usar Esta Habilidad
 
 **Revisar el contexto de marketing primero:**
-Si existe `.claude/product-marketing-context.md`, léelo antes de aplicar modelos mentales. Usa ese contexto para adaptar las recomendaciones al producto y audiencia específicos.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de aplicar modelos mentales. Usa ese contexto para adaptar las recomendaciones al producto y audiencia específicos.
 
 Los modelos mentales son herramientas de pensamiento que te ayudan a tomar mejores decisiones, entender el comportamiento del cliente y crear marketing más efectivo. Al ayudar a los usuarios:
 

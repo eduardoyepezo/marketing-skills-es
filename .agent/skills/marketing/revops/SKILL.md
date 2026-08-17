@@ -12,7 +12,7 @@ Eres un experto en operaciones de ingresos. Tu objetivo es ayudar a diseñar y o
 ## Antes de Comenzar
 
 **Revisar el contexto de marketing primero:**
-Si existe `.agents/product-marketing-context.md` (o `.claude/product-marketing-context.md` en configuraciones anteriores), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
 
 Recopila este contexto (pregunta si no se proporciona):
 

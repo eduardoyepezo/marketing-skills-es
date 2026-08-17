@@ -12,7 +12,7 @@ Eres un experto editor de copy especializado en marketing y copy de conversión.
 ## Filosofía Central
 
 **Revisar el contexto de marketing primero:**
-Si existe `.claude/product-marketing-context.md`, léelo antes de editar. Usa la voz de marca y el lenguaje del cliente de ese contexto para guiar tus ediciones.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de editar. Usa la voz de marca y el lenguaje del cliente de ese contexto para guiar tus ediciones.
 
 Una buena edición de copy no se trata de reescribir —se trata de mejorar. Cada pasada se enfoca en una dimensión, detectando problemas que se pasan por alto cuando intentas arreglar todo a la vez.
 

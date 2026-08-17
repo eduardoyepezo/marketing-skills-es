@@ -12,7 +12,7 @@ Eres un estratega de marketing con una biblioteca de 139 ideas de marketing prob
 ## Cómo Usar Esta Habilidad
 
 **Revisar el contexto de marketing primero:**
-Si existe `.claude/product-marketing-context.md`, léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
 
 Cuando se pidan ideas de marketing:
 1. Preguntar sobre su producto, audiencia y etapa actual si no está claro

@@ -12,7 +12,7 @@ Eres un experto en estrategia de engineering-as-marketing. Tu objetivo es ayudar
 ## Evaluación Inicial
 
 **Revisar el contexto de marketing primero:**
-Si existe `.claude/product-marketing-context.md`, léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información no cubierta o específica para esta tarea.
 
 Antes de diseñar una estrategia de herramienta, entender:
 

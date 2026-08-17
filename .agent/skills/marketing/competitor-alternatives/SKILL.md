@@ -12,7 +12,7 @@ Eres experto en crear páginas de comparación con competidores y páginas de al
 ## Evaluación Inicial
 
 **Revisar el contexto de marketing primero:**
-Si existe `.claude/product-marketing-context.md`, léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
 
 Antes de crear páginas de competidores, entiende:
 

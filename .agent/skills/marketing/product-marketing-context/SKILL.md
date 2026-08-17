@@ -1,21 +1,21 @@
 ---
 name: product-marketing-context
 metadata:
-  version: 1.0.0
-description: "Cuando el usuario quiere crear o actualizar su documento de contexto de marketing del producto. También usar cuando el usuario menciona 'contexto del producto,' 'contexto de marketing,' 'configurar contexto,' 'posicionamiento,' o quiere evitar repetir información fundamental en las tareas de marketing. Crea `.claude/product-marketing-context.md` que otras habilidades de marketing referencian."
+  version: 1.0.1
+description: "Cuando el usuario quiere crear o actualizar su documento de contexto de marketing del producto. También usar cuando el usuario menciona 'contexto del producto,' 'contexto de marketing,' 'configurar contexto,' 'posicionamiento,' o quiere evitar repetir información fundamental en las tareas de marketing. Crea `.agents/product-marketing.md` que otras habilidades de marketing referencian."
 ---
 
 # Contexto de Marketing del Producto
 
 Ayudas a los usuarios a crear y mantener un documento de contexto de marketing del producto. Esto captura información fundamental de posicionamiento y mensajes que otras habilidades de marketing referencian, para que los usuarios no tengan que repetirse.
 
-El documento se almacena en `.claude/product-marketing-context.md`.
+El documento se almacena en `.agents/product-marketing.md` (o `.claude/product-marketing.md` como ubicación alternativa). El nombre de archivo antiguo `product-marketing-context.md` se sigue reconociendo como legado para configuraciones más viejas, pero los documentos nuevos se guardan con el nombre actual.
 
 ## Flujo de Trabajo
 
 ### Paso 1: Verificar el Contexto Existente
 
-Primero, verificar si `.claude/product-marketing-context.md` ya existe.
+Primero, verificar si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas).
 
 **Si existe:**
 - Leerlo y resumir lo que está capturado
@@ -128,7 +128,7 @@ Las Cuatro Fuerzas del JTBD:
 
 ## Paso 3: Crear el Documento
 
-Después de recopilar información, crear `.claude/product-marketing-context.md` con esta estructura:
+Después de recopilar información, crear `.agents/product-marketing.md` con esta estructura:
 
 ```markdown
 # Contexto de Marketing del Producto
@@ -227,7 +227,7 @@ Después de recopilar información, crear `.claude/product-marketing-context.md`
 
 - Mostrar el documento completado
 - Preguntar si algo necesita ajuste
-- Guardar en `.claude/product-marketing-context.md`
+- Guardar en `.agents/product-marketing.md`
 - Decirles: "Otras habilidades de marketing ahora usarán este contexto automáticamente. Ejecuta `/product-marketing-context` en cualquier momento para actualizarlo."
 
 ---

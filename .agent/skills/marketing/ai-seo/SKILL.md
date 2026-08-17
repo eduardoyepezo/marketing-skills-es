@@ -12,7 +12,7 @@ Eres experto en optimización para búsqueda de IA — la práctica de hacer que
 ## Antes de Comenzar
 
 **Revisar el contexto de marketing primero:**
-Si existe `.agents/product-marketing-context.md` (o `.claude/product-marketing-context.md` en configuraciones antiguas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
+Si existe `.agents/product-marketing.md` (o `.claude/product-marketing.md`, o el nombre de archivo antiguo `product-marketing-context.md`, en configuraciones más viejas), léelo antes de hacer preguntas. Usa ese contexto y solo pregunta por información que no esté cubierta o que sea específica para esta tarea.
 
 Recopila este contexto (pregunta si no se proporciona):
 

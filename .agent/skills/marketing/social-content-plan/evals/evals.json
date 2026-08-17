@@ -4,9 +4,9 @@
     {
       "id": 1,
       "prompt": "Necesito el plan de contenido completo de mayo para mi cliente Estudio Pilates Forma. Están en Instagram y TikTok. En Instagram quieren 4 posts por semana (mezcla de reels y carruseles) y en TikTok 3 videos por semana. Su objetivo es conseguir nuevas alumnas. El tono es motivador y cercano. Pilares: bienestar femenino, transformación física, comunidad, tips de movimiento y promociones del estudio.",
-      "expected_output": "Debe verificar si existe product-marketing-context.md. Debe generar el plan completo de mayo: Semana 1 al 4 con todos los posts escritos (4/sem Instagram + 3/sem TikTok = 28 posts totales). Cada post debe tener: fecha, plataforma, formato, copy completo redactado, hashtags (10-15 para Instagram, 3-5 para TikTok), CTA y brief visual. Los Reels y videos de TikTok deben tener guion completo (hook, setup, valor, CTA). Debe variar formatos: no mismo formato dos días seguidos. Debe distribuir los 5 pilares de forma equilibrada. Debe incluir tabla resumen al final. Debe guardar el archivo como plan-contenido-estudio-pilates-forma-mayo-2026.md o similar. Debe terminar ofreciendo branded-deliverable.",
+      "expected_output": "Debe verificar si existe .agents/product-marketing.md (o su equivalente legado). Debe generar el plan completo de mayo: Semana 1 al 4 con todos los posts escritos (4/sem Instagram + 3/sem TikTok = 28 posts totales). Cada post debe tener: fecha, plataforma, formato, copy completo redactado, hashtags (10-15 para Instagram, 3-5 para TikTok), CTA y brief visual. Los Reels y videos de TikTok deben tener guion completo (hook, setup, valor, CTA). Debe variar formatos: no mismo formato dos días seguidos. Debe distribuir los 5 pilares de forma equilibrada. Debe incluir tabla resumen al final. Debe guardar el archivo como plan-contenido-estudio-pilates-forma-mayo-2026.md o similar. Debe terminar ofreciendo la habilidad content-plan-html.",
       "assertions": [
-        "Verifica si existe product-marketing-context.md",
+        "Verifica si existe .agents/product-marketing.md (o su equivalente legado)",
         "Genera posts para las 4 semanas completas de mayo",
         "Genera 4 posts por semana para Instagram",
         "Genera 3 posts por semana para TikTok",
@@ -17,14 +17,14 @@
         "Varía los formatos a lo largo del mes",
         "Distribuye los 5 pilares de forma equilibrada",
         "Incluye tabla resumen al final",
-        "Termina ofreciendo la habilidad branded-deliverable"
+        "Termina ofreciendo la habilidad content-plan-html"
       ],
       "files": []
     },
     {
       "id": 2,
       "prompt": "dame el plan de contenido para linkedin de junio para SoftwareB2B una empresa que vende CRM para pymes. quiero 3 posts por semana, tono profesional pero cercano. que el contenido eduque sobre ventas, CRM y productividad.",
-      "expected_output": "Debe activarse con lenguaje informal. Debe verificar si existe product-marketing-context.md. Debe generar 3 posts semanales × 4 semanas = 12 posts de LinkedIn para junio. Cada post: fecha, copy completo de LinkedIn (900-1300 caracteres), hashtags (3-5), CTA y brief visual. Debe aplicar fórmulas de hook (curiosidad, historia, valor, contrario). Debe distribuir los pilares: ventas, CRM, productividad. Debe variar formatos: texto, carrusel, video. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer branded-deliverable al final.",
+      "expected_output": "Debe activarse con lenguaje informal. Debe verificar si existe .agents/product-marketing.md (o su equivalente legado). Debe generar 3 posts semanales × 4 semanas = 12 posts de LinkedIn para junio. Cada post: fecha, copy completo de LinkedIn (900-1300 caracteres), hashtags (3-5), CTA y brief visual. Debe aplicar fórmulas de hook (curiosidad, historia, valor, contrario). Debe distribuir los pilares: ventas, CRM, productividad. Debe variar formatos: texto, carrusel, video. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer content-plan-html al final.",
       "assertions": [
         "Se activa con lenguaje informal",
         "Genera 12 posts de LinkedIn (3 por semana por 4 semanas)",
@@ -34,14 +34,14 @@
         "Varía formatos entre texto, carrusel y video",
         "Distribuye los pilares de ventas, CRM y productividad",
         "Incluye tabla resumen al final",
-        "Ofrece branded-deliverable al terminar"
+        "Ofrece content-plan-html al terminar"
       ],
       "files": []
     },
     {
       "id": 3,
       "prompt": "Quiero el plan de redes sociales de julio para Restaurante Casa Blanca. Plataformas: Instagram y Facebook. Instagram: 5 posts semanales (reels, carruseles e imágenes). Facebook: 3 posts semanales. Objetivo: aumentar reservaciones. Tono: cálido, sofisticado, que invite a vivir la experiencia. Pilares: platos del chef, historia y tradición, experiencias de clientes, ingredientes frescos, eventos especiales.",
-      "expected_output": "Debe generar el plan completo de julio para Instagram (5x/sem = 20 posts) y Facebook (3x/sem = 12 posts) = 32 posts totales. Cada post escrito con copy completo adaptado al tono cálido y sofisticado. Los reels deben tener guion con hook visual, setup, valor y CTA. Las imágenes deben tener caption completa. Facebook debe tener copy adaptado (no simplemente copiar el de Instagram). Debe distribuir los 5 pilares. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer branded-deliverable.",
+      "expected_output": "Debe generar el plan completo de julio para Instagram (5x/sem = 20 posts) y Facebook (3x/sem = 12 posts) = 32 posts totales. Cada post escrito con copy completo adaptado al tono cálido y sofisticado. Los reels deben tener guion con hook visual, setup, valor y CTA. Las imágenes deben tener caption completa. Facebook debe tener copy adaptado (no simplemente copiar el de Instagram). Debe distribuir los 5 pilares. Debe incluir tabla resumen. Debe guardar el archivo. Debe ofrecer content-plan-html.",
       "assertions": [
         "Genera 20 posts para Instagram (5 por semana)",
         "Genera 12 posts para Facebook (3 por semana)",
@@ -51,7 +51,7 @@
         "Distribuye los 5 pilares del restaurante",
         "Incluye brief visual relevante para restaurante (platos, ambiente, etc.)",
         "Incluye tabla resumen al final",
-        "Ofrece branded-deliverable al terminar"
+        "Ofrece content-plan-html al terminar"
       ],
       "files": []
     },
@@ -80,7 +80,7 @@
     {
       "id": 6,
       "prompt": "Tengo los pilares de contenido listos para mi cliente FitApp. Quiero generar el plan de agosto para Instagram solamente, 4 posts por semana. Los pilares son: motivación fitness, nutrición práctica, historias de transformación de usuarios, tips de entrenamiento en casa, y promociones de la app.",
-      "expected_output": "Debe generar 4 posts semanales × 4 semanas = 16 posts de Instagram para agosto. Debe mezclar formatos: reels, carruseles e imágenes. Cada post con copy completo, hashtags (10-15), CTA y brief visual. Los reels deben tener guion. Debe usar los 5 pilares proporcionados. Debe distribuir los pilares de forma equilibrada. Debe incluir tabla resumen. Debe terminar ofreciendo branded-deliverable.",
+      "expected_output": "Debe generar 4 posts semanales × 4 semanas = 16 posts de Instagram para agosto. Debe mezclar formatos: reels, carruseles e imágenes. Cada post con copy completo, hashtags (10-15), CTA y brief visual. Los reels deben tener guion. Debe usar los 5 pilares proporcionados. Debe distribuir los pilares de forma equilibrada. Debe incluir tabla resumen. Debe terminar ofreciendo la habilidad content-plan-html.",
       "assertions": [
         "Genera exactamente 16 posts de Instagram (4 por semana × 4 semanas)",
         "Mezcla formatos: reels, carruseles e imágenes",
@@ -89,7 +89,7 @@
         "Incluye brief visual en cada post",
         "Usa los 5 pilares proporcionados distribuidos equilibradamente",
         "Incluye tabla resumen al final",
-        "Ofrece branded-deliverable al terminar"
+        "Ofrece content-plan-html al terminar"
       ],
       "files": []
     }
