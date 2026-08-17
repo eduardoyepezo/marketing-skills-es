@@ -6,48 +6,28 @@ Plataforma de automatización de flujos de trabajo que conecta aplicaciones sin 
 
 | Integración | Disponible | Notas |
 |-------------|------------|-------|
-| API | ✓ | REST API para Zaps, tareas y webhooks |
-| MCP | ✓ | Disponible mediante el servidor MCP de Zapier |
+| API | ✓ | Partner API para Zaps/tareas (requiere integración pública aprobada) + Webhooks (sin aprobación) |
+| MCP | ✓ | Servidor MCP oficial hospedado — recomendado para agentes de IA, ver abajo |
 | CLI | - | No disponible |
 | SDK | - | Solo API y webhooks |
 
-## Autenticación
+## Servidor MCP (recomendado para agentes de IA)
 
-- **Tipo**: API Key
-- **Encabezado**: `X-API-Key: {api_key}`
-- **Obtener clave**: Settings > API en la cuenta de Zapier
+Es la forma más simple de que un agente actúe sobre Zapier — sin necesidad de aprobar una integración pública. Zapier expone más de 9,000 apps como herramientas MCP.
 
-## Operaciones Comunes del Agente
+- **URL del servidor**: `https://mcp.zapier.com/api/v1/connect`
+- **Autenticación**: OAuth — el cliente (Claude Code, Claude Desktop) te dirige al flujo de login de Zapier y Zapier configura el servidor automáticamente
+- **Documentación oficial**: [docs.zapier.com/mcp](https://docs.zapier.com/mcp/home)
 
-### Listar Zaps
+## Autenticación de la API (caso avanzado, no la ruta por defecto)
 
-```bash
-GET https://api.zapier.com/v1/zaps
-```
+Gestionar Zaps directamente por API (listar, activar/desactivar, ver tareas) **no** es tan simple como generar una API key en Settings — requiere crear una **integración pública en la Partner API** con OAuth y pasar un proceso de revisión de Zapier (toma aproximadamente una semana). No recomiendes esta ruta a una agencia que solo quiere conectar el sistema — usa el servidor MCP de arriba, o webhooks (abajo), que no requieren aprobación.
 
-### Obtener detalles de un Zap
+### Listar Zaps (Partner API, requiere integración aprobada)
 
 ```bash
-GET https://api.zapier.com/v1/zaps/{zap_id}
-```
-
-### Activar/desactivar Zap
-
-```bash
-POST https://api.zapier.com/v1/zaps/{zap_id}/on
-POST https://api.zapier.com/v1/zaps/{zap_id}/off
-```
-
-### Obtener historial de tareas
-
-```bash
-GET https://api.zapier.com/v1/zaps/{zap_id}/tasks
-```
-
-### Obtener información del perfil
-
-```bash
-GET https://api.zapier.com/v1/profiles/me
+GET https://api.zapier.com/v2/zaps
+Authorization: Bearer {oauth_token}
 ```
 
 ## Webhooks (Disparadores)

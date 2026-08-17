@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+// Nota: 'zaps', 'tasks' y 'profile' usan la Partner API de Zapier, que requiere
+// una integración pública aprobada por Zapier (no una API key simple de cuenta).
+// Para conectar un agente de IA sin ese proceso, usa el servidor MCP de Zapier
+// (ver tools/integrations/zapier.md) o el subcomando 'hooks send' de abajo,
+// que sí funciona con solo una URL de webhook.
 const API_KEY = process.env.ZAPIER_API_KEY
 const BASE_URL = 'https://api.zapier.com/v1'
 

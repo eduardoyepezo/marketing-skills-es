@@ -151,11 +151,11 @@ Los usuarios pueden extender el panel ("agrega mi propio asesor"). Crea un dossi
 
 ## Skills Relacionadas
 
-- **positioning** / **product-marketing-context**: Cuando gana la postura de Dunford — ejecuta el trabajo de posicionamiento
+- **product-marketing-context**: Cuando gana la postura de Dunford — ejecuta el trabajo de posicionamiento
 - **offers** / **pricing-strategy**: Cuando gana la dirección de Hormozi/Halbert — construye la oferta
 - **copywriting** / **copy-editing**: Cuando el consejo revisó copy — ejecuta las revisiones
 - **paid-ads** / **ad-creative**: Cuando el debate fue de medios o estrategia creativa
 - **content-strategy** / **social**: Cuando gana la dirección de Handley/Vaynerchuk
-- **brand-strategy** / **marketing-psychology**: Para el trabajo de disponibilidad de Sharp y la mecánica del comportamiento de Sutherland
+- **marketing-psychology**: Para el trabajo de disponibilidad de Sharp y la mecánica del comportamiento de Sutherland
 - **ab-test-setup**: Cuando el mapa del desacuerdo dice "pruébalo" — Hopkins insistiría
 - **deep-research**: Para el pase de investigación en vivo, cuando esté instalada
