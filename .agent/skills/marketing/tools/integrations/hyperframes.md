@@ -6,148 +6,107 @@ Framework de video programático de código abierto de HeyGen. Crea videos desde
 
 | Integración | Disponible | Notas |
 |-------------|------------|-------|
-| API | - | Es una librería, no un servicio hospedado |
+| API | - | Es un CLI que escafolda proyectos, no un servicio hospedado ni una librería de JS importable |
 | MCP | - | - |
-| CLI | ✓ | `npx hyperframes render` |
-| SDK | ✓ | Paquete de Node.js/TypeScript |
+| CLI | ✓ | `npx hyperframes <comando>` (init, preview, render, doctor, y más) |
+| SDK | - | No existe un paquete `import { render } from "hyperframes"` — la composición se edita como HTML de proyecto, no se llama por código |
 
 ## Por Qué Hyperframes
 
 - **Nativo para LLMs**: los modelos de IA generan mejor HTML que componentes de React — estándares web planos, sin DSL de framework
 - **Determinístico**: la misma entrada siempre produce el mismo resultado (ideal para automatización)
 - **Código abierto**: licencia Apache 2.0, sin costo por render
-- **Amigable para agentes**: cualquier agente de código que sepa escribir HTML puede crear videos
+- **Amigable para agentes**: cada proyecto escafoldado trae `AGENTS.md`/`CLAUDE.md` — está diseñado para que un agente de código (como Claude Code) edite el HTML directamente
 
 ## Instalación
 
-```bash
-npm install hyperframes
-```
+No requiere instalación global — se usa vía `npx`. Cada proyecto escafoldado trae su propio `package.json` con scripts que también invocan `npx hyperframes` internamente.
 
-Requiere: Node.js 22+, Chrome/Chromium (para renderizar)
+**Requiere:**
+- Node.js 22+
+- Chrome/Chromium (se descarga automáticamente si falta)
+- **FFmpeg** (`brew install ffmpeg`) — sin esto el render falla con error explícito
+- Al menos ~2 GB de RAM disponible para renderizar sin fallos
+
+Verifica el entorno antes de una sesión con cliente:
+```bash
+npx hyperframes doctor
+```
 
 ## Inicio Rápido
 
-```typescript
-import { render } from "hyperframes";
+```bash
+# 1. Escafoldar un proyecto nuevo
+npx hyperframes init mi-video --example blank --resolution portrait
 
-await render({
-  frames: [
-    {
-      html: `
-        <div style="display:flex; align-items:center; justify-content:center;
-                    height:100%; background:#000; color:#fff; font-family:system-ui;">
-          <h1 style="font-size:64px;">Bienvenido a Acme</h1>
-        </div>
-      `,
-      duration: 3,
-    },
-    {
-      html: `
-        <div style="display:flex; flex-direction:column; align-items:center;
-                    justify-content:center; height:100%; background:#000; color:#fff;
-                    font-family:system-ui;">
-          <h2 style="font-size:48px;">Lanza más rápido con IA</h2>
-          <p style="font-size:24px; color:#888;">Pruébalo gratis hoy</p>
-        </div>
-      `,
-      duration: 3,
-    },
-  ],
-  output: "intro.mp4",
-  width: 1080,
-  height: 1920, // 9:16 vertical
-  fps: 30,
-});
+cd mi-video
+
+# 2. Previsualizar en el navegador mientras editas index.html
+npm run dev
+
+# 3. Validar la composición antes de renderizar
+npm run check
+
+# 4. Renderizar a MP4
+npm run render
 ```
+
+`--resolution` acepta: `landscape` (1920x1080), `portrait` (1080x1920), `square` (1080x1080), y variantes 4K.
 
 ## Conceptos Centrales
 
-### Frames
+### El proyecto es un archivo HTML
 
-Cada frame es un documento HTML renderizado en un punto específico de la línea de tiempo. Piénsalo como una diapositiva con una duración.
+`init` genera `index.html` con un contenedor raíz que define la composición completa:
 
-```typescript
-{
-  html: "<div>...</div>",  // Contenido HTML completo
-  duration: 3,              // Segundos que se muestra
-  css?: "body { ... }",     // CSS externo opcional
-}
+```html
+<div
+  id="root"
+  data-composition-id="main"
+  data-start="0"
+  data-duration="10"
+  data-width="1080"
+  data-height="1920"
+>
+  <!-- Los clips van aquí dentro -->
+</div>
 ```
+
+### Clips
+
+Cada pieza de contenido en la línea de tiempo es un `<div class="clip">` con su propio tiempo de entrada, duración y pista:
+
+```html
+<div
+  id="hook"
+  class="clip"
+  data-start="0"
+  data-duration="3"
+  data-track-index="1"
+  style="display:flex; align-items:center; justify-content:center; height:100%;
+         background:#000; color:#fff; font-family:system-ui; font-size:64px;"
+>
+  Este es el lugar exacto de donde sale tu café
+</div>
+```
+
+Agrega tantos `.clip` como frames necesite el video — cada uno con su `data-start` y `data-duration` propios. GSAP (`gsap.min.js`) viene precargado en el HTML escafoldado para animaciones dentro de un clip.
 
 ### Transiciones
 
-Las transiciones y animaciones CSS funcionan entre frames:
+Las transiciones y animaciones CSS funcionan igual que en cualquier HTML — `@keyframes` y `animation` sobre los clips.
 
-```html
-<div style="animation: fadeIn 0.5s ease-in;">
-  <h1>Entrada Deslizante</h1>
-</div>
-<style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
-```
+### Producción en lote (varios videos desde datos)
 
-### Videos Basados en Datos
-
-Genera frames a partir de datos para producción en lote:
-
-```typescript
-const features = ["Analítica", "Automatización", "Insights de IA"];
-
-const frames = features.map((feature) => ({
-  html: `
-    <div style="display:flex; align-items:center; justify-content:center;
-                height:100%; background:linear-gradient(135deg, #667eea, #764ba2);
-                color:#fff; font-family:system-ui;">
-      <h1 style="font-size:56px;">${feature}</h1>
-    </div>
-  `,
-  duration: 2.5,
-}));
-
-await render({ frames, output: "features.mp4", width: 1080, height: 1920 });
-```
+No hay una función `render()` para llamar por código con distintos datos. El patrón real para lotes es generar varios **proyectos** (uno por pieza de contenido) y renderizarlos con `npx hyperframes render <directorio>` en un loop de shell, o editar el `index.html` de un mismo proyecto para cada variante antes de renderizar.
 
 ## Plantillas Comunes de Marketing
 
-### Anuncio de Producto
+Estos son casos de uso, no código para copiar — la implementación real es HTML dentro de `index.html` del proyecto:
 
-```typescript
-const frames = [
-  { html: hookSlide("Algo nuevo llegó"), duration: 2 },
-  { html: featureSlide(title, description, screenshot), duration: 4 },
-  { html: ctaSlide("Pruébalo gratis →", url), duration: 3 },
-];
-```
-
-### Video de Testimonio
-
-```typescript
-const frames = [
-  { html: quoteSlide(testimonial.text), duration: 4 },
-  { html: attributionSlide(testimonial.author, testimonial.company), duration: 2 },
-  { html: ctaSlide("Únete a más de 1,000 clientes felices"), duration: 3 },
-];
-```
-
-### Video de Estadísticas/Métricas
-
-```typescript
-const metrics = [
-  { label: "Usuarios", value: "10,000+" },
-  { label: "Uptime", value: "99.9%" },
-  { label: "NPS", value: "72" },
-];
-
-const frames = metrics.map(m => ({
-  html: metricSlide(m.label, m.value),
-  duration: 2.5,
-}));
-```
+- **Anuncio de producto:** hook (2s) → feature con screenshot (4s) → CTA (3s), cada uno como un `.clip` con su `data-start`.
+- **Video de testimonio:** cita (4s) → atribución (2s) → CTA (3s).
+- **Estadísticas/métricas:** un `.clip` por métrica, distribuidos en la línea de tiempo con `data-start` consecutivos.
 
 ## Relaciones de Aspecto
 

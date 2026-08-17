@@ -56,25 +56,18 @@ Construye videos con código. Ideal para video repetible, templado o basado en d
 Open-source, Apache 2.0, de HeyGen. Usa HTML/CSS/JS plano — sin DSL de framework que aprender. Nativo para LLM: los modelos de IA generan mejor HTML que componentes de React.
 
 ```bash
-npm install hyperframes
+npx hyperframes init mi-video --example blank --resolution portrait
 ```
 
-**Concepto clave:** Cada frame es un documento HTML. Compón frames en una línea de tiempo, renderiza a MP4.
+**Concepto clave:** No es una librería de JavaScript — es un CLI que escafolda un proyecto. Cada composición es un `index.html` con un contenedor raíz (`data-start`, `data-duration`, `data-width`, `data-height`) y uno o más `<div class="clip">` con sus propios `data-start`/`data-duration`/`data-track-index`. Edita ese HTML directamente (el proyecto viene con `AGENTS.md`/`CLAUDE.md` pensados para que un agente de código lo edite), previsualiza y renderiza con el mismo CLI:
 
-```typescript
-import { render } from "hyperframes";
-
-await render({
-  frames: [
-    { html: "<h1>Welcome to Acme</h1>", duration: 3 },
-    { html: "<h2>Here's what we built</h2>", duration: 3 },
-    { html: "<p>Try it free →</p>", duration: 2 },
-  ],
-  output: "intro.mp4",
-  width: 1080,
-  height: 1920, // 9:16 para vertical
-});
+```bash
+cd mi-video
+npx hyperframes preview   # previsualizar en el navegador
+npx hyperframes render    # renderizar a MP4 (o npm run render, ya viene en package.json)
 ```
+
+**Requiere además de Node 22+ y Chrome/Chromium:** FFmpeg instalado (`brew install ffmpeg`) — sin esto el render falla. Verifica el entorno con `npx hyperframes doctor` antes de la primera sesión con un cliente.
 
 **Mejor para:** Anuncios de producto, changelogs, reportes basados en datos, videos de outreach personalizados.
 
