@@ -7,7 +7,7 @@ Servicio de correo electrónico transaccional orientado a desarrolladores con un
 | Integración | Disponible | Notas |
 |-------------|-----------|-------|
 | API | ✓ | REST API sencilla para envío de correos |
-| MCP | ✓ | Disponible mediante el servidor MCP de Resend |
+| MCP | ✓ | Servidor MCP oficial hospedado (sin instalación) — [resend.com/docs/mcp-server](https://resend.com/docs/mcp-server) |
 | CLI | - | No disponible |
 | SDK | ✓ | SDKs oficiales para Node.js, Python, Go, etc. |
 

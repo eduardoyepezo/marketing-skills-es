@@ -7,7 +7,7 @@ Plataforma de publicidad de pago por clic para campañas de búsqueda, display y
 | Integración | Disponible | Notas |
 |-------------|-----------|-------|
 | API | ✓ | Google Ads API para gestión de campañas |
-| MCP | ✓ | Disponible mediante el servidor MCP de Google Ads |
+| MCP | ✓ | Servidor MCP oficial de Google — [developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server). Solo lectura: lista cuentas y corre queries GAQL — no cambia pujas ni pausa campañas |
 | CLI | - | Usar gcloud o scripts de API |
 | SDK | ✓ | Bibliotecas cliente para múltiples lenguajes |
 

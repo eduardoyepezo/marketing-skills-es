@@ -7,7 +7,7 @@ Plataforma de email marketing para campañas, automatización y gestión de audi
 | Integración | Disponible | Notas |
 |-------------|-----------|-------|
 | API | ✓ | Marketing API para campañas, audiencias y automatización |
-| MCP | ✓ | Disponible a través del servidor MCP de Mailchimp |
+| MCP | ✓ | Servidor MCP oficial en `https://mandrillapp.com/mcp` — ojo: es para la API de Mensajería Transaccional (Mandrill), no para campañas/audiencias/automatizaciones del Mailchimp de marketing completo |
 | CLI | - | No disponible |
 | SDK | ✓ | SDKs oficiales para múltiples lenguajes |
 

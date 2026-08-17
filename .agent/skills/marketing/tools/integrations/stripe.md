@@ -7,7 +7,7 @@ Procesamiento de pagos, suscripciones y facturación para negocios en internet.
 | Integración | Disponible | Notas |
 |-------------|------------|-------|
 | API | ✓ | REST API completa |
-| MCP | ✓ | Disponible mediante el servidor MCP de Stripe |
+| MCP | ✓ | Servidor MCP oficial hospedado en `https://mcp.stripe.com/` — [docs.stripe.com/mcp](https://docs.stripe.com/mcp) |
 | CLI | ✓ | CLI `stripe` para pruebas y webhooks |
 | SDK | ✓ | SDKs oficiales para la mayoría de lenguajes |
 

@@ -7,7 +7,7 @@ Plataforma de analítica web para rastrear el comportamiento de usuarios, conver
 | Integración | Disponible | Notas |
 |-------------|-----------|-------|
 | API | ✓ | Data API para reportes, Admin API para configuración |
-| MCP | ✓ | Disponible mediante el servidor MCP de Google Analytics |
+| MCP | ✓ | Servidor MCP oficial de Google — [github.com/googleanalytics/google-analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp), docs en [developers.google.com/analytics/devguides/MCP](https://developers.google.com/analytics/devguides/MCP) |
 | CLI | - | Usar gcloud para algunas operaciones |
 | SDK | ✓ | gtag.js, Google Analytics SDK para móvil |
 
