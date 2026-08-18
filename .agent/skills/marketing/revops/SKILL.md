@@ -318,18 +318,18 @@ Formatear cada uno como un documento independiente que el usuario puede implemen
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md). Herramientas clave de RevOps:
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md). Herramientas clave de RevOps:
 
 | Herramienta | Qué Hace | Guía |
 |------|------------|-------|
-| **HubSpot** | CRM, automatización de marketing, scoring de leads, flujos de trabajo | [hubspot.md](../../tools/integrations/hubspot.md) |
-| **Salesforce** | CRM empresarial, gestión de pipeline, reportes | [salesforce.md](../../tools/integrations/salesforce.md) |
-| **Calendly** | Programación de reuniones, enrutamiento round-robin | [calendly.md](../../tools/integrations/calendly.md) |
-| **SavvyCal** | Programación con disponibilidad basada en prioridades | [savvycal.md](../../tools/integrations/savvycal.md) |
-| **Clearbit** | Enriquecimiento y scoring de leads en tiempo real | [clearbit.md](../../tools/integrations/clearbit.md) |
-| **Apollo** | Datos de contacto, enriquecimiento y secuencias outbound | [apollo.md](../../tools/integrations/apollo.md) |
-| **ActiveCampaign** | Automatización de marketing para PyMEs, scoring de leads | [activecampaign.md](../../tools/integrations/activecampaign.md) |
-| **Zapier** | Automatización entre herramientas y flujo de trabajo | [zapier.md](../../tools/integrations/zapier.md) |
+| **HubSpot** | CRM, automatización de marketing, scoring de leads, flujos de trabajo | [hubspot.md](../tools/integrations/hubspot.md) |
+| **Salesforce** | CRM empresarial, gestión de pipeline, reportes | [salesforce.md](../tools/integrations/salesforce.md) |
+| **Calendly** | Programación de reuniones, enrutamiento round-robin | [calendly.md](../tools/integrations/calendly.md) |
+| **SavvyCal** | Programación con disponibilidad basada en prioridades | [savvycal.md](../tools/integrations/savvycal.md) |
+| **Clearbit** | Enriquecimiento y scoring de leads en tiempo real | [clearbit.md](../tools/integrations/clearbit.md) |
+| **Apollo** | Datos de contacto, enriquecimiento y secuencias outbound | [apollo.md](../tools/integrations/apollo.md) |
+| **ActiveCampaign** | Automatización de marketing para PyMEs, scoring de leads | [activecampaign.md](../tools/integrations/activecampaign.md) |
+| **Zapier** | Automatización entre herramientas y flujo de trabajo | [zapier.md](../tools/integrations/zapier.md) |
 
 ---
 

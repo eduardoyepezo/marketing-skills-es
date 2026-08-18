@@ -366,7 +366,7 @@ Verificación mensual:
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md).
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md).
 
 | Herramienta | Para qué se usa |
 |-------------|-----------------|

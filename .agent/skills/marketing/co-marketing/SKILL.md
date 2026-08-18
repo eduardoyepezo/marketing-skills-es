@@ -272,13 +272,13 @@ Tengo una idea para [tipo de campaña específico] que podría funcionar bien pa
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md). Herramientas clave para co-marketing:
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md). Herramientas clave para co-marketing:
 
 | Herramienta | Mejor Para | Guía |
 |------|----------|-------|
-| **Crossbeam** | Solapamiento de cuentas con partners | [crossbeam.md](../../tools/integrations/crossbeam.md) |
-| **Introw** | Gestión de programas de partners, registro de deals | [introw.md](../../tools/integrations/introw.md) |
-| **PartnerStack** | Gestión de programas de partners y afiliados | [partnerstack.md](../../tools/integrations/partnerstack.md) |
+| **Crossbeam** | Solapamiento de cuentas con partners | [crossbeam.md](../tools/integrations/crossbeam.md) |
+| **Introw** | Gestión de programas de partners, registro de deals | [introw.md](../tools/integrations/introw.md) |
+| **PartnerStack** | Gestión de programas de partners y afiliados | [partnerstack.md](../tools/integrations/partnerstack.md) |
 
 ---
 

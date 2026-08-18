@@ -334,7 +334,7 @@ Los datos de SparkToro están agregados y anonimizados — muestran patrones, no
 - Se inclina hacia inglés y hacia EE. UU.
 - Muestra qué hacen las audiencias, no por qué — combínalo con fuentes cualitativas
 
-Ver [tools/integrations/sparktoro.md](../../../tools/integrations/sparktoro.md) para detalles completos de la herramienta y precios.
+Ver [tools/integrations/sparktoro.md](../../tools/integrations/sparktoro.md) para detalles completos de la herramienta y precios.
 
 ---
 

@@ -387,14 +387,14 @@ Para producción de creatividades a gran escala (el equipo de growth de Anthropi
 
 ## Integraciones de Herramientas
 
-Para extraer datos de rendimiento y gestionar campañas, ver el [registro de herramientas](../../tools/REGISTRY.md).
+Para extraer datos de rendimiento y gestionar campañas, ver el [registro de herramientas](../tools/REGISTRY.md).
 
 | Plataforma | Extraer datos | Gestionar campañas | Guía |
 |------------|:-------------:|:------------------:|------|
-| **Google Ads** | `google-ads campaigns list`, `google-ads reports get` | `google-ads campaigns create` | [google-ads.md](../../tools/integrations/google-ads.md) |
-| **Meta Ads** | `meta-ads insights get` | `meta-ads campaigns list` | [meta-ads.md](../../tools/integrations/meta-ads.md) |
-| **LinkedIn Ads** | `linkedin-ads analytics get` | `linkedin-ads campaigns list` | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
-| **TikTok Ads** | `tiktok-ads reports get` | `tiktok-ads campaigns list` | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md) |
+| **Google Ads** | `google-ads campaigns list`, `google-ads reports get` | `google-ads campaigns create` | [google-ads.md](../tools/integrations/google-ads.md) |
+| **Meta Ads** | `meta-ads insights get` | `meta-ads campaigns list` | [meta-ads.md](../tools/integrations/meta-ads.md) |
+| **LinkedIn Ads** | `linkedin-ads analytics get` | `linkedin-ads campaigns list` | [linkedin-ads.md](../tools/integrations/linkedin-ads.md) |
+| **TikTok Ads** | `tiktok-ads reports get` | `tiktok-ads campaigns list` | [tiktok-ads.md](../tools/integrations/tiktok-ads.md) |
 
 ### Flujo de Trabajo: Extraer Datos, Analizar, Generar
 

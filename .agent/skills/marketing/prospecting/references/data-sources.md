@@ -36,7 +36,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 - Precisión de email ~60–80% — siempre validar
 - Aplican límites de exportación masiva
 
-**Integración**: ver [apollo.md](../../../tools/integrations/apollo.md)
+**Integración**: ver [apollo.md](../../tools/integrations/apollo.md)
 
 ---
 
@@ -55,7 +55,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 - El precio por crédito puede dispararse en listas grandes
 - Sobrecarga de complejidad — es fácil sobre-diseñar los flujos
 
-**Integración**: ver [clay.md](../../../tools/integrations/clay.md)
+**Integración**: ver [clay.md](../../tools/integrations/clay.md)
 
 ---
 
@@ -74,7 +74,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 - Excesivo para prospección SMB
 - Típicamente atado a contratos multi-año
 
-**Integración**: ver [zoominfo.md](../../../tools/integrations/zoominfo.md)
+**Integración**: ver [zoominfo.md](../../tools/integrations/zoominfo.md)
 
 ---
 
@@ -92,7 +92,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 - Adquisición por HubSpot (2023) — ahora empaquetado en HubSpot Breeze Intelligence
 - La API standalone sigue disponible pero el precio/acceso depende del nivel
 
-**Integración**: ver [clearbit.md](../../../tools/integrations/clearbit.md)
+**Integración**: ver [clearbit.md](../../tools/integrations/clearbit.md)
 
 ---
 
@@ -114,7 +114,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 - Ambas son herramientas de adivinar patrones — la precisión depende de que el patrón de email de la empresa objetivo sea inferible
 - Siempre pasar los resultados por un validador dedicado (Truelist o similar) antes del outreach
 
-**Integraciones**: ver [hunter.md](../../../tools/integrations/hunter.md), [snov.md](../../../tools/integrations/snov.md)
+**Integraciones**: ver [hunter.md](../../tools/integrations/hunter.md), [snov.md](../../tools/integrations/snov.md)
 
 ---
 
@@ -133,7 +133,7 @@ Guía de selección de herramientas para prospección en las tres ramas.
 
 **Por qué esto importa**: La reputación del cold email se hunde cuando las tasas de rebote superan el 2%. Validar antes de enviar no es negociable. Los datos de Apollo/ZoomInfo/Hunter suelen tener una precisión de 60–80% — Truelist atrapa el resto.
 
-**Integración**: ver [truelist.md](../../../tools/integrations/truelist.md)
+**Integración**: ver [truelist.md](../../tools/integrations/truelist.md)
 
 ---
 
@@ -205,7 +205,7 @@ Verifica cruzadamente ambas para señales de tech stack de alta confianza.
 - Los repos muy populares (100K+ estrellas) son mayormente ruido; repos más pequeños y dirigidos (5K–25K) dan mejor densidad de señal
 - La mayoría de los prospectos son individuos, no contactos de empresa directamente — hay que averiguar su empresa desde el campo `company` o LinkedIn
 
-**Integración**: ver [github.md](../../../tools/integrations/github.md)
+**Integración**: ver [github.md](../../tools/integrations/github.md)
 
 ---
 
@@ -234,7 +234,7 @@ Ambas herramientas técnicamente pueden apuntar a cualquier URL. La regla estric
 
 El discovery ocurre en plataformas (investigación manual asistida por navegador). La extracción ocurre en sitios de negocios públicos individuales.
 
-**Integraciones**: ver [firecrawl.md](../../../tools/integrations/firecrawl.md), [browserbase.md](../../../tools/integrations/browserbase.md)
+**Integraciones**: ver [firecrawl.md](../../tools/integrations/firecrawl.md), [browserbase.md](../../tools/integrations/browserbase.md)
 
 ---
 
@@ -251,7 +251,7 @@ El discovery ocurre en plataformas (investigación manual asistida por navegador
 - Consideraciones de privacidad/GDPR — verifica las divulgaciones de tu política de privacidad
 - La identificación a nivel de persona genera más preocupaciones que a nivel de empresa
 
-**Integración**: ver [rb2b.md](../../../tools/integrations/rb2b.md)
+**Integración**: ver [rb2b.md](../../tools/integrations/rb2b.md)
 
 ---
 

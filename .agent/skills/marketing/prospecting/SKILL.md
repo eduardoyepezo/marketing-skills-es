@@ -232,22 +232,22 @@ score,business,category,area,distance_km,website_status,website_url,social_urls,
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md). Herramientas clave de prospección:
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md). Herramientas clave de prospección:
 
 | Herramienta | Mejor para | MCP | Guía |
 |------|----------|:---:|-------|
-| **Apollo** | Descubrimiento firmográfico + de contactos B2B / SaaS | - | [apollo.md](../../tools/integrations/apollo.md) |
-| **Clay** | Enriquecimiento multi-fuente + waterfall | ✓ | [clay.md](../../tools/integrations/clay.md) |
-| **Clearbit** | Enriquecimiento email-a-empresa | - | [clearbit.md](../../tools/integrations/clearbit.md) |
-| **ZoomInfo** | Contacto B2B empresarial + intención | ✓ | [zoominfo.md](../../tools/integrations/zoominfo.md) |
-| **Hunter** | Patrón de email + verificación | - | [hunter.md](../../tools/integrations/hunter.md) |
-| **Snov** | Buscador de email + verificador | - | [snov.md](../../tools/integrations/snov.md) |
-| **Truelist** | Validación de entregabilidad de email | - | [truelist.md](../../tools/integrations/truelist.md) |
-| **Outreach** | Engagement de ventas (post-lista) | ✓ | [outreach.md](../../tools/integrations/outreach.md) |
-| **RB2B** | Identificación de visitantes (intención cálida) | - | [rb2b.md](../../tools/integrations/rb2b.md) |
-| **GitHub** | Stargazers/forks/watchers como señal de intención de desarrollador | - | [github.md](../../tools/integrations/github.md) |
-| **Firecrawl** | Extracción de sitio único (sitio web propio del prospecto) | ✓ | [firecrawl.md](../../tools/integrations/firecrawl.md) |
-| **Browserbase** | Investigación de sitios con navegador real cuando se necesita renderizado o interacción | ✓ | [browserbase.md](../../tools/integrations/browserbase.md) |
+| **Apollo** | Descubrimiento firmográfico + de contactos B2B / SaaS | - | [apollo.md](../tools/integrations/apollo.md) |
+| **Clay** | Enriquecimiento multi-fuente + waterfall | ✓ | [clay.md](../tools/integrations/clay.md) |
+| **Clearbit** | Enriquecimiento email-a-empresa | - | [clearbit.md](../tools/integrations/clearbit.md) |
+| **ZoomInfo** | Contacto B2B empresarial + intención | ✓ | [zoominfo.md](../tools/integrations/zoominfo.md) |
+| **Hunter** | Patrón de email + verificación | - | [hunter.md](../tools/integrations/hunter.md) |
+| **Snov** | Buscador de email + verificador | - | [snov.md](../tools/integrations/snov.md) |
+| **Truelist** | Validación de entregabilidad de email | - | [truelist.md](../tools/integrations/truelist.md) |
+| **Outreach** | Engagement de ventas (post-lista) | ✓ | [outreach.md](../tools/integrations/outreach.md) |
+| **RB2B** | Identificación de visitantes (intención cálida) | - | [rb2b.md](../tools/integrations/rb2b.md) |
+| **GitHub** | Stargazers/forks/watchers como señal de intención de desarrollador | - | [github.md](../tools/integrations/github.md) |
+| **Firecrawl** | Extracción de sitio único (sitio web propio del prospecto) | ✓ | [firecrawl.md](../tools/integrations/firecrawl.md) |
+| **Browserbase** | Investigación de sitios con navegador real cuando se necesita renderizado o interacción | ✓ | [browserbase.md](../tools/integrations/browserbase.md) |
 
 ---
 

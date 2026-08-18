@@ -358,7 +358,7 @@ Para el playbook completo de dunning con configuración específica por proveedo
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md).
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md).
 
 ### Plataformas de Retención
 

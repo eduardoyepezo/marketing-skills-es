@@ -311,18 +311,18 @@ Mantén las recomendaciones específicas. No digas "envía un SMS en el momento 
 
 ## Integraciones de Herramientas
 
-Para implementación, ver el [registro de herramientas](../../tools/REGISTRY.md). Herramientas clave de SMS:
+Para implementación, ver el [registro de herramientas](../tools/REGISTRY.md). Herramientas clave de SMS:
 
 | Herramienta | Mejor Para | MCP | Guía |
 |------|----------|:---:|-------|
-| **Klaviyo** | Email + SMS de ecommerce combinados | ✓ | [klaviyo.md](../../tools/integrations/klaviyo.md) |
-| **Postscript** | SMS DTC en Shopify, la integración más profunda con Shopify | - | [postscript.md](../../tools/integrations/postscript.md) |
-| **Attentive** | SMS DTC mid-market+, full-service | - | [attentive.md](../../tools/integrations/attentive.md) |
-| **Twilio** | API cruda para builds a la medida, transaccional, dev-first | - | [twilio.md](../../tools/integrations/twilio.md) |
-| **Plivo** | Alternativa a Twilio, menor costo por envío | - | [plivo.md](../../tools/integrations/plivo.md) |
-| **AudienceTap** | DTC con enfoque en IA, opt-in por QR en el empaque | - | [audiencetap.md](../../tools/integrations/audiencetap.md) |
-| **Brevo** | Email + SMS en EU, amigable con SMB | ✓ | [brevo.md](../../tools/integrations/brevo.md) |
-| **Customer.io** | Automatización de SMS basada en comportamiento | - | [customer-io.md](../../tools/integrations/customer-io.md) |
+| **Klaviyo** | Email + SMS de ecommerce combinados | ✓ | [klaviyo.md](../tools/integrations/klaviyo.md) |
+| **Postscript** | SMS DTC en Shopify, la integración más profunda con Shopify | - | [postscript.md](../tools/integrations/postscript.md) |
+| **Attentive** | SMS DTC mid-market+, full-service | - | [attentive.md](../tools/integrations/attentive.md) |
+| **Twilio** | API cruda para builds a la medida, transaccional, dev-first | - | [twilio.md](../tools/integrations/twilio.md) |
+| **Plivo** | Alternativa a Twilio, menor costo por envío | - | [plivo.md](../tools/integrations/plivo.md) |
+| **AudienceTap** | DTC con enfoque en IA, opt-in por QR en el empaque | - | [audiencetap.md](../tools/integrations/audiencetap.md) |
+| **Brevo** | Email + SMS en EU, amigable con SMB | ✓ | [brevo.md](../tools/integrations/brevo.md) |
+| **Customer.io** | Automatización de SMS basada en comportamiento | - | [customer-io.md](../tools/integrations/customer-io.md) |
 
 ---
 

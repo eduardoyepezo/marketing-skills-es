@@ -324,8 +324,8 @@ Resultado: Video listo para publicar
 
 | Herramienta | Tipo | MCP | Guía |
 |------|------|:---:|-------|
-| **HeyGen** | Avatares de IA | Sí | [heygen.md](../../tools/integrations/heygen.md) |
-| **Hyperframes** | Video programático | - | [hyperframes.md](../../tools/integrations/hyperframes.md) |
+| **HeyGen** | Avatares de IA | Sí | [heygen.md](../tools/integrations/heygen.md) |
+| **Hyperframes** | Video programático | - | [hyperframes.md](../tools/integrations/hyperframes.md) |
 | **Remotion** | Video programático | - | [remotion.dev](https://www.remotion.dev/docs) |
 | **Runway** | Generación con IA | - | [runwayml.com/docs](https://docs.dev.runwayml.com) |
 
