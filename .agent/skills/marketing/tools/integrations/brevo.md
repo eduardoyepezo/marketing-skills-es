@@ -262,7 +262,6 @@ Brevo usa REST estándar con paginación basada en offset (parámetros `limit` y
 ## Skills Relevantes
 
 - email-sequence
-- sms-marketing
-- transactional-email
-- lifecycle-marketing
-- contact-management
+- sms
+- churn-prevention
+- revops

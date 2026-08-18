@@ -285,8 +285,5 @@ POST https://api.intercom.io/events
 
 ## Skills Relevantes
 
-- customer-onboarding
-- customer-retention
-- lead-generation
-- customer-support
-- in-app-messaging
+- churn-prevention
+- onboarding-cro

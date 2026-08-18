@@ -184,8 +184,5 @@ Headers:
 
 ## Habilidades Relacionadas
 
-- reputation-management
-- customer-feedback
-- review-generation
-- social-proof
-- post-purchase-flow
+- sales-enablement
+- churn-prevention

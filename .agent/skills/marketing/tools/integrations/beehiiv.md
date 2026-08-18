@@ -152,6 +152,5 @@ Todos los endpoints están vinculados a una publicación. El ID de publicación 
 ## Skills Relevantes
 
 - email-sequence
-- newsletter-growth
 - referral-program
 - content-strategy

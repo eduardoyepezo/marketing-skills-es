@@ -216,7 +216,4 @@ Todas las respuestas siguen el formato:
 ## Skills Relevantes
 
 - referral-program
-- affiliate-marketing
-- partner-enablement
-- saas-metrics
-- launch-sequence
+- co-marketing

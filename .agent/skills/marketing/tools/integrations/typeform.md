@@ -183,8 +183,7 @@ GET https://api.typeform.com/workspaces/{workspace_id}
 
 ## Habilidades Relacionadas
 
-- lead-generation
 - customer-research
 - page-cro
 - signup-flow-cro
-- customer-feedback
+- form-cro

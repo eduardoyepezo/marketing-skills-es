@@ -223,6 +223,5 @@ Klaviyo utiliza la especificación JSON:API. Todos los cuerpos de solicitud/resp
 ## Skills Relevantes
 
 - email-sequence
-- ecommerce-email
-- lifecycle-marketing
-- customer-segmentation
+- sms
+- churn-prevention

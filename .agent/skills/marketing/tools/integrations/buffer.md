@@ -132,7 +132,6 @@ Las respuestas incluyen un booleano `success` para operaciones de mutación.
 
 ## Skills Relacionadas
 
-- social-media-calendar
-- content-repurposing
-- social-proof
-- launch-sequence
+- social
+- social-content-plan
+- launch-strategy

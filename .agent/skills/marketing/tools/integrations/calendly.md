@@ -155,7 +155,5 @@ DELETE https://api.calendly.com/webhook_subscriptions/{webhook_uuid}
 
 ## Skills Relacionadas
 
-- lead-generation
-- sales-automation
-- customer-onboarding
-- appointment-scheduling
+- sales-enablement
+- revops

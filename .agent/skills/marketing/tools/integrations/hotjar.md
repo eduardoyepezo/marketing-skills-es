@@ -143,5 +143,3 @@ Authorization: Bearer {access_token}
 - page-cro
 - ab-test-setup
 - analytics-tracking
-- ux-audit
-- landing-page

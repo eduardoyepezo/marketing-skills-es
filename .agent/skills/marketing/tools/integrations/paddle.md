@@ -205,8 +205,5 @@ GET https://api.paddle.com/event-types
 
 ## Skills Relevantes
 
-- pricing-page
-- saas-metrics
-- churn-reduction
-- launch-sequence
-- monetization-strategy
+- pricing-strategy
+- churn-prevention

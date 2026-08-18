@@ -175,7 +175,5 @@ POST https://api.savvycal.com/v1/webhooks
 
 ## Habilidades Relevantes
 
-- lead-generation
-- sales-automation
-- appointment-scheduling
-- customer-onboarding
+- sales-enablement
+- revops

@@ -158,7 +158,5 @@ El CLI utiliza v1 para máxima estabilidad.
 
 ## Habilidades Relacionadas
 
-- video-marketing
-- content-repurposing
-- landing-page-optimization
-- lead-generation
+- video
+- page-cro

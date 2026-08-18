@@ -135,8 +135,5 @@ Los endpoints estándar devuelven `202 Accepted` si los datos están siendo proc
 
 ## Skills Relacionadas
 
-- lead-scoring
-- personalization
-- abm-strategy
-- lead-enrichment
+- prospecting
 - competitor-alternatives

@@ -141,8 +141,6 @@ POST https://api.apollo.io/api/v1/organizations/enrich
 
 ## Skills Relevantes
 
-- abm-strategy
-- lead-enrichment
-- lead-scoring
 - cold-email
+- prospecting
 - competitor-alternatives

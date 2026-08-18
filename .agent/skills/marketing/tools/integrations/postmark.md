@@ -229,6 +229,4 @@ Postmark usa endpoints REST simples con nombres de campo en PascalCase en los cu
 ## Skills Relevantes
 
 - email-sequence
-- transactional-email
-- email-deliverability
-- onboarding-email
+- onboarding-cro

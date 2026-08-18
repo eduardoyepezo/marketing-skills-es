@@ -331,7 +331,5 @@ ActiveCampaign usa REST con encapsulamiento de recursos (p. ej., `{ "contact": {
 ## Skills Relevantes
 
 - email-sequence
-- lifecycle-marketing
-- crm-integration
-- sales-pipeline
-- marketing-automation
+- churn-prevention
+- revops

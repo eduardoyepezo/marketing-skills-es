@@ -175,8 +175,6 @@ Demio utiliza una API REST sencilla:
 
 ## Skills Relacionadas
 
-- webinar-marketing
-- lead-generation
-- event-marketing
 - content-strategy
-- lifecycle-marketing
+- launch-strategy
+- sales-enablement

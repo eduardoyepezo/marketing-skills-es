@@ -174,4 +174,3 @@ GET https://plausible.io/api/v1/sites
 - content-strategy
 - programmatic-seo
 - page-cro
-- utm-tracking
