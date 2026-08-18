@@ -84,6 +84,11 @@ Referencia rápida para que los agentes de IA descubran las capacidades de las h
 | shopify | Comercio | ✓ | - | ✓ | ✓ | [shopify.md](integrations/shopify.md) |
 | wordpress | CMS | ✓ | - | ✓ | ✓ | [wordpress.md](integrations/wordpress.md) |
 | webflow | CMS | ✓ | - | ✓ | ✓ | [webflow.md](integrations/webflow.md) |
+| twilio | SMS/Voz | ✓ | - | - | ✓ | [twilio.md](integrations/twilio.md) |
+| plivo | SMS/Voz | ✓ | - | - | ✓ | [plivo.md](integrations/plivo.md) |
+| postscript | SMS Marketing | ✓ | - | - | ✓ | [postscript.md](integrations/postscript.md) |
+| attentive | SMS Marketing | ✓ | - | - | - | [attentive.md](integrations/attentive.md) |
+| audiencetap | SMS Marketing (Text-to-Buy) | - | - | - | - | [audiencetap.md](integrations/audiencetap.md) |
 
 ---
 
@@ -392,6 +397,20 @@ Plataformas de e-commerce y sistemas de gestión de contenido.
 | **webflow** | Sitios de marketing enfocados en diseño | ✓ |
 
 **Recomendación del agente**: Shopify para e-commerce. Webflow para sitios de marketing. WordPress para blogs.
+
+### SMS Marketing
+
+Mensajería de texto para marketing, infraestructura de envío, y comercio conversacional.
+
+| Herramienta | Ideal para | Notas |
+|------|----------|-------|
+| **postscript** | SMS marketing en Shopify | Líder de mercado en e-commerce, SDK de checkout compatible con TCPA |
+| **attentive** | SMS marketing para marcas de mayor volumen | Journeys automatizados, mensajería transaccional |
+| **audiencetap** | Vender directo dentro del hilo de SMS (text-to-buy) | Sin API pública — se integra vía Zapier o conexiones nativas (Shopify/Stripe/Klaviyo) |
+| **twilio** | Infraestructura de SMS/voz de bajo nivel | Para OTPs, alertas transaccionales simples, o depurar entregabilidad debajo de una plataforma de marketing |
+| **plivo** | Alternativa a Twilio, menor costo por segmento | Misma lógica que Twilio, precio distinto |
+
+**Recomendación del agente**: Postscript o Attentive para SMS marketing completo (opt-in, segmentación, cumplimiento). Twilio o Plivo solo para infraestructura transaccional cruda, nunca como reemplazo de una plataforma de marketing. AudienceTap cuando el objetivo es vender dentro del mensaje mismo, no solo avisar.
 
 ---
 
